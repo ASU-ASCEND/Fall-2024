@@ -3,6 +3,10 @@
 
 #include <Arduino.h>
 
+/**
+ * @brief Interface for sensor objects
+ * 
+ */
 class Sensor {
  private:
   unsigned long minimum_period;
@@ -78,7 +82,7 @@ class Sensor {
    * @return true, if connected
    * @return false, if not connected
    */
-  virtual bool verifyPin() = 0;
+  virtual bool verify() = 0;
 
   /**
    * @brief Returns the collected data from the sensor in CSV format
