@@ -119,6 +119,11 @@ int verifySensors() {
   return count;
 }
 
+/**
+ * @brief Verifies the connection with each storage device
+ *
+ * @return int The number of verified storage devices
+ */
 int verifyStorage() {
   int count = 0;
   for (int i = 0; i < storages_len; i++) {
@@ -132,6 +137,11 @@ int verifyStorage() {
   return count;
 }
 
+/**
+ * @brief Sends data to each storage device
+ *
+ * @param data Data in a CSV formatted string
+ */
 void storeData(String data) {
   for (int i = 0; i < storages_len; i++) {
     storages[i]->store(data);
