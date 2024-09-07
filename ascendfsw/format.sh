@@ -1,3 +1,3 @@
 #!/bin/bash 
 
-clang-format -style=Chromium -i ./include/*.h ./src/*.cpp
+clang-format -style=Google -i ./include/*.h ./src/*.cpp

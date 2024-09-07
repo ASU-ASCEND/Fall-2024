@@ -92,7 +92,7 @@ void loop() {
   // store csv
   storeData(csv_row);
 
-  delay(100);
+  delay(500);
   digitalWrite(25, it % 2);
 }
 
@@ -105,8 +105,7 @@ int verifySensors() {
   int count = 0;
   for (int i = 0; i < sensors_len; i++) {
     sensors_verify[i] = sensors[i]->verify();
-    if (sensors_verify[i])
-      count++;
+    if (sensors_verify[i]) count++;
   }
   Serial.println("Pin Verification Results:");
   for (int i = 0; i < sensors_len; i++) {
@@ -159,18 +158,18 @@ void storeData(String data) {
  *
  */
 
-/**
- * @brief Setup for core 1
- *
- *
- */
-void setup1() {}
+// /**
+//  * @brief Setup for core 1
+//  *
+//  *
+//  */
+// void setup1() {}
 
-/**
- * @brief Loop for core 1
- *
- */
-void loop1() {
-  Serial.println("Core 1: " + String(millis()));
-  delay(1000);
-}
+// /**
+//  * @brief Loop for core 1
+//  *
+//  */
+// void loop1() {
+//   Serial.println("Core 1: " + String(millis()));
+//   delay(1000);
+// }

@@ -37,9 +37,7 @@ class Sensor {
    * @param fields number of csv cells the sensor will return
    * @param minimum_period Set the minimum time between sensor reads in ms
    */
-  Sensor(String sensor_name,
-         String csv_header,
-         int fields,
+  Sensor(String sensor_name, String csv_header, int fields,
          unsigned long minimum_period) {
     this->minimum_period = minimum_period;
     this->last_execution = 0;
