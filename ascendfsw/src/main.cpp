@@ -71,7 +71,7 @@ void setup() {
   // store header
   storeData(header);
 
-  pinMode(25, OUTPUT); 
+  pinMode(25, OUTPUT);
 }
 
 /**
@@ -92,8 +92,8 @@ void loop() {
   // store csv
   storeData(csv_row);
 
-  delay(100); 
-  digitalWrite(25, it % 2); 
+  delay(100);
+  digitalWrite(25, it % 2);
 }
 
 /**
@@ -171,6 +171,6 @@ void setup1() {}
  *
  */
 void loop1() {
-  Serial.println("Core 1: " + String(millis())); 
-  delay(1000); 
+  Serial.println("Core 1: " + String(millis()));
+  delay(1000);
 }
