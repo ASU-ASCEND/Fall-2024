@@ -3,6 +3,9 @@
 ## Microcontroller 
 [Raspberry Pi Pico](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)
 
+## Watchdog Chip
+[Attiny85](https://www.microchip.com/en-us/product/ATtiny85)
+
 ## Sensors 
 
 ### [MD0555](https://moderndevice.com/products/wind-sensor-rev-p): Wind Sensor
@@ -51,4 +54,4 @@ Protocol: ADC (analog read)
 
 ## Storages
 #### [SD Card](https://www.adafruit.com/product/4682)
-Protocol: 
+Protocol: SPI
