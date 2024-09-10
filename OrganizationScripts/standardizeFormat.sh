@@ -1,4 +1,6 @@
-#!/bin/bash 
+#!/bin/bash
+# Standardizes the format of every .h, .cpp, and .ino file in the repo
+# Intended to be executed in the OrganizationalScripts folder 
 
 cd ..
 

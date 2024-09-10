@@ -1,3 +1,6 @@
+"""
+Creates issues for each sensor
+"""
 import os
 
 sensors = """
