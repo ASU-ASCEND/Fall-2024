@@ -44,7 +44,7 @@ Watchdog program to restart microcontroller if it crashes
 ## Data Processing
 ### Traditional
 #### v1 (Minimum Viable Product)
-* Visualization for each sensor with explaining section and what is expected
+* Visualization for each sensor with explaining the section and what is expected
 #### v2 (Reusable Toolset)
 * Generalized format and add customization for different CSV input 
 * Create consistently styled reusable visualization template 
@@ -57,4 +57,4 @@ Watchdog program to restart microcontroller if it crashes
 * Payload accurate model
 * Output savable as video
 #### v3 (Real World Use)
-* integrate into radio reception
+* Integrate into radio reception
