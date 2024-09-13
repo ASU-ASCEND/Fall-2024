@@ -18,7 +18,7 @@ Watchdog program to restart microcontroller if it crashes
 | Week  | Task                                    | Complete   |
 |-------|-----------------------------------------|------------|
 | 9/18  | Github, Arduino, Platform.io and FSWv1  | &#x2610;   |
-| 9/25  | Colibration and optimization            | &#x2610;   |
+| 9/25  | Calibration and optimization            | &#x2610;   |
 | 10/2  | FSWv2                                   | &#x2610;   |
 | 10/9  | Testing FSWv2                           | &#x2610;   |
 | 10/16 | Science Mission review                  | &#x2610;   |
