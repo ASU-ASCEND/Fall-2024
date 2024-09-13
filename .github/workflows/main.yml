@@ -1,0 +1,22 @@
+name: Auto-formatter
+run-name: Auto-formatter is formatting code
+on:
+  push:
+    branches:
+      - main
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - run: 
+          sudo apt-get update
+      - run:
+          sudo apt-get install clang-format
+      - name: Running scripts
+        working-directory: ./OrganizationScripts
+        run: bash standardizeFormat.sh
+          
+
