@@ -4,7 +4,7 @@
 
 cd ..
 
-FILES=$(find -not -path "*/.*" | grep -E "\.h|\.cpp|\.ino$")
+FILES=$(find -not -path "*/.*" -not -path "*/lib/*" | grep -E "\.h|\.cpp|\.ino$")
 
 echo "Formatting:"
 echo $FILES
