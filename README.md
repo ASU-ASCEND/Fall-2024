@@ -17,16 +17,16 @@ Watchdog program to restart microcontroller if it crashes
 
 | Week  | Task                                    | Complete   |
 |-------|-----------------------------------------|------------|
-| 9/19  | Github, Arduino, Platform.io and FSWv1  | &#x2610;   |
-| 9/26  | Colibration and optimization            | &#x2610;   |
-| 10/3  | FSWv2                                   | &#x2610;   |
-| 10/10 | Testing FSWv2                           | &#x2610;   |
-| 10/17 | Science Mission review                  | &#x2610;   |
-| 10/24 | DP:Tv1, DP:3Dv1                         | &#x2610;   |
-| 10/31 | DP:Tv2                                  | &#x2610;   |
-| 11/7  | FSWv3, DP:3Dv2                          | &#x2610;   |
-| 11/14 | Testing FSWv3, DP:3Dv3                  | &#x2610;   |
-| 11/22 | Launch                                  | &#x2610;   |
+| 9/18  | Github, Arduino, Platform.io and FSWv1  | &#x2610;   |
+| 9/25  | Colibration and optimization            | &#x2610;   |
+| 10/2  | FSWv2                                   | &#x2610;   |
+| 10/9  | Testing FSWv2                           | &#x2610;   |
+| 10/16 | Science Mission review                  | &#x2610;   |
+| 10/23 | DP:Tv1, DP:3Dv1                         | &#x2610;   |
+| 10/30 | DP:Tv2                                  | &#x2610;   |
+| 11/6  | FSWv3, DP:3Dv2                          | &#x2610;   |
+| 11/13 | Testing FSWv3, DP:3Dv3                  | &#x2610;   |
+| 11/21 | Launch                                  | &#x2610;   |
 
 # Milestones 
 
