@@ -12,6 +12,8 @@ jobs:
         shell: bash
         working-directory: ./scripts
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
       - run: 
           sudo apt-get update
       - run:
