@@ -16,7 +16,7 @@ jobs:
       - run:
           sudo apt-get install clang-format
       - name: Running scripts
-        working-directory: OrganizationScripts
+        working-directory: ./OrganizationScripts
         run: bash standardizeFormat.sh
           
 
