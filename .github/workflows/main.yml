@@ -13,6 +13,7 @@ jobs:
     steps:
       - run: 
           sudo apt-get update
+      - run:
           sudo apt-get install clang-format
       - name: Running scripts
         working-directory: OrganizationScripts
