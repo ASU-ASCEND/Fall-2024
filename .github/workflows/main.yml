@@ -9,10 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ../OrganizationScripts
         shell: bash
     steps:
       - run: 
           sudo apt-get update
           sudo apt-get install clang-format
-      - run: bash standardizeFormat.sh
+      - name: Running scripts
+        working-directory: OrganizationScripts
+        run: bash standardizeFormat.sh
+          
+
