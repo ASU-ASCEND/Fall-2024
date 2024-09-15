@@ -18,6 +18,10 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install clang-format
+      - name: Checkout branch 
+        run: |
+          git checkout testActions
+          git status
       - name: Run formatting script
         run: 
           bash standardizeFormat.sh
@@ -25,7 +29,6 @@ jobs:
         run: |
           git config user.name "autoformatter[bot]"
           git config user.email "autoformatter[bot]@users.noreply.github.com"
-          git checkout testActions
           git add .
           git commit -m "generated"
           git push
