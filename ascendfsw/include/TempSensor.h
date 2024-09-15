@@ -4,8 +4,8 @@
 #include "Sensor.h"
 
 /**
- * @brief Implementation of a Sensor for the onboard temperature sensor 
- * 
+ * @brief Implementation of a Sensor for the onboard temperature sensor
+ *
  */
 class TempSensor : public Sensor {
  private:
