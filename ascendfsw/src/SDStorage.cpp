@@ -29,7 +29,10 @@ bool SDStorage::verify() {
   return true;
 }
 
-void testingAction(){ int i = 0; i = i / 2; i++; 
+void testingAction() {
+  int i = 0;
+  i = i / 2;
+  i++;
 }
 
 /**
