@@ -1,0 +1,42 @@
+name: Auto-formatter
+run-name: Auto-formatter is formatting code
+on:
+  push:
+    branches:
+      - main
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./scripts
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Install clang-format
+        run: |
+          sudo apt-get update
+          sudo apt-get install clang-format
+      - name: Checkout branch 
+        run: |
+          git checkout testActions
+          git status
+      - name: Run formatting script
+        run: 
+          bash standardizeFormat.sh
+      - name: Push formatting changes to repo   
+        run: |
+          git config user.name "autoformatter[bot]"
+          git config user.email "autoformatter[bot]@users.noreply.github.com"
+          git status
+          if [ "$(git diff)" = "" ]; then
+            echo "No formatting needed"
+          else 
+            git add .. 
+            git commit -m "[bot] - autoformatted code"
+            git push
+          fi
+    
+          
+
