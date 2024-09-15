@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['readdata_6',['readData',['../classSensor.html#a56153cab066abc01692301d11965f9b8',1,'Sensor::readData()'],['../classTempSensor.html#a3e5875aa6fad21ed69aa3ac15b59f7b9',1,'TempSensor::readData()']]],
-  ['readempty_7',['readEmpty',['../classSensor.html#a62d72a2f81422ac2d2fa8ae86ba08571',1,'Sensor']]]
+  ['fields_1',['fields',['../classSensor.html#ae5bd95d5c03d221d3aa133bd5989e084',1,'Sensor']]],
+  ['file_5fname_2',['file_name',['../classSDStorage.html#a940beb3d7849473c7c96a4fe57479c1a',1,'SDStorage']]]
 ];

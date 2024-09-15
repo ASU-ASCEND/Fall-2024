@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tempsensor_14',['TempSensor',['../classTempSensor.html',1,'TempSensor'],['../classTempSensor.html#aa444370d1924832815f93188b79414cc',1,'TempSensor::TempSensor()'],['../classTempSensor.html#a64c43cf917c318fee62f2caa54e2647a',1,'TempSensor::TempSensor(unsigned long minium_period)']]]
+  ['it_9',['it',['../main_8cpp.html#ac65d766d5179dcc67a8e61e09a1ce969',1,'main.cpp']]]
 ];

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['sdstorage_8',['SDStorage',['../classSDStorage.html',1,'SDStorage'],['../classSDStorage.html#a992cb710f41462a7a35c6dfdc838f01f',1,'SDStorage::SDStorage()']]],
-  ['sensor_9',['Sensor',['../classSensor.html',1,'Sensor'],['../classSensor.html#ac961611fe726ecce2236efa3b9ee450c',1,'Sensor::Sensor(String sensor_name, String csv_header, int fields)'],['../classSensor.html#a861ed177b65f0d04543e7b6fae6b8c85',1,'Sensor::Sensor(String sensor_name, String csv_header, int fields, unsigned long minimum_period)']]],
-  ['setlastexecution_10',['setLastExecution',['../classSensor.html#aea739069d8009fdb9b4026b4b3afc3ab',1,'Sensor']]],
-  ['setperiod_11',['setPeriod',['../classSensor.html#aecd2cfc8a5d16e306f6369adcc3e208a',1,'Sensor']]],
-  ['storage_12',['Storage',['../classStorage.html',1,'']]],
-  ['store_13',['store',['../classSDStorage.html#a9450318396c536da92d44d9ebad33ec1',1,'SDStorage::store()'],['../classStorage.html#a08674ceb4404690065b1cf39963eb5a3',1,'Storage::store()']]]
+  ['getdatacsv_3',['getDataCSV',['../classSensor.html#a2d5ecda6a046ddba40d0e37921226d2f',1,'Sensor']]],
+  ['getlastexecution_4',['getLastExecution',['../classSensor.html#ac44e20195df40674efb539e0aea1f789',1,'Sensor']]],
+  ['getperiod_5',['getPeriod',['../classSensor.html#a8763e8f8a73198127db17e0b9e79c5f5',1,'Sensor']]],
+  ['getsensorcsvheader_6',['getSensorCSVHeader',['../classSensor.html#a8a69f0a1c04c3b90d8225d67301a75b6',1,'Sensor']]],
+  ['getsensorname_7',['getSensorName',['../classSensor.html#acbb8667640eea651a758497cf4b88194',1,'Sensor']]],
+  ['getstoragename_8',['getStorageName',['../classStorage.html#ade89a8cb71d3f08ac75390d0f1e842cb',1,'Storage']]]
 ];

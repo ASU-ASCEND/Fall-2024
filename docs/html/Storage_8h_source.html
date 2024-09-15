@@ -69,19 +69,19 @@ $(function() {
 <div class="title">Storage.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef STORAGE_H</span></div>
+<a href="Storage_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef STORAGE_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define STORAGE_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Arduino.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classStorage.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classStorage.html">Storage</a> {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  String storage_name;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classStorage.html#aff621d72ce660e62f0dbb2f87d835327">   12</a></span>&#160;  String <a class="code" href="classStorage.html#aff621d72ce660e62f0dbb2f87d835327">storage_name</a>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="classStorage.html">Storage</a>(String storage_name) { this-&gt;storage_name = storage_name; }</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classStorage.html#a2f5803f60b5c3cd8e9c35fc744ab3058">   15</a></span>&#160;  <a class="code" href="classStorage.html#a2f5803f60b5c3cd8e9c35fc744ab3058">Storage</a>(String <a class="code" href="classStorage.html#aff621d72ce660e62f0dbb2f87d835327">storage_name</a>) { this-&gt;storage_name = <a class="code" href="classStorage.html#aff621d72ce660e62f0dbb2f87d835327">storage_name</a>; }</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classStorage.html#ade89a8cb71d3f08ac75390d0f1e842cb">   22</a></span>&#160;  <span class="keyword">const</span> String&amp; <a class="code" href="classStorage.html#ade89a8cb71d3f08ac75390d0f1e842cb">getStorageName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;storage_name; }</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classStorage.html#ade89a8cb71d3f08ac75390d0f1e842cb">   22</a></span>&#160;  <span class="keyword">const</span> String&amp; <a class="code" href="classStorage.html#ade89a8cb71d3f08ac75390d0f1e842cb">getStorageName</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="classStorage.html#aff621d72ce660e62f0dbb2f87d835327">storage_name</a>; }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classStorage.html#a83fbc910d2fe786ac9134f27a85bda8f">verify</a>() = 0;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
@@ -92,6 +92,8 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassStorage_html_ade89a8cb71d3f08ac75390d0f1e842cb"><div class="ttname"><a href="classStorage.html#ade89a8cb71d3f08ac75390d0f1e842cb">Storage::getStorageName</a></div><div class="ttdeci">const String &amp; getStorageName() const</div><div class="ttdoc">Get the name of the storage device.</div><div class="ttdef"><b>Definition:</b> Storage.h:22</div></div>
 <div class="ttc" id="aclassStorage_html_a08674ceb4404690065b1cf39963eb5a3"><div class="ttname"><a href="classStorage.html#a08674ceb4404690065b1cf39963eb5a3">Storage::store</a></div><div class="ttdeci">virtual void store(String data)=0</div><div class="ttdoc">Send data to storage device.</div></div>
+<div class="ttc" id="aclassStorage_html_aff621d72ce660e62f0dbb2f87d835327"><div class="ttname"><a href="classStorage.html#aff621d72ce660e62f0dbb2f87d835327">Storage::storage_name</a></div><div class="ttdeci">String storage_name</div><div class="ttdef"><b>Definition:</b> Storage.h:12</div></div>
+<div class="ttc" id="aclassStorage_html_a2f5803f60b5c3cd8e9c35fc744ab3058"><div class="ttname"><a href="classStorage.html#a2f5803f60b5c3cd8e9c35fc744ab3058">Storage::Storage</a></div><div class="ttdeci">Storage(String storage_name)</div><div class="ttdef"><b>Definition:</b> Storage.h:15</div></div>
 <div class="ttc" id="aclassStorage_html_a83fbc910d2fe786ac9134f27a85bda8f"><div class="ttname"><a href="classStorage.html#a83fbc910d2fe786ac9134f27a85bda8f">Storage::verify</a></div><div class="ttdeci">virtual bool verify()=0</div><div class="ttdoc">Verifies connection with storage device.</div></div>
 <div class="ttc" id="aclassStorage_html"><div class="ttname"><a href="classStorage.html">Storage</a></div><div class="ttdoc">Parent class for all data storage devices (sd card, radio, etc)</div><div class="ttdef"><b>Definition:</b> Storage.h:10</div></div>
 <!-- start footer part -->

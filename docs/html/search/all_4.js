@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['verify_15',['verify',['../classSDStorage.html#a2a08793ce2cb22bc0675f5cf4916155a',1,'SDStorage::verify()'],['../classSensor.html#a45975aa760bbab8224775ae5d78da333',1,'Sensor::verify()'],['../classStorage.html#a83fbc910d2fe786ac9134f27a85bda8f',1,'Storage::verify()'],['../classTempSensor.html#ab110bdca4c570053b16da6481b00bba5',1,'TempSensor::verify()']]]
+  ['last_5fexecution_10',['last_execution',['../classSensor.html#abd94c964e6cf265293cfb4cd5d01708d',1,'Sensor']]],
+  ['loop_11',['loop',['../main_8cpp.html#afe461d27b9c48d5921c00d521181f12f',1,'main.cpp']]]
 ];

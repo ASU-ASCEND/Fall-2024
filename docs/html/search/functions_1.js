@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['readdata_26',['readData',['../classSensor.html#a56153cab066abc01692301d11965f9b8',1,'Sensor::readData()'],['../classTempSensor.html#a3e5875aa6fad21ed69aa3ac15b59f7b9',1,'TempSensor::readData()']]],
-  ['readempty_27',['readEmpty',['../classSensor.html#a62d72a2f81422ac2d2fa8ae86ba08571',1,'Sensor']]]
+  ['loop_62',['loop',['../main_8cpp.html#afe461d27b9c48d5921c00d521181f12f',1,'main.cpp']]]
 ];

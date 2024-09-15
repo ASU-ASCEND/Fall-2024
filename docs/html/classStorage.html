@@ -63,6 +63,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classStorage-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Storage Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -76,25 +77,18 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for Storage:</div>
 <div class="dyncontent">
-<div class="center"><img src="classStorage__inherit__graph.png" border="0" usemap="#Storage_inherit__map" alt="Inheritance graph"/></div>
-<map name="Storage_inherit__map" id="Storage_inherit__map">
-<area shape="rect" title="Parent class for all data storage devices (sd card, radio, etc)" alt="" coords="5,5,163,127"/>
-<area shape="rect" href="classSDStorage.html" title=" " alt="" coords="27,175,141,281"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classStorage__inherit__graph.svg" width="168" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for Storage:</div>
 <div class="dyncontent">
-<div class="center"><img src="classStorage__coll__graph.png" border="0" usemap="#Storage_coll__map" alt="Collaboration graph"/></div>
-<map name="Storage_coll__map" id="Storage_coll__map">
-<area shape="rect" title="Parent class for all data storage devices (sd card, radio, etc)" alt="" coords="5,5,163,127"/>
-</map>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classStorage__coll__graph.svg" width="192" height="272"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2f5803f60b5c3cd8e9c35fc744ab3058"><td class="memItemLeft" align="right" valign="top"><a id="a2f5803f60b5c3cd8e9c35fc744ab3058"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Storage</b> (String storage_name)</td></tr>
+<tr class="memitem:a2f5803f60b5c3cd8e9c35fc744ab3058"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStorage.html#a2f5803f60b5c3cd8e9c35fc744ab3058">Storage</a> (String <a class="el" href="classStorage.html#aff621d72ce660e62f0dbb2f87d835327">storage_name</a>)</td></tr>
 <tr class="separator:a2f5803f60b5c3cd8e9c35fc744ab3058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade89a8cb71d3f08ac75390d0f1e842cb"><td class="memItemLeft" align="right" valign="top">const String &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStorage.html#ade89a8cb71d3f08ac75390d0f1e842cb">getStorageName</a> () const</td></tr>
 <tr class="memdesc:ade89a8cb71d3f08ac75390d0f1e842cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the storage device.  <a href="classStorage.html#ade89a8cb71d3f08ac75390d0f1e842cb">More...</a><br /></td></tr>
@@ -105,10 +99,42 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08674ceb4404690065b1cf39963eb5a3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStorage.html#a08674ceb4404690065b1cf39963eb5a3">store</a> (String data)=0</td></tr>
 <tr class="memdesc:a08674ceb4404690065b1cf39963eb5a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data to storage device.  <a href="classStorage.html#a08674ceb4404690065b1cf39963eb5a3">More...</a><br /></td></tr>
 <tr class="separator:a08674ceb4404690065b1cf39963eb5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aff621d72ce660e62f0dbb2f87d835327"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStorage.html#aff621d72ce660e62f0dbb2f87d835327">storage_name</a></td></tr>
+<tr class="separator:aff621d72ce660e62f0dbb2f87d835327"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parent class for all data storage devices (sd card, radio, etc) </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a2f5803f60b5c3cd8e9c35fc744ab3058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f5803f60b5c3cd8e9c35fc744ab3058">&#9670;&nbsp;</a></span>Storage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Storage::Storage </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>storage_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ade89a8cb71d3f08ac75390d0f1e842cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade89a8cb71d3f08ac75390d0f1e842cb">&#9670;&nbsp;</a></span>getStorageName()</h2>
 
@@ -202,6 +228,29 @@ Public Member Functions</h2></td></tr>
 false </dd></dl>
 
 <p>Implemented in <a class="el" href="classSDStorage.html#a2a08793ce2cb22bc0675f5cf4916155a">SDStorage</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aff621d72ce660e62f0dbb2f87d835327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff621d72ce660e62f0dbb2f87d835327">&#9670;&nbsp;</a></span>storage_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">String Storage::storage_name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

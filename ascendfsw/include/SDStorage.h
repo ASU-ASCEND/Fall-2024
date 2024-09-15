@@ -7,6 +7,10 @@
 
 #define SD_CS_PIN 17
 
+/**
+ * @brief Implementation of a Storage device to interface with an SD card 
+ * 
+ */
 class SDStorage : public Storage {
  private:
   String file_name;
