@@ -30,10 +30,13 @@ jobs:
           git config user.name "autoformatter[bot]"
           git config user.email "autoformatter[bot]@users.noreply.github.com"
           git status
-          # [ "$(git diff)" = "" ] ||
+          if[ "$(git diff)" = "" ]; then
           git add .. 
           git commit -m "[bot] - autoformatted code"
-          git push || echo "Done."
+          git push
+          else 
+          echo "No formatting needed"
+          fi
     
           
 
