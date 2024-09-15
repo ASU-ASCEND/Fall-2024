@@ -29,10 +29,6 @@ bool SDStorage::verify() {
   return true;
 }
 
-void formatTest() {int i = 0;
-i++; i = i == 2;
-}
-
 /**
  * @brief Store data on the SD card, ending with newline
  *
