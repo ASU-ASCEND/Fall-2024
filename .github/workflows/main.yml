@@ -31,11 +31,11 @@ jobs:
           git config user.email "autoformatter[bot]@users.noreply.github.com"
           git status
           if[ "$(git diff)" = "" ]; then
-          git add .. 
-          git commit -m "[bot] - autoformatted code"
-          git push
+            git add .. 
+            git commit -m "[bot] - autoformatted code"
+            git push
           else 
-          echo "No formatting needed"
+            echo "No formatting needed"
           fi
     
           
