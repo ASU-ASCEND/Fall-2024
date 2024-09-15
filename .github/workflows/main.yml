@@ -27,7 +27,7 @@ jobs:
           bash standardizeFormat.sh
       - name: Push formatting changes to repo   
         run: |
-          [ "$(git diff)" = ""] ||
+          [ "$(git diff)" = "" ] ||
           git config user.name "autoformatter[bot]" && 
           git config user.email "autoformatter[bot]@users.noreply.github.com" &&
           git status &&
