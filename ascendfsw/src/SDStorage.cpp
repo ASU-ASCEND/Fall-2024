@@ -29,10 +29,8 @@ bool SDStorage::verify() {
   return true;
 }
 
-void formatTest() {
-  int i = 0;
-  i++;
-  i = i == 2;
+void formatTest() {int i = 0;
+i++; i = i == 2;
 }
 
 /**
