@@ -20,7 +20,7 @@ jobs:
           sudo apt-get install clang-format
       - name: Checkout branch 
         run: |
-          git checkout testActions
+          git checkout main
           git status
       - name: Run formatting script
         run: 
