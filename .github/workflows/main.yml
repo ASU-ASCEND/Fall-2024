@@ -3,7 +3,7 @@ run-name: Auto-formatter is formatting code
 on:
   push:
     branches:
-      - testActions
+      - main
 jobs:
   format:
     runs-on: ubuntu-latest
