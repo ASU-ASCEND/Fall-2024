@@ -13,22 +13,22 @@ jobs:
         working-directory: ./scripts
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-      - run: 
+        uses: actions/checkout@v4
+      - name: Install clang-format
+        run: |
           sudo apt-get update
-      - run:
           sudo apt-get install clang-format
-      - name: Running scripts
+      - name: Run formatting script
         run: 
           bash standardizeFormat.sh
-      - name: sync changes to repo  
+      - name: Push formatting changes to repo   
         run: |
-          git remote set-url origin ${{ secrets.ssh }}
-          git status
+          git config user.name "autoformatter[bot]"
+          git config user.email "autoformatter[bot]@users.noreply.github.com"
+          git checkout testActions
           git add .
-          git commit -m "Autoformatting code"
-          git fetch origin testActions
-          git push origin HEAD:testActions 
+          git commit -m "generated"
+          git push
     
           
 
