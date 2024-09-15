@@ -30,8 +30,8 @@ jobs:
           git config user.name "autoformatter[bot]"
           git config user.email "autoformatter[bot]@users.noreply.github.com"
           git status
-          git add .
-          git commit -m "generated"
+          git add ..
+          git commit -m "[bot] - autoformmatted"
           git push
     
           
