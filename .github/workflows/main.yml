@@ -1,9 +1,9 @@
-name: Auto-formatter
-run-name: Auto-formatter is formatting code
+name: Auto-doc
+run-name: Auto-doc is formatting and documenting code
 on:
   push:
     branches:
-      - main
+      - autodoxygen 
 jobs:
   format:
     runs-on: ubuntu-latest
@@ -25,6 +25,12 @@ jobs:
       - name: Run formatting script
         run: 
           bash standardizeFormat.sh
+      - name: Install doxygen 
+        run:
+          sudo apt-get install doxygen 
+      - name: Run doxygen on ascendfsw
+        run:
+          doxygen fswDoxyfile 
       - name: Push formatting changes to repo   
         run: |
           git config user.name "autoformatter[bot]"
@@ -38,5 +44,4 @@ jobs:
             git push
           fi
     
-          
 
