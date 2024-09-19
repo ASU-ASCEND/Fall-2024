@@ -1,4 +1,4 @@
-name: Auto-doc
+name: Auto-doc (ascend-nasa-asu)
 run-name: Auto-doc is formatting and documenting code
 on:
   push:
