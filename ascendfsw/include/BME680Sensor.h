@@ -8,62 +8,46 @@
 #include <Wire.h>
 #include <SPI.h> 
 
+/**
+ * @class BME680Sensor
+ * @brief A class to interface with the Adafruit BME680 sensor for environmental data collection.
+ * 
+ * The BME680Sensor class is responsible for interacting with the BME680 sensor to gather environmental data such as
+ * temperature, pressure, humidity, and gas resistance. It also provides an approximation of altitude based on sea level pressure.
+ * 
+ * This class inherits from the Sensor base class and overrides its virtual methods to implement the specific functionality 
+ * required to read and verify data from the BME680 sensor.
+ * 
+ * Key functionalities:
+ * - Verify sensor connection and setup.
+ * - Retrieve sensor readings in CSV format for easy integration with data logging systems.
+ * - Get sensor name and CSV header for consistency in data handling.
+ * 
+ * Usage example:
+ * ```
+ * BME680Sensor sensor;
+ * if (sensor.verify()) {
+ *     String data = sensor.readData();
+ * }
+ * ```
+ * 
+ */
 class BME680Sensor : public Sensor {
     private:
         Adafruit_BME680 bme;
         String nameCompiled = "BME680"; 
         String csvHeaderCompiled = "BME680 Temp C, BME680 Pressure hPa, BME680 Humidity %, BME680 Gas KOhms, BME680 Approx Alt m, ";
+    
     public:
-        /**
-         * @brief Construct a new default BME680Sensor object
-         * 
-         */
         BME680Sensor();
-
-        /**
-         * @brief Construct a new BME680Sensor object
-         * 
-         * @param minimum_period Set the minimum time between sensor reads in ms
-         */
         BME680Sensor(unsigned long minimum_period);
 
-        /**
-         * @brief Get the Sensor Name as an Arduino string
-         * 
-         * @return const String& 
-         */
         const String& getSensorName() const;
-
-        /**
-         * @brief Get the CSV header string associated with BME680 sensor
-         * 
-         * @return const String& 
-         */
         const String& getSensorCSVHeader() const; 
-
-        /**
-         * @brief Verifies if the sensor is connected and working
-         * 
-         * @return true  - connected
-         * @return false - not connected
-         */
+        
         bool verify() override;
-
-        /**
-         * @brief Returns the collected data from the sensor in CSV format
-         * 
-         * @return String 
-         */
         String readData() override;
-
-        /**
-         * @brief Returns CSV line in the same format as readData() but with "-" instead of data
-         * 
-         * @return String 
-         */
-        String readEmpty() const {
-            return "-, -, -, -, -, ";
-        }
+        String readEmpty() const;
 };
 
 #endif
