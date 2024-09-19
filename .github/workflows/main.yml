@@ -30,6 +30,9 @@ jobs:
       - name: Install doxygen 
         run:
           sudo apt-get install doxygen 
+      - name: Clean old docs
+        run:
+          rm -r ../docs/*
       - name: Run doxygen on ascendfsw
         run:
           doxygen fswDoxyfile 
