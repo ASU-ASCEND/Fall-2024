@@ -1,5 +1,5 @@
-#ifndef GEIGERINTERRUPT_H
-#define GEIGERINTERRUPT_H
+#ifndef GEIGERSENSOR_H
+#define GEIGERSENSOR_H
 
 #include "Sensor.h"
 #include "Arduino.h"
@@ -8,24 +8,55 @@
 
 static volatile int count;
 
+/**
+ * @class GeigerSensor
+ * @brief A class for interfacing with a Geiger counter sensor.
+ * 
+ * The GeigerSensor class is responsible for measuring counts per second (CPS) 
+ * from a Geiger counter to detect radiation levels. This class utilizes an interrupt 
+ * to increment the count whenever radiation particles are detected by the sensor.
+ * 
+ * Key functionalities:
+ * - Attaches an interrupt to the sensor pin to track counts.
+ * - Reads the current CPS value over a set period and provides the data in CSV format.
+ * - Provides functionality to verify the sensor connection and reset counts after each reading.
+ * 
+ * Usage example:
+ * ```
+ * GeigerSensor sensor;
+ * if (sensor.verify()) {
+ *     String data = sensor.readData();
+ * }
+ * ```
+ * 
+ */
 class GeigerSensor : public Sensor {
 
     private:
         String nameCompiled = "GeigerSensor";
         String csvHeaderCompiled = "GeigerSensor CPS, ";
-        int measuringPeriodStart = 0; 
+        int measuringPeriodStart = 0;
+        
+        /**
+         * @brief Interrupt function to count pulses from the Geiger counter.
+         * 
+         * This function is triggered on each falling edge of the Geiger counter's signal
+         * and increments the count, which represents the number of radiation events detected.
+         */
         static void geigerCounter(){
             count++;
         }
-    public: 
-        const String& getSensorName() const override;
-        const String& getSensorCSVHeader() const override;
-        bool verifyPin() override;
-        String readData() override;
-        String readEmpty(){
-            return "-, ";
-        }
 
+    public: 
+        GeigerSensor();
+        GeigerSensor(unsigned long minimum_period);
+
+        const String& getSensorName() const;
+        const String& getSensorCSVHeader() const;
+
+        bool verify() override;
+        String readData() override;
+        String readEmpty();
 };
 
 #endif
