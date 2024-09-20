@@ -35,19 +35,13 @@
 class BME680Sensor : public Sensor {
     private:
         Adafruit_BME680 bme;
-        String nameCompiled = "BME680"; 
-        String csvHeaderCompiled = "BME680 Temp C, BME680 Pressure hPa, BME680 Humidity %, BME680 Gas KOhms, BME680 Approx Alt m, ";
     
     public:
         BME680Sensor();
         BME680Sensor(unsigned long minimum_period);
-
-        const String& getSensorName() const;
-        const String& getSensorCSVHeader() const; 
         
         bool verify() override;
         String readData() override;
-        String readEmpty() const;
 };
 
 #endif

@@ -10,27 +10,17 @@
 BME680Sensor::BME680Sensor() : BME680Sensor(0) {}
 
 /**
- * @brief Retrieves the sensor's name.
+ * @brief Parameterized constructor for the BME680Sensor class.
  * 
- * This function returns the name of the sensor, which is compiled into a string.
- * Useful for identifying the sensor in logs or reports.
+ * This constructor initializes the BME680Sensor with a specified minimum period between sensor readings. 
+ * It passes sensor-specific information like the name, CSV header, number of fields, and the minimum period 
+ * between reads to the base Sensor class constructor.
  * 
- * @return const String& - A reference to the string containing the sensor name ("BME680").
+ * @param minimum_period The minimum time (in milliseconds) between consecutive sensor reads.
  */
-const String& BME680Sensor::getSensorName() const {
-    return nameCompiled;
-}
+BME680Sensor::BME680Sensor(unsigned long minimum_period) 
+    : Sensor("BME680", "BMETemp(C),BMEPress(hPa),BMEHum(%),BMEGas(KOhms),BMEAlt(m)", 5, minimum_period) {}
 
-/**
- * @brief Retrieves the CSV header for the sensor's data.
- * 
- * Returns a pre-defined CSV header string that represents the labels for the sensor's output data fields.
- * 
- * @return const String& - A reference to the string containing the CSV header for the BME680 sensor.
- */
-const String& BME680Sensor::getSensorCSVHeader() const {
-    return csvHeaderCompiled;
-}
 
 /**
  * @brief Verifies the connection and readiness of the BME680 sensor.
@@ -74,18 +64,4 @@ String BME680Sensor::readData() {
 
     return String(bme.temperature) + ", " + String(bme.pressure / 100.0) + ", " + String(bme.humidity) + ", " 
         + String(bme.gas_resistance) + ", " + String(bme.readAltitude(SEALEVELPRESSURE_HPA)) + ", ";
-}
-
-/**
- * @brief Returns an empty CSV string placeholder.
- * 
- * This function is used when the sensor is unable to provide valid data,
- * or if the sensor reading fails. It returns a placeholder CSV string 
- * representing unavailable or invalid sensor data.
- * 
- * @return String - A string formatted as "-, -, -, -, -, " representing 
- * missing or unavailable data for temperature, pressure, humidity, gas resistance, and altitude.
- */
-String BME680Sensor::readEmpty() const {
-    return "-, -, -, -, -, ";
 }
