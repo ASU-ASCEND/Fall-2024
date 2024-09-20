@@ -8,22 +8,16 @@
 GeigerSensor::GeigerSensor() : GeigerSensor(0) {}
 
 /**
- * @brief Retrieves the sensor name.
- *
- * @return const String& - The name of the sensor.
+ * @brief Parameterized constructor for the GeigerSensor class.
+ * 
+ * This constructor initializes the GeigerSensor with a specified minimum period between sensor readings. 
+ * It also passes specific details like the sensor name, CSV header, and number of fields to the base 
+ * Sensor class constructor.
+ * 
+ * @param minimum_period The minimum time (in milliseconds) between consecutive sensor reads.
  */
-const String &GeigerSensor::getSensorName() const {
-    return nameCompiled;
-}
-
-/**
- * @brief Retrieves the CSV header for the sensor data.
- *
- * @return const String& - The CSV header string for the sensor data.
- */
-const String &GeigerSensor::getSensorCSVHeader() const {
-    return csvHeaderCompiled;
-}
+GeigerSensor::GeigerSensor(unsigned long minimum_period) 
+    : Sensor("GeigorSensor", "GeigorSensor(CPS)", 1, minimum_period) {}
 
 /**
  * @brief Verifies the connection to the sensor and sets up the interrupt.
@@ -56,13 +50,4 @@ String GeigerSensor::readData() {
     measuringPeriodStart = millis();
 
     return String(CPS) + ", ";
-}
-
-/**
- * @brief Returns an empty CSV string when no valid data is available.
- *
- * @return String - A placeholder string formatted as "-, ".
- */
-String GeigerSensor::readEmpty() {
-    return "-, ";
 }

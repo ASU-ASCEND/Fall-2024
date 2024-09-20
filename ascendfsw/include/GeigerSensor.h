@@ -31,10 +31,7 @@ static volatile int count;
  * 
  */
 class GeigerSensor : public Sensor {
-
     private:
-        String nameCompiled = "GeigerSensor";
-        String csvHeaderCompiled = "GeigerSensor CPS, ";
         int measuringPeriodStart = 0;
         
         /**
@@ -51,12 +48,8 @@ class GeigerSensor : public Sensor {
         GeigerSensor();
         GeigerSensor(unsigned long minimum_period);
 
-        const String& getSensorName() const;
-        const String& getSensorCSVHeader() const;
-
         bool verify() override;
         String readData() override;
-        String readEmpty();
 };
 
 #endif
