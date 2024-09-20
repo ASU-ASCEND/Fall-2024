@@ -19,7 +19,7 @@ BME680Sensor::BME680Sensor() : BME680Sensor(0) {}
  * @param minimum_period The minimum time (in milliseconds) between consecutive sensor reads.
  */
 BME680Sensor::BME680Sensor(unsigned long minimum_period) 
-    : Sensor("BME680", "BMETemp(C),BMEPress(hPa),BMEHum(%),BMEGas(KOhms),BMEAlt(m)", 5, minimum_period) {}
+    : Sensor("BME680", "BMETemp(C),BMEPress(hPa),BMEHum(%),BMEGas(KOhms),BMEAlt(m),", 5, minimum_period) {}
 
 
 /**
