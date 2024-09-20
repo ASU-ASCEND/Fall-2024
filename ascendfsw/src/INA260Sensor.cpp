@@ -1,14 +1,11 @@
 #include "INA260Sensor.h"
 
-const String& INA260Sensor::getSensorName() const {
-    return nameCompiled;
-}
+INA260Sensor::INA260Sensor() : INA260Sensor(0) {}
 
-const String& INA260Sensor::getSensorCSVHeader() const {
-    return csvHeaderCompiled;
-} 
+INA260Sensor::INA260Sensor(unsigned long minimum_period)
+    : Sensor("INA260", "INACurr(mA),INAVolt(mV),INAPow(mW),", 3, minimum_period) {}
 
-bool INA260Sensor::verifyPin() {
+bool INA260Sensor::verify() {
     ina260 = Adafruit_INA260();
     return ina260.begin();
 }
