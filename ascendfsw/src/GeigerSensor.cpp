@@ -17,7 +17,7 @@ GeigerSensor::GeigerSensor() : GeigerSensor(0) {}
  * @param minimum_period The minimum time (in milliseconds) between consecutive sensor reads.
  */
 GeigerSensor::GeigerSensor(unsigned long minimum_period) 
-    : Sensor("GeigorSensor", "GeigorSensor(CPS),", 1, minimum_period) {}
+    : Sensor("GeigerSensor", "GeigerSensor(CPS),", 1, minimum_period) {}
 
 /**
  * @brief Verifies the connection to the sensor and sets up the interrupt.
