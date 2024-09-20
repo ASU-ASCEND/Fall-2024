@@ -1,15 +1,11 @@
 #include "ZOPT220Sensor.h"
-#include "ZOPT220x_Control.h"
 
-const arduino::String& ZOPT220Sensor::getSensorName() const {
-    return nameCompiled;
-}
+ZOPT220Sensor::ZOPT220Sensor() : ZOPT220Sensor(0) {}
 
-const arduino::String& ZOPT220Sensor::getSensorCSVHeader() const {
-    return csvHeaderCompiled;
-} 
+ZOPT220Sensor::ZOPT220Sensor(unsigned long minimum_period) 
+    : Sensor("ZOPT220", "ZOPTUV(),ZOPTLight(lx),", 2, minimum_period) {}
 
-bool ZOPT220Sensor::verifyPin(){
+bool ZOPT220Sensor::verify(){
     return zopt220xSetup();
 }
 
@@ -38,5 +34,4 @@ arduino::String ZOPT220Sensor::readData() {
     long als = getALS();
 
     return String(uvIndex) + ", " + String(als) + ", "; 
-
 }
