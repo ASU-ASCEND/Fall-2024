@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zopt220sensor_110',['ZOPT220Sensor',['../classZOPT220Sensor.html',1,'']]]
+  ['tempsensor_116',['TempSensor',['../classTempSensor.html',1,'']]]
 ];

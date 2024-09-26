@@ -2,21 +2,23 @@
 
 /**
  * @brief Default constructor for the GeigerSensor class.
- * 
- * Initializes the sensor object with a default minimum period of 0 milliseconds.
+ *
+ * Initializes the sensor object with a default minimum period of 0
+ * milliseconds.
  */
 GeigerSensor::GeigerSensor() : GeigerSensor(0) {}
 
 /**
  * @brief Parameterized constructor for the GeigerSensor class.
- * 
- * This constructor initializes the GeigerSensor with a specified minimum period between sensor readings. 
- * It also passes specific details like the sensor name, CSV header, and number of fields to the base 
- * Sensor class constructor.
- * 
- * @param minimum_period The minimum time (in milliseconds) between consecutive sensor reads.
+ *
+ * This constructor initializes the GeigerSensor with a specified minimum period
+ * between sensor readings. It also passes specific details like the sensor
+ * name, CSV header, and number of fields to the base Sensor class constructor.
+ *
+ * @param minimum_period The minimum time (in milliseconds) between consecutive
+ * sensor reads.
  */
-GeigerSensor::GeigerSensor(unsigned long minimum_period) 
+GeigerSensor::GeigerSensor(unsigned long minimum_period)
     : Sensor("GeigerSensor", "GeigerSensor(CPS),", 1, minimum_period) {}
 
 /**
@@ -26,9 +28,9 @@ GeigerSensor::GeigerSensor(unsigned long minimum_period)
  * @return false - (Not applicable for this sensor, always returns true).
  */
 bool GeigerSensor::verify() {
-    attachInterrupt(digitalPinToInterrupt(GEIGER_PIN), geigerCounter, FALLING);
-    measuringPeriodStart = millis();
-    return true;
+  attachInterrupt(digitalPinToInterrupt(GEIGER_PIN), geigerCounter, FALLING);
+  measuringPeriodStart = millis();
+  return true;
 }
 
 /**
@@ -40,14 +42,14 @@ bool GeigerSensor::verify() {
  * @return String - The current CPS reading in CSV format.
  */
 String GeigerSensor::readData() {
-    int samplePeriod = millis() - measuringPeriodStart;
+  int samplePeriod = millis() - measuringPeriodStart;
 
-    noInterrupts();
-    float CPS = count / (samplePeriod / 1000.0);
-    count = 0;
-    interrupts();
+  noInterrupts();
+  float CPS = count / (samplePeriod / 1000.0);
+  count = 0;
+  interrupts();
 
-    measuringPeriodStart = millis();
+  measuringPeriodStart = millis();
 
-    return String(CPS) + ", ";
+  return String(CPS) + ", ";
 }

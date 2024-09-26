@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['main_2ecpp_115',['main.cpp',['../main_8cpp.html',1,'']]]
+  ['lsm9ds1sensor_2ecpp_122',['LSM9DS1Sensor.cpp',['../LSM9DS1Sensor_8cpp.html',1,'']]],
+  ['lsm9ds1sensor_2eh_123',['LSM9DS1Sensor.h',['../LSM9DS1Sensor_8h.html',1,'']]]
 ];
