@@ -1,0 +1,4 @@
+<map id="ZOPT220Sensor" name="ZOPT220Sensor">
+<area shape="rect" id="node1" title="A class to interface with the ZOPT220x UV and ambient light sensor." alt="" coords="23,351,173,472"/>
+<area shape="rect" id="node2" href="$classSensor.html" title="Parent class for sensor objects." alt="" coords="5,5,191,303"/>
+</map>
