@@ -28,15 +28,6 @@
  * - Retrieve sensor readings in CSV format for easy integration with data
  * logging systems.
  * - Get sensor name and CSV header for consistency in data handling.
- *
- * Usage example:
- * ```
- * BME680Sensor sensor;
- * if (sensor.verify()) {
- *     String data = sensor.readData();
- * }
- * ```
- *
  */
 class BME680Sensor : public Sensor {
  private:
