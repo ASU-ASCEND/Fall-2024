@@ -7,15 +7,17 @@ digraph "Sensor"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node1 [label="{Sensor\n|- minimum_period\l- last_execution\l- sensor_name\l- csv_header\l- fields\l|+ Sensor()\l+ Sensor()\l+ getPeriod()\l+ setPeriod()\l+ getLastExecution()\l+ setLastExecution()\l+ getSensorName()\l+ getSensorCSVHeader()\l+ verify()\l+ readData()\l+ readEmpty()\l+ getDataCSV()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Parent class for sensor objects."];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
-  Node2 [label="{GeigerSensor\n|- measuringPeriodStart\l|+ GeigerSensor()\l+ GeigerSensor()\l+ verify()\l+ readData()\l- geigerCounter()\l}",height=0.2,width=0.4,color="black",URL="$classGeigerSensor.html",tooltip="A class for interfacing with a Geiger counter sensor."];
+  Node2 [label="{BME680Sensor\n|- bme\l|+ BME680Sensor()\l+ BME680Sensor()\l+ verify()\l+ readData()\l}",height=0.2,width=0.4,color="black",URL="$classBME680Sensor.html",tooltip="A class to interface with the Adafruit BME680 sensor for environmental data collection."];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
-  Node3 [label="{INA260Sensor\n|- ina260\l|+ INA260Sensor()\l+ INA260Sensor()\l+ verify()\l+ readData()\l}",height=0.2,width=0.4,color="black",URL="$classINA260Sensor.html",tooltip="A class to interface with the Adafruit INA260 sensor for current, voltage, and power measurements."];
+  Node3 [label="{GeigerSensor\n|- measuringPeriodStart\l|+ GeigerSensor()\l+ GeigerSensor()\l+ verify()\l+ readData()\l- geigerCounter()\l}",height=0.2,width=0.4,color="black",URL="$classGeigerSensor.html",tooltip="A class for interfacing with a Geiger counter sensor."];
   Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
-  Node4 [label="{LSM9DS1Sensor\n||+ LSM9DS1Sensor()\l+ LSM9DS1Sensor()\l+ verify()\l+ readData()\l}",height=0.2,width=0.4,color="black",URL="$classLSM9DS1Sensor.html",tooltip=" "];
+  Node4 [label="{INA260Sensor\n|- ina260\l|+ INA260Sensor()\l+ INA260Sensor()\l+ verify()\l+ readData()\l}",height=0.2,width=0.4,color="black",URL="$classINA260Sensor.html",tooltip="A class to interface with the Adafruit INA260 sensor for current, voltage, and power measurements."];
   Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
-  Node5 [label="{SHT31Sensor\n|- sht31\l- csvHeaderCompiled\l|+ SHT31Sensor()\l+ SHT31Sensor()\l+ verify()\l+ readData()\l}",height=0.2,width=0.4,color="black",URL="$classSHT31Sensor.html",tooltip="Interfaces with SHT31 Sensor to collect temperature and humidity data."];
+  Node5 [label="{LSM9DS1Sensor\n||+ LSM9DS1Sensor()\l+ LSM9DS1Sensor()\l+ verify()\l+ readData()\l}",height=0.2,width=0.4,color="black",URL="$classLSM9DS1Sensor.html",tooltip=" "];
   Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
-  Node6 [label="{TempSensor\n||+ TempSensor()\l+ TempSensor()\l+ verify()\l+ readData()\l}",height=0.2,width=0.4,color="black",URL="$classTempSensor.html",tooltip="Implementation of a Sensor for the onboard temperature sensor."];
+  Node6 [label="{SHT31Sensor\n|- sht31\l- csvHeaderCompiled\l|+ SHT31Sensor()\l+ SHT31Sensor()\l+ verify()\l+ readData()\l}",height=0.2,width=0.4,color="black",URL="$classSHT31Sensor.html",tooltip="Interfaces with SHT31 Sensor to collect temperature and humidity data."];
   Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
-  Node7 [label="{ZOPT220Sensor\n||+ ZOPT220Sensor()\l+ ZOPT220Sensor()\l+ verify()\l+ readData()\l}",height=0.2,width=0.4,color="black",URL="$classZOPT220Sensor.html",tooltip="A class to interface with the ZOPT220x UV and ambient light sensor."];
+  Node7 [label="{TempSensor\n||+ TempSensor()\l+ TempSensor()\l+ verify()\l+ readData()\l}",height=0.2,width=0.4,color="black",URL="$classTempSensor.html",tooltip="Implementation of a Sensor for the onboard temperature sensor."];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node8 [label="{ZOPT220Sensor\n||+ ZOPT220Sensor()\l+ ZOPT220Sensor()\l+ verify()\l+ readData()\l}",height=0.2,width=0.4,color="black",URL="$classZOPT220Sensor.html",tooltip="A class to interface with the ZOPT220x UV and ambient light sensor."];
 }

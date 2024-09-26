@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ina260_191',['ina260',['../classINA260Sensor.html#a81348d4fdf3a040932de924c09db4358',1,'INA260Sensor']]],
-  ['it_192',['it',['../main_8cpp.html#ac65d766d5179dcc67a8e61e09a1ce969',1,'main.cpp']]]
+  ['fields_199',['fields',['../classSensor.html#ae5bd95d5c03d221d3aa133bd5989e084',1,'Sensor']]],
+  ['file_5fname_200',['file_name',['../classSDStorage.html#a940beb3d7849473c7c96a4fe57479c1a',1,'SDStorage']]]
 ];

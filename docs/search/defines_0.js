@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['byte_208',['byte',['../ZOPT220x__Control_8h.html#a71809484a26cd96c6abe839a0a8a289d',1,'ZOPT220x_Control.h']]]
+  ['byte_218',['byte',['../ZOPT220x__Control_8h.html#a71809484a26cd96c6abe839a0a8a289d',1,'ZOPT220x_Control.h']]]
 ];

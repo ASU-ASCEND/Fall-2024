@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['measuringperiodstart_194',['measuringPeriodStart',['../classGeigerSensor.html#a3f3e077ee3f22666f2ea23659e510e57',1,'GeigerSensor']]],
-  ['minimum_5fperiod_195',['minimum_period',['../classSensor.html#ab44ddb52915d3308953718c4ba3f63c4',1,'Sensor']]]
+  ['last_5fexecution_203',['last_execution',['../classSensor.html#abd94c964e6cf265293cfb4cd5d01708d',1,'Sensor']]]
 ];

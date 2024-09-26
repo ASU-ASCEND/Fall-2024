@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['checkpoweronstatus_136',['checkPowerOnStatus',['../ZOPT220x__Control_8h.html#a705d5cfa93cebcd507a02e148fc320da',1,'ZOPT220x_Control.h']]]
+  ['bme680sensor_144',['BME680Sensor',['../classBME680Sensor.html#aef81ef59340d381e16b54c965f8f73c0',1,'BME680Sensor::BME680Sensor()'],['../classBME680Sensor.html#a0679871d405ed9cc332da90988e19750',1,'BME680Sensor::BME680Sensor(unsigned long minimum_period)']]]
 ];
