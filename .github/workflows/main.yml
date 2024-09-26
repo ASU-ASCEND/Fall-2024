@@ -28,7 +28,7 @@ jobs:
         run: 
           bash standardizeFormat.sh
       - name: Install Doxygen and Graphviz
-        run:
+        run: |
           sudo apt-get install doxygen 
           sudo apt install graphviz
       - name: Clean old docs
