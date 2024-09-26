@@ -143,16 +143,9 @@ Private Attributes</h2></td></tr>
 <p>The <a class="el" href="classINA260Sensor.html" title="A class to interface with the Adafruit INA260 sensor for current, voltage, and power measurements.">INA260Sensor</a> class is responsible for interacting with the Adafruit INA260 sensor to gather electrical data, including current (in mA), voltage (in mV), and power (in mW). This class inherits from the <a class="el" href="classSensor.html" title="Parent class for sensor objects.">Sensor</a> base class and overrides the <code><a class="el" href="classINA260Sensor.html#a799f491fe1496b33b1d985e5672a7e6d" title="Verifies the connection to the INA260 sensor.">verify()</a></code> and <code><a class="el" href="classINA260Sensor.html#a40a7b8158adfe1742ab7ce746b2830c4" title="Reads data from the INA260 sensor and returns it in CSV format.">readData()</a></code> methods to provide specific functionality for the INA260 sensor.</p>
 <p>Key functionalities:</p><ul>
 <li>Initializes and verifies the connection with the INA260 sensor.</li>
-<li>Reads current, voltage, and power data from the sensor and returns it in CSV format.</li>
+<li>Reads current, voltage, and power data from the sensor and returns it in CSV format. </li>
 </ul>
-<p>Usage example: </p><div class="fragment"><div class="line"><a class="code" href="classINA260Sensor.html">INA260Sensor</a> sensor;</div>
-<div class="line"><span class="keywordflow">if</span> (sensor.<a class="code" href="classINA260Sensor.html#a799f491fe1496b33b1d985e5672a7e6d">verify</a>()) {</div>
-<div class="line">    String data = sensor.<a class="code" href="classINA260Sensor.html#a40a7b8158adfe1742ab7ce746b2830c4">readData</a>();</div>
-<div class="line">}</div>
-<div class="ttc" id="aclassINA260Sensor_html"><div class="ttname"><a href="classINA260Sensor.html">INA260Sensor</a></div><div class="ttdoc">A class to interface with the Adafruit INA260 sensor for current, voltage, and power measurements.</div><div class="ttdef"><b>Definition:</b> INA260Sensor.h:34</div></div>
-<div class="ttc" id="aclassINA260Sensor_html_a40a7b8158adfe1742ab7ce746b2830c4"><div class="ttname"><a href="classINA260Sensor.html#a40a7b8158adfe1742ab7ce746b2830c4">INA260Sensor::readData</a></div><div class="ttdeci">String readData() override</div><div class="ttdoc">Reads data from the INA260 sensor and returns it in CSV format.</div><div class="ttdef"><b>Definition:</b> INA260Sensor.cpp:48</div></div>
-<div class="ttc" id="aclassINA260Sensor_html_a799f491fe1496b33b1d985e5672a7e6d"><div class="ttname"><a href="classINA260Sensor.html#a799f491fe1496b33b1d985e5672a7e6d">INA260Sensor::verify</a></div><div class="ttdeci">bool verify() override</div><div class="ttdoc">Verifies the connection to the INA260 sensor.</div><div class="ttdef"><b>Definition:</b> INA260Sensor.cpp:34</div></div>
-</div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a042f617dabe0fdd117cd1ba7cdb8723d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a042f617dabe0fdd117cd1ba7cdb8723d">&#9670;&nbsp;</a></span>INA260Sensor() <span class="overload">[1/2]</span></h2>
 

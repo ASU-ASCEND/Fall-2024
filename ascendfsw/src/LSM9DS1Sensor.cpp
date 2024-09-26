@@ -2,13 +2,14 @@
 
 /**
  * @brief Construct a new LSM9DS1Sensor object with default minimum_period of 0
- * 
+ *
  */
 LSM9DS1Sensor::LSM9DS1Sensor() : LSM9DS1Sensor(0) {}
 
 /**
- * @brief Construct a new LSM9DS1Sensor object, given mininum_period between sensor reads
- * 
+ * @brief Construct a new LSM9DS1Sensor object, given mininum_period between
+ * sensor reads
+ *
  * @param minimum_period Minimum time to wait between readings in ms
  */
 LSM9DS1Sensor::LSM9DS1Sensor(unsigned long minimum_period)
@@ -19,7 +20,7 @@ LSM9DS1Sensor::LSM9DS1Sensor(unsigned long minimum_period)
 
 /**
  * @brief Verifies that the LSM is connected and working
- * 
+ *
  * @return true if connected and working
  * @return false if not connected and working
  */
@@ -30,11 +31,11 @@ bool LSM9DS1Sensor::verify() {
 
 /**
  * @brief Retrieves data from LSM 9-axis IMU
- * 
- * @return String A CSV section in format AccX, AccY, AccZ, GyroX, GyroY, GyroZ, MagX, MagY, MagZ,
+ *
+ * @return String A CSV section in format AccX, AccY, AccZ, GyroX, GyroY, GyroZ,
+ * MagX, MagY, MagZ,
  */
 String LSM9DS1Sensor::readData() {
-
   float accX, accY, accZ;
   IMU.readAcceleration(accX, accY, accZ);
 

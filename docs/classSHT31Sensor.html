@@ -98,9 +98,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b322dd4ff6fafbbdfdccaf7cd0b622f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSHT31Sensor.html#a1b322dd4ff6fafbbdfdccaf7cd0b622f">verify</a> () override</td></tr>
 <tr class="memdesc:a1b322dd4ff6fafbbdfdccaf7cd0b622f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies connection of SHT <a class="el" href="classSensor.html" title="Parent class for sensor objects.">Sensor</a>.  <a href="classSHT31Sensor.html#a1b322dd4ff6fafbbdfdccaf7cd0b622f">More...</a><br /></td></tr>
 <tr class="separator:a1b322dd4ff6fafbbdfdccaf7cd0b622f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8f2f378d2f81260a76db835f7f2b7bc"><td class="memItemLeft" align="right" valign="top">arduino::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSHT31Sensor.html#aa8f2f378d2f81260a76db835f7f2b7bc">readData</a> () override</td></tr>
-<tr class="memdesc:aa8f2f378d2f81260a76db835f7f2b7bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads sensor data and returns in csv format.  <a href="classSHT31Sensor.html#aa8f2f378d2f81260a76db835f7f2b7bc">More...</a><br /></td></tr>
-<tr class="separator:aa8f2f378d2f81260a76db835f7f2b7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c96b9d77a2a3859391038c6ebccec4d"><td class="memItemLeft" align="right" valign="top">arduino::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSHT31Sensor.html#a8c96b9d77a2a3859391038c6ebccec4d">readData</a> () override</td></tr>
+<tr class="memdesc:a8c96b9d77a2a3859391038c6ebccec4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads sensor data and returns in csv format.  <a href="classSHT31Sensor.html#a8c96b9d77a2a3859391038c6ebccec4d">More...</a><br /></td></tr>
+<tr class="separator:a8c96b9d77a2a3859391038c6ebccec4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSensor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSensor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSensor.html">Sensor</a></td></tr>
 <tr class="memitem:ac961611fe726ecce2236efa3b9ee450c inherit pub_methods_classSensor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensor.html#ac961611fe726ecce2236efa3b9ee450c">Sensor</a> (String <a class="el" href="classSensor.html#a51529bb4324e61954a2d181ec4629b77">sensor_name</a>, String <a class="el" href="classSensor.html#a2ec9679548d0d3c876995aa3de551293">csv_header</a>, int <a class="el" href="classSensor.html#ae5bd95d5c03d221d3aa133bd5989e084">fields</a>)</td></tr>
 <tr class="memdesc:ac961611fe726ecce2236efa3b9ee450c inherit pub_methods_classSensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classSensor.html" title="Parent class for sensor objects.">Sensor</a> object with default minimum_period of 0.  <a href="classSensor.html#ac961611fe726ecce2236efa3b9ee450c">More...</a><br /></td></tr>
@@ -189,8 +189,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa8f2f378d2f81260a76db835f7f2b7bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8f2f378d2f81260a76db835f7f2b7bc">&#9670;&nbsp;</a></span>readData()</h2>
+<a id="a8c96b9d77a2a3859391038c6ebccec4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c96b9d77a2a3859391038c6ebccec4d">&#9670;&nbsp;</a></span>readData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,7 +199,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">arduino::String SHT31Sensor::readData </td>
+          <td class="memname">String SHT31Sensor::readData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -213,7 +213,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reads sensor data and returns in csv format. </p>
-<dl class="section return"><dt>Returns</dt><dd>arduino::String </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>String A CSV section in the format humidity, temperature, </dd></dl>
 
 <p>Implements <a class="el" href="classSensor.html#a56153cab066abc01692301d11965f9b8">Sensor</a>.</p>
 
@@ -243,9 +243,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Verifies connection of SHT <a class="el" href="classSensor.html" title="Parent class for sensor objects.">Sensor</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dl class="section return"><dt>Returns</dt><dd>true if connected and working </dd>
 <dd>
-false </dd></dl>
+false if not connected and working </dd></dl>
 
 <p>Implements <a class="el" href="classSensor.html#a45975aa760bbab8224775ae5d78da333">Sensor</a>.</p>
 

@@ -97,9 +97,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5fab507a3cadaab6d6026c3fea36d0e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZOPT220Sensor.html#a5fab507a3cadaab6d6026c3fea36d0e6">verify</a> () override</td></tr>
 <tr class="memdesc:a5fab507a3cadaab6d6026c3fea36d0e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies the connection to the ZOPT220x sensor.  <a href="classZOPT220Sensor.html#a5fab507a3cadaab6d6026c3fea36d0e6">More...</a><br /></td></tr>
 <tr class="separator:a5fab507a3cadaab6d6026c3fea36d0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abebec3ac7bdc6f3917a29594e2537060"><td class="memItemLeft" align="right" valign="top">arduino::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZOPT220Sensor.html#abebec3ac7bdc6f3917a29594e2537060">readData</a> () override</td></tr>
-<tr class="memdesc:abebec3ac7bdc6f3917a29594e2537060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from the ZOPT220x sensor and returns it in CSV format.  <a href="classZOPT220Sensor.html#abebec3ac7bdc6f3917a29594e2537060">More...</a><br /></td></tr>
-<tr class="separator:abebec3ac7bdc6f3917a29594e2537060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aeb56062c5ff976d199ae407df9ed6c"><td class="memItemLeft" align="right" valign="top">arduino::String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZOPT220Sensor.html#a6aeb56062c5ff976d199ae407df9ed6c">readData</a> () override</td></tr>
+<tr class="memdesc:a6aeb56062c5ff976d199ae407df9ed6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from the ZOPT220x sensor and returns it in CSV format.  <a href="classZOPT220Sensor.html#a6aeb56062c5ff976d199ae407df9ed6c">More...</a><br /></td></tr>
+<tr class="separator:a6aeb56062c5ff976d199ae407df9ed6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSensor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSensor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSensor.html">Sensor</a></td></tr>
 <tr class="memitem:ac961611fe726ecce2236efa3b9ee450c inherit pub_methods_classSensor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensor.html#ac961611fe726ecce2236efa3b9ee450c">Sensor</a> (String <a class="el" href="classSensor.html#a51529bb4324e61954a2d181ec4629b77">sensor_name</a>, String <a class="el" href="classSensor.html#a2ec9679548d0d3c876995aa3de551293">csv_header</a>, int <a class="el" href="classSensor.html#ae5bd95d5c03d221d3aa133bd5989e084">fields</a>)</td></tr>
 <tr class="memdesc:ac961611fe726ecce2236efa3b9ee450c inherit pub_methods_classSensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classSensor.html" title="Parent class for sensor objects.">Sensor</a> object with default minimum_period of 0.  <a href="classSensor.html#ac961611fe726ecce2236efa3b9ee450c">More...</a><br /></td></tr>
@@ -134,19 +134,12 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class to interface with the ZOPT220x UV and ambient light sensor. </p>
-<p>The <a class="el" href="classZOPT220Sensor.html" title="A class to interface with the ZOPT220x UV and ambient light sensor.">ZOPT220Sensor</a> class provides functionality to interact with the ZOPT220x sensor, allowing it to read UV index and ambient light levels (lux). This class inherits from the <a class="el" href="classSensor.html" title="Parent class for sensor objects.">Sensor</a> base class and overrides the <code><a class="el" href="classZOPT220Sensor.html#a5fab507a3cadaab6d6026c3fea36d0e6" title="Verifies the connection to the ZOPT220x sensor.">verify()</a></code> and <code><a class="el" href="classZOPT220Sensor.html#abebec3ac7bdc6f3917a29594e2537060" title="Reads data from the ZOPT220x sensor and returns it in CSV format.">readData()</a></code> methods to handle the sensor’s specific functionality.</p>
+<p>The <a class="el" href="classZOPT220Sensor.html" title="A class to interface with the ZOPT220x UV and ambient light sensor.">ZOPT220Sensor</a> class provides functionality to interact with the ZOPT220x sensor, allowing it to read UV index and ambient light levels (lux). This class inherits from the <a class="el" href="classSensor.html" title="Parent class for sensor objects.">Sensor</a> base class and overrides the <code><a class="el" href="classZOPT220Sensor.html#a5fab507a3cadaab6d6026c3fea36d0e6" title="Verifies the connection to the ZOPT220x sensor.">verify()</a></code> and <code><a class="el" href="classZOPT220Sensor.html#a6aeb56062c5ff976d199ae407df9ed6c" title="Reads data from the ZOPT220x sensor and returns it in CSV format.">readData()</a></code> methods to handle the sensor’s specific functionality.</p>
 <p>Key functionalities:</p><ul>
 <li>Verifies and initializes the connection with the ZOPT220x sensor.</li>
-<li>Reads UV index and ambient light data from the sensor and returns it in CSV format.</li>
+<li>Reads UV index and ambient light data from the sensor and returns it in CSV format. </li>
 </ul>
-<p>Usage example: </p><div class="fragment"><div class="line"><a class="code" href="classZOPT220Sensor.html">ZOPT220Sensor</a> sensor;</div>
-<div class="line"><span class="keywordflow">if</span> (sensor.<a class="code" href="classZOPT220Sensor.html#a5fab507a3cadaab6d6026c3fea36d0e6">verify</a>()) {</div>
-<div class="line">    String data = sensor.<a class="code" href="classZOPT220Sensor.html#abebec3ac7bdc6f3917a29594e2537060">readData</a>();</div>
-<div class="line">}</div>
-<div class="ttc" id="aclassZOPT220Sensor_html"><div class="ttname"><a href="classZOPT220Sensor.html">ZOPT220Sensor</a></div><div class="ttdoc">A class to interface with the ZOPT220x UV and ambient light sensor.</div><div class="ttdef"><b>Definition:</b> ZOPT220Sensor.h:33</div></div>
-<div class="ttc" id="aclassZOPT220Sensor_html_a5fab507a3cadaab6d6026c3fea36d0e6"><div class="ttname"><a href="classZOPT220Sensor.html#a5fab507a3cadaab6d6026c3fea36d0e6">ZOPT220Sensor::verify</a></div><div class="ttdeci">bool verify() override</div><div class="ttdoc">Verifies the connection to the ZOPT220x sensor.</div><div class="ttdef"><b>Definition:</b> ZOPT220Sensor.cpp:33</div></div>
-<div class="ttc" id="aclassZOPT220Sensor_html_abebec3ac7bdc6f3917a29594e2537060"><div class="ttname"><a href="classZOPT220Sensor.html#abebec3ac7bdc6f3917a29594e2537060">ZOPT220Sensor::readData</a></div><div class="ttdeci">arduino::String readData() override</div><div class="ttdoc">Reads data from the ZOPT220x sensor and returns it in CSV format.</div><div class="ttdef"><b>Definition:</b> ZOPT220Sensor.cpp:46</div></div>
-</div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9631f5bd9a0e1ea5ad4ffb34e3413745"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9631f5bd9a0e1ea5ad4ffb34e3413745">&#9670;&nbsp;</a></span>ZOPT220Sensor() <span class="overload">[1/2]</span></h2>
 
@@ -195,8 +188,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abebec3ac7bdc6f3917a29594e2537060"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abebec3ac7bdc6f3917a29594e2537060">&#9670;&nbsp;</a></span>readData()</h2>
+<a id="a6aeb56062c5ff976d199ae407df9ed6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aeb56062c5ff976d199ae407df9ed6c">&#9670;&nbsp;</a></span>readData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,7 +198,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">arduino::String ZOPT220Sensor::readData </td>
+          <td class="memname">String ZOPT220Sensor::readData </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -220,7 +213,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Reads data from the ZOPT220x sensor and returns it in CSV format. </p>
 <p>This function collects the UV index and ambient light level (in lux) from the sensor. It configures the sensor resolution, gain, and enables the respective sensing modes. A delay is introduced to ensure data availability, and the data is then formatted into a CSV string.</p>
-<dl class="section return"><dt>Returns</dt><dd>arduino::String A string containing the sensor readings in the format: "UV Index, Ambient Light (lux), ". </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>String A string containing the sensor readings in the format: "UV Index, Ambient Light (lux), ". </dd></dl>
 
 <p>Implements <a class="el" href="classSensor.html#a56153cab066abc01692301d11965f9b8">Sensor</a>.</p>
 

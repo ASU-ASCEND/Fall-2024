@@ -151,16 +151,9 @@ Private Attributes</h2></td></tr>
 <p>Key functionalities:</p><ul>
 <li>Attaches an interrupt to the sensor pin to track counts.</li>
 <li>Reads the current CPS value over a set period and provides the data in CSV format.</li>
-<li>Provides functionality to verify the sensor connection and reset counts after each reading.</li>
+<li>Provides functionality to verify the sensor connection and reset counts after each reading. </li>
 </ul>
-<p>Usage example: </p><div class="fragment"><div class="line"><a class="code" href="classGeigerSensor.html">GeigerSensor</a> sensor;</div>
-<div class="line"><span class="keywordflow">if</span> (sensor.<a class="code" href="classGeigerSensor.html#af9b257d10771ecc37b124ea067bc5354">verify</a>()) {</div>
-<div class="line">    String data = sensor.<a class="code" href="classGeigerSensor.html#a5629ecf718aa41b6f62780913025560a">readData</a>();</div>
-<div class="line">}</div>
-<div class="ttc" id="aclassGeigerSensor_html"><div class="ttname"><a href="classGeigerSensor.html">GeigerSensor</a></div><div class="ttdoc">A class for interfacing with a Geiger counter sensor.</div><div class="ttdef"><b>Definition:</b> GeigerSensor.h:36</div></div>
-<div class="ttc" id="aclassGeigerSensor_html_a5629ecf718aa41b6f62780913025560a"><div class="ttname"><a href="classGeigerSensor.html#a5629ecf718aa41b6f62780913025560a">GeigerSensor::readData</a></div><div class="ttdeci">String readData() override</div><div class="ttdoc">Reads the sensor data in CPS (counts per second) format.</div><div class="ttdef"><b>Definition:</b> GeigerSensor.cpp:44</div></div>
-<div class="ttc" id="aclassGeigerSensor_html_af9b257d10771ecc37b124ea067bc5354"><div class="ttname"><a href="classGeigerSensor.html#af9b257d10771ecc37b124ea067bc5354">GeigerSensor::verify</a></div><div class="ttdeci">bool verify() override</div><div class="ttdoc">Verifies the connection to the sensor and sets up the interrupt.</div><div class="ttdef"><b>Definition:</b> GeigerSensor.cpp:30</div></div>
-</div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8a7b4cd3421a6f67b6ba15578648a15d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a7b4cd3421a6f67b6ba15578648a15d">&#9670;&nbsp;</a></span>GeigerSensor() <span class="overload">[1/2]</span></h2>
 

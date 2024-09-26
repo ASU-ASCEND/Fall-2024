@@ -50,6 +50,5 @@ String INA260Sensor::readData() {
   float busVoltage = ina260.readBusVoltage();
   float power = ina260.readPower();
 
-  return String(current) + "," + String(busVoltage) + "," + String(power) +
-         ",";
+  return String(current) + "," + String(busVoltage) + "," + String(power) + ",";
 }

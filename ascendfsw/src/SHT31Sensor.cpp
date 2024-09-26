@@ -29,7 +29,7 @@ bool SHT31Sensor::verify() {
 /**
  * @brief Reads sensor data and returns in csv format
  *
- * @return String A CSV section in the format humidity, temperature,  
+ * @return String A CSV section in the format humidity, temperature,
  */
 String SHT31Sensor::readData() {
   // return "-. -. ";

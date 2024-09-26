@@ -8,7 +8,7 @@
 
 /**
  * @brief Implementation of the Sensor class for the LSM9DS1 (9-axis IMU)
- * 
+ *
  */
 class LSM9DS1Sensor : public Sensor {
  private:
