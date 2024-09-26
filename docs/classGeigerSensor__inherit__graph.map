@@ -1,0 +1,4 @@
+<map id="GeigerSensor" name="GeigerSensor">
+<area shape="rect" id="node1" title="A class for interfacing with a Geiger counter sensor." alt="" coords="12,351,184,487"/>
+<area shape="rect" id="node2" href="$classSensor.html" title="Parent class for sensor objects." alt="" coords="5,5,191,303"/>
+</map>
