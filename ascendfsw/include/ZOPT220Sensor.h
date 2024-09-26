@@ -21,14 +21,6 @@
  * - Verifies and initializes the connection with the ZOPT220x sensor.
  * - Reads UV index and ambient light data from the sensor and returns it in CSV
  * format.
- *
- * Usage example:
- * ```
- * ZOPT220Sensor sensor;
- * if (sensor.verify()) {
- *     String data = sensor.readData();
- * }
- * ```
  */
 class ZOPT220Sensor : public Sensor {
  public:

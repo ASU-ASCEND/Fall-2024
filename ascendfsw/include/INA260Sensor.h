@@ -22,14 +22,6 @@
  * - Initializes and verifies the connection with the INA260 sensor.
  * - Reads current, voltage, and power data from the sensor and returns it in
  * CSV format.
- *
- * Usage example:
- * ```
- * INA260Sensor sensor;
- * if (sensor.verify()) {
- *     String data = sensor.readData();
- * }
- * ```
  */
 class INA260Sensor : public Sensor {
  private:

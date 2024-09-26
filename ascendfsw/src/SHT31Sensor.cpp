@@ -17,8 +17,8 @@ SHT31Sensor::SHT31Sensor(unsigned long minimum_period)
  * @brief Verifies connection of SHT Sensor
  *
  *
- * @return true
- * @return false
+ * @return true if connected and working
+ * @return false if not connected and working
  */
 bool SHT31Sensor::verify() {
   sht31 = Adafruit_SHT31();
@@ -29,11 +29,11 @@ bool SHT31Sensor::verify() {
 /**
  * @brief Reads sensor data and returns in csv format
  *
- * @return arduino::String
+ * @return String A CSV section in the format humidity, temperature,  
  */
-arduino::String SHT31Sensor::readData() {
+String SHT31Sensor::readData() {
   // return "-. -. ";
   float t = sht31.readTemperature();
   float h = sht31.readHumidity();
-  return String(h) + ", " + String(t) + ", ";
+  return String(h) + "," + String(t) + ",";
 }

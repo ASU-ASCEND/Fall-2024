@@ -23,15 +23,6 @@ static volatile int count;
  * format.
  * - Provides functionality to verify the sensor connection and reset counts
  * after each reading.
- *
- * Usage example:
- * ```
- * GeigerSensor sensor;
- * if (sensor.verify()) {
- *     String data = sensor.readData();
- * }
- * ```
- *
  */
 class GeigerSensor : public Sensor {
  private:

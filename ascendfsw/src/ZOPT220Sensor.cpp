@@ -40,10 +40,10 @@ bool ZOPT220Sensor::verify() { return zopt220xSetup(); }
  * sensing modes. A delay is introduced to ensure data availability, and the
  * data is then formatted into a CSV string.
  *
- * @return arduino::String A string containing the sensor readings in the
+ * @return String A string containing the sensor readings in the
  * format: "UV Index, Ambient Light (lux), ".
  */
-arduino::String ZOPT220Sensor::readData() {
+String ZOPT220Sensor::readData() {
   // UV index
   setResolution(2);
   setGain(4);
@@ -65,5 +65,5 @@ arduino::String ZOPT220Sensor::readData() {
   }
   long als = getALS();
 
-  return String(uvIndex) + ", " + String(als) + ", ";
+  return String(uvIndex) + "," + String(als) + ",";
 }
