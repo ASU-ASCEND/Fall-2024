@@ -7,10 +7,14 @@ digraph "/home/runner/work/Fall-2024/Fall-2024/ascendfsw/include/Sensor.h"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node1 [label="/home/runner/work/Fall\l-2024/Fall-2024/ascendfsw\l/include/Sensor.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="/home/runner/work/Fall\l-2024/Fall-2024/ascendfsw\l/include/TempSensor.h",height=0.2,width=0.4,color="black",URL="$TempSensor_8h.html",tooltip=" "];
+  Node2 [label="/home/runner/work/Fall\l-2024/Fall-2024/ascendfsw\l/include/SHT31Sensor.h",height=0.2,width=0.4,color="black",URL="$SHT31Sensor_8h.html",tooltip=" "];
   Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="/home/runner/work/Fall\l-2024/Fall-2024/ascendfsw\l/src/main.cpp",height=0.2,width=0.4,color="black",URL="$main_8cpp.html",tooltip=" "];
-  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="/home/runner/work/Fall\l-2024/Fall-2024/ascendfsw\l/src/TempSensor.cpp",height=0.2,width=0.4,color="black",URL="$TempSensor_8cpp.html",tooltip=" "];
-  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="/home/runner/work/Fall\l-2024/Fall-2024/ascendfsw\l/src/SHT31Sensor.cpp",height=0.2,width=0.4,color="black",URL="$SHT31Sensor_8cpp.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="/home/runner/work/Fall\l-2024/Fall-2024/ascendfsw\l/include/TempSensor.h",height=0.2,width=0.4,color="black",URL="$TempSensor_8h.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="/home/runner/work/Fall\l-2024/Fall-2024/ascendfsw\l/src/main.cpp",height=0.2,width=0.4,color="black",URL="$main_8cpp.html",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="/home/runner/work/Fall\l-2024/Fall-2024/ascendfsw\l/src/TempSensor.cpp",height=0.2,width=0.4,color="black",URL="$TempSensor_8cpp.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }
