@@ -1,11 +1,10 @@
-/** @file */
-
 #include <Arduino.h>
 
 #include "Sensor.h"
 #include "Storage.h"
 // include sensor headers here
 #include "TempSensor.h"
+#include "BME680Sensor.h"
 
 // helper function definitions
 int verifySensors();
@@ -14,9 +13,10 @@ void storeData(String data);
 
 // Global variables
 // sensor classes
-TempSensor temp_sensor(0);
+TempSensor temp_sensor;
+BME680Sensor bme_sensor; 
 // sensor array
-Sensor* sensors[] = {&temp_sensor};
+Sensor* sensors[] = {&temp_sensor, &bme_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
 
