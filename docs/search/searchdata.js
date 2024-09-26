@@ -1,8 +1,8 @@
 var indexSectionsWithContent =
 {
   0: "cfgilmrstv",
-  1: "st",
-  2: "mst",
+  1: "lst",
+  2: "lmst",
   3: "glrstv",
   4: "cfilmst",
   5: "s"
