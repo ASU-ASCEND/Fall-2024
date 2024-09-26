@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['readdata_78',['readData',['../classLSM9DS1Sensor.html#ab7bb3fa7c86f10b340d25912d143baf3',1,'LSM9DS1Sensor::readData()'],['../classSensor.html#a56153cab066abc01692301d11965f9b8',1,'Sensor::readData()'],['../classSHT31Sensor.html#aa8f2f378d2f81260a76db835f7f2b7bc',1,'SHT31Sensor::readData()'],['../classTempSensor.html#a3e5875aa6fad21ed69aa3ac15b59f7b9',1,'TempSensor::readData()']]],
-  ['readempty_79',['readEmpty',['../classSensor.html#a62d72a2f81422ac2d2fa8ae86ba08571',1,'Sensor']]]
+  ['enablealssensing_123',['enableALSSensing',['../ZOPT220x__Control_8h.html#aff8d75b6792d0a03253ade10ff4d0419',1,'ZOPT220x_Control.h']]],
+  ['enablerawsensing_124',['enableRawSensing',['../ZOPT220x__Control_8h.html#ab1daf368483381e00ec667fb0aa7be66',1,'ZOPT220x_Control.h']]],
+  ['enablesensor_125',['enableSensor',['../ZOPT220x__Control_8h.html#a9b883a9ffdfe2daf8a27a0bdc7f700d2',1,'ZOPT220x_Control.h']]],
+  ['enableuvbsensing_126',['enableUVBSensing',['../ZOPT220x__Control_8h.html#a0dc6635a76a203af5b3c14491dfe5c79',1,'ZOPT220x_Control.h']]]
 ];

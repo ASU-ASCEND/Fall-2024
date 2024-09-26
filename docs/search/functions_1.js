@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['loop_76',['loop',['../main_8cpp.html#afe461d27b9c48d5921c00d521181f12f',1,'main.cpp']]],
-  ['lsm9ds1sensor_77',['LSM9DS1Sensor',['../classLSM9DS1Sensor.html#a46aef0b7563f5317c17b5c373ca7d513',1,'LSM9DS1Sensor::LSM9DS1Sensor()'],['../classLSM9DS1Sensor.html#a77f30f3bb42282065b2c35ec7b70dc0a',1,'LSM9DS1Sensor::LSM9DS1Sensor(unsigned long minimum_period)']]]
+  ['dataavailable_121',['dataAvailable',['../ZOPT220x__Control_8h.html#a199998eae3dcb0bfc75eed9c321e1e35',1,'ZOPT220x_Control.h']]],
+  ['disablesensor_122',['disableSensor',['../ZOPT220x__Control_8h.html#a46ece229c2295be7087fe951f8eb7194',1,'ZOPT220x_Control.h']]]
 ];

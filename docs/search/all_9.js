@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['verify_50',['verify',['../classLSM9DS1Sensor.html#a245f95f4d1174bf884bb47781f21f055',1,'LSM9DS1Sensor::verify()'],['../classSDStorage.html#a2a08793ce2cb22bc0675f5cf4916155a',1,'SDStorage::verify()'],['../classSensor.html#a45975aa760bbab8224775ae5d78da333',1,'Sensor::verify()'],['../classSHT31Sensor.html#a1b322dd4ff6fafbbdfdccaf7cd0b622f',1,'SHT31Sensor::verify()'],['../classStorage.html#a83fbc910d2fe786ac9134f27a85bda8f',1,'Storage::verify()'],['../classTempSensor.html#ab110bdca4c570053b16da6481b00bba5',1,'TempSensor::verify()']]],
-  ['verifysensors_51',['verifySensors',['../main_8cpp.html#aef42a5a8a5d889c599fa964be60eca24',1,'main.cpp']]],
-  ['verifystorage_52',['verifyStorage',['../main_8cpp.html#a339ac134cdee34bfe9d5f539ab14ba00',1,'main.cpp']]]
+  ['readdata_30',['readData',['../classLSM9DS1Sensor.html#ab7bb3fa7c86f10b340d25912d143baf3',1,'LSM9DS1Sensor::readData()'],['../classSensor.html#a56153cab066abc01692301d11965f9b8',1,'Sensor::readData()'],['../classSHT31Sensor.html#aa8f2f378d2f81260a76db835f7f2b7bc',1,'SHT31Sensor::readData()'],['../classTempSensor.html#a3e5875aa6fad21ed69aa3ac15b59f7b9',1,'TempSensor::readData()'],['../classZOPT220Sensor.html#abebec3ac7bdc6f3917a29594e2537060',1,'ZOPT220Sensor::readData()']]],
+  ['readempty_31',['readEmpty',['../classSensor.html#a62d72a2f81422ac2d2fa8ae86ba08571',1,'Sensor']]]
 ];

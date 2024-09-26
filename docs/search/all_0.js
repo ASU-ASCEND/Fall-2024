@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['csv_5fheader_0',['csv_header',['../classSensor.html#a2ec9679548d0d3c876995aa3de551293',1,'Sensor']]],
-  ['csvheadercompiled_1',['csvHeaderCompiled',['../classSHT31Sensor.html#a521c9dc64bddf628a786c3f702544de9',1,'SHT31Sensor']]]
+  ['byte_0',['byte',['../ZOPT220x__Control_8h.html#a71809484a26cd96c6abe839a0a8a289d',1,'ZOPT220x_Control.h']]]
 ];

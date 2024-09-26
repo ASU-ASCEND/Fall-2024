@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['fields_2',['fields',['../classSensor.html#ae5bd95d5c03d221d3aa133bd5989e084',1,'Sensor']]],
-  ['file_5fname_3',['file_name',['../classSDStorage.html#a940beb3d7849473c7c96a4fe57479c1a',1,'SDStorage']]]
+  ['checkpoweronstatus_1',['checkPowerOnStatus',['../ZOPT220x__Control_8h.html#a705d5cfa93cebcd507a02e148fc320da',1,'ZOPT220x_Control.h']]],
+  ['csv_5fheader_2',['csv_header',['../classSensor.html#a2ec9679548d0d3c876995aa3de551293',1,'Sensor']]],
+  ['csvheadercompiled_3',['csvHeaderCompiled',['../classSHT31Sensor.html#a521c9dc64bddf628a786c3f702544de9',1,'SHT31Sensor']]]
 ];
