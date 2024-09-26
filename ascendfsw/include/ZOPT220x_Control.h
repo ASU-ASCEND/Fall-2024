@@ -9,7 +9,7 @@
 byte zoptAddress = 0x53;  // Default I2C address. Can be changed via software.
 //#define ZOPT220X_ADDR 0x53 //7-bit unshifted default I2C Address
 //#define ZOPT220X_ADDR 0x52 //7-bit unshifted programmed NVM I2C Address (in
-//case you need multiple on same bus)
+// case you need multiple on same bus)
 
 // Register addresses
 #define ZOPT220x_MAIN_CTRL 0x00
