@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['zopt220sensor_162',['ZOPT220Sensor',['../classZOPT220Sensor.html#a9631f5bd9a0e1ea5ad4ffb34e3413745',1,'ZOPT220Sensor::ZOPT220Sensor()'],['../classZOPT220Sensor.html#a42578e81a233f9bad1b7f297cf5784f8',1,'ZOPT220Sensor::ZOPT220Sensor(unsigned long mimimum_period)']]],
-  ['zopt220xsetup_163',['zopt220xSetup',['../ZOPT220x__Control_8h.html#a868593dba53990493b7248063c00b2a7',1,'ZOPT220x_Control.h']]],
-  ['zopt220xsetupwithaddress_164',['zopt220xSetupWithAddress',['../ZOPT220x__Control_8h.html#a7ed9b1cf7bdff8b24fcb03f07f16ec69',1,'ZOPT220x_Control.h']]],
-  ['zoptread3registers_165',['zoptRead3Registers',['../ZOPT220x__Control_8h.html#a42f17382078af50559d710bd94b1c309',1,'ZOPT220x_Control.h']]],
-  ['zoptreadregister_166',['zoptReadRegister',['../ZOPT220x__Control_8h.html#ad8c9ff292d6bb9790157beadde399be4',1,'ZOPT220x_Control.h']]],
-  ['zoptwriteregister_167',['zoptWriteRegister',['../ZOPT220x__Control_8h.html#af5a5c554f3ab69668242b106ea5a889f',1,'ZOPT220x_Control.h']]]
+  ['verify_167',['verify',['../classINA260Sensor.html#a799f491fe1496b33b1d985e5672a7e6d',1,'INA260Sensor::verify()'],['../classLSM9DS1Sensor.html#a245f95f4d1174bf884bb47781f21f055',1,'LSM9DS1Sensor::verify()'],['../classSDStorage.html#a2a08793ce2cb22bc0675f5cf4916155a',1,'SDStorage::verify()'],['../classSensor.html#a45975aa760bbab8224775ae5d78da333',1,'Sensor::verify()'],['../classSHT31Sensor.html#a1b322dd4ff6fafbbdfdccaf7cd0b622f',1,'SHT31Sensor::verify()'],['../classStorage.html#a83fbc910d2fe786ac9134f27a85bda8f',1,'Storage::verify()'],['../classTempSensor.html#ab110bdca4c570053b16da6481b00bba5',1,'TempSensor::verify()'],['../classZOPT220Sensor.html#a5fab507a3cadaab6d6026c3fea36d0e6',1,'ZOPT220Sensor::verify()']]],
+  ['verifysensors_168',['verifySensors',['../main_8cpp.html#aef42a5a8a5d889c599fa964be60eca24',1,'main.cpp']]],
+  ['verifystorage_169',['verifyStorage',['../main_8cpp.html#a339ac134cdee34bfe9d5f539ab14ba00',1,'main.cpp']]]
 ];
