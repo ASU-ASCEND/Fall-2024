@@ -8,5 +8,7 @@ digraph "Graphical Class Hierarchy"
   rankdir="LR";
   Node0 [label="Sensor",height=0.2,width=0.4,color="black",URL="$classSensor.html",tooltip="Parent class for sensor objects."];
   Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="TempSensor",height=0.2,width=0.4,color="black",URL="$classTempSensor.html",tooltip="Implementation of a Sensor for the onboard temperature sensor."];
+  Node1 [label="SHT31Sensor",height=0.2,width=0.4,color="black",URL="$classSHT31Sensor.html",tooltip="Interfaces with SHT31 Sensor to collect temperature and humidity data."];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TempSensor",height=0.2,width=0.4,color="black",URL="$classTempSensor.html",tooltip="Implementation of a Sensor for the onboard temperature sensor."];
 }
