@@ -19,15 +19,17 @@ void storeData(String data);
 // Global variables
 // sensor classes
 BME680Sensor bme_sensor;
-GeigerSensor geiger_sensor; 
-INA260Sensor ina260_sensor; 
-LSM9DS1Sensor lsm9ds1_sensor; 
-SHT31Sensor sht31_sensor; 
+GeigerSensor geiger_sensor;
+INA260Sensor ina260_sensor;
+LSM9DS1Sensor lsm9ds1_sensor;
+SHT31Sensor sht31_sensor;
 TempSensor temp_sensor;
-ZOPT220Sensor zopt220_sensor; 
+ZOPT220Sensor zopt220_sensor;
 
 // sensor array
-Sensor* sensors[] = {&bme_sensor, &geiger_sensor, &ina260_sensor, &lsm9ds1_sensor, &sht31_sensor, &temp_sensor, &zopt220_sensor};
+Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
+                     &lsm9ds1_sensor, &sht31_sensor,  &temp_sensor,
+                     &zopt220_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
 

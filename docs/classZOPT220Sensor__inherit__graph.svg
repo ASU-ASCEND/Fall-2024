@@ -15,7 +15,7 @@
 <polygon fill="#bfbfbf" stroke="black" points="13,-0.5 13,-90.5 126,-90.5 126,-0.5 13,-0.5"/>
 <text text-anchor="middle" x="69.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">ZOPT220Sensor</text>
 <polyline fill="none" stroke="black" points="13,-71.5 126,-71.5 "/>
-<text text-anchor="middle" x="69.5" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="21" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; zopt</text>
 <polyline fill="none" stroke="black" points="13,-52.5 126,-52.5 "/>
 <text text-anchor="start" x="21" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ZOPT220Sensor()</text>
 <text text-anchor="start" x="21" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ZOPT220Sensor()</text>

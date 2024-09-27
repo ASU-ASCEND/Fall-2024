@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['byte_220',['byte',['../ZOPT220x__Control_8h.html#a71809484a26cd96c6abe839a0a8a289d',1,'ZOPT220x_Control.h']]]
+  ['geiger_5fpin_233',['GEIGER_PIN',['../GeigerSensor_8h.html#a0dfddbcc95894f158bbc01f9529b7a95',1,'GeigerSensor.h']]]
 ];

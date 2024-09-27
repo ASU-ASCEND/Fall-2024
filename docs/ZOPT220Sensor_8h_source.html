@@ -80,22 +80,27 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ZOPT220x__Control_8h.html">ZOPT220x_Control.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classZOPT220Sensor.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classZOPT220Sensor.html">ZOPT220Sensor</a> : <span class="keyword">public</span> <a class="code" href="classSensor.html">Sensor</a> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classZOPT220Sensor.html#a9631f5bd9a0e1ea5ad4ffb34e3413745">ZOPT220Sensor</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="classZOPT220Sensor.html#a9631f5bd9a0e1ea5ad4ffb34e3413745">ZOPT220Sensor</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> mimimum_period);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classZOPT220Sensor.html#a5fab507a3cadaab6d6026c3fea36d0e6">verify</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  arduino::String <a class="code" href="classZOPT220Sensor.html#a6aeb56062c5ff976d199ae407df9ed6c">readData</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classZOPT220Sensor.html#a197f87d2ad2e67a2a20d204c6923583c">   27</a></span>&#160;  <a class="code" href="classZOPT220x__Control.html">ZOPT220x_Control</a> <a class="code" href="classZOPT220Sensor.html#a197f87d2ad2e67a2a20d204c6923583c">zopt</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="classZOPT220Sensor.html#a9631f5bd9a0e1ea5ad4ffb34e3413745">ZOPT220Sensor</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="classZOPT220Sensor.html#a9631f5bd9a0e1ea5ad4ffb34e3413745">ZOPT220Sensor</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> mimimum_period);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classZOPT220Sensor.html#a5fab507a3cadaab6d6026c3fea36d0e6">verify</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  arduino::String <a class="code" href="classZOPT220Sensor.html#a6aeb56062c5ff976d199ae407df9ed6c">readData</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aSensor_8h_html"><div class="ttname"><a href="Sensor_8h.html">Sensor.h</a></div></div>
 <div class="ttc" id="aZOPT220x__Control_8h_html"><div class="ttname"><a href="ZOPT220x__Control_8h.html">ZOPT220x_Control.h</a></div></div>
 <div class="ttc" id="aclassSensor_html"><div class="ttname"><a href="classSensor.html">Sensor</a></div><div class="ttdoc">Parent class for sensor objects.</div><div class="ttdef"><b>Definition:</b> Sensor.h:10</div></div>
 <div class="ttc" id="aclassZOPT220Sensor_html"><div class="ttname"><a href="classZOPT220Sensor.html">ZOPT220Sensor</a></div><div class="ttdoc">A class to interface with the ZOPT220x UV and ambient light sensor.</div><div class="ttdef"><b>Definition:</b> ZOPT220Sensor.h:25</div></div>
+<div class="ttc" id="aclassZOPT220Sensor_html_a197f87d2ad2e67a2a20d204c6923583c"><div class="ttname"><a href="classZOPT220Sensor.html#a197f87d2ad2e67a2a20d204c6923583c">ZOPT220Sensor::zopt</a></div><div class="ttdeci">ZOPT220x_Control zopt</div><div class="ttdef"><b>Definition:</b> ZOPT220Sensor.h:27</div></div>
 <div class="ttc" id="aclassZOPT220Sensor_html_a5fab507a3cadaab6d6026c3fea36d0e6"><div class="ttname"><a href="classZOPT220Sensor.html#a5fab507a3cadaab6d6026c3fea36d0e6">ZOPT220Sensor::verify</a></div><div class="ttdeci">bool verify() override</div><div class="ttdoc">Verifies the connection to the ZOPT220x sensor.</div><div class="ttdef"><b>Definition:</b> ZOPT220Sensor.cpp:33</div></div>
 <div class="ttc" id="aclassZOPT220Sensor_html_a6aeb56062c5ff976d199ae407df9ed6c"><div class="ttname"><a href="classZOPT220Sensor.html#a6aeb56062c5ff976d199ae407df9ed6c">ZOPT220Sensor::readData</a></div><div class="ttdeci">arduino::String readData() override</div><div class="ttdoc">Reads data from the ZOPT220x sensor and returns it in CSV format.</div><div class="ttdef"><b>Definition:</b> ZOPT220Sensor.cpp:46</div></div>
 <div class="ttc" id="aclassZOPT220Sensor_html_a9631f5bd9a0e1ea5ad4ffb34e3413745"><div class="ttname"><a href="classZOPT220Sensor.html#a9631f5bd9a0e1ea5ad4ffb34e3413745">ZOPT220Sensor::ZOPT220Sensor</a></div><div class="ttdeci">ZOPT220Sensor()</div><div class="ttdoc">Default constructor for the ZOPT220Sensor class.</div><div class="ttdef"><b>Definition:</b> ZOPT220Sensor.cpp:9</div></div>
+<div class="ttc" id="aclassZOPT220x__Control_html"><div class="ttname"><a href="classZOPT220x__Control.html">ZOPT220x_Control</a></div><div class="ttdef"><b>Definition:</b> ZOPT220x_Control.h:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

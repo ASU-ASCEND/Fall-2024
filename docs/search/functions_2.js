@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['dataavailable_147',['dataAvailable',['../ZOPT220x__Control_8h.html#a199998eae3dcb0bfc75eed9c321e1e35',1,'ZOPT220x_Control.h']]],
-  ['disablesensor_148',['disableSensor',['../ZOPT220x__Control_8h.html#a46ece229c2295be7087fe951f8eb7194',1,'ZOPT220x_Control.h']]]
+  ['dataavailable_154',['dataAvailable',['../classZOPT220x__Control.html#af74c3620eaaa1ba7413ebd8417eee271',1,'ZOPT220x_Control']]],
+  ['disablesensor_155',['disableSensor',['../classZOPT220x__Control.html#a1f67c4ca2c2c8f160ea8f790fb433602',1,'ZOPT220x_Control']]]
 ];

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['zopt220sensor_191',['ZOPT220Sensor',['../classZOPT220Sensor.html#a9631f5bd9a0e1ea5ad4ffb34e3413745',1,'ZOPT220Sensor::ZOPT220Sensor()'],['../classZOPT220Sensor.html#a42578e81a233f9bad1b7f297cf5784f8',1,'ZOPT220Sensor::ZOPT220Sensor(unsigned long mimimum_period)']]],
-  ['zopt220xsetup_192',['zopt220xSetup',['../ZOPT220x__Control_8h.html#a868593dba53990493b7248063c00b2a7',1,'ZOPT220x_Control.h']]],
-  ['zopt220xsetupwithaddress_193',['zopt220xSetupWithAddress',['../ZOPT220x__Control_8h.html#a7ed9b1cf7bdff8b24fcb03f07f16ec69',1,'ZOPT220x_Control.h']]],
-  ['zoptread3registers_194',['zoptRead3Registers',['../ZOPT220x__Control_8h.html#a42f17382078af50559d710bd94b1c309',1,'ZOPT220x_Control.h']]],
-  ['zoptreadregister_195',['zoptReadRegister',['../ZOPT220x__Control_8h.html#ad8c9ff292d6bb9790157beadde399be4',1,'ZOPT220x_Control.h']]],
-  ['zoptwriteregister_196',['zoptWriteRegister',['../ZOPT220x__Control_8h.html#af5a5c554f3ab69668242b106ea5a889f',1,'ZOPT220x_Control.h']]]
+  ['zopt220sensor_198',['ZOPT220Sensor',['../classZOPT220Sensor.html#a9631f5bd9a0e1ea5ad4ffb34e3413745',1,'ZOPT220Sensor::ZOPT220Sensor()'],['../classZOPT220Sensor.html#a42578e81a233f9bad1b7f297cf5784f8',1,'ZOPT220Sensor::ZOPT220Sensor(unsigned long mimimum_period)']]],
+  ['zopt220xsetup_199',['zopt220xSetup',['../classZOPT220x__Control.html#aab772e9154760b2ddbee82953532f08e',1,'ZOPT220x_Control']]],
+  ['zopt220xsetupwithaddress_200',['zopt220xSetupWithAddress',['../classZOPT220x__Control.html#adc20ce356a572b8039ba96b9160e97c4',1,'ZOPT220x_Control']]],
+  ['zoptread3registers_201',['zoptRead3Registers',['../classZOPT220x__Control.html#a76e8b5e30cc7b3a0f9e0dace481e8030',1,'ZOPT220x_Control']]],
+  ['zoptreadregister_202',['zoptReadRegister',['../classZOPT220x__Control.html#a58c74577acc1183a66b1f9b9281551a3',1,'ZOPT220x_Control']]],
+  ['zoptwriteregister_203',['zoptWriteRegister',['../classZOPT220x__Control.html#ab5f43fd630eaaadeea212559e12648be',1,'ZOPT220x_Control']]]
 ];

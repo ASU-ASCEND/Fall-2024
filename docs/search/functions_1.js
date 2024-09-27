@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['checkpoweronstatus_146',['checkPowerOnStatus',['../ZOPT220x__Control_8h.html#a705d5cfa93cebcd507a02e148fc320da',1,'ZOPT220x_Control.h']]]
+  ['checkpoweronstatus_153',['checkPowerOnStatus',['../classZOPT220x__Control.html#a8eb237d4b6eb8513893d99d3163fc094',1,'ZOPT220x_Control']]]
 ];

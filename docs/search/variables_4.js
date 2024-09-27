@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['last_5fexecution_205',['last_execution',['../classSensor.html#abd94c964e6cf265293cfb4cd5d01708d',1,'Sensor']]]
+  ['ina260_211',['ina260',['../classINA260Sensor.html#a81348d4fdf3a040932de924c09db4358',1,'INA260Sensor']]],
+  ['ina260_5fsensor_212',['ina260_sensor',['../main_8cpp.html#a2711f8eaa9460bd825dc5fa05a6fe777',1,'main.cpp']]],
+  ['it_213',['it',['../main_8cpp.html#ac65d766d5179dcc67a8e61e09a1ce969',1,'main.cpp']]]
 ];

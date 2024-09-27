@@ -63,6 +63,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classZOPT220Sensor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ZOPT220Sensor Class Reference</div>  </div>
@@ -82,7 +83,7 @@ Inheritance diagram for ZOPT220Sensor:</div>
 <div class="dynheader">
 Collaboration diagram for ZOPT220Sensor:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classZOPT220Sensor__coll__graph.svg" width="342" height="575"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classZOPT220Sensor__coll__graph.svg" width="510" height="588"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -131,6 +132,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d5ecda6a046ddba40d0e37921226d2f inherit pub_methods_classSensor"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensor.html#a2d5ecda6a046ddba40d0e37921226d2f">getDataCSV</a> ()</td></tr>
 <tr class="memdesc:a2d5ecda6a046ddba40d0e37921226d2f inherit pub_methods_classSensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses readData and readEmpty to get the data-filled or empty-celled CSV line for the sensor.  <a href="classSensor.html#a2d5ecda6a046ddba40d0e37921226d2f">More...</a><br /></td></tr>
 <tr class="separator:a2d5ecda6a046ddba40d0e37921226d2f inherit pub_methods_classSensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a197f87d2ad2e67a2a20d204c6923583c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classZOPT220x__Control.html">ZOPT220x_Control</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classZOPT220Sensor.html#a197f87d2ad2e67a2a20d204c6923583c">zopt</a></td></tr>
+<tr class="separator:a197f87d2ad2e67a2a20d204c6923583c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class to interface with the ZOPT220x UV and ambient light sensor. </p>
@@ -243,12 +249,35 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Verifies the connection to the ZOPT220x sensor. </p>
-<p>This function checks whether the ZOPT220x sensor is correctly initialized and ready for use by calling <code><a class="el" href="ZOPT220x__Control_8h.html#a868593dba53990493b7248063c00b2a7">zopt220xSetup()</a></code>.</p>
+<p>This function checks whether the ZOPT220x sensor is correctly initialized and ready for use by calling <code>zopt220xSetup()</code>.</p>
 <dl class="section return"><dt>Returns</dt><dd>true If the sensor is successfully verified. </dd>
 <dd>
 false If the sensor fails to initialize. </dd></dl>
 
 <p>Implements <a class="el" href="classSensor.html#a45975aa760bbab8224775ae5d78da333">Sensor</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a197f87d2ad2e67a2a20d204c6923583c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a197f87d2ad2e67a2a20d204c6923583c">&#9670;&nbsp;</a></span>zopt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classZOPT220x__Control.html">ZOPT220x_Control</a> ZOPT220Sensor::zopt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

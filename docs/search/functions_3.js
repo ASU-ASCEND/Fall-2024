@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['enablealssensing_149',['enableALSSensing',['../ZOPT220x__Control_8h.html#aff8d75b6792d0a03253ade10ff4d0419',1,'ZOPT220x_Control.h']]],
-  ['enablerawsensing_150',['enableRawSensing',['../ZOPT220x__Control_8h.html#ab1daf368483381e00ec667fb0aa7be66',1,'ZOPT220x_Control.h']]],
-  ['enablesensor_151',['enableSensor',['../ZOPT220x__Control_8h.html#a9b883a9ffdfe2daf8a27a0bdc7f700d2',1,'ZOPT220x_Control.h']]],
-  ['enableuvbsensing_152',['enableUVBSensing',['../ZOPT220x__Control_8h.html#a0dc6635a76a203af5b3c14491dfe5c79',1,'ZOPT220x_Control.h']]]
+  ['enablealssensing_156',['enableALSSensing',['../classZOPT220x__Control.html#a27c0821f9341f36d87c9388ce7bf4ee5',1,'ZOPT220x_Control']]],
+  ['enablerawsensing_157',['enableRawSensing',['../classZOPT220x__Control.html#a0d055b74457d1c10173897918d5610ab',1,'ZOPT220x_Control']]],
+  ['enablesensor_158',['enableSensor',['../classZOPT220x__Control.html#a6878d8f2dbff54f6e2f9203df20b9927',1,'ZOPT220x_Control']]],
+  ['enableuvbsensing_159',['enableUVBSensing',['../classZOPT220x__Control.html#a1172703928cf494b466ea2c3595bbbba',1,'ZOPT220x_Control']]]
 ];

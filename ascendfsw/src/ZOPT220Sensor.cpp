@@ -19,9 +19,7 @@ ZOPT220Sensor::ZOPT220Sensor() : ZOPT220Sensor(0) {}
  * milliseconds.
  */
 ZOPT220Sensor::ZOPT220Sensor(unsigned long minimum_period)
-    : Sensor("ZOPT220", "ZOPTUV,ZOPTLight(lx),", 2, minimum_period) {
-       
-    }
+    : Sensor("ZOPT220", "ZOPTUV,ZOPTLight(lx),", 2, minimum_period) {}
 
 /**
  * @brief Verifies the connection to the ZOPT220x sensor.
