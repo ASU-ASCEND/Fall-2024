@@ -19,7 +19,9 @@ ZOPT220Sensor::ZOPT220Sensor() : ZOPT220Sensor(0) {}
  * milliseconds.
  */
 ZOPT220Sensor::ZOPT220Sensor(unsigned long minimum_period)
-    : Sensor("ZOPT220", "ZOPTUV,ZOPTLight(lx),", 2, minimum_period) {}
+    : Sensor("ZOPT220", "ZOPTUV,ZOPTLight(lx),", 2, minimum_period) {
+       
+    }
 
 /**
  * @brief Verifies the connection to the ZOPT220x sensor.
@@ -30,7 +32,7 @@ ZOPT220Sensor::ZOPT220Sensor(unsigned long minimum_period)
  * @return true If the sensor is successfully verified.
  * @return false If the sensor fails to initialize.
  */
-bool ZOPT220Sensor::verify() { return zopt220xSetup(); }
+bool ZOPT220Sensor::verify() { return this->zopt.zopt220xSetup(); }
 
 /**
  * @brief Reads data from the ZOPT220x sensor and returns it in CSV format.
@@ -45,25 +47,25 @@ bool ZOPT220Sensor::verify() { return zopt220xSetup(); }
  */
 String ZOPT220Sensor::readData() {
   // UV index
-  setResolution(2);
-  setGain(4);
-  enableUVBSensing();
+  this->zopt.setResolution(2);
+  this->zopt.setGain(4);
+  this->zopt.enableUVBSensing();
 
   // Might need delay
-  float uvIndex = getUVIndex();
+  float uvIndex = this->zopt.getUVIndex();
 
   // ALS - Ambient Light
-  setResolution(2);
-  setGain(1);
-  enableALSSensing();
+  this->zopt.setResolution(2);
+  this->zopt.setGain(1);
+  this->zopt.enableALSSensing();
 
   // Ensure data is available before reading
   int it = 0;
-  while (!dataAvailable() && it < 40) {
+  while (!this->zopt.dataAvailable() && it < 40) {
     delay(10);
     it++;
   }
-  long als = getALS();
+  long als = this->zopt.getALS();
 
   return String(uvIndex) + "," + String(als) + ",";
 }

@@ -23,6 +23,8 @@
  * format.
  */
 class ZOPT220Sensor : public Sensor {
+  private:
+  ZOPT220x_Control zopt;
  public:
   ZOPT220Sensor();
   ZOPT220Sensor(unsigned long mimimum_period);
