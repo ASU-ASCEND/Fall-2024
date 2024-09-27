@@ -3,8 +3,8 @@
 #include "Sensor.h"
 #include "Storage.h"
 // include sensor headers here
-#include "TempSensor.h"
 #include "BME680Sensor.h"
+#include "TempSensor.h"
 
 // helper function definitions
 int verifySensors();
@@ -14,7 +14,7 @@ void storeData(String data);
 // Global variables
 // sensor classes
 TempSensor temp_sensor;
-BME680Sensor bme_sensor; 
+BME680Sensor bme_sensor;
 // sensor array
 Sensor* sensors[] = {&temp_sensor, &bme_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
