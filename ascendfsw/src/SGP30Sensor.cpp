@@ -1,14 +1,12 @@
 #include "SGP30Sensor.h"
 
-const String& SGP30Sensor::getSensorName() const {
-    return nameCompiled;
-}
+SGP30Sensor::SGP30Sensor() : SGP30Sensor(0) {}
 
-const String& SGP30Sensor::getSensorCSVHeader() const {
-    return csvHeaderCompiled;
-}
+SGP30Sensor::SGP30Sensor(unsigned long minimum_period)
+    : Sensor("SGP30", "SGPTVOC(ppb), SGPeCO2(ppm), SGPTVOCBase(ppb), SGPeCO2Base(ppb),SGPH2, SGPEtha",
+    6, minimum_period) {}
 
-bool SGP30Sensor::verifyPin(){
+bool SGP30Sensor::verify(){
     return sgp.begin();
 }
 

@@ -10,17 +10,12 @@
 
 class SGP30Sensor : public Sensor {
     private:
-        Adafruit_SGP30 sgp;
-        String nameCompiled = "SGP30";
-        String csvHeaderCompiled = "SGP30 TVOC ppb, SGP30 eCO2 ppm, SGP30 TVOC base, SGP30 eCO2 base, SGP30 Raw H2, SGP30 Raw Ethanol, ";
+        Adafruit_SGP30 sgp; 
     public:
-        const String& getSensorName() const override;
-        const String& getSensorCSVHeader() const; 
-        bool verifyPin() override;
+        SGP30Sensor();
+        SGP30Sensor(unsigned long minimum_period);
+        bool verify() override;
         String readData() override;
-        String readEmpty() override {
-            return "-, -, -, -, -, -, ";
-        }
 };
 
 #endif
