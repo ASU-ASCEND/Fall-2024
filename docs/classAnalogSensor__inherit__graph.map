@@ -1,0 +1,4 @@
+<map id="AnalogSensor" name="AnalogSensor">
+<area shape="rect" id="node1" title="Implementation of a Sensor for the analog readings." alt="" coords="30,351,166,472"/>
+<area shape="rect" id="node2" href="$classSensor.html" title="Parent class for sensor objects." alt="" coords="5,5,191,303"/>
+</map>

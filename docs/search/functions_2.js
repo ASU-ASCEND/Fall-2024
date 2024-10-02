@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['dataavailable_154',['dataAvailable',['../classZOPT220x__Control.html#af74c3620eaaa1ba7413ebd8417eee271',1,'ZOPT220x_Control']]],
-  ['disablesensor_155',['disableSensor',['../classZOPT220x__Control.html#a1f67c4ca2c2c8f160ea8f790fb433602',1,'ZOPT220x_Control']]]
+  ['checkpoweronstatus_163',['checkPowerOnStatus',['../classZOPT220x__Control.html#a8eb237d4b6eb8513893d99d3163fc094',1,'ZOPT220x_Control']]]
 ];

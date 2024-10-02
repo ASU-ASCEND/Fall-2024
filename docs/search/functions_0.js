@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bme680sensor_152',['BME680Sensor',['../classBME680Sensor.html#aef81ef59340d381e16b54c965f8f73c0',1,'BME680Sensor::BME680Sensor()'],['../classBME680Sensor.html#a0679871d405ed9cc332da90988e19750',1,'BME680Sensor::BME680Sensor(unsigned long minimum_period)']]]
+  ['analogsensor_161',['AnalogSensor',['../classAnalogSensor.html#ab0bee8a8adeba701b68b6788add2e698',1,'AnalogSensor::AnalogSensor()'],['../classAnalogSensor.html#a70e07c257f0dbebc9914fe634da84f37',1,'AnalogSensor::AnalogSensor(unsigned long minium_period)']]]
 ];
