@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1023;
+var viewWidth = 1141;
 var viewHeight = 369;
 var sectionId = 'dynsection-0';
 </script>
@@ -58,27 +58,27 @@ var sectionId = 'dynsection-0';
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Parent class for sensor objects.">
-<polygon fill="#bfbfbf" stroke="black" points="439.5,-138.5 439.5,-360.5 578.5,-360.5 578.5,-138.5 439.5,-138.5"/>
-<text text-anchor="middle" x="509" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sensor</text>
-<polyline fill="none" stroke="black" points="439.5,-341.5 578.5,-341.5 "/>
-<text text-anchor="start" x="447.5" y="-329.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; minimum_period</text>
-<text text-anchor="start" x="447.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; last_execution</text>
-<text text-anchor="start" x="447.5" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sensor_name</text>
-<text text-anchor="start" x="447.5" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; csv_header</text>
-<text text-anchor="start" x="447.5" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; fields</text>
-<polyline fill="none" stroke="black" points="439.5,-278.5 578.5,-278.5 "/>
-<text text-anchor="start" x="447.5" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Sensor()</text>
-<text text-anchor="start" x="447.5" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Sensor()</text>
-<text text-anchor="start" x="447.5" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getPeriod()</text>
-<text text-anchor="start" x="447.5" y="-233.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setPeriod()</text>
-<text text-anchor="start" x="447.5" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getLastExecution()</text>
-<text text-anchor="start" x="447.5" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setLastExecution()</text>
-<text text-anchor="start" x="447.5" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSensorName()</text>
-<text text-anchor="start" x="447.5" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSensorCSVHeader()</text>
-<text text-anchor="start" x="447.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="447.5" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
-<text text-anchor="start" x="447.5" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readEmpty()</text>
-<text text-anchor="start" x="447.5" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getDataCSV()</text>
+<polygon fill="#bfbfbf" stroke="black" points="503.5,-138.5 503.5,-360.5 642.5,-360.5 642.5,-138.5 503.5,-138.5"/>
+<text text-anchor="middle" x="573" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sensor</text>
+<polyline fill="none" stroke="black" points="503.5,-341.5 642.5,-341.5 "/>
+<text text-anchor="start" x="511.5" y="-329.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; minimum_period</text>
+<text text-anchor="start" x="511.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; last_execution</text>
+<text text-anchor="start" x="511.5" y="-307.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sensor_name</text>
+<text text-anchor="start" x="511.5" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; csv_header</text>
+<text text-anchor="start" x="511.5" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; fields</text>
+<polyline fill="none" stroke="black" points="503.5,-278.5 642.5,-278.5 "/>
+<text text-anchor="start" x="511.5" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Sensor()</text>
+<text text-anchor="start" x="511.5" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Sensor()</text>
+<text text-anchor="start" x="511.5" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getPeriod()</text>
+<text text-anchor="start" x="511.5" y="-233.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setPeriod()</text>
+<text text-anchor="start" x="511.5" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getLastExecution()</text>
+<text text-anchor="start" x="511.5" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setLastExecution()</text>
+<text text-anchor="start" x="511.5" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSensorName()</text>
+<text text-anchor="start" x="511.5" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSensorCSVHeader()</text>
+<text text-anchor="start" x="511.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="511.5" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<text text-anchor="start" x="511.5" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readEmpty()</text>
+<text text-anchor="start" x="511.5" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getDataCSV()</text>
 </a>
 </g>
 </g>
@@ -101,8 +101,8 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M429.45,-227.95C346.49,-204.56 214.39,-161.71 111,-102 107.83,-100.17 104.66,-98.17 101.53,-96.05"/>
-<polygon fill="none" stroke="midnightblue" points="428.74,-231.38 439.31,-230.7 430.62,-224.64 428.74,-231.38"/>
+<path fill="none" stroke="midnightblue" d="M493.26,-233.08C398.08,-212.51 236.1,-170.49 111,-102 107.79,-100.24 104.59,-98.3 101.43,-96.23"/>
+<polygon fill="none" stroke="midnightblue" points="492.6,-236.52 503.11,-235.19 494.06,-229.68 492.6,-236.52"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -123,8 +123,8 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M430.36,-210.8C374.88,-183.09 299.58,-143.22 237,-102 234.08,-100.08 231.14,-98.06 228.19,-95.97"/>
-<polygon fill="none" stroke="midnightblue" points="428.93,-213.99 439.44,-215.31 432.05,-207.72 428.93,-213.99"/>
+<path fill="none" stroke="midnightblue" d="M493.54,-220.57C423.6,-194.44 320.23,-152 237,-102 233.89,-100.13 230.76,-98.12 227.65,-96.03"/>
+<polygon fill="none" stroke="midnightblue" points="492.59,-223.95 503.18,-224.15 495.02,-217.39 492.59,-223.95"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
@@ -146,8 +146,8 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M432.13,-172.21C408.26,-148.53 382.59,-123.05 361.05,-101.67"/>
-<polygon fill="none" stroke="midnightblue" points="429.91,-174.94 439.47,-179.5 434.84,-169.97 429.91,-174.94"/>
+<path fill="none" stroke="midnightblue" d="M495.47,-190.35C457.42,-161.81 412.09,-127.82 375.89,-100.67"/>
+<polygon fill="none" stroke="midnightblue" points="493.38,-193.16 503.48,-196.36 497.58,-187.56 493.38,-193.16"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
@@ -168,8 +168,8 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M470.61,-128.76C466.93,-117.29 463.39,-106.23 460.19,-96.25"/>
-<polygon fill="none" stroke="midnightblue" points="467.34,-130.02 473.72,-138.47 474,-127.88 467.34,-130.02"/>
+<path fill="none" stroke="midnightblue" d="M497.91,-132.32C489.66,-119.56 481.68,-107.21 474.56,-96.18"/>
+<polygon fill="none" stroke="midnightblue" points="495,-134.27 503.37,-140.76 500.88,-130.47 495,-134.27"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
@@ -190,75 +190,97 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M548,-128.76C551.74,-117.29 555.34,-106.23 558.59,-96.25"/>
-<polygon fill="none" stroke="midnightblue" points="544.6,-127.88 544.84,-138.47 551.26,-130.05 544.6,-127.88"/>
+<path fill="none" stroke="midnightblue" d="M573,-128.41C573,-117.07 573,-106.13 573,-96.25"/>
+<polygon fill="none" stroke="midnightblue" points="569.5,-128.47 573,-138.47 576.5,-128.47 569.5,-128.47"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classSHT31Sensor.html" target="_top" xlink:title="Interfaces with SHT31 Sensor to collect temperature and humidity data.">
-<polygon fill="none" stroke="black" points="648,-0.5 648,-101.5 770,-101.5 770,-0.5 648,-0.5"/>
-<text text-anchor="middle" x="709" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">SHT31Sensor</text>
-<polyline fill="none" stroke="black" points="648,-82.5 770,-82.5 "/>
-<text text-anchor="start" x="656" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sht31</text>
-<text text-anchor="start" x="656" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; csvHeaderCompiled</text>
-<polyline fill="none" stroke="black" points="648,-52.5 770,-52.5 "/>
-<text text-anchor="start" x="656" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SHT31Sensor()</text>
-<text text-anchor="start" x="656" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SHT31Sensor()</text>
-<text text-anchor="start" x="656" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="656" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<g id="a_node7"><a xlink:href="classSGP30Sensor.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="648,-6 648,-96 748,-96 748,-6 648,-6"/>
+<text text-anchor="middle" x="698" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">SGP30Sensor</text>
+<polyline fill="none" stroke="black" points="648,-77 748,-77 "/>
+<text text-anchor="start" x="656" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sgp</text>
+<polyline fill="none" stroke="black" points="648,-58 748,-58 "/>
+<text text-anchor="start" x="656" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ SGP30Sensor()</text>
+<text text-anchor="start" x="656" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ SGP30Sensor()</text>
+<text text-anchor="start" x="656" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="656" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M585.82,-173.03C610.17,-149.1 636.46,-123.27 658.48,-101.64"/>
-<polygon fill="none" stroke="midnightblue" points="583.35,-170.54 578.67,-180.05 588.26,-175.54 583.35,-170.54"/>
+<path fill="none" stroke="midnightblue" d="M648.02,-130.57C655.76,-118.4 663.23,-106.66 669.93,-96.12"/>
+<polygon fill="none" stroke="midnightblue" points="645.04,-128.73 642.63,-139.05 650.95,-132.49 645.04,-128.73"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="classTempSensor.html" target="_top" xlink:title="Implementation of a Sensor for the onboard temperature sensor.">
-<polygon fill="none" stroke="black" points="788.5,-6 788.5,-96 883.5,-96 883.5,-6 788.5,-6"/>
-<text text-anchor="middle" x="836" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">TempSensor</text>
-<polyline fill="none" stroke="black" points="788.5,-77 883.5,-77 "/>
-<text text-anchor="middle" x="836" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="788.5,-58 883.5,-58 "/>
-<text text-anchor="start" x="796.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ TempSensor()</text>
-<text text-anchor="start" x="796.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ TempSensor()</text>
-<text text-anchor="start" x="796.5" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="796.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<g id="a_node8"><a xlink:href="classSHT31Sensor.html" target="_top" xlink:title="Interfaces with SHT31 Sensor to collect temperature and humidity data.">
+<polygon fill="none" stroke="black" points="766,-0.5 766,-101.5 888,-101.5 888,-0.5 766,-0.5"/>
+<text text-anchor="middle" x="827" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">SHT31Sensor</text>
+<polyline fill="none" stroke="black" points="766,-82.5 888,-82.5 "/>
+<text text-anchor="start" x="774" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sht31</text>
+<text text-anchor="start" x="774" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; csvHeaderCompiled</text>
+<polyline fill="none" stroke="black" points="766,-52.5 888,-52.5 "/>
+<text text-anchor="start" x="774" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SHT31Sensor()</text>
+<text text-anchor="start" x="774" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SHT31Sensor()</text>
+<text text-anchor="start" x="774" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="774" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M587.67,-211.65C643.03,-184.34 717.86,-144.6 779,-102 782.13,-99.82 785.29,-97.49 788.42,-95.07"/>
-<polygon fill="none" stroke="midnightblue" points="586.05,-208.55 578.61,-216.09 589.13,-214.83 586.05,-208.55"/>
+<path fill="none" stroke="midnightblue" d="M650.98,-188.17C687.83,-159.67 731.17,-126.13 765.63,-99.48"/>
+<polygon fill="none" stroke="midnightblue" points="648.51,-185.66 642.74,-194.55 652.79,-191.19 648.51,-185.66"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="classZOPT220Sensor.html" target="_top" xlink:title="A class to interface with the ZOPT220x UV and ambient light sensor.">
-<polygon fill="none" stroke="black" points="901.5,-6 901.5,-96 1014.5,-96 1014.5,-6 901.5,-6"/>
-<text text-anchor="middle" x="958" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">ZOPT220Sensor</text>
-<polyline fill="none" stroke="black" points="901.5,-77 1014.5,-77 "/>
-<text text-anchor="start" x="909.5" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; zopt</text>
-<polyline fill="none" stroke="black" points="901.5,-58 1014.5,-58 "/>
-<text text-anchor="start" x="909.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ ZOPT220Sensor()</text>
-<text text-anchor="start" x="909.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ ZOPT220Sensor()</text>
-<text text-anchor="start" x="909.5" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="909.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<g id="a_node9"><a xlink:href="classTempSensor.html" target="_top" xlink:title="Implementation of a Sensor for the onboard temperature sensor.">
+<polygon fill="none" stroke="black" points="906.5,-6 906.5,-96 1001.5,-96 1001.5,-6 906.5,-6"/>
+<text text-anchor="middle" x="954" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">TempSensor</text>
+<polyline fill="none" stroke="black" points="906.5,-77 1001.5,-77 "/>
+<text text-anchor="middle" x="954" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="906.5,-58 1001.5,-58 "/>
+<text text-anchor="start" x="914.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ TempSensor()</text>
+<text text-anchor="start" x="914.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ TempSensor()</text>
+<text text-anchor="start" x="914.5" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="914.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M588.6,-225.62C668.41,-200.98 793.42,-157.71 893,-102 896.23,-100.19 899.48,-98.24 902.7,-96.18"/>
-<polygon fill="none" stroke="midnightblue" points="587.15,-222.4 578.61,-228.68 589.2,-229.1 587.15,-222.4"/>
+<path fill="none" stroke="midnightblue" d="M652.48,-220.17C720.21,-194.29 818.73,-152.43 897,-102 900.1,-100 903.2,-97.85 906.27,-95.59"/>
+<polygon fill="none" stroke="midnightblue" points="650.83,-217.06 642.72,-223.88 653.31,-223.6 650.83,-217.06"/>
+</g>
+<!-- Node10 -->
+<g id="node10" class="node">
+<title>Node10</title>
+<g id="a_node10"><a xlink:href="classZOPT220Sensor.html" target="_top" xlink:title="A class to interface with the ZOPT220x UV and ambient light sensor.">
+<polygon fill="none" stroke="black" points="1019.5,-6 1019.5,-96 1132.5,-96 1132.5,-6 1019.5,-6"/>
+<text text-anchor="middle" x="1076" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">ZOPT220Sensor</text>
+<polyline fill="none" stroke="black" points="1019.5,-77 1132.5,-77 "/>
+<text text-anchor="start" x="1027.5" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; zopt</text>
+<polyline fill="none" stroke="black" points="1019.5,-58 1132.5,-58 "/>
+<text text-anchor="start" x="1027.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ ZOPT220Sensor()</text>
+<text text-anchor="start" x="1027.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ ZOPT220Sensor()</text>
+<text text-anchor="start" x="1027.5" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="1027.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node10 -->
+<g id="edge9" class="edge">
+<title>Node1&#45;&gt;Node10</title>
+<path fill="none" stroke="midnightblue" d="M652.56,-230.41C742.88,-207.97 892.98,-164.83 1011,-102 1014.39,-100.19 1017.79,-98.21 1021.16,-96.11"/>
+<polygon fill="none" stroke="midnightblue" points="651.53,-227.06 642.66,-232.84 653.2,-233.85 651.53,-227.06"/>
 </g>
 </g>
 </svg>
