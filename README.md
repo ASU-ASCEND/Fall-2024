@@ -12,16 +12,16 @@ Payload flight software
 [Watchdog](/Watchdog/):
 Watchdog program to restart microcontroller if it crashes 
 
-## Schedule
+## Meeting Schedule
 [//]: # (&#x2611; is checked box, &#x2610; is unchecked box)
 
 | Week  | Task                                    | Complete   |
 |-------|-----------------------------------------|------------|
-| 9/18  | Github, Arduino, Platform.io and FSWv1  | &#x2610;   |
-| 9/25  | Calibration and optimization            | &#x2610;   |
-| 10/2  | FSWv2                                   | &#x2610;   |
-| 10/9  | Testing FSWv2                           | &#x2610;   |
-| 10/16 | Science Mission review                  | &#x2610;   |
+| 9/18  | Reviewing last semester, Github Org.    | &#x2611;   |
+| 9/25  | Github, Arduino, Platform.io and FSWv1  | &#x2611;   |
+| 10/2  | Merging, Datasheets, and Calibration    | &#x2610;   |
+| 10/9  | FSWv2                                   | &#x2610;   |
+| 10/16 | FSWv2 (cont.) and Science Mission       | &#x2610;   |
 | 10/23 | DP:Tv1, DP:3Dv1                         | &#x2610;   |
 | 10/30 | DP:Tv2                                  | &#x2610;   |
 | 11/6  | FSWv3, DP:3Dv2                          | &#x2610;   |

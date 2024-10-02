@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['last_5fexecution_10',['last_execution',['../classSensor.html#abd94c964e6cf265293cfb4cd5d01708d',1,'Sensor']]],
-  ['loop_11',['loop',['../main_8cpp.html#afe461d27b9c48d5921c00d521181f12f',1,'main.cpp']]]
+  ['fields_14',['fields',['../classSensor.html#ae5bd95d5c03d221d3aa133bd5989e084',1,'Sensor']]],
+  ['file_5fname_15',['file_name',['../classSDStorage.html#a940beb3d7849473c7c96a4fe57479c1a',1,'SDStorage']]]
 ];

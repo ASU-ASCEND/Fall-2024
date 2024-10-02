@@ -1,0 +1,10 @@
+<map id="Sensor" name="Sensor">
+<area shape="rect" id="node1" title="Parent class for sensor objects." alt="" coords="517,5,702,303"/>
+<area shape="rect" id="node2" href="$classBME680Sensor.html" title="A class to interface with the Adafruit BME680 sensor for environmental data collection." alt="" coords="5,358,149,479"/>
+<area shape="rect" id="node3" href="$classGeigerSensor.html" title="A class for interfacing with a Geiger counter sensor." alt="" coords="174,351,346,487"/>
+<area shape="rect" id="node4" href="$classINA260Sensor.html" title="A class to interface with the Adafruit INA260 sensor for current, voltage, and power measurements." alt="" coords="371,358,509,479"/>
+<area shape="rect" id="node5" href="$classLSM9DS1Sensor.html" title="Implementation of the Sensor class for the LSM9DS1 (9&#45;axis IMU)" alt="" coords="533,358,685,479"/>
+<area shape="rect" id="node6" href="$classSHT31Sensor.html" title="Interfaces with SHT31 Sensor to collect temperature and humidity data." alt="" coords="709,351,872,487"/>
+<area shape="rect" id="node7" href="$classTempSensor.html" title="Implementation of a Sensor for the onboard temperature sensor." alt="" coords="897,358,1023,479"/>
+<area shape="rect" id="node8" href="$classZOPT220Sensor.html" title="A class to interface with the ZOPT220x UV and ambient light sensor." alt="" coords="1047,358,1198,479"/>
+</map>

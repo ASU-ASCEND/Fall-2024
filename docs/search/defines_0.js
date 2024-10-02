@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sd_5fcs_5fpin_93',['SD_CS_PIN',['../SDStorage_8h.html#a04d57a6c18b2d5e81f31093e58ed0c62',1,'SDStorage.h']]]
+  ['geiger_5fpin_233',['GEIGER_PIN',['../GeigerSensor_8h.html#a0dfddbcc95894f158bbc01f9529b7a95',1,'GeigerSensor.h']]]
 ];

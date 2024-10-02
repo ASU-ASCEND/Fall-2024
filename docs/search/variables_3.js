@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['last_5fexecution_81',['last_execution',['../classSensor.html#abd94c964e6cf265293cfb4cd5d01708d',1,'Sensor']]]
+  ['geiger_5fsensor_210',['geiger_sensor',['../main_8cpp.html#a47dfda590def210c7c02f431790aa20f',1,'main.cpp']]]
 ];

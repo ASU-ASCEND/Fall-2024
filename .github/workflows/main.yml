@@ -27,9 +27,10 @@ jobs:
       - name: Run formatting script
         run: 
           bash standardizeFormat.sh
-      - name: Install doxygen 
-        run:
+      - name: Install Doxygen and Graphviz
+        run: |
           sudo apt-get install doxygen 
+          sudo apt install graphviz
       - name: Clean old docs
         run:
           rm -r ../docs/*

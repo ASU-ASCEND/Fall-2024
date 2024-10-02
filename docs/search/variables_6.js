@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['temp_5fsensor_92',['temp_sensor',['../main_8cpp.html#a94cbea0038374ff9b9f73e524ec452e0',1,'main.cpp']]]
+  ['measuringperiodstart_216',['measuringPeriodStart',['../classGeigerSensor.html#a3f3e077ee3f22666f2ea23659e510e57',1,'GeigerSensor']]],
+  ['minimum_5fperiod_217',['minimum_period',['../classSensor.html#ab44ddb52915d3308953718c4ba3f63c4',1,'Sensor']]]
 ];

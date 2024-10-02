@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loop_62',['loop',['../main_8cpp.html#afe461d27b9c48d5921c00d521181f12f',1,'main.cpp']]]
+  ['checkpoweronstatus_153',['checkPowerOnStatus',['../classZOPT220x__Control.html#a8eb237d4b6eb8513893d99d3163fc094',1,'ZOPT220x_Control']]]
 ];

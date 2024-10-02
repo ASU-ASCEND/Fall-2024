@@ -1,0 +1,8 @@
+<map id="SHT31Sensor" name="SHT31Sensor">
+<area shape="rect" id="node1" title="Interfaces with SHT31 Sensor to collect temperature and humidity data." alt="" coords="217,461,350,583"/>
+<area shape="rect" id="node2" href="$classSensor.html" title="Parent class for sensor objects." alt="" coords="191,160,376,399"/>
+<area shape="rect" id="node3" title=" " alt="" coords="63,5,123,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="204,5,317,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="389,5,428,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="401,241,523,318"/>
+</map>

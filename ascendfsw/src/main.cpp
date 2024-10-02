@@ -3,7 +3,13 @@
 #include "Sensor.h"
 #include "Storage.h"
 // include sensor headers here
+#include "BME680Sensor.h"
+#include "GeigerSensor.h"
+#include "INA260Sensor.h"
+#include "LSM9DS1Sensor.h"
+#include "SHT31Sensor.h"
 #include "TempSensor.h"
+#include "ZOPT220Sensor.h"
 
 // helper function definitions
 int verifySensors();
@@ -12,9 +18,18 @@ void storeData(String data);
 
 // Global variables
 // sensor classes
-TempSensor temp_sensor(0);
+BME680Sensor bme_sensor;
+GeigerSensor geiger_sensor;
+INA260Sensor ina260_sensor;
+LSM9DS1Sensor lsm9ds1_sensor;
+SHT31Sensor sht31_sensor;
+TempSensor temp_sensor;
+ZOPT220Sensor zopt220_sensor;
+
 // sensor array
-Sensor* sensors[] = {&temp_sensor};
+Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
+                     &lsm9ds1_sensor, &sht31_sensor,  &temp_sensor,
+                     &zopt220_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
 

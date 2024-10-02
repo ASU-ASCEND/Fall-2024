@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['fields_78',['fields',['../classSensor.html#ae5bd95d5c03d221d3aa133bd5989e084',1,'Sensor']]],
-  ['file_5fname_79',['file_name',['../classSDStorage.html#a940beb3d7849473c7c96a4fe57479c1a',1,'SDStorage']]]
+  ['csv_5fheader_206',['csv_header',['../classSensor.html#a2ec9679548d0d3c876995aa3de551293',1,'Sensor']]],
+  ['csvheadercompiled_207',['csvHeaderCompiled',['../classSHT31Sensor.html#a521c9dc64bddf628a786c3f702544de9',1,'SHT31Sensor']]]
 ];

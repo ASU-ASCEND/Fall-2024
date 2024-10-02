@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['temp_5fsensor_38',['temp_sensor',['../main_8cpp.html#a94cbea0038374ff9b9f73e524ec452e0',1,'main.cpp']]],
-  ['tempsensor_39',['TempSensor',['../classTempSensor.html',1,'TempSensor'],['../classTempSensor.html#aa444370d1924832815f93188b79414cc',1,'TempSensor::TempSensor()'],['../classTempSensor.html#a64c43cf917c318fee62f2caa54e2647a',1,'TempSensor::TempSensor(unsigned long minium_period)']]],
-  ['tempsensor_2ecpp_40',['TempSensor.cpp',['../TempSensor_8cpp.html',1,'']]],
-  ['tempsensor_2eh_41',['TempSensor.h',['../TempSensor_8h.html',1,'']]]
+  ['main_2ecpp_44',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['measuringperiodstart_45',['measuringPeriodStart',['../classGeigerSensor.html#a3f3e077ee3f22666f2ea23659e510e57',1,'GeigerSensor']]],
+  ['minimum_5fperiod_46',['minimum_period',['../classSensor.html#ab44ddb52915d3308953718c4ba3f63c4',1,'Sensor']]]
 ];
