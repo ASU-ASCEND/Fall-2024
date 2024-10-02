@@ -12,6 +12,8 @@
 #include "TempSensor.h"
 #include "ZOPT220Sensor.h"
 
+#define ON_BOARD_LED_PIN 25
+
 // helper function definitions
 int verifySensors();
 int verifyStorage();
@@ -88,7 +90,7 @@ void setup() {
   // store header
   storeData(header);
 
-  pinMode(25, OUTPUT);
+  pinMode(ON_BOARD_LED_PIN, OUTPUT);
 }
 
 /**
@@ -110,7 +112,7 @@ void loop() {
   storeData(csv_row);
 
   delay(500);
-  digitalWrite(25, it % 2);
+  digitalWrite(ON_BOARD_LED_PIN, it % 2);
 }
 
 /**
