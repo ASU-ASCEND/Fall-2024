@@ -13,7 +13,7 @@ AnalogSensor::AnalogSensor() : AnalogSensor(0) {}
  * @param minium_period Minium period between reading data in ms
  */
 AnalogSensor::AnalogSensor(unsigned long minium_period)
-    : Sensor("Analog Sensors", "Wind ADC,Temp ADC,", 2, minium_period) {}
+    : Sensor("Analog Sensors", "WindADC,TempADC,", 2, minium_period) {}
 
 /**
  * @brief Verify if sensor is connected (for ADC this just returns true)

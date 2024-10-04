@@ -9,6 +9,10 @@
 #include "Adafruit_SGP30.h"
 #include "Sensor.h"
 
+/**
+ * @brief Implementation of a Sensor for the SGP Air Quality sensor 
+ * 
+ */
 class SGP30Sensor : public Sensor {
  private:
   Adafruit_SGP30 sgp;
