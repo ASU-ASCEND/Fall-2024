@@ -95,7 +95,7 @@
 <!-- Node6 -->
 <g id="node7" class="node">
 <title>Node6</title>
-<g id="a_node7"><a xlink:href="classSGP30Sensor.html" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="classSGP30Sensor.html" target="_top" xlink:title="Implementation of a Sensor for the SGP Air Quality sensor.">
 <polygon fill="none" stroke="black" points="93,-114.5 93,-133.5 174,-133.5 174,-114.5 93,-114.5"/>
 <text text-anchor="middle" x="133.5" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">SGP30Sensor</text>
 </a>

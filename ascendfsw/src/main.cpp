@@ -8,10 +8,10 @@
 #include "GeigerSensor.h"
 #include "INA260Sensor.h"
 #include "LSM9DS1Sensor.h"
+#include "SGP30Sensor.h"
 #include "SHT31Sensor.h"
 #include "TempSensor.h"
 #include "ZOPT220Sensor.h"
-#include "SGP30Sensor.h"
 
 #define ON_BOARD_LED_PIN 25
 
@@ -30,7 +30,7 @@ SHT31Sensor sht31_sensor;
 TempSensor temp_sensor;
 ZOPT220Sensor zopt220_sensor;
 AnalogSensor analog_sensor;
-SGP30Sensor sgp30_sensor; 
+SGP30Sensor sgp30_sensor;
 
 // sensor array
 Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,

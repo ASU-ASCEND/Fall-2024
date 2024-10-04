@@ -70,6 +70,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Implementation of a <a class="el" href="classSensor.html" title="Parent class for sensor objects.">Sensor</a> for the SGP Air Quality sensor.  
+ <a href="classSGP30Sensor.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="SGP30Sensor_8h_source.html">SGP30Sensor.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for SGP30Sensor:</div>
@@ -87,14 +90,16 @@ Collaboration diagram for SGP30Sensor:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a884d39d3cbdde603d75d43d6c4f5b89d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSGP30Sensor.html#a884d39d3cbdde603d75d43d6c4f5b89d">SGP30Sensor</a> ()</td></tr>
+<tr class="memdesc:a884d39d3cbdde603d75d43d6c4f5b89d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for the <a class="el" href="classSGP30Sensor.html" title="Implementation of a Sensor for the SGP Air Quality sensor.">SGP30Sensor</a>, sets the miniumum period to 0 ms.  <a href="classSGP30Sensor.html#a884d39d3cbdde603d75d43d6c4f5b89d">More...</a><br /></td></tr>
 <tr class="separator:a884d39d3cbdde603d75d43d6c4f5b89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22e23104fef4d49ab10260ca2730c5b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSGP30Sensor.html#a22e23104fef4d49ab10260ca2730c5b7">SGP30Sensor</a> (unsigned long <a class="el" href="classSensor.html#ab44ddb52915d3308953718c4ba3f63c4">minimum_period</a>)</td></tr>
+<tr class="memdesc:a22e23104fef4d49ab10260ca2730c5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="classSGP30Sensor.html" title="Implementation of a Sensor for the SGP Air Quality sensor.">SGP30Sensor</a>.  <a href="classSGP30Sensor.html#a22e23104fef4d49ab10260ca2730c5b7">More...</a><br /></td></tr>
 <tr class="separator:a22e23104fef4d49ab10260ca2730c5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fd4a6f8ad76aacb6c2aebda3eddb3ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSGP30Sensor.html#a1fd4a6f8ad76aacb6c2aebda3eddb3ac">verify</a> () override</td></tr>
-<tr class="memdesc:a1fd4a6f8ad76aacb6c2aebda3eddb3ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies if the sensor is connected and working.  <a href="classSGP30Sensor.html#a1fd4a6f8ad76aacb6c2aebda3eddb3ac">More...</a><br /></td></tr>
+<tr class="memdesc:a1fd4a6f8ad76aacb6c2aebda3eddb3ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies if the SGP30 sensor is connected.  <a href="classSGP30Sensor.html#a1fd4a6f8ad76aacb6c2aebda3eddb3ac">More...</a><br /></td></tr>
 <tr class="separator:a1fd4a6f8ad76aacb6c2aebda3eddb3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a14ecfe1a86d4872b0f6f27de80f25a"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSGP30Sensor.html#a4a14ecfe1a86d4872b0f6f27de80f25a">readData</a> () override</td></tr>
-<tr class="memdesc:a4a14ecfe1a86d4872b0f6f27de80f25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the collected data from the sensor in CSV format.  <a href="classSGP30Sensor.html#a4a14ecfe1a86d4872b0f6f27de80f25a">More...</a><br /></td></tr>
+<tr class="memdesc:a4a14ecfe1a86d4872b0f6f27de80f25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads and returns data from the SGP30 sensor.  <a href="classSGP30Sensor.html#a4a14ecfe1a86d4872b0f6f27de80f25a">More...</a><br /></td></tr>
 <tr class="separator:a4a14ecfe1a86d4872b0f6f27de80f25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSensor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSensor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSensor.html">Sensor</a></td></tr>
 <tr class="memitem:ac961611fe726ecce2236efa3b9ee450c inherit pub_methods_classSensor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSensor.html#ac961611fe726ecce2236efa3b9ee450c">Sensor</a> (String <a class="el" href="classSensor.html#a51529bb4324e61954a2d181ec4629b77">sensor_name</a>, String <a class="el" href="classSensor.html#a2ec9679548d0d3c876995aa3de551293">csv_header</a>, int <a class="el" href="classSensor.html#ae5bd95d5c03d221d3aa133bd5989e084">fields</a>)</td></tr>
@@ -133,7 +138,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a90ee5ad5963451ea1ee1304d99264754"><td class="memItemLeft" align="right" valign="top">Adafruit_SGP30&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSGP30Sensor.html#a90ee5ad5963451ea1ee1304d99264754">sgp</a></td></tr>
 <tr class="separator:a90ee5ad5963451ea1ee1304d99264754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implementation of a <a class="el" href="classSensor.html" title="Parent class for sensor objects.">Sensor</a> for the SGP Air Quality sensor. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a884d39d3cbdde603d75d43d6c4f5b89d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a884d39d3cbdde603d75d43d6c4f5b89d">&#9670;&nbsp;</a></span>SGP30Sensor() <span class="overload">[1/2]</span></h2>
 
@@ -148,6 +155,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Default constructor for the <a class="el" href="classSGP30Sensor.html" title="Implementation of a Sensor for the SGP Air Quality sensor.">SGP30Sensor</a>, sets the miniumum period to 0 ms. </p>
 
 </div>
 </div>
@@ -166,6 +175,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor for the <a class="el" href="classSGP30Sensor.html" title="Implementation of a Sensor for the SGP Air Quality sensor.">SGP30Sensor</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minimum_period</td><td>Minumum period between sensor reads in ms </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -193,8 +210,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the collected data from the sensor in CSV format. </p>
-<dl class="section return"><dt>Returns</dt><dd>String </dd></dl>
+<p>Reads and returns data from the SGP30 sensor. </p>
+<dl class="section return"><dt>Returns</dt><dd>String A CSV section in the form SGPTVOC(ppb), SGPeCO2(ppm), SGPTVOCBase(ppb), SGPeCO2Base(ppb), SGPH2, SGPEtha, </dd></dl>
 
 <p>Implements <a class="el" href="classSensor.html#a56153cab066abc01692301d11965f9b8">Sensor</a>.</p>
 
@@ -223,10 +240,10 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Verifies if the sensor is connected and working. </p>
-<dl class="section return"><dt>Returns</dt><dd>true, if connected </dd>
+<p>Verifies if the SGP30 sensor is connected. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if the sensor is connected </dd>
 <dd>
-false, if not connected </dd></dl>
+false if the sensor is not connected </dd></dl>
 
 <p>Implements <a class="el" href="classSensor.html#a45975aa760bbab8224775ae5d78da333">Sensor</a>.</p>
 
