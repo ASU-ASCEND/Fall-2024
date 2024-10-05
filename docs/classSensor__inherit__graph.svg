@@ -196,7 +196,7 @@ var sectionId = 'dynsection-0';
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classSGP30Sensor.html" target="_top" xlink:title=" ">
+<g id="a_node7"><a xlink:href="classSGP30Sensor.html" target="_top" xlink:title="Implementation of a Sensor for the SGP Air Quality sensor.">
 <polygon fill="none" stroke="black" points="648,-6 648,-96 748,-96 748,-6 648,-6"/>
 <text text-anchor="middle" x="698" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">SGP30Sensor</text>
 <polyline fill="none" stroke="black" points="648,-77 748,-77 "/>
