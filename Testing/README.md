@@ -37,7 +37,7 @@ Protocol:
 <br/>Callibration:  
 
 #### [SGP30](https://www.mouser.com/pdfdocs/Sensirion_Gas_Sensors_SGP30_Datasheet_EN-1148053.pdf): Gas Sensor
-Protocol: 
+Protocol: I^2C
 <br/>Callibration:   
 
 #### [SHT31](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf): Humidity, Temperature
