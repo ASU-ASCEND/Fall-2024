@@ -33,8 +33,11 @@ Protocol:
 <br/>Callibration:  
 
 #### [MTK3339](https://www.adafruit.com/product/746): GPS
-Protocol: 
-<br/>Callibration:  
+Protocol: Serial protocol, NMEA data output
+<br/>Callibration:  Configure the GPS output you see by commenting/uncommenting lines in the setup() procedure.
+Data can by configured by sending some custom NMEA GPS commands (https://adafru.it/qif) that adjust the amount and rate of data.
+If power is lost the GPS reverts to factory defaults.
+Documentation: https://cdn-learn.adafruit.com/downloads/pdf/adafruit-ultimate-gps.pdf
 
 #### [SGP30](https://www.mouser.com/pdfdocs/Sensirion_Gas_Sensors_SGP30_Datasheet_EN-1148053.pdf): Gas Sensor
 Protocol: 
