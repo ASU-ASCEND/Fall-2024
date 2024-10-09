@@ -1,0 +1,4 @@
+<map id="MTK3339Sensor" name="MTK3339Sensor">
+<area shape="rect" id="node1" title="Implementation of the Adafruit MTK3339 GPS sensor." alt="" coords="22,351,174,472"/>
+<area shape="rect" id="node2" href="$classSensor.html" title="Parent class for sensor objects." alt="" coords="5,5,191,303"/>
+</map>

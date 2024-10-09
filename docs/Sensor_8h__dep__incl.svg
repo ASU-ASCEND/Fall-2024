@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1175;
+var viewWidth = 1308;
 var viewHeight = 140;
 var sectionId = 'dynsection-1';
 </script>
@@ -58,8 +58,8 @@ var sectionId = 'dynsection-1';
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="531.5,-112.5 531.5,-131.5 589.5,-131.5 589.5,-112.5 531.5,-112.5"/>
-<text text-anchor="middle" x="560.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sensor.h</text>
+<polygon fill="#bfbfbf" stroke="black" points="584.5,-112.5 584.5,-131.5 642.5,-131.5 642.5,-112.5 584.5,-112.5"/>
+<text text-anchor="middle" x="613.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sensor.h</text>
 </a>
 </g>
 </g>
@@ -67,16 +67,16 @@ var sectionId = 'dynsection-1';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="AnalogSensor_8h.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="64.5,-56.5 64.5,-75.5 156.5,-75.5 156.5,-56.5 64.5,-56.5"/>
-<text text-anchor="middle" x="110.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">AnalogSensor.h</text>
+<polygon fill="none" stroke="black" points="77.5,-56.5 77.5,-75.5 169.5,-75.5 169.5,-56.5 77.5,-56.5"/>
+<text text-anchor="middle" x="123.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">AnalogSensor.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M520.9,-117.13C449.67,-110.04 295.23,-93.99 165.5,-76 162.62,-75.6 159.67,-75.17 156.69,-74.73"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="520.91,-120.65 531.2,-118.16 521.6,-113.69 520.91,-120.65"/>
+<path fill="none" stroke="midnightblue" d="M574.3,-117.73C497.96,-111.18 324.05,-95.42 178.5,-76 175.62,-75.62 172.66,-75.2 169.68,-74.76"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="574.15,-121.23 584.41,-118.59 574.75,-114.25 574.15,-121.23"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
@@ -88,130 +88,145 @@ var sectionId = 'dynsection-1';
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge28" class="edge">
+<g id="edge30" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M551.33,-102.99C547.39,-94.86 542.92,-85.08 539.5,-76 532.03,-56.2 525.67,-32.11 522.56,-19.55"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="548.32,-104.81 555.91,-112.21 554.59,-101.69 548.32,-104.81"/>
+<path fill="none" stroke="midnightblue" d="M589.06,-106.87C576.93,-98.96 562.72,-88.23 552.5,-76 537.82,-58.44 527.84,-32.99 523.29,-19.75"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="587.49,-110.02 597.83,-112.35 591.2,-104.09 587.49,-110.02"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="BME680Sensor_8h.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="174.5,-56.5 174.5,-75.5 272.5,-75.5 272.5,-56.5 174.5,-56.5"/>
-<text text-anchor="middle" x="223.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">BME680Sensor.h</text>
+<polygon fill="none" stroke="black" points="187.5,-56.5 187.5,-75.5 285.5,-75.5 285.5,-56.5 187.5,-56.5"/>
+<text text-anchor="middle" x="236.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">BME680Sensor.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M521.38,-114.73C459.74,-104.86 340.12,-85.69 272.73,-74.89"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="521.05,-118.22 531.48,-116.35 522.16,-111.31 521.05,-118.22"/>
+<path fill="none" stroke="midnightblue" d="M574.25,-115.64C514.04,-107.38 395.23,-90.92 294.5,-76 291.58,-75.57 288.57,-75.12 285.54,-74.66"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="574.07,-119.15 584.45,-117.04 575.02,-112.21 574.07,-119.15"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="GeigerSensor_8h.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="290.5,-56.5 290.5,-75.5 380.5,-75.5 380.5,-56.5 290.5,-56.5"/>
-<text text-anchor="middle" x="335.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">GeigerSensor.h</text>
+<polygon fill="none" stroke="black" points="303.5,-56.5 303.5,-75.5 393.5,-75.5 393.5,-56.5 303.5,-56.5"/>
+<text text-anchor="middle" x="348.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">GeigerSensor.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M521.14,-111.55C478.81,-101.4 412.1,-85.38 371.23,-75.58"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="520.54,-115.01 531.09,-113.94 522.18,-108.2 520.54,-115.01"/>
+<path fill="none" stroke="midnightblue" d="M574.43,-113.04C525.15,-103 440.78,-85.8 390.27,-75.51"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="573.88,-116.5 584.38,-115.07 575.28,-109.64 573.88,-116.5"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="INA260Sensor_8h.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="399,-56.5 399,-75.5 492,-75.5 492,-56.5 399,-56.5"/>
-<text text-anchor="middle" x="445.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">INA260Sensor.h</text>
+<polygon fill="none" stroke="black" points="412,-56.5 412,-75.5 505,-75.5 505,-56.5 412,-56.5"/>
+<text text-anchor="middle" x="458.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">INA260Sensor.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge10" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M533.02,-108.1C511.53,-98.01 482.28,-84.27 463.64,-75.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="531.74,-111.36 542.28,-112.44 534.71,-105.02 531.74,-111.36"/>
+<path fill="none" stroke="midnightblue" d="M579.17,-109.04C550,-98.88 508.86,-84.55 482.95,-75.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="578.34,-112.46 588.94,-112.44 580.65,-105.85 578.34,-112.46"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
 <g id="a_node11"><a xlink:href="LSM9DS1Sensor_8h.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="548.5,-56.5 548.5,-75.5 652.5,-75.5 652.5,-56.5 548.5,-56.5"/>
-<text text-anchor="middle" x="600.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">LSM9DS1Sensor.h</text>
+<polygon fill="none" stroke="black" points="561.5,-56.5 561.5,-75.5 665.5,-75.5 665.5,-56.5 561.5,-56.5"/>
+<text text-anchor="middle" x="613.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">LSM9DS1Sensor.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node11 -->
 <g id="edge13" class="edge">
 <title>Node1&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M573.2,-103.86C580.13,-94.5 588.41,-83.33 594.02,-75.75"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="570.25,-101.96 567.11,-112.08 575.87,-106.13 570.25,-101.96"/>
+<path fill="none" stroke="midnightblue" d="M613.5,-101.8C613.5,-92.91 613.5,-82.78 613.5,-75.75"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="610,-102.08 613.5,-112.08 617,-102.08 610,-102.08"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="SGP30Sensor_8h.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="671,-56.5 671,-75.5 760,-75.5 760,-56.5 671,-56.5"/>
-<text text-anchor="middle" x="715.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">SGP30Sensor.h</text>
+<g id="a_node13"><a xlink:href="MTK3339Sensor_8h.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="1161.5,-56.5 1161.5,-75.5 1265.5,-75.5 1265.5,-56.5 1161.5,-56.5"/>
+<text text-anchor="middle" x="1213.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">MTK3339Sensor.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node13 -->
 <g id="edge16" class="edge">
 <title>Node1&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M594.83,-109.04C624,-98.88 665.14,-84.55 691.05,-75.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="593.35,-105.85 585.06,-112.44 595.66,-112.46 593.35,-105.85"/>
+<path fill="none" stroke="midnightblue" d="M652.99,-117.45C757.8,-108.01 1043.05,-82.34 1161.18,-71.71"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="652.49,-113.98 642.85,-118.36 653.12,-120.95 652.49,-113.98"/>
 </g>
 <!-- Node15 -->
 <g id="node15" class="node">
 <title>Node15</title>
-<g id="a_node15"><a xlink:href="SHT31Sensor_8h.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="778,-56.5 778,-75.5 867,-75.5 867,-56.5 778,-56.5"/>
-<text text-anchor="middle" x="822.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">SHT31Sensor.h</text>
+<g id="a_node15"><a xlink:href="SGP30Sensor_8h.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="684,-56.5 684,-75.5 773,-75.5 773,-56.5 684,-56.5"/>
+<text text-anchor="middle" x="728.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">SGP30Sensor.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node15 -->
-<g id="edge19" class="edge">
+<g id="edge18" class="edge">
 <title>Node1&#45;&gt;Node15</title>
-<path fill="none" stroke="midnightblue" d="M599.37,-112.99C648,-102.97 730.94,-85.87 780.84,-75.59"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="598.63,-109.57 589.54,-115.01 600.04,-116.42 598.63,-109.57"/>
+<path fill="none" stroke="midnightblue" d="M640.98,-108.1C662.47,-98.01 691.72,-84.27 710.36,-75.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="639.29,-105.02 631.72,-112.44 642.26,-111.36 639.29,-105.02"/>
 </g>
 <!-- Node17 -->
 <g id="node17" class="node">
 <title>Node17</title>
-<g id="a_node17"><a xlink:href="TempSensor_8h.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="884.5,-56.5 884.5,-75.5 968.5,-75.5 968.5,-56.5 884.5,-56.5"/>
-<text text-anchor="middle" x="926.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">TempSensor.h</text>
+<g id="a_node17"><a xlink:href="SHT31Sensor_8h.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="791,-56.5 791,-75.5 880,-75.5 880,-56.5 791,-56.5"/>
+<text text-anchor="middle" x="835.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">SHT31Sensor.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node17 -->
-<g id="edge22" class="edge">
+<g id="edge21" class="edge">
 <title>Node1&#45;&gt;Node17</title>
-<path fill="none" stroke="midnightblue" d="M599.89,-115.86C659.74,-107.95 777.15,-92.01 876.5,-76 879.03,-75.59 881.62,-75.16 884.24,-74.72"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="599.2,-112.42 589.74,-117.2 600.11,-119.36 599.2,-112.42"/>
+<path fill="none" stroke="midnightblue" d="M652.33,-111.55C694.1,-101.4 759.92,-85.38 800.24,-75.58"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="651.41,-108.18 642.52,-113.94 653.07,-114.98 651.41,-108.18"/>
 </g>
 <!-- Node19 -->
 <g id="node19" class="node">
 <title>Node19</title>
-<g id="a_node19"><a xlink:href="ZOPT220Sensor_8h.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="986.5,-56.5 986.5,-75.5 1088.5,-75.5 1088.5,-56.5 986.5,-56.5"/>
-<text text-anchor="middle" x="1037.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">ZOPT220Sensor.h</text>
+<g id="a_node19"><a xlink:href="TempSensor_8h.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="897.5,-56.5 897.5,-75.5 981.5,-75.5 981.5,-56.5 897.5,-56.5"/>
+<text text-anchor="middle" x="939.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">TempSensor.h</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node19 -->
-<g id="edge25" class="edge">
+<g id="edge24" class="edge">
 <title>Node1&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M599.87,-117.3C673.92,-110.22 838.97,-93.86 977.5,-76 980.43,-75.62 983.43,-75.22 986.46,-74.8"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="599.24,-113.84 589.62,-118.28 599.91,-120.81 599.24,-113.84"/>
+<path fill="none" stroke="midnightblue" d="M652.89,-114.71C706.3,-106.15 804.66,-90.26 888.5,-76 891.43,-75.5 894.44,-74.98 897.48,-74.46"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="652.14,-111.29 642.82,-116.32 653.25,-118.2 652.14,-111.29"/>
+</g>
+<!-- Node21 -->
+<g id="node21" class="node">
+<title>Node21</title>
+<g id="a_node21"><a xlink:href="ZOPT220Sensor_8h.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="999.5,-56.5 999.5,-75.5 1101.5,-75.5 1101.5,-56.5 999.5,-56.5"/>
+<text text-anchor="middle" x="1050.5" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">ZOPT220Sensor.h</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node21 -->
+<g id="edge27" class="edge">
+<title>Node1&#45;&gt;Node21</title>
+<path fill="none" stroke="midnightblue" d="M652.81,-116.7C721.42,-109.11 867.47,-92.57 990.5,-76 993.42,-75.61 996.42,-75.19 999.45,-74.76"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="652.42,-113.22 642.87,-117.8 653.19,-120.18 652.42,-113.22"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -225,20 +240,20 @@ var sectionId = 'dynsection-1';
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M93.61,-49.54C83.09,-39.91 69.93,-27.87 61.15,-19.83"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="91.28,-52.15 101.02,-56.32 96.01,-46.99 91.28,-52.15"/>
+<path fill="none" stroke="midnightblue" d="M103.63,-50.1C90.68,-40.38 74.2,-28.03 63.28,-19.83"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="101.83,-53.12 111.93,-56.32 106.03,-47.52 101.83,-53.12"/>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M166.94,-55.87C306.84,-36.92 344.82,-42.95 480.5,-20 483.31,-19.53 486.21,-18.98 489.12,-18.4"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="166.12,-52.45 156.69,-57.28 167.07,-59.38 166.12,-52.45"/>
+<path fill="none" stroke="midnightblue" d="M179.95,-55.86C314.11,-37.35 350.53,-42.31 480.5,-20 483.31,-19.52 486.21,-18.97 489.12,-18.38"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="179.11,-52.44 169.69,-57.29 180.08,-59.37 179.11,-52.44"/>
 </g>
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge6" class="edge">
 <title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M282.98,-55.42C335.17,-46.81 413.04,-33.49 480.5,-20 483.29,-19.44 486.19,-18.84 489.09,-18.22"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="282.2,-52 272.9,-57.07 283.34,-58.91 282.2,-52"/>
+<path fill="none" stroke="midnightblue" d="M295.57,-54.77C345.07,-46.04 417.53,-32.89 480.5,-20 483.29,-19.43 486.18,-18.82 489.08,-18.19"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="294.92,-51.33 285.68,-56.51 296.14,-58.22 294.92,-51.33"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
@@ -252,14 +267,14 @@ var sectionId = 'dynsection-1';
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M208.77,-48.43C200.36,-38.97 190.15,-27.48 183.28,-19.75"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="206.31,-50.93 215.57,-56.08 211.55,-46.28 206.31,-50.93"/>
+<path fill="none" stroke="midnightblue" d="M219.03,-49.54C208.16,-39.91 194.56,-27.87 185.48,-19.83"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="216.89,-52.32 226.7,-56.32 221.53,-47.07 216.89,-52.32"/>
 </g>
 <!-- Node7&#45;&gt;Node4 -->
 <g id="edge9" class="edge">
 <title>Node7&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M374.67,-53.57C409.57,-43.38 459.85,-28.7 491.32,-19.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="373.43,-50.28 364.81,-56.44 375.39,-57 373.43,-50.28"/>
+<path fill="none" stroke="midnightblue" d="M385.33,-53.44C417.76,-43.26 464.24,-28.66 493.37,-19.52"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="384.25,-50.11 375.75,-56.44 386.34,-56.79 384.25,-50.11"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
@@ -273,14 +288,14 @@ var sectionId = 'dynsection-1';
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge8" class="edge">
 <title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M323.55,-47.57C317.19,-38.27 309.63,-27.25 304.5,-19.75"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="320.85,-49.81 329.39,-56.08 326.63,-45.86 320.85,-49.81"/>
+<path fill="none" stroke="midnightblue" d="M333.42,-48.72C324.61,-39.2 313.83,-27.56 306.6,-19.75"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="330.88,-51.12 340.24,-56.08 336.02,-46.37 330.88,-51.12"/>
 </g>
 <!-- Node9&#45;&gt;Node4 -->
 <g id="edge12" class="edge">
 <title>Node9&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M465.81,-50.38C479.36,-40.62 496.74,-28.11 508.23,-19.83"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="463.62,-47.64 457.55,-56.32 467.71,-53.32 463.62,-47.64"/>
+<path fill="none" stroke="midnightblue" d="M476.25,-49.54C487.31,-39.91 501.13,-27.87 510.36,-19.83"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="473.7,-47.12 468.46,-56.32 478.3,-52.4 473.7,-47.12"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
@@ -294,14 +309,14 @@ var sectionId = 'dynsection-1';
 <!-- Node9&#45;&gt;Node10 -->
 <g id="edge11" class="edge">
 <title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M436.83,-46.98C432.41,-37.82 427.25,-27.09 423.71,-19.75"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="433.71,-48.59 441.21,-56.08 440.02,-45.55 433.71,-48.59"/>
+<path fill="none" stroke="midnightblue" d="M446.12,-47.86C439.36,-38.5 431.29,-27.33 425.82,-19.75"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="443.37,-50.03 452.06,-56.08 449.04,-45.93 443.37,-50.03"/>
 </g>
 <!-- Node11&#45;&gt;Node4 -->
 <g id="edge15" class="edge">
 <title>Node11&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M579.2,-50.62C564.58,-40.76 545.67,-27.99 533.32,-19.65"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="577.4,-53.63 587.65,-56.32 581.32,-47.83 577.4,-53.63"/>
+<path fill="none" stroke="midnightblue" d="M589.69,-51.18C572.58,-41.24 550.03,-28.15 535.4,-19.65"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="588.15,-54.33 598.56,-56.32 591.67,-48.28 588.15,-54.33"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
@@ -315,92 +330,107 @@ var sectionId = 'dynsection-1';
 <!-- Node11&#45;&gt;Node12 -->
 <g id="edge14" class="edge">
 <title>Node11&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M609.51,-46.98C614.09,-37.82 619.45,-27.09 623.12,-19.75"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="606.3,-45.57 604.96,-56.08 612.56,-48.7 606.3,-45.57"/>
-</g>
-<!-- Node13&#45;&gt;Node4 -->
-<g id="edge17" class="edge">
-<title>Node13&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M674.69,-53.7C637.89,-43.51 584.57,-28.74 551.25,-19.52"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="674.03,-57.15 684.6,-56.44 675.9,-50.4 674.03,-57.15"/>
+<path fill="none" stroke="midnightblue" d="M618.32,-46.4C620.67,-37.36 623.37,-26.94 625.23,-19.75"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="614.93,-45.52 615.81,-56.08 621.71,-47.28 614.93,-45.52"/>
 </g>
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
-<g id="a_node14"><a xlink:href="SGP30Sensor_8cpp.html" target="_top" xlink:title=" ">
+<g id="a_node14"><a xlink:href="MTK3339Sensor_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="1185,-0.5 1185,-19.5 1300,-19.5 1300,-0.5 1185,-0.5"/>
+<text text-anchor="middle" x="1242.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">MTK3339Sensor.cpp</text>
+</a>
+</g>
+</g>
+<!-- Node13&#45;&gt;Node14 -->
+<g id="edge17" class="edge">
+<title>Node13&#45;&gt;Node14</title>
+<path fill="none" stroke="midnightblue" d="M1223.18,-46.98C1228.1,-37.82 1233.86,-27.09 1237.8,-19.75"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1219.94,-45.62 1218.29,-56.08 1226.1,-48.93 1219.94,-45.62"/>
+</g>
+<!-- Node15&#45;&gt;Node4 -->
+<g id="edge19" class="edge">
+<title>Node15&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M685.82,-53.92C645.92,-43.56 587.26,-28.33 551.61,-19.08"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="684.98,-57.32 695.54,-56.44 686.74,-50.54 684.98,-57.32"/>
+</g>
+<!-- Node16 -->
+<g id="node16" class="node">
+<title>Node16</title>
+<g id="a_node16"><a xlink:href="SGP30Sensor_8cpp.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="703,-0.5 703,-19.5 804,-19.5 804,-0.5 703,-0.5"/>
 <text text-anchor="middle" x="753.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">SGP30Sensor.cpp</text>
 </a>
 </g>
 </g>
-<!-- Node13&#45;&gt;Node14 -->
-<g id="edge18" class="edge">
-<title>Node13&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M727.56,-47.86C734.14,-38.5 742.01,-27.33 747.34,-19.75"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="724.67,-45.89 721.77,-56.08 730.39,-49.92 724.67,-45.89"/>
-</g>
-<!-- Node15&#45;&gt;Node4 -->
+<!-- Node15&#45;&gt;Node16 -->
 <g id="edge20" class="edge">
-<title>Node15&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M767.89,-55.72C697.39,-43.72 581.36,-23.89 561.5,-20 558.35,-19.38 555.08,-18.71 551.81,-18.03"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="767.5,-59.2 777.94,-57.43 768.67,-52.3 767.5,-59.2"/>
+<title>Node15&#45;&gt;Node16</title>
+<path fill="none" stroke="midnightblue" d="M736.84,-46.98C741.08,-37.82 746.05,-27.09 749.45,-19.75"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="733.65,-45.54 732.63,-56.08 740.01,-48.48 733.65,-45.54"/>
 </g>
-<!-- Node16 -->
-<g id="node16" class="node">
-<title>Node16</title>
-<g id="a_node16"><a xlink:href="SHT31Sensor_8cpp.html" target="_top" xlink:title=" ">
+<!-- Node17&#45;&gt;Node4 -->
+<g id="edge22" class="edge">
+<title>Node17&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M780.58,-55.86C681.61,-39.74 655.05,-38.32 560.5,-20 557.7,-19.46 554.81,-18.87 551.91,-18.25"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="780.28,-59.36 790.71,-57.52 781.41,-52.45 780.28,-59.36"/>
+</g>
+<!-- Node18 -->
+<g id="node18" class="node">
+<title>Node18</title>
+<g id="a_node18"><a xlink:href="SHT31Sensor_8cpp.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="822,-0.5 822,-19.5 923,-19.5 923,-0.5 822,-0.5"/>
 <text text-anchor="middle" x="872.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">SHT31Sensor.cpp</text>
 </a>
 </g>
 </g>
-<!-- Node15&#45;&gt;Node16 -->
-<g id="edge21" class="edge">
-<title>Node15&#45;&gt;Node16</title>
-<path fill="none" stroke="midnightblue" d="M837.58,-48.72C846.39,-39.2 857.17,-27.56 864.4,-19.75"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="834.98,-46.37 830.76,-56.08 840.12,-51.12 834.98,-46.37"/>
-</g>
-<!-- Node17&#45;&gt;Node4 -->
+<!-- Node17&#45;&gt;Node18 -->
 <g id="edge23" class="edge">
-<title>Node17&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M874.08,-55.72C735.32,-35.85 697.24,-42.59 561.5,-20 558.34,-19.47 555.05,-18.86 551.78,-18.21"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="873.85,-59.22 884.25,-57.2 874.86,-52.3 873.85,-59.22"/>
+<title>Node17&#45;&gt;Node18</title>
+<path fill="none" stroke="midnightblue" d="M847.45,-47.57C853.81,-38.27 861.37,-27.25 866.5,-19.75"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="844.37,-45.86 841.61,-56.08 850.15,-49.81 844.37,-45.86"/>
 </g>
-<!-- Node18 -->
-<g id="node18" class="node">
-<title>Node18</title>
-<g id="a_node18"><a xlink:href="TempSensor_8cpp.html" target="_top" xlink:title=" ">
+<!-- Node19&#45;&gt;Node4 -->
+<g id="edge25" class="edge">
+<title>Node19&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M887.03,-55.88C741.55,-35.63 701.9,-43.59 560.5,-20 557.69,-19.53 554.78,-18.99 551.88,-18.41"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="886.84,-59.39 897.23,-57.32 887.82,-52.46 886.84,-59.39"/>
+</g>
+<!-- Node20 -->
+<g id="node20" class="node">
+<title>Node20</title>
+<g id="a_node20"><a xlink:href="TempSensor_8cpp.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="941,-0.5 941,-19.5 1036,-19.5 1036,-0.5 941,-0.5"/>
 <text text-anchor="middle" x="988.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">TempSensor.cpp</text>
 </a>
 </g>
 </g>
-<!-- Node17&#45;&gt;Node18 -->
-<g id="edge24" class="edge">
-<title>Node17&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M944.25,-49.54C955.31,-39.91 969.13,-27.87 978.36,-19.83"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="941.7,-47.12 936.46,-56.32 946.3,-52.4 941.7,-47.12"/>
-</g>
-<!-- Node19&#45;&gt;Node4 -->
+<!-- Node19&#45;&gt;Node20 -->
 <g id="edge26" class="edge">
-<title>Node19&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M976.41,-55.95C791.46,-34.69 741.74,-47.46 561.5,-20 558.33,-19.52 555.04,-18.93 551.76,-18.3"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="976.13,-59.44 986.47,-57.12 976.94,-52.49 976.13,-59.44"/>
+<title>Node19&#45;&gt;Node20</title>
+<path fill="none" stroke="midnightblue" d="M954.53,-48.43C963.12,-38.97 973.54,-27.48 980.56,-19.75"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="951.72,-46.33 947.59,-56.08 956.9,-51.03 951.72,-46.33"/>
 </g>
-<!-- Node20 -->
-<g id="node20" class="node">
-<title>Node20</title>
-<g id="a_node20"><a xlink:href="ZOPT220Sensor_8cpp.html" target="_top" xlink:title=" ">
+<!-- Node21&#45;&gt;Node4 -->
+<g id="edge28" class="edge">
+<title>Node21&#45;&gt;Node4</title>
+<path fill="none" stroke="midnightblue" d="M989.37,-55.95C798.27,-34.28 746.82,-48.62 560.5,-20 557.69,-19.57 554.77,-19.05 551.87,-18.49"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="989.13,-59.45 999.47,-57.11 989.93,-52.49 989.13,-59.45"/>
+</g>
+<!-- Node22 -->
+<g id="node22" class="node">
+<title>Node22</title>
+<g id="a_node22"><a xlink:href="ZOPT220Sensor_8cpp.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="1054,-0.5 1054,-19.5 1167,-19.5 1167,-0.5 1054,-0.5"/>
 <text text-anchor="middle" x="1110.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">ZOPT220Sensor.cpp</text>
 </a>
 </g>
 </g>
-<!-- Node19&#45;&gt;Node20 -->
-<g id="edge27" class="edge">
-<title>Node19&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M1057.64,-50.1C1070.78,-40.38 1087.48,-28.03 1098.56,-19.83"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="1055.19,-47.56 1049.23,-56.32 1059.35,-53.19 1055.19,-47.56"/>
+<!-- Node21&#45;&gt;Node22 -->
+<g id="edge29" class="edge">
+<title>Node21&#45;&gt;Node22</title>
+<path fill="none" stroke="midnightblue" d="M1067.68,-49.54C1078.38,-39.91 1091.76,-27.87 1100.68,-19.83"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="1065.23,-47.03 1060.14,-56.32 1069.91,-52.24 1065.23,-47.03"/>
 </g>
 </g>
 </svg>

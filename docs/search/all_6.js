@@ -15,5 +15,6 @@ var searchData=
   ['getsensorname_32',['getSensorName',['../classSensor.html#acbb8667640eea651a758497cf4b88194',1,'Sensor']]],
   ['getstoragename_33',['getStorageName',['../classStorage.html#ade89a8cb71d3f08ac75390d0f1e842cb',1,'Storage']]],
   ['getuvb_34',['getUVB',['../classZOPT220x__Control.html#a9d0197ab4de4731ecd692e39ee9c5e64',1,'ZOPT220x_Control']]],
-  ['getuvindex_35',['getUVIndex',['../classZOPT220x__Control.html#a1233f73c507efe1393d84b9d88b4a023',1,'ZOPT220x_Control']]]
+  ['getuvindex_35',['getUVIndex',['../classZOPT220x__Control.html#a1233f73c507efe1393d84b9d88b4a023',1,'ZOPT220x_Control']]],
+  ['gps_36',['GPS',['../classMTK3339Sensor.html#a4a809ba92d7a99aff32c8a4114cb54e5',1,'MTK3339Sensor']]]
 ];
