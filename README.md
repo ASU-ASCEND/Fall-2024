@@ -23,7 +23,7 @@ Flight software for the ASU Fall 2024 ASCEND Payload
 | 9/18  | Reviewing last semester, Github Org.    | &#x2611;   |
 | 9/25  | Github, Arduino, Platform.io and FSWv1  | &#x2611;   |
 | 10/2  | Merging, Datasheets, and Calibration    | &#x2611;   |
-| 10/9  | FSWv2                                   | &#x2610;   |
+| 10/9  | FSWv2                                   | &#x2612;   |
 | 10/16 | FSWv2 (cont.) and Science Mission       | &#x2610;   |
 | 10/23 | DP:Tv1, DP:3Dv1                         | &#x2610;   |
 | 10/30 | DP:Tv2                                  | &#x2610;   |
