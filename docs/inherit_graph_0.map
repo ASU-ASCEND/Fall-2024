@@ -5,7 +5,7 @@
 <area shape="rect" id="node4" href="$classGeigerSensor.html" title="A class for interfacing with a Geiger counter sensor." alt="" coords="129,107,238,133"/>
 <area shape="rect" id="node5" href="$classINA260Sensor.html" title="A class to interface with the Adafruit INA260 sensor for current, voltage, and power measurements." alt="" coords="127,157,240,184"/>
 <area shape="rect" id="node6" href="$classLSM9DS1Sensor.html" title="Implementation of the Sensor class for the LSM9DS1 (9&#45;axis IMU)" alt="" coords="120,208,247,235"/>
-<area shape="rect" id="node7" href="$classSGP30Sensor.html" title=" " alt="" coords="129,259,237,285"/>
+<area shape="rect" id="node7" href="$classSGP30Sensor.html" title="Implementation of a Sensor for the SGP Air Quality sensor." alt="" coords="129,259,237,285"/>
 <area shape="rect" id="node8" href="$classSHT31Sensor.html" title="Interfaces with SHT31 Sensor to collect temperature and humidity data." alt="" coords="129,309,237,336"/>
 <area shape="rect" id="node9" href="$classTempSensor.html" title="Implementation of a Sensor for the onboard temperature sensor." alt="" coords="133,360,234,387"/>
 <area shape="rect" id="node10" href="$classZOPT220Sensor.html" title="A class to interface with the ZOPT220x UV and ambient light sensor." alt="" coords="121,411,246,437"/>
