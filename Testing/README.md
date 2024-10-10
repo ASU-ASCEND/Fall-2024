@@ -25,8 +25,12 @@ Protocol:
 <br/>Callibration:  
 
 #### [INA260](https://www.ti.com/product/INA260): current, voltage, power
-Protocol: 
-<br/>Callibration:  
+Protocol: **I<sup>2</sup>C**
+- **I<sup>2</sup>C Mode**
+  - **SCL**: Serial Clock Line (no. 9)
+  - **SDA**: Serial Data Line (no. 8)
+
+Calibration: No calibration required as the INA260 is factory-calibrated.
 
 #### [LSM9DS1](https://www.st.com/en/mems-and-sensors/lsm9ds1.html): 9-axis IMU
 Protocol: 
