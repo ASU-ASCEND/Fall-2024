@@ -106,7 +106,7 @@ void loop() {
   // build csv row
   String csv_row = String(millis()) + ",";
   for (int i = 0; i < sensors_len; i++) {
-    if(sensors_verify[i]){
+    if (sensors_verify[i]) {
       csv_row += sensors[i]->getDataCSV();
     }
   }
