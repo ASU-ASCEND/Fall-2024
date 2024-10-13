@@ -1,37 +1,50 @@
-/*
-  Blink
 
-  Turns an LED on for one second, then off for one second, repeatedly.
+#define DATA_HEARTBEAT_PIN 5
+#define STORAGE_HEARTBEAT_PIN 6
+#define RESET_PIN 2
 
-  Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO
-  it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set to
-  the correct LED pin independent of which board is used.
-  If you want to know what pin the on-board LED is connected to on your Arduino
-  model, check the Technical Specs of your board at:
-  https://www.arduino.cc/en/Main/Products
+volatile bool data_beat = 0;
+volatile bool storage_beat = 0; 
 
-  modified 8 May 2014
-  by Scott Fitzgerald
-  modified 2 Sep 2016
-  by Arturo Guadalupi
-  modified 8 Sep 2016
-  by Colby Newman
+void PCINT0_ISR(void){
 
-  This example code is in the public domain.
-
-  https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink
-*/
-#define LED_BUILTIN 4
-// the setup function runs once when you press reset or power the board
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
 }
 
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on
-  delay(1000);                      // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off
-  delay(1000);                      // wait for a second
+int main(){
+  // setup 
+  pinMode(DATA_HEARTBEAT_PIN, INPUT); 
+  pinMode(STORAGE_HEARTBEAT_PIN, INPUT); 
+  pinMode(RESET_PIN, OUTPUT); 
+  digitalWrite(RESET_PIN, LOW); 
+
+  while(1){
+    delay(1000); 
+    digitalWrite(RESET_PIN, HIGH); 
+    delay(1000); 
+    digitalWrite(RESET_PIN, LOW); 
+
+  }
+  // // any logical change interrupt 
+  // MCUCR &= ~(0b11);
+  // MCUCR |= (0b01);
+  // // enable Pin Change interrupt 
+  // GIMSK |= (1<<5); 
+  // // enable pins PCINT 1 and 0
+  // PCMSK |= (1<<0)|(1<<1); 
+  
+  // // loop 
+  // while(1){
+  //   delay(10000); // check every 10s 
+  //   if((data_beat && storage_beat) == false){
+  //     // one of the tasks if frozen, reset
+  //     digitalWrite(RESET_PIN, HIGH); 
+  //     delay(100); 
+  //     digitalWrite(RESET_PIN, LOW);
+  //   }
+  //   // clear beats
+  //   data_beat = false;
+  //   storage_beat = false; 
+  // }
+
+  return 0; 
 }
