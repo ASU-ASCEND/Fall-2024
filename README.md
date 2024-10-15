@@ -7,7 +7,7 @@ Flight software for the ASU Fall 2024 ASCEND Payload
 
 [Testing](/Testing/): Test and calibration information for sensor and storage modules.
 
-[Watchdog](/Watchdog/)/[Watchdog_ArduinoIDE](/Watchdog_ArduinoIDE/): Software for watchdog chip.
+[Watchdog](/Watchdog/): Software for watchdog Attiny85 chip.
 
 [ascendfsw](/ascendfsw/): Payload flight software.
 
