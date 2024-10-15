@@ -51,8 +51,8 @@ bool storages_verify[storages_len];
 
 // pin definitions
 #define ON_BOARD_LED_PIN 25
-#define HEARTBEAT_PIN_0 19
-#define HEARTBEAT_PIN_1 20
+#define HEARTBEAT_PIN_0 14
+#define HEARTBEAT_PIN_1 15
 
 // global variables for main 
 // loop counter
@@ -67,7 +67,6 @@ void setup() {
   Serial.begin(115200);
   while (!Serial)
     ;
-  delay(5000);  // wait for 5 seconds to ensure serial is initialized
 
   // setup heartbeat pins
   pinMode(HEARTBEAT_PIN_0, OUTPUT); 
