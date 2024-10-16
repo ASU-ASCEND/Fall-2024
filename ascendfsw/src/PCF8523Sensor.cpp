@@ -1,4 +1,3 @@
-
 #include "PCF8523Sensor.h"
 
 PCF8523Sensor::PCF8523Sensor() {}
@@ -19,4 +18,8 @@ void PCF8523Sensor::calibrate() {
     if (!rtc.initialized() || rtc.lostPower()) {
         rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
     }
+}
+
+bool PCF8523Sensor::isRTCReady() {
+    return rtc.initialized() && !rtc.lostPower();
 }
