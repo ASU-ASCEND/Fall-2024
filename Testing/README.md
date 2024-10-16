@@ -17,8 +17,22 @@ Protocol:
 <br/>Calibration:  
 
 #### [BME680](https://www.adafruit.com/product/3660): Temperature, Pressure, Humidity, Gas, Altitude
+
 Protocol: 
 <br/>Calibration:  
+=======
+**Protocol**: **I2C**, **SPI 4-Wire**, **SPI 3-Wire**
+- **I2C Mode**
+  - **SCK**: Serial clock (SCL)
+  - **SDI**: Data (SDA)
+  - **SDO**: Slave Address LSB (GND = `0` (`0x76` address), V<sub>DDIO</sub> = `1` (`0x77` address))
+- **SPI Mode**
+  - **CSB**: Chip Select (CSB)
+  - **SDI**: Input Data (SPI 4W = SDI, SPI 3W = SDI/SDO)
+  - **SCK**: Clock (SCK)
+  - **SDO**: Output Data (SPI 4W = SDO, SPI 3W = DNC (Do not connect))
+
+**Calibration**: No calibration required. The BME680 uses built-in algorithms for accurate readings.
 
 #### [Mighty Ohm Geiger Counter](https://mightyohm.com/blog/products/geiger-counter/): CPS 
 Protocol: 
