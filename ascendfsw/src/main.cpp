@@ -2,6 +2,7 @@
 
 #include "Sensor.h"
 #include "Storage.h"
+
 // include sensor headers here
 #include "AnalogSensor.h"
 #include "BME680Sensor.h"
@@ -12,8 +13,6 @@
 #include "SHT31Sensor.h"
 #include "TempSensor.h"
 #include "ZOPT220Sensor.h"
-
-#define ON_BOARD_LED_PIN 25
 
 // helper function definitions
 int verifySensors();
@@ -50,6 +49,12 @@ Storage* storages[] = {&sd_storage};
 const int storages_len = sizeof(storages) / sizeof(storages[0]);
 bool storages_verify[storages_len];
 
+// pin definitions
+#define ON_BOARD_LED_PIN 25
+#define HEARTBEAT_PIN_0 14
+#define HEARTBEAT_PIN_1 15
+
+// global variables for main 
 // loop counter
 unsigned int it = 0;
 
@@ -62,7 +67,10 @@ void setup() {
   Serial.begin(115200);
   while (!Serial)
     ;
-  delay(5000);  // wait for 5 seconds to ensure serial is initialized
+
+  // setup heartbeat pins
+  pinMode(HEARTBEAT_PIN_0, OUTPUT); 
+  pinMode(HEARTBEAT_PIN_1, OUTPUT); 
 
   // verify sensors
   if (verifySensors() == 0) {
@@ -101,6 +109,11 @@ void setup() {
  */
 void loop() {
   it++;
+
+  // toggle heartbeats 
+  digitalWrite(HEARTBEAT_PIN_0, (it & 0x1));
+  digitalWrite(HEARTBEAT_PIN_1, (it & 0x1)); 
+
   Serial.print("it: " + String(it) + "\t");
 
   // build csv row
