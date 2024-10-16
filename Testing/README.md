@@ -33,8 +33,13 @@ Protocol: **I<sup>2</sup>C**
 Calibration: No calibration required as the INA260 is factory-calibrated.
 
 #### [LSM9DS1](https://www.st.com/en/mems-and-sensors/lsm9ds1.html): 9-axis IMU
-Protocol: 
-<br/>Calibration:  
+Protocol: I2C: Easy to use but slower data rates.
+SPI: Preferred for faster sampling rates; recommended for high-speed applications.
+
+<br/>Calibration: Necessary for accurate measurements. Perform offset calibration for accelerometer and gyroscope. Magnetometer calibration requires hard iron offset correction.
+
+Libraries: SparkFun LSM9DS1 Library: Supports both I²C and SPI.
+GitHub Repository: SparkFun_LSM9DS1_Arduino_Library
 
 #### [MTK3339](https://www.adafruit.com/product/746): GPS
 Protocol: 
