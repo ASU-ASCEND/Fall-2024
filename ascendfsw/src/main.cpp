@@ -54,7 +54,7 @@ bool storages_verify[storages_len];
 #define HEARTBEAT_PIN_0 14
 #define HEARTBEAT_PIN_1 15
 
-// global variables for main 
+// global variables for main
 // loop counter
 unsigned int it = 0;
 
@@ -69,8 +69,8 @@ void setup() {
     ;
 
   // setup heartbeat pins
-  pinMode(HEARTBEAT_PIN_0, OUTPUT); 
-  pinMode(HEARTBEAT_PIN_1, OUTPUT); 
+  pinMode(HEARTBEAT_PIN_0, OUTPUT);
+  pinMode(HEARTBEAT_PIN_1, OUTPUT);
 
   // verify sensors
   if (verifySensors() == 0) {
@@ -110,9 +110,9 @@ void setup() {
 void loop() {
   it++;
 
-  // toggle heartbeats 
+  // toggle heartbeats
   digitalWrite(HEARTBEAT_PIN_0, (it & 0x1));
-  digitalWrite(HEARTBEAT_PIN_1, (it & 0x1)); 
+  digitalWrite(HEARTBEAT_PIN_1, (it & 0x1));
 
   Serial.print("it: " + String(it) + "\t");
 
