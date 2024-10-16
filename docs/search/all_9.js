@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['main_2ecpp_49',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['measuringperiodstart_50',['measuringPeriodStart',['../classGeigerSensor.html#a3f3e077ee3f22666f2ea23659e510e57',1,'GeigerSensor']]],
-  ['minimum_5fperiod_51',['minimum_period',['../classSensor.html#ab44ddb52915d3308953718c4ba3f63c4',1,'Sensor']]],
-  ['mtk3339sensor_52',['MTK3339Sensor',['../classMTK3339Sensor.html',1,'MTK3339Sensor'],['../classMTK3339Sensor.html#a97dcd5d72db33226c075b962adc94157',1,'MTK3339Sensor::MTK3339Sensor()'],['../classMTK3339Sensor.html#a756a728a65297f1b463b2c9ab445b388',1,'MTK3339Sensor::MTK3339Sensor(unsigned long minimum_period)']]],
-  ['mtk3339sensor_2ecpp_53',['MTK3339Sensor.cpp',['../MTK3339Sensor_8cpp.html',1,'']]],
-  ['mtk3339sensor_2eh_54',['MTK3339Sensor.h',['../MTK3339Sensor_8h.html',1,'']]]
+  ['last_5fexecution_45',['last_execution',['../classSensor.html#abd94c964e6cf265293cfb4cd5d01708d',1,'Sensor']]],
+  ['loop_46',['loop',['../main_8cpp.html#afe461d27b9c48d5921c00d521181f12f',1,'main.cpp']]],
+  ['lsm9ds1_5fsensor_47',['lsm9ds1_sensor',['../main_8cpp.html#a65d3af343150171c2dc94255abca5c54',1,'main.cpp']]],
+  ['lsm9ds1sensor_48',['LSM9DS1Sensor',['../classLSM9DS1Sensor.html',1,'LSM9DS1Sensor'],['../classLSM9DS1Sensor.html#a46aef0b7563f5317c17b5c373ca7d513',1,'LSM9DS1Sensor::LSM9DS1Sensor()'],['../classLSM9DS1Sensor.html#a77f30f3bb42282065b2c35ec7b70dc0a',1,'LSM9DS1Sensor::LSM9DS1Sensor(unsigned long minimum_period)']]],
+  ['lsm9ds1sensor_2ecpp_49',['LSM9DS1Sensor.cpp',['../LSM9DS1Sensor_8cpp.html',1,'']]],
+  ['lsm9ds1sensor_2eh_50',['LSM9DS1Sensor.h',['../LSM9DS1Sensor_8h.html',1,'']]]
 ];
