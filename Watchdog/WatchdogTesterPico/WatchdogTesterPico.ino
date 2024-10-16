@@ -1,4 +1,5 @@
-// pico code to test watchdog, flatlines after 50 iterations, resets around 100 iterations
+// pico code to test watchdog, flatlines after 50 iterations, resets around 100
+// iterations
 #define h1 14
 #define h2 15
 
@@ -6,24 +7,25 @@
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
-  pinMode(h1, OUTPUT); 
-  pinMode(h2, OUTPUT); 
+  pinMode(h1, OUTPUT);
+  pinMode(h2, OUTPUT);
 }
 
-int i = 0; 
+int i = 0;
 // the loop function runs over and over again forever
 void loop() {
-  Serial.println(i++); 
-  digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
-  delay(250);                      // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
-  delay(250);  
+  Serial.println(i++);
+  digitalWrite(LED_BUILTIN,
+               HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(250);          // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);  // turn the LED off by making the voltage LOW
+  delay(250);
 
-  if(i < 80){
-    digitalWrite(h1, (i & 0x1)); 
-    digitalWrite(h2, (i & 0x1)); 
+  if (i < 80) {
+    digitalWrite(h1, (i & 0x1));
+    digitalWrite(h2, (i & 0x1));
   }
-  if(i == 50){
-    Serial.println("Flatline"); 
+  if (i == 50) {
+    Serial.println("Flatline");
   }
 }
