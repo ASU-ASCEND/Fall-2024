@@ -12,6 +12,7 @@
 #include "SHT31Sensor.h"
 #include "TempSensor.h"
 #include "ZOPT220Sensor.h"
+#include "PCF8523Sensor.h"
 
 #define ON_BOARD_LED_PIN 25
 
@@ -31,6 +32,7 @@ TempSensor temp_sensor;
 ZOPT220Sensor zopt220_sensor;
 AnalogSensor analog_sensor;
 SGP30Sensor sgp30_sensor;
+PCF8523Sensor pcf8523_sensor;
 
 // sensor array
 Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
