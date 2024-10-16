@@ -70,7 +70,7 @@ void setup() {
 
   // setup heartbeat pins
   pinMode(HEARTBEAT_PIN_0, OUTPUT); 
-  pinMOde(HEARTBEAT_PIN_1, OUTPUT); 
+  pinMode(HEARTBEAT_PIN_1, OUTPUT); 
 
   // verify sensors
   if (verifySensors() == 0) {
