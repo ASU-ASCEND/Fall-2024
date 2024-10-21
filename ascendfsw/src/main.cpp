@@ -18,6 +18,8 @@
 int verifySensors();
 int verifyStorage();
 void storeData(String data);
+String readSensorData(); 
+void handleDataInterface(); 
 
 // Global variables
 // sensor classes
@@ -53,6 +55,7 @@ bool storages_verify[storages_len];
 #define ON_BOARD_LED_PIN 25
 #define HEARTBEAT_PIN_0 14
 #define HEARTBEAT_PIN_1 15
+#define DATA_INTERFACE_PIN 1
 
 // global variables for main
 // loop counter
@@ -65,7 +68,7 @@ unsigned int it = 0;
 void setup() {
   // start serial
   Serial.begin(115200);
-  while (!Serial)
+  while (!Serial) // remove before flight 
     ;
 
   // setup heartbeat pins
@@ -114,22 +117,26 @@ void loop() {
   digitalWrite(HEARTBEAT_PIN_0, (it & 0x1));
   digitalWrite(HEARTBEAT_PIN_1, (it & 0x1));
 
+  // switch to data recovery mode
+  if(digitalRead(DATA_INTERFACE_PIN) == HIGH){
+    handleDataInterface(); 
+    return; 
+  }
+
+  // start print line with iteration number 
   Serial.print("it: " + String(it) + "\t");
 
   // build csv row
-  String csv_row = String(millis()) + ",";
-  for (int i = 0; i < sensors_len; i++) {
-    if (sensors_verify[i]) {
-      csv_row += sensors[i]->getDataCSV();
-    }
-  }
+  String csv_row = readSensorData(); 
+
+  // print csv row
   Serial.println(csv_row);
 
-  // store csv
+  // store csv row 
   storeData(csv_row);
 
-  delay(500);
-  digitalWrite(ON_BOARD_LED_PIN, it % 2);
+  delay(500); // remove before flight 
+  digitalWrite(ON_BOARD_LED_PIN, (it & 0x1)); // toggle light with iteration 
 }
 
 /**
@@ -155,6 +162,16 @@ int verifySensors() {
   Serial.println();
 
   return count;
+}
+
+String readSensorData(){
+  String csv_row = String(millis()) + ",";
+  for (int i = 0; i < sensors_len; i++) {
+    if (sensors_verify[i]) {
+      csv_row += sensors[i]->getDataCSV();
+    }
+  }
+  return csv_row; 
 }
 
 /**
@@ -184,6 +201,10 @@ void storeData(String data) {
   for (int i = 0; i < storages_len; i++) {
     storages[i]->store(data);
   }
+}
+
+void handleDataInterface(){
+  
 }
 
 /** -------------------------------------------------------------------
