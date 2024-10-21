@@ -165,9 +165,9 @@ int verifySensors() {
 }
 
 /**
- * @brief Read data from each verified Sensor 
- * 
- * @return String Complete CSV row for iteration 
+ * @brief Read data from each verified Sensor
+ *
+ * @return String Complete CSV row for iteration
  */
 String readSensorData() {
   String csv_row = String(millis()) + ",";
@@ -210,11 +210,9 @@ void storeData(String data) {
 
 /**
  * @brief Handles data interface mode for retrieving data from flash memory
- * 
+ *
  */
-void handleDataInterface(){
-  delay(100);
-}
+void handleDataInterface() { delay(100); }
 
 /** -------------------------------------------------------------------
  * CORE 1 CODE ONLY AFTER THIS, DO NOT MIX CODE FOR THE CORES
