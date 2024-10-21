@@ -18,8 +18,8 @@
 int verifySensors();
 int verifyStorage();
 void storeData(String data);
-String readSensorData(); 
-void handleDataInterface(); 
+String readSensorData();
+void handleDataInterface();
 
 // Global variables
 // sensor classes
@@ -68,7 +68,7 @@ unsigned int it = 0;
 void setup() {
   // start serial
   Serial.begin(115200);
-  while (!Serial) // remove before flight 
+  while (!Serial)  // remove before flight
     ;
 
   // setup heartbeat pins
@@ -118,25 +118,25 @@ void loop() {
   digitalWrite(HEARTBEAT_PIN_1, (it & 0x1));
 
   // switch to data recovery mode
-  if(digitalRead(DATA_INTERFACE_PIN) == HIGH){
-    handleDataInterface(); 
-    return; 
+  if (digitalRead(DATA_INTERFACE_PIN) == HIGH) {
+    handleDataInterface();
+    return;
   }
 
-  // start print line with iteration number 
+  // start print line with iteration number
   Serial.print("it: " + String(it) + "\t");
 
   // build csv row
-  String csv_row = readSensorData(); 
+  String csv_row = readSensorData();
 
   // print csv row
   Serial.println(csv_row);
 
-  // store csv row 
+  // store csv row
   storeData(csv_row);
 
-  delay(500); // remove before flight 
-  digitalWrite(ON_BOARD_LED_PIN, (it & 0x1)); // toggle light with iteration 
+  delay(500);                                  // remove before flight
+  digitalWrite(ON_BOARD_LED_PIN, (it & 0x1));  // toggle light with iteration
 }
 
 /**
@@ -169,14 +169,14 @@ int verifySensors() {
  * 
  * @return String Complete CSV row for iteration 
  */
-String readSensorData(){
+String readSensorData() {
   String csv_row = String(millis()) + ",";
   for (int i = 0; i < sensors_len; i++) {
     if (sensors_verify[i]) {
       csv_row += sensors[i]->getDataCSV();
     }
   }
-  return csv_row; 
+  return csv_row;
 }
 
 /**
