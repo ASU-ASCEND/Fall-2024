@@ -66,6 +66,9 @@ unsigned int it = 0;
  *
  */
 void setup() {
+  // multicore setup
+  queue_init(&qt, QT_ENTRY_SIZE, QT_MAX_SIZE);
+
   // start serial
   Serial.begin(115200);
   while (!Serial)  // remove before flight
@@ -103,6 +106,9 @@ void setup() {
   // store header
   storeData(header);
 
+  // send header to core1
+  queue_add_blocking(&qt, header.c_str()); 
+
   pinMode(ON_BOARD_LED_PIN, OUTPUT);
 }
 
@@ -134,6 +140,9 @@ void loop() {
 
   // store csv row
   storeData(csv_row);
+
+  // send data to core1
+  queue_add_blocking(&qt, csv_row.c_str()); 
 
   delay(500);                                  // remove before flight
   digitalWrite(ON_BOARD_LED_PIN, (it & 0x1));  // toggle light with iteration
@@ -221,6 +230,9 @@ void handleDataInterface() { delay(100); }
  * setup queue for data transfer between cores
  *
  */
+#include "RadioStorage.h"
+
+RadioStorage radioStorage; 
 
 // /**
 //  * @brief Setup for core 1
