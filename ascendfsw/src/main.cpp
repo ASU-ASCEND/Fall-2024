@@ -61,6 +61,8 @@ bool storages_verify[storages_len];
 // loop counter
 unsigned int it = 0;
 
+// multicore transfer queue
+
 /**
  * @brief Setup for core 0
  *
@@ -222,18 +224,20 @@ void handleDataInterface() { delay(100); }
  *
  */
 
-// /**
-//  * @brief Setup for core 1
-//  *
-//  *
-//  */
-// void setup1() {}
+/**
+ * @brief Setup for core 1
+ *
+ *
+ */
+void setup1() {
+  delay(500); // wait for other setup to run 
+}
 
-// /**
-//  * @brief Loop for core 1
-//  *
-//  */
-// void loop1() {
-//   Serial.println("Core 1: " + String(millis()));
-//   delay(1000);
-// }
+/**
+ * @brief Loop for core 1
+ *
+ */
+void loop1() {
+  Serial.println("Core 1: " + String(millis()));
+  delay(1000);
+}
