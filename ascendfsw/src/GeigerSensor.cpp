@@ -51,5 +51,5 @@ String GeigerSensor::readData() {
 
   measuringPeriodStart = millis();
 
-  return String(CPS) + ", ";
+  return String(CPS) + ",";
 }

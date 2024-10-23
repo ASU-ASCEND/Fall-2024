@@ -101,6 +101,8 @@ Macros</h2></td></tr>
 <tr class="separator:abaa3035bca6ee12a60c3b4b03aa7574a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e93fe19ad4ef78d366cc8f619da977a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a1e93fe19ad4ef78d366cc8f619da977a">HEARTBEAT_PIN_1</a>&#160;&#160;&#160;15</td></tr>
 <tr class="separator:a1e93fe19ad4ef78d366cc8f619da977a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36df51ef7cb9a6bf22a094f4d347cad6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a36df51ef7cb9a6bf22a094f4d347cad6">DATA_INTERFACE_PIN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a36df51ef7cb9a6bf22a094f4d347cad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -113,6 +115,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a0f14b13edaa51207f1ff6752e4696ee7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0f14b13edaa51207f1ff6752e4696ee7">storeData</a> (String data)</td></tr>
 <tr class="memdesc:a0f14b13edaa51207f1ff6752e4696ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends data to each storage device.  <a href="main_8cpp.html#a0f14b13edaa51207f1ff6752e4696ee7">More...</a><br /></td></tr>
 <tr class="separator:a0f14b13edaa51207f1ff6752e4696ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db5e6113d9a0bd03a1b044059ae787b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a9db5e6113d9a0bd03a1b044059ae787b">readSensorData</a> ()</td></tr>
+<tr class="memdesc:a9db5e6113d9a0bd03a1b044059ae787b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from each verified <a class="el" href="classSensor.html" title="Parent class for sensor objects.">Sensor</a>.  <a href="main_8cpp.html#a9db5e6113d9a0bd03a1b044059ae787b">More...</a><br /></td></tr>
+<tr class="separator:a9db5e6113d9a0bd03a1b044059ae787b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a222d3cef3e43d77865ecbd2f95edba3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a222d3cef3e43d77865ecbd2f95edba3a">handleDataInterface</a> ()</td></tr>
+<tr class="memdesc:a222d3cef3e43d77865ecbd2f95edba3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles data interface mode for retrieving data from flash memory.  <a href="main_8cpp.html#a222d3cef3e43d77865ecbd2f95edba3a">More...</a><br /></td></tr>
+<tr class="separator:a222d3cef3e43d77865ecbd2f95edba3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
 <tr class="memdesc:a4fc01d736fe50cf5b977f755b675f11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup for core 0.  <a href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">More...</a><br /></td></tr>
 <tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +166,20 @@ Variables</h2></td></tr>
 <tr class="separator:ac65d766d5179dcc67a8e61e09a1ce969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a36df51ef7cb9a6bf22a094f4d347cad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36df51ef7cb9a6bf22a094f4d347cad6">&#9670;&nbsp;</a></span>DATA_INTERFACE_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_INTERFACE_PIN&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="abaa3035bca6ee12a60c3b4b03aa7574a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abaa3035bca6ee12a60c3b4b03aa7574a">&#9670;&nbsp;</a></span>HEARTBEAT_PIN_0</h2>
 
@@ -201,6 +223,25 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a222d3cef3e43d77865ecbd2f95edba3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a222d3cef3e43d77865ecbd2f95edba3a">&#9670;&nbsp;</a></span>handleDataInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleDataInterface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handles data interface mode for retrieving data from flash memory. </p>
+
+</div>
+</div>
 <a id="afe461d27b9c48d5921c00d521181f12f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe461d27b9c48d5921c00d521181f12f">&#9670;&nbsp;</a></span>loop()</h2>
 
@@ -217,6 +258,26 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Loop for core 0, handling sensor reads. </p>
+
+</div>
+</div>
+<a id="a9db5e6113d9a0bd03a1b044059ae787b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9db5e6113d9a0bd03a1b044059ae787b">&#9670;&nbsp;</a></span>readSensorData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String readSensorData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read data from each verified <a class="el" href="classSensor.html" title="Parent class for sensor objects.">Sensor</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>String Complete CSV row for iteration </dd></dl>
 
 </div>
 </div>
@@ -418,15 +479,15 @@ Variables</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= {&amp;<a class="code" href="main_8cpp.html#a326611a549ba21af9061facbfe145260">bme_sensor</a>,     &amp;<a class="code" href="main_8cpp.html#a47dfda590def210c7c02f431790aa20f">geiger_sensor</a>, &amp;<a class="code" href="main_8cpp.html#a2711f8eaa9460bd825dc5fa05a6fe777">ina260_sensor</a>,</div>
 <div class="line">                     &amp;<a class="code" href="main_8cpp.html#a65d3af343150171c2dc94255abca5c54">lsm9ds1_sensor</a>, &amp;<a class="code" href="main_8cpp.html#aee37f117e05ca5394d692e7420058f86">sht31_sensor</a>,  &amp;<a class="code" href="main_8cpp.html#a7ea47e2057b8377cca3ada270010cbe1">temp_sensor</a>,</div>
 <div class="line">                     &amp;<a class="code" href="main_8cpp.html#a605b2d944419ab59d5b481123c56c912">zopt220_sensor</a>, &amp;<a class="code" href="main_8cpp.html#a4da70d50cd9e181d4c45b2d503657c68">analog_sensor</a>, &amp;<a class="code" href="main_8cpp.html#a339f7667d8947529eca61e05eb6f2002">sgp30_sensor</a>}</div>
-<div class="ttc" id="amain_8cpp_html_a2711f8eaa9460bd825dc5fa05a6fe777"><div class="ttname"><a href="main_8cpp.html#a2711f8eaa9460bd825dc5fa05a6fe777">ina260_sensor</a></div><div class="ttdeci">INA260Sensor ina260_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:26</div></div>
-<div class="ttc" id="amain_8cpp_html_a326611a549ba21af9061facbfe145260"><div class="ttname"><a href="main_8cpp.html#a326611a549ba21af9061facbfe145260">bme_sensor</a></div><div class="ttdeci">BME680Sensor bme_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:24</div></div>
-<div class="ttc" id="amain_8cpp_html_a339f7667d8947529eca61e05eb6f2002"><div class="ttname"><a href="main_8cpp.html#a339f7667d8947529eca61e05eb6f2002">sgp30_sensor</a></div><div class="ttdeci">SGP30Sensor sgp30_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:32</div></div>
-<div class="ttc" id="amain_8cpp_html_a47dfda590def210c7c02f431790aa20f"><div class="ttname"><a href="main_8cpp.html#a47dfda590def210c7c02f431790aa20f">geiger_sensor</a></div><div class="ttdeci">GeigerSensor geiger_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:25</div></div>
-<div class="ttc" id="amain_8cpp_html_a4da70d50cd9e181d4c45b2d503657c68"><div class="ttname"><a href="main_8cpp.html#a4da70d50cd9e181d4c45b2d503657c68">analog_sensor</a></div><div class="ttdeci">AnalogSensor analog_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:31</div></div>
-<div class="ttc" id="amain_8cpp_html_a605b2d944419ab59d5b481123c56c912"><div class="ttname"><a href="main_8cpp.html#a605b2d944419ab59d5b481123c56c912">zopt220_sensor</a></div><div class="ttdeci">ZOPT220Sensor zopt220_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:30</div></div>
-<div class="ttc" id="amain_8cpp_html_a65d3af343150171c2dc94255abca5c54"><div class="ttname"><a href="main_8cpp.html#a65d3af343150171c2dc94255abca5c54">lsm9ds1_sensor</a></div><div class="ttdeci">LSM9DS1Sensor lsm9ds1_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:27</div></div>
-<div class="ttc" id="amain_8cpp_html_a7ea47e2057b8377cca3ada270010cbe1"><div class="ttname"><a href="main_8cpp.html#a7ea47e2057b8377cca3ada270010cbe1">temp_sensor</a></div><div class="ttdeci">TempSensor temp_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:29</div></div>
-<div class="ttc" id="amain_8cpp_html_aee37f117e05ca5394d692e7420058f86"><div class="ttname"><a href="main_8cpp.html#aee37f117e05ca5394d692e7420058f86">sht31_sensor</a></div><div class="ttdeci">SHT31Sensor sht31_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:28</div></div>
+<div class="ttc" id="amain_8cpp_html_a2711f8eaa9460bd825dc5fa05a6fe777"><div class="ttname"><a href="main_8cpp.html#a2711f8eaa9460bd825dc5fa05a6fe777">ina260_sensor</a></div><div class="ttdeci">INA260Sensor ina260_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:28</div></div>
+<div class="ttc" id="amain_8cpp_html_a326611a549ba21af9061facbfe145260"><div class="ttname"><a href="main_8cpp.html#a326611a549ba21af9061facbfe145260">bme_sensor</a></div><div class="ttdeci">BME680Sensor bme_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:26</div></div>
+<div class="ttc" id="amain_8cpp_html_a339f7667d8947529eca61e05eb6f2002"><div class="ttname"><a href="main_8cpp.html#a339f7667d8947529eca61e05eb6f2002">sgp30_sensor</a></div><div class="ttdeci">SGP30Sensor sgp30_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:34</div></div>
+<div class="ttc" id="amain_8cpp_html_a47dfda590def210c7c02f431790aa20f"><div class="ttname"><a href="main_8cpp.html#a47dfda590def210c7c02f431790aa20f">geiger_sensor</a></div><div class="ttdeci">GeigerSensor geiger_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:27</div></div>
+<div class="ttc" id="amain_8cpp_html_a4da70d50cd9e181d4c45b2d503657c68"><div class="ttname"><a href="main_8cpp.html#a4da70d50cd9e181d4c45b2d503657c68">analog_sensor</a></div><div class="ttdeci">AnalogSensor analog_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:33</div></div>
+<div class="ttc" id="amain_8cpp_html_a605b2d944419ab59d5b481123c56c912"><div class="ttname"><a href="main_8cpp.html#a605b2d944419ab59d5b481123c56c912">zopt220_sensor</a></div><div class="ttdeci">ZOPT220Sensor zopt220_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:32</div></div>
+<div class="ttc" id="amain_8cpp_html_a65d3af343150171c2dc94255abca5c54"><div class="ttname"><a href="main_8cpp.html#a65d3af343150171c2dc94255abca5c54">lsm9ds1_sensor</a></div><div class="ttdeci">LSM9DS1Sensor lsm9ds1_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:29</div></div>
+<div class="ttc" id="amain_8cpp_html_a7ea47e2057b8377cca3ada270010cbe1"><div class="ttname"><a href="main_8cpp.html#a7ea47e2057b8377cca3ada270010cbe1">temp_sensor</a></div><div class="ttdeci">TempSensor temp_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:31</div></div>
+<div class="ttc" id="amain_8cpp_html_aee37f117e05ca5394d692e7420058f86"><div class="ttname"><a href="main_8cpp.html#aee37f117e05ca5394d692e7420058f86">sht31_sensor</a></div><div class="ttdeci">SHT31Sensor sht31_sensor</div><div class="ttdef"><b>Definition:</b> main.cpp:30</div></div>
 </div><!-- fragment -->
 </div>
 </div>
