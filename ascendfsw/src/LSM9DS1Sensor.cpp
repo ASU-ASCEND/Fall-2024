@@ -16,7 +16,9 @@ LSM9DS1Sensor::LSM9DS1Sensor(unsigned long minimum_period)
     : Sensor("LSM9DS1",
              "LSM9DS1 AccX, LSM9DS1 AccY, LSM9DS1 AccZ, LSM9DS1 GyroX, LSM9DS1 "
              "GyroY, LSM9DS1 GyroZ, LSM9DS1 MagX, LSM9DS1 MagY, LSM9DS1 MagZ,",
-             9, minimum_period) {}
+              9, minimum_period),
+      IMU(SPI_MODE, 10, 9) {  // Initialize IMU with SPI mode and chip select pins
+}
 
 /**
  * @brief Verifies that the LSM is connected and working
@@ -25,7 +27,6 @@ LSM9DS1Sensor::LSM9DS1Sensor(unsigned long minimum_period)
  * @return false if not connected and working
  */
 bool LSM9DS1Sensor::verify() {
-  // return false;
   return IMU.begin();
 }
 
@@ -36,16 +37,33 @@ bool LSM9DS1Sensor::verify() {
  * MagX, MagY, MagZ,
  */
 String LSM9DS1Sensor::readData() {
-  float accX, accY, accZ;
-  IMU.readAcceleration(accX, accY, accZ);
+  IMU.readAccelGyroMag();
 
-  float gyroX, gyroY, gyroZ;
-  IMU.readGyroscope(gyroX, gyroY, gyroZ);
+  float accX = IMU.calcAccel(IMU.ax);
+  float accY = IMU.calcAccel(IMU.ay);
+  float accZ = IMU.calcAccel(IMU.az);
 
-  float magX, magY, magZ;
-  IMU.readMagneticField(magX, magY, magZ);
+  float gyroX = IMU.calcGyro(IMU.gx);
+  float gyroY = IMU.calcGyro(IMU.gy);
+  float gyroZ = IMU.calcGyro(IMU.gz);
+
+  float magX = IMU.calcMag(IMU.mx);
+  float magY = IMU.calcMag(IMU.my);
+  float magZ = IMU.calcMag(IMU.mz);
 
   return String(accX) + "," + String(accY) + "," + String(accZ) + "," +
          String(gyroX) + "," + String(gyroY) + "," + String(gyroZ) + "," +
          String(magX) + "," + String(magY) + "," + String(magZ) + ",";
+}
+
+/**
+ * @brief Calibrates the LSM9DS1 sensor by collecting offset data for gyro and accel
+ */
+void LSM9DS1Sensor::calibrate() {
+  Serial.println("Calibrating sensor... Please keep the sensor stationary.");
+  delay(3000);  // Give some time for the user to place the sensor still
+
+  IMU.calibrate(true);  // Perform automatic calibration for gyro and accel
+
+  Serial.println("Calibration complete.");
 }
