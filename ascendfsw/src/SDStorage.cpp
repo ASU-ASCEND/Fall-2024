@@ -13,8 +13,8 @@ SDStorage::SDStorage() : Storage("SD Card") {}
  * @return false otherwise
  */
 bool SDStorage::verify() {
-  // initialize SD card
-  if (!SD.begin(SD_CS_PIN)) return false;
+  // initialize SD card w/ instance
+  if (!SD.begin(SD_CS_PIN, SPI)) return false;
 
   // find unused file name
   int num = 0;
