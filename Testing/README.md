@@ -50,8 +50,9 @@ Protocol:
 <br/>Calibration:   
 
 #### [SHT31](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf): Humidity, Temperature
-Protocol: 
-<br/>Calibration:  
+Protocol: I2C Interface with communication speeds up to 1 MHz and two user selectable addresses
+
+<br/>Calibration: The sensor reloads calibration data prior to every measurement by default, self calibrated in calibration memory.
 
 #### [ZOPT220](https://www.sparkfun.com/products/retired/14264): UVB Sensor
 --Not being used this semester--

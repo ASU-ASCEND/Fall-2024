@@ -7,7 +7,7 @@ Flight software for the ASU Fall 2024 ASCEND Payload
 
 [Testing](/Testing/): Test and calibration information for sensor and storage modules.
 
-[Watchdog](/Watchdog/)/[Watchdog_ArduinoIDE](/Watchdog_ArduinoIDE/): Software for watchdog chip.
+[Watchdog](/Watchdog/): Software for watchdog Attiny85 chip.
 
 [ascendfsw](/ascendfsw/): Payload flight software.
 
@@ -23,11 +23,11 @@ Flight software for the ASU Fall 2024 ASCEND Payload
 | 9/18  | Reviewing last semester, Github Org.    | &#x2611;   |
 | 9/25  | Github, Arduino, Platform.io and FSWv1  | &#x2611;   |
 | 10/2  | Merging, Datasheets, and Calibration    | &#x2611;   |
-| 10/9  | Starting FSWv2                          | &#x2611;   |
-| 10/16 | FSWv2 (cont.) and Science Mission       | &#x2610;   |
-| 10/23 | DP:Tv1, DP:3Dv1                         | &#x2610;   |
-| 10/30 | DP:Tv2                                  | &#x2610;   |
-| 11/6  | FSWv3, DP:3Dv2                          | &#x2610;   |
+| 10/9  | Starting FSWv2 Improvements             | &#x2611;   |
+| 10/16 | FSWv2 More Improvements and New Sensors | &#x2611;   |
+| 10/23 | FSWv2 (cont.)                           | &#x2610;   |
+| 10/30 | DP:Tv1, DP:3Dv1                         | &#x2610;   |
+| 11/6  | FSWv3, DP:3Dv2, DP:Tv2                  | &#x2610;   |
 | 11/13 | Testing FSWv3, DP:3Dv3                  | &#x2610;   |
 | 11/21 | Launch                                  | &#x2610;   |
 

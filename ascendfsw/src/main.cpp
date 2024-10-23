@@ -2,6 +2,7 @@
 
 #include "Sensor.h"
 #include "Storage.h"
+
 // include sensor headers here
 #include "AnalogSensor.h"
 #include "BME680Sensor.h"
@@ -13,12 +14,12 @@
 #include "TempSensor.h"
 #include "ZOPT220Sensor.h"
 
-#define ON_BOARD_LED_PIN 25
-
 // helper function definitions
 int verifySensors();
 int verifyStorage();
 void storeData(String data);
+String readSensorData();
+void handleDataInterface();
 
 // Global variables
 // sensor classes
@@ -50,6 +51,13 @@ Storage* storages[] = {&sd_storage};
 const int storages_len = sizeof(storages) / sizeof(storages[0]);
 bool storages_verify[storages_len];
 
+// pin definitions
+#define ON_BOARD_LED_PIN 25
+#define HEARTBEAT_PIN_0 14
+#define HEARTBEAT_PIN_1 15
+#define DATA_INTERFACE_PIN 1
+
+// global variables for main
 // loop counter
 unsigned int it = 0;
 
@@ -60,9 +68,12 @@ unsigned int it = 0;
 void setup() {
   // start serial
   Serial.begin(115200);
-  while (!Serial)
+  while (!Serial)  // remove before flight
     ;
-  delay(5000);  // wait for 5 seconds to ensure serial is initialized
+
+  // setup heartbeat pins
+  pinMode(HEARTBEAT_PIN_0, OUTPUT);
+  pinMode(HEARTBEAT_PIN_1, OUTPUT);
 
   // verify sensors
   if (verifySensors() == 0) {
@@ -101,22 +112,31 @@ void setup() {
  */
 void loop() {
   it++;
+
+  // toggle heartbeats
+  digitalWrite(HEARTBEAT_PIN_0, (it & 0x1));
+  digitalWrite(HEARTBEAT_PIN_1, (it & 0x1));
+
+  // switch to data recovery mode
+  if (digitalRead(DATA_INTERFACE_PIN) == HIGH) {
+    handleDataInterface();
+    return;
+  }
+
+  // start print line with iteration number
   Serial.print("it: " + String(it) + "\t");
 
   // build csv row
-  String csv_row = String(millis()) + ",";
-  for (int i = 0; i < sensors_len; i++) {
-    if (sensors_verify[i]) {
-      csv_row += sensors[i]->getDataCSV();
-    }
-  }
+  String csv_row = readSensorData();
+
+  // print csv row
   Serial.println(csv_row);
 
-  // store csv
+  // store csv row
   storeData(csv_row);
 
-  delay(500);
-  digitalWrite(ON_BOARD_LED_PIN, it % 2);
+  delay(500);                                  // remove before flight
+  digitalWrite(ON_BOARD_LED_PIN, (it & 0x1));  // toggle light with iteration
 }
 
 /**
@@ -142,6 +162,21 @@ int verifySensors() {
   Serial.println();
 
   return count;
+}
+
+/**
+ * @brief Read data from each verified Sensor
+ *
+ * @return String Complete CSV row for iteration
+ */
+String readSensorData() {
+  String csv_row = String(millis()) + ",";
+  for (int i = 0; i < sensors_len; i++) {
+    if (sensors_verify[i]) {
+      csv_row += sensors[i]->getDataCSV();
+    }
+  }
+  return csv_row;
 }
 
 /**
@@ -172,6 +207,12 @@ void storeData(String data) {
     storages[i]->store(data);
   }
 }
+
+/**
+ * @brief Handles data interface mode for retrieving data from flash memory
+ *
+ */
+void handleDataInterface() { delay(100); }
 
 /** -------------------------------------------------------------------
  * CORE 1 CODE ONLY AFTER THIS, DO NOT MIX CODE FOR THE CORES
