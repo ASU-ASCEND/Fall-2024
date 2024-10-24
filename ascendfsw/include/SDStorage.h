@@ -4,6 +4,8 @@
 #include "SD.h"
 #include "Storage.h"
 
+#include "ErrorDisplay.h"
+
 #define SD_SPI1 0
 
 #define SD_CS_PIN 9

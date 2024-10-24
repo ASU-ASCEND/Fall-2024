@@ -16,9 +16,15 @@ bool SDStorage::verify() {
 // initialize SD card w/ instance
 // setup SPI1
 #if SD_SPI1
-  if (!SD.begin(SD_CS_PIN, this->sd_spi_1)) return false;
+  if (!SD.begin(SD_CS_PIN, this->sd_spi_1)){
+    ErrorDisplay::instance().addCode(Error::NO_SD_CARD); 
+    return false;
+  }
 #else
-  if (!SD.begin(SD_CS_PIN)) return false;
+  if (!SD.begin(SD_CS_PIN)){
+    ErrorDisplay::instance().addCode(Error::NO_SD_CARD); 
+    return false;
+  }
 #endif
 
   // find unused file name
