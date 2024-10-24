@@ -4,7 +4,9 @@
 #include "SD.h"
 #include "Storage.h"
 
-#define SD_CS_PIN 17
+#define SD_SPI1 0
+
+#define SD_CS_PIN 9
 
 /**
  * @brief Implementation of a Storage device to interface with an SD card
@@ -13,6 +15,9 @@
 class SDStorage : public Storage {
  private:
   String file_name;
+  #if SD_SPI1
+  SPIClassRP2040 sd_spi_1 = SPIClassRP2040(spi1, 8, 9, 10, 11);
+  #endif
 
  public:
   SDStorage();
