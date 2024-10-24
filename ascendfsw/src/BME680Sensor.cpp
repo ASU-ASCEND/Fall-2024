@@ -40,15 +40,15 @@ BME680Sensor::BME680Sensor(unsigned long minimum_period)
  * @return false - If the sensor is not detected or fails to initialize.
  */
 bool BME680Sensor::verify() {
-  #if SPI_MODE // Using SPI
+#if SPI_MODE  // Using SPI
   if (!bme.begin(SPI_CS_PIN, spi0)) {
     return false;
   }
-  #else // Using I2C
+#else  // Using I2C
   if (!bme.begin()) {
     return false;
   }
-  #endif
+#endif
 
   // Set up oversampling and filter initialization
   bme.setTemperatureOversampling(BME680_OS_8X);
