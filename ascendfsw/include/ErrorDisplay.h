@@ -35,9 +35,9 @@ class ErrorDisplay {
     ErrorDisplay(){
       this->pin_level = 0; 
       this->code = NONE; 
-      pinMode(ERROR_PIN_0, OUTPUT); 
-      pinMode(ERROR_PIN_1, OUTPUT); 
       pinMode(ERROR_PIN_2, OUTPUT); 
+      pinMode(ERROR_PIN_1, OUTPUT); 
+      pinMode(ERROR_PIN_0, OUTPUT); 
     }
 
   public:
