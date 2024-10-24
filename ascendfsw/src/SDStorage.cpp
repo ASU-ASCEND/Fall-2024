@@ -30,6 +30,7 @@ bool SDStorage::verify() {
   // find unused file name
   int num = 0;
   while (SD.exists("DATA" + String(num) + ".CSV")) num++;
+  if(num != 0) ErrorDisplay::instance().addCode(Error::POWER_CYCLED); 
   this->file_name = "DATA" + String(num) + ".CSV";
 
   // create file
@@ -47,7 +48,10 @@ bool SDStorage::verify() {
  */
 void SDStorage::store(String data) {
   File output = SD.open(this->file_name, FILE_WRITE);
-  if (!output) Serial.println("SD card write failed");
+  if (!output){
+    Serial.println("SD card write failed");
+    ErrorDisplay::instance().addCode(Error::NO_SD_CARD); 
+  }
 
   output.println(data);
 
