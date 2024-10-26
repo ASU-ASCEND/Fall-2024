@@ -13,15 +13,13 @@ RadioStorage::RadioStorage() : Storage("Radio") {}
  * @return false otherwise
  */
 bool RadioStorage::verify() {
-  Serial1.begin(115200); 
-  return Serial1; 
+  Serial1.begin(115200);
+  return Serial1;
 }
 
 /**
  * @brief Send data to the radio for transmitting
  *
- * @param data Data to transmit 
+ * @param data Data to transmit
  */
-void RadioStorage::store(String data) {
-  Serial1.println(data);
-}
+void RadioStorage::store(String data) { Serial1.println(data); }
