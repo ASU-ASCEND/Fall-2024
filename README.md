@@ -25,8 +25,8 @@ Flight software for the ASU Fall 2024 ASCEND Payload
 | 10/2  | Merging, Datasheets, and Calibration    | &#x2611;   |
 | 10/9  | Starting FSWv2 Improvements             | &#x2611;   |
 | 10/16 | FSWv2 More Improvements and New Sensors | &#x2611;   |
-| 10/23 | FSWv2 (cont.)                           | &#x2610;   |
-| 10/30 | DP:Tv1, DP:3Dv1                         | &#x2610;   |
+| 10/23 | FSWv2 (cont.)                           | &#x2611;   |
+| 10/30 | Testing, Intro DP:Tv1 and DP:3Dv1       | &#x2610;   |
 | 11/6  | FSWv3, DP:3Dv2, DP:Tv2                  | &#x2610;   |
 | 11/13 | Testing FSWv3, DP:3Dv3                  | &#x2610;   |
 | 11/21 | Launch                                  | &#x2610;   |
