@@ -60,8 +60,12 @@ Protocol:
 <br/>Calibration:  
 
 #### [SGP30](https://www.mouser.com/pdfdocs/Sensirion_Gas_Sensors_SGP30_Datasheet_EN-1148053.pdf): Gas Sensor
-Protocol: 
-<br/>Calibration:   
+Protocol: I^2C
+<br/>Callibration:
+Sensor raw signals are used as inputs for the on-chip calibration and baseline compensation algorithms.
+The TVOC and CO2 equivalent are calculated from the sensor signals.
+Sensor is 2 data bytes (MSB first) and 1 CRC byte in intervals of 1s for each of two air quality signals.
+First 15 seconds is intitialization phase and returns fixed values of TVOC and CO2.
 
 #### [SHT31](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf): Humidity, Temperature
 Protocol: I2C Interface with communication speeds up to 1 MHz and two user selectable addresses
