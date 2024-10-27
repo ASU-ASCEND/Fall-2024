@@ -10,7 +10,8 @@
  */
 class BME280Sensor : public Sensor {
  private:
-  BME280 bme; 
+  BME280 bme;
+
  public:
   BME280Sensor();
   BME280Sensor(unsigned long minium_period);
