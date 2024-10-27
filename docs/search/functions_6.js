@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ina260sensor_191',['INA260Sensor',['../classINA260Sensor.html#a042f617dabe0fdd117cd1ba7cdb8723d',1,'INA260Sensor::INA260Sensor()'],['../classINA260Sensor.html#a15132c8e875b5cd00b243bf42b65efd9',1,'INA260Sensor::INA260Sensor(unsigned long minimum_period)']]]
+  ['handledatainterface_213',['handleDataInterface',['../main_8cpp.html#a222d3cef3e43d77865ecbd2f95edba3a',1,'main.cpp']]]
 ];

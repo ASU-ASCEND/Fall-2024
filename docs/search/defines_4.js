@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wind_5fpin_263',['WIND_PIN',['../AnalogSensor_8h.html#aba0c6bbc4f09561494697d5ec87ab839',1,'AnalogSensor.h']]]
+  ['pt1000_5fpin_289',['PT1000_PIN',['../AnalogSensor_8h.html#a330caf3be7eb66e72d2b36e1e72f717d',1,'AnalogSensor.h']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pt1000_5fpin_258',['PT1000_PIN',['../AnalogSensor_8h.html#a330caf3be7eb66e72d2b36e1e72f717d',1,'AnalogSensor.h']]]
+  ['heartbeat_5fpin_5f0_286',['HEARTBEAT_PIN_0',['../main_8cpp.html#abaa3035bca6ee12a60c3b4b03aa7574a',1,'main.cpp']]],
+  ['heartbeat_5fpin_5f1_287',['HEARTBEAT_PIN_1',['../main_8cpp.html#a1e93fe19ad4ef78d366cc8f619da977a',1,'main.cpp']]]
 ];
