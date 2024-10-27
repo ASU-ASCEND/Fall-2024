@@ -44,13 +44,15 @@ const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
 
 // include storage headers here
+#include "RadioStorage.h"
 #include "SDStorage.h"
 
 // storage classes
 SDStorage sd_storage;
+RadioStorage radio_storage;
 
 // storage array
-Storage* storages[] = {&sd_storage};
+Storage* storages[] = {&sd_storage, &radio_storage};
 const int storages_len = sizeof(storages) / sizeof(storages[0]);
 bool storages_verify[storages_len];
 

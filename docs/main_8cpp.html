@@ -85,6 +85,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="SHT31Sensor_8h_source.html">SHT31Sensor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TempSensor_8h_source.html">TempSensor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ZOPT220Sensor_8h_source.html">ZOPT220Sensor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="RadioStorage_8h_source.html">RadioStorage.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SDStorage_8h_source.html">SDStorage.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
@@ -156,7 +157,9 @@ Variables</h2></td></tr>
 <tr class="separator:aeefd7b47f4c282cba9dbee667418920a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad957b3f59d6aa0ac31f6b666528f798d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSDStorage.html">SDStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad957b3f59d6aa0ac31f6b666528f798d">sd_storage</a></td></tr>
 <tr class="separator:ad957b3f59d6aa0ac31f6b666528f798d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39db351a5a127ccbd3893f4de5936b05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classStorage.html">Storage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a39db351a5a127ccbd3893f4de5936b05">storages</a> [] = {&amp;<a class="el" href="main_8cpp.html#ad957b3f59d6aa0ac31f6b666528f798d">sd_storage</a>}</td></tr>
+<tr class="memitem:aa9bf2d87eb422349a53cce59be5d5fe7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRadioStorage.html">RadioStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aa9bf2d87eb422349a53cce59be5d5fe7">radio_storage</a></td></tr>
+<tr class="separator:aa9bf2d87eb422349a53cce59be5d5fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39db351a5a127ccbd3893f4de5936b05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classStorage.html">Storage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a39db351a5a127ccbd3893f4de5936b05">storages</a> [] = {&amp;<a class="el" href="main_8cpp.html#ad957b3f59d6aa0ac31f6b666528f798d">sd_storage</a>, &amp;<a class="el" href="main_8cpp.html#aa9bf2d87eb422349a53cce59be5d5fe7">radio_storage</a>}</td></tr>
 <tr class="separator:a39db351a5a127ccbd3893f4de5936b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12b260a884350838d7056cd758cd8cbe"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a12b260a884350838d7056cd758cd8cbe">storages_len</a> = sizeof(<a class="el" href="main_8cpp.html#a39db351a5a127ccbd3893f4de5936b05">storages</a>) / sizeof(<a class="el" href="main_8cpp.html#a39db351a5a127ccbd3893f4de5936b05">storages</a>[0])</td></tr>
 <tr class="separator:a12b260a884350838d7056cd758cd8cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -451,6 +454,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aa9bf2d87eb422349a53cce59be5d5fe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9bf2d87eb422349a53cce59be5d5fe7">&#9670;&nbsp;</a></span>radio_storage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classRadioStorage.html">RadioStorage</a> radio_storage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad957b3f59d6aa0ac31f6b666528f798d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad957b3f59d6aa0ac31f6b666528f798d">&#9670;&nbsp;</a></span>sd_storage</h2>
 
@@ -554,7 +571,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classStorage.html">Storage</a>* storages[] = {&amp;<a class="el" href="main_8cpp.html#ad957b3f59d6aa0ac31f6b666528f798d">sd_storage</a>}</td>
+          <td class="memname"><a class="el" href="classStorage.html">Storage</a>* storages[] = {&amp;<a class="el" href="main_8cpp.html#ad957b3f59d6aa0ac31f6b666528f798d">sd_storage</a>, &amp;<a class="el" href="main_8cpp.html#aa9bf2d87eb422349a53cce59be5d5fe7">radio_storage</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
