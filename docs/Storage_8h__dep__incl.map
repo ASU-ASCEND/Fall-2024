@@ -1,6 +1,8 @@
 <map id="Storage.h" name="Storage.h">
-<area shape="rect" id="node1" title=" " alt="" coords="49,5,133,32"/>
-<area shape="rect" id="node2" href="$SDStorage_8h.html" title=" " alt="" coords="85,80,187,107"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title=" " alt="" coords="5,155,88,181"/>
-<area shape="rect" id="node4" href="$SDStorage_8cpp.html" title=" " alt="" coords="112,155,229,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="165,5,249,32"/>
+<area shape="rect" id="node2" href="$RadioStorage_8h.html" title=" " alt="" coords="47,80,169,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title=" " alt="" coords="165,155,248,181"/>
+<area shape="rect" id="node5" href="$SDStorage_8h.html" title=" " alt="" coords="245,80,347,107"/>
+<area shape="rect" id="node4" href="$RadioStorage_8cpp.html" title=" " alt="" coords="5,155,141,181"/>
+<area shape="rect" id="node6" href="$SDStorage_8cpp.html" title=" " alt="" coords="272,155,389,181"/>
 </map>
