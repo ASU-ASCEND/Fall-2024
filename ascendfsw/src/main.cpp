@@ -183,7 +183,7 @@ String readSensorData() {
 }
 
 /**
- * @brief Verifies the connection with each storage device
+ * @brief Verifies the connection with each storage device, and defines the header_condensed field
  *
  * @return int The number of verified storage devices
  */
