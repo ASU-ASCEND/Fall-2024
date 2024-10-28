@@ -189,19 +189,19 @@ String readSensorData() {
  */
 int verifyStorage() {
   int count = 0;
-  uint16_t bit_array = 1; // start with a bit to show the beginning 
+  uint32_t bit_array = 1; // start with a bit to show the beginning 
   for (int i = 0; i < storages_len; i++) {
     storages_verify[i] = storages[i]->verify();
     if (storages_verify[i]) {
       Serial.println(storages[i]->getStorageName() + " verified.");
       count++;
-      bit_array = (bit_array << 1) | 0b1; 
+      bit_array = (bit_array << 1) | 0b1; // if the sensor is verified shift a 1 in 
     }
     else {
-      bit_array = (bit_array << 1); 
+      bit_array = (bit_array << 1); // otherwise shift a 0 in 
     }
   }
-  header_condensed = String(bit_array, HEX); 
+  header_condensed = String(bit_array, HEX); // translate it to hex to condense it for the csv
   return count;
 }
 
