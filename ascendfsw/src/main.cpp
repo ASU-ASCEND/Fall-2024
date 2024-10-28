@@ -39,6 +39,7 @@ Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
                      &zopt220_sensor, &analog_sensor, &sgp30_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
+String header_condensed = ""; 
 
 // include storage headers here
 #include "RadioStorage.h"
@@ -94,7 +95,7 @@ void setup() {
   }
 
   // build csv header
-  String header = "Millis,";
+  String header = "Header, Millis,";
   for (int i = 0; i < sensors_len; i++) {
     if (sensors_verify[i]) {
       header += sensors[i]->getSensorCSVHeader();
@@ -172,7 +173,7 @@ int verifySensors() {
  * @return String Complete CSV row for iteration
  */
 String readSensorData() {
-  String csv_row = String(millis()) + ",";
+  String csv_row = header_condensed + "," + String(millis()) + ",";
   for (int i = 0; i < sensors_len; i++) {
     if (sensors_verify[i]) {
       csv_row += sensors[i]->getDataCSV();
@@ -188,14 +189,19 @@ String readSensorData() {
  */
 int verifyStorage() {
   int count = 0;
+  uint16_t bit_array = 1; // start with a bit to show the beginning 
   for (int i = 0; i < storages_len; i++) {
     storages_verify[i] = storages[i]->verify();
     if (storages_verify[i]) {
       Serial.println(storages[i]->getStorageName() + " verified.");
       count++;
+      bit_array = (bit_array << 1) | 0b1; 
+    }
+    else {
+      bit_array = (bit_array << 1); 
     }
   }
-
+  header_condensed = String(bit_array, HEX); 
   return count;
 }
 
