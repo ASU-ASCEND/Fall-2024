@@ -4,14 +4,19 @@
  * @brief Default constructor for the MTK3339Sensor, sets minimum_period to 0 ms
  *
  */
-MTK3339Sensor::MTK3339Sensor() : MTK3339Sensor(0) {}
+
+MTK3339Sensor::MTK3339Sensor(int pin)
+    : Sensor("MTK3339", "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,", 7), // Base class constructor
+      GPS(&SPI, pin),  // Initialize GPS with SPI and pin
+      pin(pin) {    // Initialize pin
+}
 
 /**
  * @brief Constructor for the MTK3339Sensor
  *
  * @param minimum_period Minimum period between sensor reads in ms
  */
-MTK3339Sensor::MTK3339Sensor(unsigned long minimum_period)
+MTK3339Sensor::MTK3339Sensor(unsigned long minimum_period, int pin)
     : Sensor("MTK3339",
              "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,", 7) {}
 
@@ -22,7 +27,7 @@ MTK3339Sensor::MTK3339Sensor(unsigned long minimum_period)
  * @return false if it is not connected and working
  */
 bool MTK3339Sensor::verify() {
-  if (!GPS.begin(0x10)) {  // returns 0 on success
+  if (!GPS.begin(pin)) {  // returns 0 on success
     GPS.sendCommand(PMTK_SET_NMEA_OUTPUT_RMCGGA);
     GPS.sendCommand(PMTK_SET_NMEA_UPDATE_1HZ);  // 1 Hz update rate
     delay(1000);
