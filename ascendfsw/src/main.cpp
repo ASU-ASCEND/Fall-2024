@@ -44,6 +44,7 @@ Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
                      &bme280_sensor,  &ens160_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
+String header_condensed = ""; 
 
 // include storage headers here
 #include "RadioStorage.h"
@@ -99,7 +100,7 @@ void setup() {
   }
 
   // build csv header
-  String header = "Millis,";
+  String header = "Header,Millis,";
   for (int i = 0; i < sensors_len; i++) {
     if (sensors_verify[i]) {
       header += sensors[i]->getSensorCSVHeader();
@@ -153,10 +154,19 @@ void loop() {
  */
 int verifySensors() {
   int count = 0;
+  uint32_t bit_array = 0b11; // start with a bit for header and for millis (they will always be there) 
   for (int i = 0; i < sensors_len; i++) {
     sensors_verify[i] = sensors[i]->verify();
-    if (sensors_verify[i]) count++;
+    if (sensors_verify[i]){
+      count++;
+      bit_array = (bit_array << 1) | 0b1; // if the sensor is verified shift a 1 in 
+    }
+    else {
+      bit_array = (bit_array << 1); // otherwise shift a 0 in 
+    }
   }
+  header_condensed = String(bit_array, HEX); // translate it to hex to condense it for the csv
+
   Serial.println("Pin Verification Results:");
   for (int i = 0; i < sensors_len; i++) {
     Serial.print(sensors[i]->getSensorName());
@@ -167,7 +177,6 @@ int verifySensors() {
                          "definitions in the respective sensor header file)");
   }
   Serial.println();
-
   return count;
 }
 
@@ -177,7 +186,7 @@ int verifySensors() {
  * @return String Complete CSV row for iteration
  */
 String readSensorData() {
-  String csv_row = String(millis()) + ",";
+  String csv_row = header_condensed + "," + String(millis()) + ",";
   for (int i = 0; i < sensors_len; i++) {
     if (sensors_verify[i]) {
       csv_row += sensors[i]->getDataCSV();
@@ -187,7 +196,7 @@ String readSensorData() {
 }
 
 /**
- * @brief Verifies the connection with each storage device
+ * @brief Verifies the connection with each storage device, and defines the header_condensed field
  *
  * @return int The number of verified storage devices
  */
@@ -200,7 +209,6 @@ int verifyStorage() {
       count++;
     }
   }
-
   return count;
 }
 
