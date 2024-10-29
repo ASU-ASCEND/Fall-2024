@@ -113,7 +113,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:aef42a5a8a5d889c599fa964be60eca24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies each sensor by calling each verify() function.  <a href="main_8cpp.html#aef42a5a8a5d889c599fa964be60eca24">More...</a><br /></td></tr>
 <tr class="separator:aef42a5a8a5d889c599fa964be60eca24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a339ac134cdee34bfe9d5f539ab14ba00"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a339ac134cdee34bfe9d5f539ab14ba00">verifyStorage</a> ()</td></tr>
-<tr class="memdesc:a339ac134cdee34bfe9d5f539ab14ba00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies the connection with each storage device.  <a href="main_8cpp.html#a339ac134cdee34bfe9d5f539ab14ba00">More...</a><br /></td></tr>
+<tr class="memdesc:a339ac134cdee34bfe9d5f539ab14ba00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies the connection with each storage device, and defines the header_condensed field.  <a href="main_8cpp.html#a339ac134cdee34bfe9d5f539ab14ba00">More...</a><br /></td></tr>
 <tr class="separator:a339ac134cdee34bfe9d5f539ab14ba00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f14b13edaa51207f1ff6752e4696ee7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0f14b13edaa51207f1ff6752e4696ee7">storeData</a> (String data)</td></tr>
 <tr class="memdesc:a0f14b13edaa51207f1ff6752e4696ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends data to each storage device.  <a href="main_8cpp.html#a0f14b13edaa51207f1ff6752e4696ee7">More...</a><br /></td></tr>
@@ -161,6 +161,8 @@ Variables</h2></td></tr>
 <tr class="separator:aa2e2e34d5a2889006d561d83bd0287a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeefd7b47f4c282cba9dbee667418920a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aeefd7b47f4c282cba9dbee667418920a">sensors_verify</a> [<a class="el" href="main_8cpp.html#aa2e2e34d5a2889006d561d83bd0287a6">sensors_len</a>]</td></tr>
 <tr class="separator:aeefd7b47f4c282cba9dbee667418920a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0745405a2027325a40f1c9cf7420db60"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0745405a2027325a40f1c9cf7420db60">header_condensed</a> = &quot;&quot;</td></tr>
+<tr class="separator:a0745405a2027325a40f1c9cf7420db60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad957b3f59d6aa0ac31f6b666528f798d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSDStorage.html">SDStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad957b3f59d6aa0ac31f6b666528f798d">sd_storage</a></td></tr>
 <tr class="separator:ad957b3f59d6aa0ac31f6b666528f798d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9bf2d87eb422349a53cce59be5d5fe7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRadioStorage.html">RadioStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aa9bf2d87eb422349a53cce59be5d5fe7">radio_storage</a></td></tr>
@@ -370,7 +372,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Verifies the connection with each storage device. </p>
+<p>Verifies the connection with each storage device, and defines the header_condensed field. </p>
 <dl class="section return"><dt>Returns</dt><dd>int The number of verified storage devices </dd></dl>
 
 </div>
@@ -440,6 +442,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classGeigerSensor.html">GeigerSensor</a> geiger_sensor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0745405a2027325a40f1c9cf7420db60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0745405a2027325a40f1c9cf7420db60">&#9670;&nbsp;</a></span>header_condensed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String header_condensed = &quot;&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">

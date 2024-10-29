@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['radio_5fstorage_286',['radio_storage',['../main_8cpp.html#aa9bf2d87eb422349a53cce59be5d5fe7',1,'main.cpp']]]
+  ['measuringperiodstart_286',['measuringPeriodStart',['../classGeigerSensor.html#a3f3e077ee3f22666f2ea23659e510e57',1,'GeigerSensor']]],
+  ['minimum_5fperiod_287',['minimum_period',['../classSensor.html#ab44ddb52915d3308953718c4ba3f63c4',1,'Sensor']]]
 ];
