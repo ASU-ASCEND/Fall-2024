@@ -5,7 +5,9 @@
 
 // include sensor headers here
 #include "AnalogSensor.h"
+#include "BME280Sensor.h"
 #include "BME680Sensor.h"
+#include "ENS160Sensor.h"
 #include "GeigerSensor.h"
 #include "INA260Sensor.h"
 #include "LSM9DS1Sensor.h"
@@ -32,11 +34,14 @@ TempSensor temp_sensor;
 ZOPT220Sensor zopt220_sensor;
 AnalogSensor analog_sensor;
 SGP30Sensor sgp30_sensor;
+BME280Sensor bme280_sensor;
+ENS160Sensor ens160_sensor;
 
 // sensor array
 Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
                      &lsm9ds1_sensor, &sht31_sensor,  &temp_sensor,
-                     &zopt220_sensor, &analog_sensor, &sgp30_sensor};
+                     &zopt220_sensor, &analog_sensor, &sgp30_sensor,
+                     &bme280_sensor,  &ens160_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
 
