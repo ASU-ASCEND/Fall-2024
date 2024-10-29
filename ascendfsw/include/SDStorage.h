@@ -6,7 +6,7 @@
 
 #define SD_SPI1 0
 
-#define SD_CS_PIN 9
+#define SD_CS_PIN 7
 
 /**
  * @brief Implementation of a Storage device to interface with an SD card

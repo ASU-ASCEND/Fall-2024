@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ina260_259',['ina260',['../classINA260Sensor.html#a81348d4fdf3a040932de924c09db4358',1,'INA260Sensor']]],
-  ['ina260_5fsensor_260',['ina260_sensor',['../main_8cpp.html#a2711f8eaa9460bd825dc5fa05a6fe777',1,'main.cpp']]],
-  ['it_261',['it',['../main_8cpp.html#ac65d766d5179dcc67a8e61e09a1ce969',1,'main.cpp']]]
+  ['geiger_5fsensor_277',['geiger_sensor',['../main_8cpp.html#a47dfda590def210c7c02f431790aa20f',1,'main.cpp']]],
+  ['gps_278',['GPS',['../classMTK3339Sensor.html#a4a809ba92d7a99aff32c8a4114cb54e5',1,'MTK3339Sensor']]]
 ];
