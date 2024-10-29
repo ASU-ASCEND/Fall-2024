@@ -12,7 +12,7 @@ BME280Sensor::BME280Sensor() : BME280Sensor(0) {}
  * @param minium_period Minimum time to wait between readings in ms
  */
 BME280Sensor::BME280Sensor(unsigned long minium_period)
-    : Sensor("BME280", "BME280RelHum %,BME280Pres Pa,BME280Alt m,BME280TempC",
+    : Sensor("BME280", "BME280RelHum %,BME280Pres Pa,BME280Alt m,BME280TempC,",
              4, minium_period) {}
 
 /**
