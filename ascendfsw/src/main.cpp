@@ -100,7 +100,7 @@ void setup() {
   }
 
   // build csv header
-  String header = "Header, Millis,";
+  String header = "Header,Millis,";
   for (int i = 0; i < sensors_len; i++) {
     if (sensors_verify[i]) {
       header += sensors[i]->getSensorCSVHeader();
@@ -154,10 +154,19 @@ void loop() {
  */
 int verifySensors() {
   int count = 0;
+  uint32_t bit_array = 0b11; // start with a bit for header and for millis (they will always be there) 
   for (int i = 0; i < sensors_len; i++) {
     sensors_verify[i] = sensors[i]->verify();
-    if (sensors_verify[i]) count++;
+    if (sensors_verify[i]){
+      count++;
+      bit_array = (bit_array << 1) | 0b1; // if the sensor is verified shift a 1 in 
+    }
+    else {
+      bit_array = (bit_array << 1); // otherwise shift a 0 in 
+    }
   }
+  header_condensed = String(bit_array, HEX); // translate it to hex to condense it for the csv
+
   Serial.println("Pin Verification Results:");
   for (int i = 0; i < sensors_len; i++) {
     Serial.print(sensors[i]->getSensorName());
@@ -168,7 +177,6 @@ int verifySensors() {
                          "definitions in the respective sensor header file)");
   }
   Serial.println();
-
   return count;
 }
 
@@ -194,19 +202,13 @@ String readSensorData() {
  */
 int verifyStorage() {
   int count = 0;
-  uint32_t bit_array = 1; // start with a bit to show the beginning 
   for (int i = 0; i < storages_len; i++) {
     storages_verify[i] = storages[i]->verify();
     if (storages_verify[i]) {
       Serial.println(storages[i]->getStorageName() + " verified.");
       count++;
-      bit_array = (bit_array << 1) | 0b1; // if the sensor is verified shift a 1 in 
-    }
-    else {
-      bit_array = (bit_array << 1); // otherwise shift a 0 in 
     }
   }
-  header_condensed = String(bit_array, HEX); // translate it to hex to condense it for the csv
   return count;
 }
 
