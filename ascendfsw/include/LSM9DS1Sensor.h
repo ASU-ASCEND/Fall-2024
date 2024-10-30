@@ -1,7 +1,7 @@
 #ifndef LSM9DS1SENSOR_H
 #define LSM9DS1SENSOR_H
 
-#include <Adafruit_LSM9DS1.h>      // Updated to use the Adafruit library
+#include <Adafruit_LSM9DS1.h>  // Updated to use the Adafruit library
 #include <Adafruit_Sensor.h>
 #include <string.h>
 
@@ -15,10 +15,10 @@ class LSM9DS1Sensor : public Sensor {
  private:
   Adafruit_LSM9DS1 lsm;  // Using Adafruit_LSM9DS1 instead of SparkFunLSM9DS1
 
- void setupSensor();    //Function to set up sensor ranges and data rates
-  float accel_offsets[3];  //Offsets for accelerometer calibration
-  float gyro_offsets[3];   //Offsets for gyroscope calibration
-  float mag_offsets[3];    //Offsets for magnetometer calibration
+  void setupSensor();      // Function to set up sensor ranges and data rates
+  float accel_offsets[3];  // Offsets for accelerometer calibration
+  float gyro_offsets[3];   // Offsets for gyroscope calibration
+  float mag_offsets[3];    // Offsets for magnetometer calibration
 
  public:
   LSM9DS1Sensor();

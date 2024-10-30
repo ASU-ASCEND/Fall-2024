@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['sdstorage_174',['SDStorage',['../classSDStorage.html',1,'']]],
-  ['sensor_175',['Sensor',['../classSensor.html',1,'']]],
-  ['sgp30sensor_176',['SGP30Sensor',['../classSGP30Sensor.html',1,'']]],
-  ['sht31sensor_177',['SHT31Sensor',['../classSHT31Sensor.html',1,'']]],
-  ['storage_178',['Storage',['../classStorage.html',1,'']]]
+  ['sdstorage_185',['SDStorage',['../classSDStorage.html',1,'']]],
+  ['sensor_186',['Sensor',['../classSensor.html',1,'']]],
+  ['sgp30sensor_187',['SGP30Sensor',['../classSGP30Sensor.html',1,'']]],
+  ['sht31sensor_188',['SHT31Sensor',['../classSHT31Sensor.html',1,'']]],
+  ['storage_189',['Storage',['../classStorage.html',1,'']]]
 ];

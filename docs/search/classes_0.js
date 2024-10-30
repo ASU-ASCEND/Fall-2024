@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['analogsensor_164',['AnalogSensor',['../classAnalogSensor.html',1,'']]],
-  ['as7331sensor_165',['AS7331Sensor',['../classAS7331Sensor.html',1,'']]]
+  ['analogsensor_175',['AnalogSensor',['../classAnalogSensor.html',1,'']]],
+  ['as7331sensor_176',['AS7331Sensor',['../classAS7331Sensor.html',1,'']]]
 ];
