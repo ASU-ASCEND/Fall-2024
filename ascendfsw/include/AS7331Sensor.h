@@ -3,14 +3,14 @@
 
 #include <SparkFun_AS7331.h>
 #include <Wire.h>
-#include "Sensor.h"
 #include <string.h>
 
+#include "Sensor.h"
+
 class AS7331Sensor : public Sensor {
- 
  private:
- SfeAS7331ArdI2C myUVSensor;
- 
+  SfeAS7331ArdI2C myUVSensor;
+
  public:
   AS7331Sensor();
   AS7331Sensor(unsigned long minimum_period);
@@ -19,4 +19,4 @@ class AS7331Sensor : public Sensor {
   String readData() override;
 };
 
-#endif 
+#endif

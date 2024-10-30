@@ -4,6 +4,7 @@
 #include "Storage.h"
 
 // include sensor headers here
+#include "AS7331Sensor.h"
 #include "AnalogSensor.h"
 #include "BME280Sensor.h"
 #include "BME680Sensor.h"
@@ -15,7 +16,6 @@
 #include "SHT31Sensor.h"
 #include "TempSensor.h"
 #include "ZOPT220Sensor.h"
-#include "AS7331Sensor.h"
 
 // helper function definitions
 int verifySensors();

@@ -1,15 +1,16 @@
 <map id="Sensor" name="Sensor">
-<area shape="rect" id="node1" title="Parent class for sensor objects." alt="" coords="925,5,1110,303"/>
-<area shape="rect" id="node2" href="$classAnalogSensor.html" title="Implementation of a Sensor for the analog readings." alt="" coords="5,358,141,479"/>
-<area shape="rect" id="node3" href="$classBME280Sensor.html" title="Implementation of a Sensor for the BME280." alt="" coords="165,358,309,479"/>
-<area shape="rect" id="node4" href="$classBME680Sensor.html" title="A class to interface with the Adafruit BME680 sensor for environmental data collection." alt="" coords="333,358,477,479"/>
-<area shape="rect" id="node5" href="$classENS160Sensor.html" title="Implementation of a Sensor for the ENS160." alt="" coords="501,358,643,479"/>
-<area shape="rect" id="node6" href="$classGeigerSensor.html" title="A class for interfacing with a Geiger counter sensor." alt="" coords="667,351,839,487"/>
-<area shape="rect" id="node7" href="$classINA260Sensor.html" title="A class to interface with the Adafruit INA260 sensor for current, voltage, and power measurements." alt="" coords="864,358,1003,479"/>
-<area shape="rect" id="node8" href="$classLSM9DS1Sensor.html" title="Implementation of the Sensor class for the LSM9DS1 (9&#45;axis IMU)" alt="" coords="1027,358,1179,479"/>
-<area shape="rect" id="node9" href="$classMTK3339Sensor.html" title="Implementation of the Adafruit MTK3339 GPS sensor." alt="" coords="1203,358,1355,479"/>
-<area shape="rect" id="node10" href="$classSGP30Sensor.html" title="Implementation of a Sensor for the SGP Air Quality sensor." alt="" coords="1379,358,1512,479"/>
-<area shape="rect" id="node11" href="$classSHT31Sensor.html" title="Interfaces with SHT31 Sensor to collect temperature and humidity data." alt="" coords="1536,351,1699,487"/>
-<area shape="rect" id="node12" href="$classTempSensor.html" title="Implementation of a Sensor for the onboard temperature sensor." alt="" coords="1723,358,1850,479"/>
-<area shape="rect" id="node13" href="$classZOPT220Sensor.html" title="A class to interface with the ZOPT220x UV and ambient light sensor." alt="" coords="1874,358,2025,479"/>
+<area shape="rect" id="node1" title="Parent class for sensor objects." alt="" coords="1005,5,1191,303"/>
+<area shape="rect" id="node2" href="$classAS7331Sensor.html" title=" " alt="" coords="5,358,145,479"/>
+<area shape="rect" id="node3" href="$classAnalogSensor.html" title="Implementation of a Sensor for the analog readings." alt="" coords="170,358,306,479"/>
+<area shape="rect" id="node4" href="$classBME280Sensor.html" title="Implementation of a Sensor for the BME280." alt="" coords="330,358,474,479"/>
+<area shape="rect" id="node5" href="$classBME680Sensor.html" title="A class to interface with the Adafruit BME680 sensor for environmental data collection." alt="" coords="498,358,642,479"/>
+<area shape="rect" id="node6" href="$classENS160Sensor.html" title="Implementation of a Sensor for the ENS160." alt="" coords="666,358,807,479"/>
+<area shape="rect" id="node7" href="$classGeigerSensor.html" title="A class for interfacing with a Geiger counter sensor." alt="" coords="832,351,1004,487"/>
+<area shape="rect" id="node8" href="$classINA260Sensor.html" title="A class to interface with the Adafruit INA260 sensor for current, voltage, and power measurements." alt="" coords="1029,358,1167,479"/>
+<area shape="rect" id="node9" href="$classLSM9DS1Sensor.html" title="Implementation of the Sensor class for the LSM9DS1 (9&#45;axis IMU)" alt="" coords="1191,358,1343,479"/>
+<area shape="rect" id="node10" href="$classMTK3339Sensor.html" title="Implementation of the Adafruit MTK3339 GPS sensor." alt="" coords="1367,358,1519,479"/>
+<area shape="rect" id="node11" href="$classSGP30Sensor.html" title="Implementation of a Sensor for the SGP Air Quality sensor." alt="" coords="1543,358,1677,479"/>
+<area shape="rect" id="node12" href="$classSHT31Sensor.html" title="Interfaces with SHT31 Sensor to collect temperature and humidity data." alt="" coords="1701,351,1863,487"/>
+<area shape="rect" id="node13" href="$classTempSensor.html" title="Implementation of a Sensor for the onboard temperature sensor." alt="" coords="1888,358,2015,479"/>
+<area shape="rect" id="node14" href="$classZOPT220Sensor.html" title="A class to interface with the ZOPT220x UV and ambient light sensor." alt="" coords="2039,358,2189,479"/>
 </map>
