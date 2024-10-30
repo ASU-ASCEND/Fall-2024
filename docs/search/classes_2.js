@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['geigersensor_141',['GeigerSensor',['../classGeigerSensor.html',1,'']]]
+  ['ens160sensor_162',['ENS160Sensor',['../classENS160Sensor.html',1,'']]]
 ];
