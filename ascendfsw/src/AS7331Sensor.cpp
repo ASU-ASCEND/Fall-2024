@@ -1,13 +1,7 @@
 #include <SparkFun_AS7331.h>
 #include <AS7331Sensor.h>
 
-
-
-
 AS7331Sensor::AS7331Sensor() : AS7331Sensor(0) {}
-
-
-
 
 AS7331Sensor::AS7331Sensor(unsigned long minium_period)
    : Sensor("AS7331", "UVA(nm), UVB(nm), UVC(nm)", 3, minium_period) {}
