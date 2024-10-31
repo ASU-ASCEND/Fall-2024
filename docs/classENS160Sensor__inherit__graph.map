@@ -1,0 +1,4 @@
+<map id="ENS160Sensor" name="ENS160Sensor">
+<area shape="rect" id="node1" title="Implementation of a Sensor for the ENS160." alt="" coords="27,351,169,472"/>
+<area shape="rect" id="node2" href="$classSensor.html" title="Parent class for sensor objects." alt="" coords="5,5,191,303"/>
+</map>

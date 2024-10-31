@@ -1,8 +1,9 @@
 #ifndef RADIO_STORAGE_H
 #define RADIO_STORAGE_H
 
-#include "Storage.h"
 #include <Arduino.h>
+
+#include "Storage.h"
 
 /**
  * @brief Implementation of a Storage device to interface with an SD card

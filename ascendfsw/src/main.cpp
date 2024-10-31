@@ -4,8 +4,11 @@
 #include "Storage.h"
 
 // include sensor headers here
+#include "AS7331Sensor.h"
 #include "AnalogSensor.h"
+#include "BME280Sensor.h"
 #include "BME680Sensor.h"
+#include "ENS160Sensor.h"
 #include "GeigerSensor.h"
 #include "INA260Sensor.h"
 #include "LSM9DS1Sensor.h"
@@ -32,22 +35,29 @@ TempSensor temp_sensor;
 ZOPT220Sensor zopt220_sensor;
 AnalogSensor analog_sensor;
 SGP30Sensor sgp30_sensor;
+BME280Sensor bme280_sensor;
+ENS160Sensor ens160_sensor;
+AS7331Sensor uv_sensor;
 
 // sensor array
 Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
                      &lsm9ds1_sensor, &sht31_sensor,  &temp_sensor,
-                     &zopt220_sensor, &analog_sensor, &sgp30_sensor};
+                     &zopt220_sensor, &analog_sensor, &sgp30_sensor,
+                     &bme280_sensor,  &ens160_sensor, &uv_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
+String header_condensed = "";
 
 // include storage headers here
+#include "RadioStorage.h"
 #include "SDStorage.h"
 
 // storage classes
 SDStorage sd_storage;
+RadioStorage radio_storage;
 
 // storage array
-Storage* storages[] = {&sd_storage};
+Storage* storages[] = {&sd_storage, &radio_storage};
 const int storages_len = sizeof(storages) / sizeof(storages[0]);
 bool storages_verify[storages_len];
 
@@ -102,7 +112,7 @@ void setup() {
   }
 
   // build csv header
-  String header = "Millis,";
+  String header = "Header,Millis,";
   for (int i = 0; i < sensors_len; i++) {
     if (sensors_verify[i]) {
       header += sensors[i]->getSensorCSVHeader();
@@ -162,10 +172,21 @@ void loop() {
  */
 int verifySensors() {
   int count = 0;
+  uint32_t bit_array = 0b11;  // start with a bit for header and for millis
+                              // (they will always be there)
   for (int i = 0; i < sensors_len; i++) {
     sensors_verify[i] = sensors[i]->verify();
-    if (sensors_verify[i]) count++;
+    if (sensors_verify[i]) {
+      count++;
+      bit_array =
+          (bit_array << 1) | 0b1;  // if the sensor is verified shift a 1 in
+    } else {
+      bit_array = (bit_array << 1);  // otherwise shift a 0 in
+    }
   }
+  header_condensed =
+      String(bit_array, HEX);  // translate it to hex to condense it for the csv
+
   Serial.println("Pin Verification Results:");
   for (int i = 0; i < sensors_len; i++) {
     Serial.print(sensors[i]->getSensorName());
@@ -176,7 +197,6 @@ int verifySensors() {
                          "definitions in the respective sensor header file)");
   }
   Serial.println();
-
   return count;
 }
 
@@ -186,7 +206,7 @@ int verifySensors() {
  * @return String Complete CSV row for iteration
  */
 String readSensorData() {
-  String csv_row = String(millis()) + ",";
+  String csv_row = header_condensed + "," + String(millis()) + ",";
   for (int i = 0; i < sensors_len; i++) {
     if (sensors_verify[i]) {
       csv_row += sensors[i]->getDataCSV();
@@ -196,7 +216,8 @@ String readSensorData() {
 }
 
 /**
- * @brief Verifies the connection with each storage device
+ * @brief Verifies the connection with each storage device, and defines the
+ * header_condensed field
  *
  * @return int The number of verified storage devices
  */
@@ -209,7 +230,6 @@ int verifyStorage() {
       count++;
     }
   }
-
   return count;
 }
 

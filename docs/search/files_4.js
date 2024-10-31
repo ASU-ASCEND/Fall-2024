@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lsm9ds1sensor_2ecpp_164',['LSM9DS1Sensor.cpp',['../LSM9DS1Sensor_8cpp.html',1,'']]],
-  ['lsm9ds1sensor_2eh_165',['LSM9DS1Sensor.h',['../LSM9DS1Sensor_8h.html',1,'']]]
+  ['ina260sensor_2ecpp_205',['INA260Sensor.cpp',['../INA260Sensor_8cpp.html',1,'']]],
+  ['ina260sensor_2eh_206',['INA260Sensor.h',['../INA260Sensor_8h.html',1,'']]]
 ];
