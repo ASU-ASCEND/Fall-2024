@@ -1,9 +1,9 @@
 #include <Arduino.h>
 
-// error code framework 
+// error code framework
 #include "ErrorDisplay.h"
 
-// parent classes 
+// parent classes
 #include "Sensor.h"
 #include "Storage.h"
 
@@ -231,7 +231,8 @@ int verifyStorage() {
 }
 
 /**
- * @brief Sends data to each storage device, assumes storage devices take care of newline/data end themselves
+ * @brief Sends data to each storage device, assumes storage devices take care
+ * of newline/data end themselves
  *
  * @param data Data in a CSV formatted string
  */
