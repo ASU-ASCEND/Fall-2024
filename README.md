@@ -31,7 +31,7 @@ Flight software for the ASU Fall 2024 ASCEND Payload
 | 11/13 | Testing FSWv3, DP:Tv2                               |          |
 | 11/21 | Launch                                              |          |
 
-# Milestones 
+# Potential Milestones 
 
 ## FSW Versions
 #### v1 (Minimum Viable Product)
