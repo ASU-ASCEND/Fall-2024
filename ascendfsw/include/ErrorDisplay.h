@@ -3,9 +3,9 @@
 
 #include <Arduino.h>
 
-#define ERROR_PIN_2 22
-#define ERROR_PIN_1 21
-#define ERROR_PIN_0 20
+#define ERROR_PIN_2 2
+#define ERROR_PIN_1 3
+#define ERROR_PIN_0 4
 
 /**
  * Error codes:
@@ -33,7 +33,7 @@ class ErrorDisplay {
     Error code; 
 
     ErrorDisplay(){
-      this->pin_level = 0; 
+      this->pin_level = 1; 
       this->code = NONE; 
       pinMode(ERROR_PIN_2, OUTPUT); 
       pinMode(ERROR_PIN_1, OUTPUT); 
