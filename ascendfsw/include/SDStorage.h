@@ -1,10 +1,11 @@
 #ifndef SD_STORAGE_H
 #define SD_STORAGE_H
 
+#include "ErrorDisplay.h"
 #include "SD.h"
 #include "Storage.h"
 
-#define SD_SPI1 0
+#define SD_SPI1 1
 
 #define SD_CS_PIN 7
 
