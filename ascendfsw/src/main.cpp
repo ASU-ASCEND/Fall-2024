@@ -93,7 +93,6 @@ void setup() {
 
   // setup heartbeat pins
   pinMode(HEARTBEAT_PIN_0, OUTPUT);
-  pinMode(HEARTBEAT_PIN_1, OUTPUT);
 
   // verify sensors
   if (verifySensors() == 0) {
@@ -106,11 +105,6 @@ void setup() {
     Serial.println("At least one sensor works, continuing");
   }
 
-  // verify storage
-  if (verifyStorage() == 0) {
-    Serial.println("No storages verified, output will be Serial only.");
-  }
-
   // build csv header
   String header = "Header,Millis,";
   for (int i = 0; i < sensors_len; i++) {
@@ -121,7 +115,7 @@ void setup() {
   Serial.println(header);
 
   // store header
-  storeData(header);
+  // storeData(header);
 
   // send header to core1
   queue_add_blocking(&qt, header.c_str()); 
@@ -138,7 +132,6 @@ void loop() {
 
   // toggle heartbeats
   digitalWrite(HEARTBEAT_PIN_0, (it & 0x1));
-  digitalWrite(HEARTBEAT_PIN_1, (it & 0x1));
 
   // switch to data recovery mode
   if (digitalRead(DATA_INTERFACE_PIN) == HIGH) {
@@ -154,9 +147,6 @@ void loop() {
 
   // print csv row
   Serial.println(csv_row);
-
-  // store csv row
-  storeData(csv_row);
 
   // send data to core1
   queue_add_blocking(&qt, csv_row.c_str()); 
@@ -257,9 +247,6 @@ void handleDataInterface() { delay(100); }
  * setup queue for data transfer between cores
  *
  */
-#include "RadioStorage.h"
-
-RadioStorage radioStorage; 
 
 /**
  * @brief Setup for core 1
@@ -268,18 +255,32 @@ RadioStorage radioStorage;
  */
 void setup1() {
   delay(500); // wait for other setup to run 
-  if(radioStorage.verify() == false){
-    while(1); 
-  } 
+
+  pinMode(HEARTBEAT_PIN_1, OUTPUT);
+  
+  // verify storage
+  if (verifyStorage() == 0) {
+    Serial.println("No storages verified, output will be Serial only.");
+  }
+
 }
 
+int it2 = 0; 
 /**
  * @brief Loop for core 1
  *
  */
 void loop1() {
+  it2++; 
+  digitalWrite(HEARTBEAT_PIN_1, (it2 & 0x1));
+
   char received_data[QT_ENTRY_SIZE]; 
   queue_remove_blocking(&qt, received_data);
 
-  radioStorage.store(String(received_data));
+  // store csv row
+  storeData(String(received_data));
+
+  // Serial.println("[CORE1]\t" + queue_get_level(&qt) + String(received_data)); 
+
+  //radioStorage.store(String(received_data));
 }

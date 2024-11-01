@@ -4,7 +4,7 @@
 #include "SD.h"
 #include "Storage.h"
 
-#define SD_SPI1 0
+#define SD_SPI1 1
 
 #define SD_CS_PIN 7
 
