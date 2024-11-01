@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['zopt_330',['zopt',['../classZOPT220Sensor.html#a197f87d2ad2e67a2a20d204c6923583c',1,'ZOPT220Sensor']]],
-  ['zoptaddress_331',['zoptAddress',['../classZOPT220x__Control.html#ae3c36998e024dc480b8abe0dfeed7d3d',1,'ZOPT220x_Control']]]
+  ['uv_5fsensor_355',['uv_sensor',['../main_8cpp.html#abc5f9445b9f0ddb523f50b2aa5ee83d3',1,'main.cpp']]]
 ];

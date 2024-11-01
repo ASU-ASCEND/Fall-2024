@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uv_5fsensor_329',['uv_sensor',['../main_8cpp.html#abc5f9445b9f0ddb523f50b2aa5ee83d3',1,'main.cpp']]]
+  ['temp_5fsensor_354',['temp_sensor',['../main_8cpp.html#a7ea47e2057b8377cca3ada270010cbe1',1,'main.cpp']]]
 ];
