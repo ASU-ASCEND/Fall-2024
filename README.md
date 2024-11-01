@@ -1,7 +1,7 @@
 # Fall-2024
 Flight software for the ASU Fall 2024 ASCEND Payload
 
-## Subfolders
+## GitHub Subfolders
 
 [DataProcessing](https://github.com/ASU-ASCEND/Fall-2024/tree/main/DataProcessing): Scripts and programs for processing and visualizing flight data.
 
