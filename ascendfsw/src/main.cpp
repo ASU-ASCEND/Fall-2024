@@ -7,6 +7,7 @@
 #include "Storage.h"
 
 // include sensor headers here
+#include "AS7331Sensor.h"
 #include "AnalogSensor.h"
 #include "BME280Sensor.h"
 #include "BME680Sensor.h"
@@ -17,7 +18,6 @@
 #include "SGP30Sensor.h"
 #include "SHT31Sensor.h"
 #include "TempSensor.h"
-#include "ZOPT220Sensor.h"
 
 // helper function definitions
 int verifySensors();
@@ -34,17 +34,17 @@ INA260Sensor ina260_sensor;
 LSM9DS1Sensor lsm9ds1_sensor;
 SHT31Sensor sht31_sensor;
 TempSensor temp_sensor;
-ZOPT220Sensor zopt220_sensor;
 AnalogSensor analog_sensor;
 SGP30Sensor sgp30_sensor;
 BME280Sensor bme280_sensor;
 ENS160Sensor ens160_sensor;
+AS7331Sensor uv_sensor;
 
 // sensor array
 Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
                      &lsm9ds1_sensor, &sht31_sensor,  &temp_sensor,
-                     &zopt220_sensor, &analog_sensor, &sgp30_sensor,
-                     &bme280_sensor,  &ens160_sensor};
+                     &analog_sensor,  &sgp30_sensor,  &bme280_sensor,
+                     &ens160_sensor,  &uv_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
 String header_condensed = "";

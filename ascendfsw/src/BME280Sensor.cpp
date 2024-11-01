@@ -12,8 +12,9 @@ BME280Sensor::BME280Sensor() : BME280Sensor(0) {}
  * @param minium_period Minimum time to wait between readings in ms
  */
 BME280Sensor::BME280Sensor(unsigned long minium_period)
-    : Sensor("BME280", "BME280RelHum %,BME280Pres Pa,BME280Alt m,BME280TempC,",
-             4, minium_period) {}
+    : Sensor("BME280",
+             "BME280RelHum %,BME280Pres Pa,BME280Alt m,BME280TempC,DewPointC,",
+             5, minium_period) {}
 
 /**
  * @brief Returns if sensor is connected and working
@@ -38,5 +39,5 @@ String BME280Sensor::readData() {
   return String(bme.readFloatHumidity()) + "," +
          String(bme.readFloatPressure()) + "," +
          String(bme.readFloatAltitudeMeters()) + "," + String(bme.readTempC()) +
-         ",";
+         "," + String(bme.dewPointC()) + ",";
 }
