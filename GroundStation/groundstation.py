@@ -23,6 +23,7 @@ full_no_fail_header = [
   "SGPTVOC(ppb),SGPeCO2(ppm),SGPTVOCBase(ppb),SGPeCO2Base(ppb),SGPH2,SGPEtha",
   "BME280RelHum %,BME280Pres Pa,BME280Alt m,BME280TempC,DewPointC,",  
   "ENSAQI,ENSTVOC ppb,ENSECO2 ppm,",
+  "UVA(nm), UVB(nm), UVC(nm)",
   " "  # final space for matching fsw
 ]
 
