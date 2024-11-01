@@ -16,8 +16,8 @@ full_no_fail_header = [
   " "  # final space for matching fsw
 ]
 
-root = tk.Tk()
-root.title("MSGC RFD900x")
+# root = tk.Tk()
+# root.title("MSGC RFD900x")
 
 # User enter serial port
 ports = list(sp.comports())
@@ -41,33 +41,40 @@ fileName = "RFD900x_Data.csv"
 file = open(fileName, "a")
 file.close()
 print(fileName + " created to hold data. If file exists, data will be appended\n")
-
-data_line = ""
-last_line = ""
-def update():
+ 
+while True:
   with open(fileName, "a", newline = '\n') as f:
-    last_line = data_line
-    data_line = "asdfasdfads" #ser.readline()
+    data_line = ser.readline()
 
     print(data_line)
     f.write(data_line + "\n")
 
-  Title = tk.Label(root, font = ("Helvetica", "20"))
-  Title.grid(row=0,column=0,padx=(0, 0), pady=(0,0))
-  Title.config(text=('RFD-900x Data'))
+# data_line = ""
+# last_line = ""
+# def update():
+  # with open(fileName, "a", newline = '\n') as f:
+  #   last_line = data_line
+  #   data_line = "asdfasdfads" #ser.readline()
 
-  now = datetime.datetime
+  #   print(data_line)
+  #   f.write(data_line + "\n")
 
-  Data1 = tk.Label(root, font = ("Helvetica", "10"))
-  Data1.grid(row=1,column=0,padx=(0, 5), pady=(0,0))
-  Data1.config(text=f"{last_line}")
+#   Title = tk.Label(root, font = ("Helvetica", "20"))
+#   Title.grid(row=0,column=0,padx=(0, 0), pady=(0,0))
+#   Title.config(text=('RFD-900x Data'))
 
-  Data2 = tk.Label(root, font = ("Helvetica", "10"))
-  Data2.grid(row=1,column=1,padx=(5, 0), pady=(0,0))
-  Data2.config(text=f"{data_line}")
+#   now = datetime.datetime
 
-  root.after(500, update) 
+#   Data1 = tk.Label(root, font = ("Helvetica", "10"))
+#   Data1.grid(row=1,column=0,padx=(0, 5), pady=(0,0))
+#   Data1.config(text=f"{last_line}")
 
-root.after(0, update)
+#   Data2 = tk.Label(root, font = ("Helvetica", "10"))
+#   Data2.grid(row=1,column=1,padx=(5, 0), pady=(0,0))
+#   Data2.config(text=f"{data_line}")
 
-root.mainloop()
+#   root.after(500, update) 
+
+# root.after(0, update)
+
+# root.mainloop()
