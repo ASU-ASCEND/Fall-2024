@@ -3,17 +3,17 @@ Flight software for the ASU Fall 2024 ASCEND Payload
 
 ## Subfolders
 
-[DataProcessing](/DataProcessing/): Scripts and programs for processing and visualizing flight data.
+[DataProcessing](https://github.com/ASU-ASCEND/Fall-2024/tree/main/DataProcessing): Scripts and programs for processing and visualizing flight data.
 
-[Testing](/Testing/): Test and calibration information for sensor and storage modules.
+[Testing](https://github.com/ASU-ASCEND/Fall-2024/tree/main/Testing): Test and calibration information for sensor and storage modules.
 
-[Watchdog](/Watchdog/): Software for watchdog Attiny85 chip.
+[Watchdog](https://github.com/ASU-ASCEND/Fall-2024/tree/main/Watchdog): Software for watchdog Attiny85 chip.
 
-[ascendfsw](/ascendfsw/): Payload flight software.
+[ascendfsw](https://github.com/ASU-ASCEND/Fall-2024/tree/main/ascendfsw): Payload flight software.
 
-[docs](/docs/): Doxygen auto-generated documentation site for GitHub pages. 
+[docs](https://github.com/ASU-ASCEND/Fall-2024/tree/main/docs): Doxygen auto-generated documentation site for GitHub pages. 
 
-[scripts](/scripts/) Various organizational and automation scripts. 
+[scripts](https://github.com/ASU-ASCEND/Fall-2024/tree/main/scripts) Various organizational and automation scripts. 
 
 
 ## Meeting Schedule
