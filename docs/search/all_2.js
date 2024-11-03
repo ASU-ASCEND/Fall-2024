@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['calibrate_17',['calibrate',['../classLSM9DS1Sensor.html#a108078a5fb9ce0e02d01bf5c664cf1b2',1,'LSM9DS1Sensor']]],
-  ['checkpoweronstatus_18',['checkPowerOnStatus',['../classZOPT220x__Control.html#a8eb237d4b6eb8513893d99d3163fc094',1,'ZOPT220x_Control']]],
-  ['csv_5fheader_19',['csv_header',['../classSensor.html#a2ec9679548d0d3c876995aa3de551293',1,'Sensor']]],
-  ['csvheadercompiled_20',['csvHeaderCompiled',['../classSHT31Sensor.html#a521c9dc64bddf628a786c3f702544de9',1,'SHT31Sensor']]]
+  ['calibrate_18',['calibrate',['../classLSM9DS1Sensor.html#a108078a5fb9ce0e02d01bf5c664cf1b2',1,'LSM9DS1Sensor']]],
+  ['checkpoweronstatus_19',['checkPowerOnStatus',['../classZOPT220x__Control.html#a8eb237d4b6eb8513893d99d3163fc094',1,'ZOPT220x_Control']]],
+  ['code_20',['code',['../classErrorDisplay.html#a5fe9c19644264ecda70d6a2ca192a0ab',1,'ErrorDisplay']]],
+  ['critical_5ffail_21',['CRITICAL_FAIL',['../ErrorDisplay_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a0b8cbe4a1604b3c87fa3207a2a38037e',1,'ErrorDisplay.h']]],
+  ['csv_5fheader_22',['csv_header',['../classSensor.html#a2ec9679548d0d3c876995aa3de551293',1,'Sensor']]],
+  ['csvheadercompiled_23',['csvHeaderCompiled',['../classSHT31Sensor.html#a521c9dc64bddf628a786c3f702544de9',1,'SHT31Sensor']]]
 ];
