@@ -1,5 +1,9 @@
 #include <Arduino.h>
 
+// error code framework
+#include "ErrorDisplay.h"
+
+// parent classes
 #include "Sensor.h"
 #include "Storage.h"
 
@@ -15,7 +19,6 @@
 #include "SGP30Sensor.h"
 #include "SHT31Sensor.h"
 #include "TempSensor.h"
-#include "ZOPT220Sensor.h"
 
 // helper function definitions
 int verifySensors();
@@ -32,7 +35,6 @@ INA260Sensor ina260_sensor;
 LSM9DS1Sensor lsm9ds1_sensor;
 SHT31Sensor sht31_sensor;
 TempSensor temp_sensor;
-ZOPT220Sensor zopt220_sensor;
 AnalogSensor analog_sensor;
 SGP30Sensor sgp30_sensor;
 BME280Sensor bme280_sensor;
@@ -42,8 +44,8 @@ AS7331Sensor uv_sensor;
 // sensor array
 Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
                      &lsm9ds1_sensor, &sht31_sensor,  &temp_sensor,
-                     &zopt220_sensor, &analog_sensor, &sgp30_sensor,
-                     &bme280_sensor,  &ens160_sensor, &uv_sensor};
+                     &analog_sensor,  &sgp30_sensor,  &bme280_sensor,
+                     &ens160_sensor,  &uv_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
 String header_condensed = "";
@@ -95,14 +97,20 @@ void setup() {
   pinMode(HEARTBEAT_PIN_0, OUTPUT);
 
   // verify sensors
-  if (verifySensors() == 0) {
+  int verified_count = verifySensors();
+  if (verified_count == 0) {
     Serial.println("All sensor communications failed");
+    ErrorDisplay::instance().addCode(Error::CRITICAL_FAIL);
     while (1) {
+      ErrorDisplay::instance().toggle();
       Serial.println("Error");
       delay(1000);
     }
   } else {
     Serial.println("At least one sensor works, continuing");
+    if (verified_count < 5) {
+      ErrorDisplay::instance().addCode(Error::LOW_SENSOR_COUNT);
+    }
   }
 
   // build csv header
@@ -129,6 +137,9 @@ void setup() {
  */
 void loop() {
   it++;
+
+  // toggle error display
+  ErrorDisplay::instance().toggle();
 
   // toggle heartbeats
   digitalWrite(HEARTBEAT_PIN_0, (it & 0x1));
@@ -224,7 +235,8 @@ int verifyStorage() {
 }
 
 /**
- * @brief Sends data to each storage device
+ * @brief Sends data to each storage device, assumes storage devices take care
+ * of newline/data end themselves
  *
  * @param data Data in a CSV formatted string
  */

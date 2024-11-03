@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['lsm9ds1_5fmcs_338',['LSM9DS1_MCS',['../LSM9DS1Sensor_8cpp.html#a79b02f1b4b83a85e4384dd86e9af49c3',1,'LSM9DS1Sensor.cpp']]],
-  ['lsm9ds1_5fmiso_339',['LSM9DS1_MISO',['../LSM9DS1Sensor_8cpp.html#a8dec581b2c07f1d8c5f99583371f2451',1,'LSM9DS1Sensor.cpp']]],
-  ['lsm9ds1_5fmosi_340',['LSM9DS1_MOSI',['../LSM9DS1Sensor_8cpp.html#a6cf47950de8ab41b3240ff893b2d9c04',1,'LSM9DS1Sensor.cpp']]],
-  ['lsm9ds1_5fsck_341',['LSM9DS1_SCK',['../LSM9DS1Sensor_8cpp.html#acd28fb619ae72f8ebcdee7de48205f07',1,'LSM9DS1Sensor.cpp']]],
-  ['lsm9ds1_5fxgcs_342',['LSM9DS1_XGCS',['../LSM9DS1Sensor_8cpp.html#ae346af1b28b94da6419cf34196be9a65',1,'LSM9DS1Sensor.cpp']]]
+  ['heartbeat_5fpin_5f0_372',['HEARTBEAT_PIN_0',['../main_8cpp.html#abaa3035bca6ee12a60c3b4b03aa7574a',1,'main.cpp']]],
+  ['heartbeat_5fpin_5f1_373',['HEARTBEAT_PIN_1',['../main_8cpp.html#a1e93fe19ad4ef78d366cc8f619da977a',1,'main.cpp']]]
 ];
