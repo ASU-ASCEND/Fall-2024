@@ -31,7 +31,7 @@ typedef enum {
  */
 class ErrorDisplay {
  private:
-  inline static mutex_t error_display_mutex; 
+  mutex_t error_display_mutex; 
   int pin_level;
   Error code;
 
