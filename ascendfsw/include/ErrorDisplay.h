@@ -2,6 +2,8 @@
 #define ERROR_DISPLAY_H
 
 #include <Arduino.h>
+#include "pico/stdlib.h"
+#include "pico/multicore.h"
 
 #define ERROR_PIN_2 2
 #define ERROR_PIN_1 3
@@ -29,10 +31,12 @@ typedef enum {
  */
 class ErrorDisplay {
  private:
+  inline static mutex_t error_display_mutex; 
   int pin_level;
   Error code;
 
   ErrorDisplay() {
+    mutex_init(&error_display_mutex); 
     this->pin_level = 1;
     this->code = NONE;
     pinMode(ERROR_PIN_2, OUTPUT);
@@ -58,9 +62,11 @@ class ErrorDisplay {
    * @param e The error code to display
    */
   void addCode(Error e) {
+    mutex_enter_blocking(&error_display_mutex); 
     if (e < this->code) {
       this->code = e;
     }
+    mutex_exit(&error_display_mutex); 
   }
 
   /**
@@ -68,16 +74,19 @@ class ErrorDisplay {
    *
    */
   void toggle() {
+    mutex_enter_blocking(&error_display_mutex);
     this->pin_level = !(this->pin_level);
 
-    uint8_t display_code = 7 - code;  // 0 is heightest
+    uint8_t display_code = 7 - this->code;  // 0 is heightest
 
     if (this->code == Error::NONE) display_code = 0b001;
 
     digitalWrite(ERROR_PIN_2, this->pin_level && (display_code & 0b100));
     digitalWrite(ERROR_PIN_1, this->pin_level && (display_code & 0b010));
     digitalWrite(ERROR_PIN_0, this->pin_level && (display_code & 0b001));
+    mutex_exit(&error_display_mutex); 
   }
+
 };
 
 #endif
