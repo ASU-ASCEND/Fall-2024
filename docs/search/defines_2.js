@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['heartbeat_5fpin_5f0_334',['HEARTBEAT_PIN_0',['../main_8cpp.html#abaa3035bca6ee12a60c3b4b03aa7574a',1,'main.cpp']]],
-  ['heartbeat_5fpin_5f1_335',['HEARTBEAT_PIN_1',['../main_8cpp.html#a1e93fe19ad4ef78d366cc8f619da977a',1,'main.cpp']]]
+  ['geiger_5fpin_371',['GEIGER_PIN',['../GeigerSensor_8h.html#a0dfddbcc95894f158bbc01f9529b7a95',1,'GeigerSensor.h']]]
 ];

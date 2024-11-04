@@ -3,6 +3,7 @@
 // error code framework
 #include "ErrorDisplay.h"
 
+// parent classes
 #include "Sensor.h"
 #include "Storage.h"
 
@@ -87,27 +88,27 @@ void setup() {
   pinMode(HEARTBEAT_PIN_1, OUTPUT);
 
   // verify sensors
-  int verified_count = verifySensors(); 
+  int verified_count = verifySensors();
   if (verified_count == 0) {
     Serial.println("All sensor communications failed");
-    ErrorDisplay::instance().addCode(Error::CRITICAL_FAIL); 
+    ErrorDisplay::instance().addCode(Error::CRITICAL_FAIL);
     while (1) {
-      ErrorDisplay::instance().toggle(); 
+      ErrorDisplay::instance().toggle();
       Serial.println("Error");
       delay(1000);
     }
   } else {
     Serial.println("At least one sensor works, continuing");
-    if(verified_count < 5){
-      ErrorDisplay::instance().addCode(Error::LOW_SENSOR_COUNT); 
+    if (verified_count < 5) {
+      ErrorDisplay::instance().addCode(Error::LOW_SENSOR_COUNT);
     }
   }
 
   // verify storage
-  verified_count = verifyStorage(); 
+  verified_count = verifyStorage();
   if (verified_count == 0) {
     Serial.println("No storages verified, output will be Serial only.");
-    ErrorDisplay::instance().addCode(Error::CRITICAL_FAIL); 
+    ErrorDisplay::instance().addCode(Error::CRITICAL_FAIL);
   }
 
   // build csv header
@@ -133,7 +134,7 @@ void loop() {
   it++;
 
   // toggle error display
-  ErrorDisplay::instance().toggle(); 
+  ErrorDisplay::instance().toggle();
 
   // toggle heartbeats
   digitalWrite(HEARTBEAT_PIN_0, (it & 0x1));
@@ -230,7 +231,8 @@ int verifyStorage() {
 }
 
 /**
- * @brief Sends data to each storage device
+ * @brief Sends data to each storage device, assumes storage devices take care
+ * of newline/data end themselves
  *
  * @param data Data in a CSV formatted string
  */
