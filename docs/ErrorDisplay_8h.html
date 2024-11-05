@@ -74,10 +74,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
+<code>#include &quot;pico/multicore.h&quot;</code><br />
+<code>#include &quot;pico/stdlib.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ErrorDisplay.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ErrorDisplay_8h__incl.svg" width="123" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ErrorDisplay_8h__incl.svg" width="372" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -108,7 +110,7 @@ Macros</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:a2c3e4bb40f36b262a5214e2da2bca9c5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ErrorDisplay_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> { <br />
 &#160;&#160;<a class="el" href="ErrorDisplay_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a0b8cbe4a1604b3c87fa3207a2a38037e">CRITICAL_FAIL</a> = 0
-, <a class="el" href="ErrorDisplay_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5afe24d2f9ddbd25abb613da7ec336613d">NO_SD_CARD</a>
+, <a class="el" href="ErrorDisplay_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5af6a33747b09124b58adf68f1dbeab24e">SD_CARD_FAIL</a>
 , <a class="el" href="ErrorDisplay_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a5d611458c3ee7342900bbef90802d0a4">LOW_SENSOR_COUNT</a>
 , <a class="el" href="ErrorDisplay_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a1ad5e7c87dfa348cdcf44d3ca5038624">POWER_CYCLED</a>
 , <br />
@@ -175,7 +177,7 @@ Enumerations</h2></td></tr>
 <p>Error codes: Smallest will be displayed as the binary value 7 - (enum value) ex. CRITICAL_FAIL (enum value of 0) will be all 3 leds blinking (7 - 0 = 7 or 0b111) Max 7 errors (1 led should always be blinking) NONE will always be 1 </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2c3e4bb40f36b262a5214e2da2bca9c5a0b8cbe4a1604b3c87fa3207a2a38037e"></a>CRITICAL_FAIL&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a2c3e4bb40f36b262a5214e2da2bca9c5afe24d2f9ddbd25abb613da7ec336613d"></a>NO_SD_CARD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2c3e4bb40f36b262a5214e2da2bca9c5af6a33747b09124b58adf68f1dbeab24e"></a>SD_CARD_FAIL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2c3e4bb40f36b262a5214e2da2bca9c5a5d611458c3ee7342900bbef90802d0a4"></a>LOW_SENSOR_COUNT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2c3e4bb40f36b262a5214e2da2bca9c5a1ad5e7c87dfa348cdcf44d3ca5038624"></a>POWER_CYCLED&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a2c3e4bb40f36b262a5214e2da2bca9c5ac157bdf0b85a40d2619cbc8bc1ae5fe2"></a>NONE&#160;</td><td class="fielddoc"></td></tr>

@@ -2,8 +2,9 @@
 #define ERROR_DISPLAY_H
 
 #include <Arduino.h>
-#include "pico/stdlib.h"
+
 #include "pico/multicore.h"
+#include "pico/stdlib.h"
 
 #define ERROR_PIN_2 2
 #define ERROR_PIN_1 3
@@ -17,8 +18,8 @@
  */
 typedef enum {
   CRITICAL_FAIL = 0,  // no sensors or no storage
-  SD_CARD_FAIL,  // triggered if SD card verify function returns false or if an SD
-               // card write fails
+  SD_CARD_FAIL,  // triggered if SD card verify function returns false or if an
+                 // SD card write fails
   LOW_SENSOR_COUNT,  // triggered for less than 5 sensors verified
   POWER_CYCLED,  // determined based on if there are multiple data files on the
                  // SD card
@@ -31,12 +32,12 @@ typedef enum {
  */
 class ErrorDisplay {
  private:
-  mutex_t error_display_mutex; 
+  mutex_t error_display_mutex;
   int pin_level;
   Error code;
 
   ErrorDisplay() {
-    mutex_init(&error_display_mutex); 
+    mutex_init(&error_display_mutex);
     this->pin_level = 1;
     this->code = NONE;
     pinMode(ERROR_PIN_2, OUTPUT);
@@ -62,13 +63,13 @@ class ErrorDisplay {
    * @param e The error code to display
    */
   void addCode(Error e) {
-    mutex_enter_blocking(&error_display_mutex); 
+    mutex_enter_blocking(&error_display_mutex);
 
     if (e < this->code) {
       this->code = e;
     }
 
-    mutex_exit(&error_display_mutex); 
+    mutex_exit(&error_display_mutex);
   }
 
   /**
@@ -76,7 +77,7 @@ class ErrorDisplay {
    *
    */
   void toggle() {
-    mutex_enter_blocking(&error_display_mutex); 
+    mutex_enter_blocking(&error_display_mutex);
 
     this->pin_level = !(this->pin_level);
 
@@ -90,7 +91,6 @@ class ErrorDisplay {
 
     mutex_exit(&error_display_mutex);
   }
-
 };
 
 #endif

@@ -78,7 +78,7 @@ unsigned int it = 0;
  *
  */
 void setup() {
-  ErrorDisplay::instance().addCode(Error::NONE); // for safety 
+  ErrorDisplay::instance().addCode(Error::NONE);  // for safety
 
   // start serial
   Serial.begin(115200);
