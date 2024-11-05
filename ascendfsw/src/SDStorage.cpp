@@ -17,12 +17,12 @@ bool SDStorage::verify() {
 // setup SPI1
 #if SD_SPI1
   if (!SD.begin(SD_CS_PIN, this->sd_spi_1)) {
-    ErrorDisplay::instance().addCode(Error::NO_SD_CARD);
+    ErrorDisplay::instance().addCode(Error::SD_CARD_FAIL);
     return false;
   }
 #else
   if (!SD.begin(SD_CS_PIN)) {
-    ErrorDisplay::instance().addCode(Error::NO_SD_CARD);
+    ErrorDisplay::instance().addCode(Error::SD_CARD_FAIL);
     return false;
   }
 #endif
@@ -50,7 +50,8 @@ void SDStorage::store(String data) {
   File output = SD.open(this->file_name, FILE_WRITE);
   if (!output) {
     Serial.println("SD card write failed");
-    ErrorDisplay::instance().addCode(Error::NO_SD_CARD);
+    // fatal error, recalling verify will doesn't fix it
+    ErrorDisplay::instance().addCode(Error::SD_CARD_FAIL);
   }
 
   output.println(data);

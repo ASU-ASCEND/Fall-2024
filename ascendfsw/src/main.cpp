@@ -87,6 +87,7 @@ queue_t qt;
 void setup() {
   // multicore setup
   queue_init(&qt, QT_ENTRY_SIZE, QT_MAX_SIZE);
+  ErrorDisplay::instance().addCode(Error::NONE);  // for safety
 
   // start serial
   Serial.begin(115200);

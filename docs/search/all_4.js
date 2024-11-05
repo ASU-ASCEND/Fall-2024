@@ -10,9 +10,10 @@ var searchData=
   ['ens160sensor_2ecpp_34',['ENS160Sensor.cpp',['../ENS160Sensor_8cpp.html',1,'']]],
   ['ens160sensor_2eh_35',['ENS160Sensor.h',['../ENS160Sensor_8h.html',1,'']]],
   ['error_36',['Error',['../ErrorDisplay_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5',1,'ErrorDisplay.h']]],
-  ['error_5fpin_5f0_37',['ERROR_PIN_0',['../ErrorDisplay_8h.html#a48a86006eb436b950e5277fdf8a3ae53',1,'ErrorDisplay.h']]],
-  ['error_5fpin_5f1_38',['ERROR_PIN_1',['../ErrorDisplay_8h.html#a5d6e22e2c3ab3c12e8cd61594815925a',1,'ErrorDisplay.h']]],
-  ['error_5fpin_5f2_39',['ERROR_PIN_2',['../ErrorDisplay_8h.html#af230e937fbf21c24dab2e1c834330a52',1,'ErrorDisplay.h']]],
-  ['errordisplay_40',['ErrorDisplay',['../classErrorDisplay.html#a05b483632a3680f52ea94beeffb5a9ca',1,'ErrorDisplay::ErrorDisplay()'],['../classErrorDisplay.html',1,'ErrorDisplay']]],
-  ['errordisplay_2eh_41',['ErrorDisplay.h',['../ErrorDisplay_8h.html',1,'']]]
+  ['error_5fdisplay_5fmutex_37',['error_display_mutex',['../classErrorDisplay.html#acb319f797d97bda8672644d80e188893',1,'ErrorDisplay']]],
+  ['error_5fpin_5f0_38',['ERROR_PIN_0',['../ErrorDisplay_8h.html#a48a86006eb436b950e5277fdf8a3ae53',1,'ErrorDisplay.h']]],
+  ['error_5fpin_5f1_39',['ERROR_PIN_1',['../ErrorDisplay_8h.html#a5d6e22e2c3ab3c12e8cd61594815925a',1,'ErrorDisplay.h']]],
+  ['error_5fpin_5f2_40',['ERROR_PIN_2',['../ErrorDisplay_8h.html#af230e937fbf21c24dab2e1c834330a52',1,'ErrorDisplay.h']]],
+  ['errordisplay_41',['ErrorDisplay',['../classErrorDisplay.html#a05b483632a3680f52ea94beeffb5a9ca',1,'ErrorDisplay::ErrorDisplay()'],['../classErrorDisplay.html',1,'ErrorDisplay']]],
+  ['errordisplay_2eh_42',['ErrorDisplay.h',['../ErrorDisplay_8h.html',1,'']]]
 ];
