@@ -50,9 +50,8 @@ void SDStorage::store(String data) {
   File output = SD.open(this->file_name, FILE_WRITE);
   if (!output) {
     Serial.println("SD card write failed");
-    ErrorDisplay::instance().addCode(
-        Error::SD_CARD_FAIL);  // fatal error, recalling verify will doesn't fix
-                               // it
+    // fatal error, recalling verify will doesn't fix it
+    ErrorDisplay::instance().addCode(Error::SD_CARD_FAIL);  
   }
 
   output.println(data);
