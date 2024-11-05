@@ -51,7 +51,7 @@ void SDStorage::store(String data) {
   if (!output) {
     Serial.println("SD card write failed");
     // fatal error, recalling verify will doesn't fix it
-    ErrorDisplay::instance().addCode(Error::SD_CARD_FAIL);  
+    ErrorDisplay::instance().addCode(Error::SD_CARD_FAIL);
   }
 
   output.println(data);
