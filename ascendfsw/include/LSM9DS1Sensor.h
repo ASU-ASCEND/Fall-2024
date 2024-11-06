@@ -15,7 +15,7 @@ class LSM9DS1Sensor : public Sensor {
  private:
   Adafruit_LSM9DS1 lsm;  
 
- void setupSensor();    //Function to set up sensor ranges and data rates
+  void setupSensor();    //Function to set up sensor ranges and data rates
   float accel_offsets[3];  //Offsets for accelerometer calibration
   float gyro_offsets[3];   //Offsets for gyroscope calibration
   float mag_offsets[3];    //Offsets for magnetometer calibration
@@ -23,8 +23,8 @@ class LSM9DS1Sensor : public Sensor {
  public:
   LSM9DS1Sensor();
   LSM9DS1Sensor(unsigned long minimum_period);
-  bool verify() override;
-  String readData() override;
+  String verify() override;       // Changed to return String with messages
+  String readData() override;     // String return for formatted data with error handling
   void calibrate();  // calibration function
 };
 
