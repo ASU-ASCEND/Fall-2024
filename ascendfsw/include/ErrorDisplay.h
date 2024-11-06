@@ -8,7 +8,7 @@
 
 #define ERROR_PIN_2 2
 #define ERROR_PIN_1 3
-#define ERROR_PIN_0 4
+#define ERROR_PIN_0 6
 
 /**
  * Error codes:
