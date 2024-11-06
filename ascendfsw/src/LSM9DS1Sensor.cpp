@@ -23,8 +23,8 @@ LSM9DS1Sensor::LSM9DS1Sensor(unsigned long minimum_period)
              "LSM9DS1 AccX, LSM9DS1 AccY, LSM9DS1 AccZ, LSM9DS1 GyroX, LSM9DS1 "
              "GyroY, LSM9DS1 GyroZ, LSM9DS1 MagX, LSM9DS1 MagY, LSM9DS1 MagZ,",
               9, minimum_period),
-       lsm(LSM9DS1_XGCS, LSM9DS1_MCS) {  //Initialize lsm with CS pins for SPI
-       //calibration offsets to zero
+       lsm(LSM9DS1_XGCS, LSM9DS1_MCS) {  // Initialize lsm with CS pins for SPI
+       // Calibration offsets to zero
         for (int i = 0; i < 3; i++) {
           accel_offsets[i] = 0.0;
           gyro_offsets[i] = 0.0;
@@ -35,29 +35,29 @@ LSM9DS1Sensor::LSM9DS1Sensor(unsigned long minimum_period)
 /**
  * @brief Verifies that the LSM is connected and working
  *
- * @return true if connected and working
- * @return false if not connected and working
+ * @return String "Sensor initialized successfully" if connected, or 
+ * "Failed to initialize sensor" if not connected
  */
-bool LSM9DS1Sensor::verify() {
+String LSM9DS1Sensor::verify() {
   if (!lsm.begin()) {
     Serial.println("Unable to initialize the LSM9DS1. Check wiring.");
-    return false;
+    return "Failed to initialize sensor";
   }
-  setupSensor();  //sensor ranges and data rates
-  return true;
+  setupSensor();  // Set sensor ranges and data rates
+  return "Sensor initialized successfully";
 }
 
 /**
  * @brief Helper function to set up sensor ranges and data rates
  */
 void LSM9DS1Sensor::setupSensor() {
-  //Accelerometer range to 16G and data rate to 952Hz
+  // Set accelerometer range to 16G and data rate to 952Hz
   lsm.setupAccel(lsm.LSM9DS1_ACCELRANGE_16G, lsm.LSM9DS1_ACCELDATARATE_952HZ);
 
-  //Magnetometer sensitivity to 4 Gauss
+  // Set magnetometer sensitivity to 4 Gauss
   lsm.setupMag(lsm.LSM9DS1_MAGGAIN_4GAUSS);
 
-  //Gyroscope scale to 245 degrees per second
+  // Set gyroscope scale to 245 degrees per second
   lsm.setupGyro(lsm.LSM9DS1_GYROSCALE_245DPS);
 }
 
@@ -65,25 +65,27 @@ void LSM9DS1Sensor::setupSensor() {
  * @brief Retrieves data from LSM 9-axis IMU
  *
  * @return String A CSV section in format AccX, AccY, AccZ, GyroX, GyroY, GyroZ,
- * MagX, MagY, MagZ,
+ * MagX, MagY, MagZ, or "Data read error" if data retrieval fails
  */
 String LSM9DS1Sensor::readData() {
-  lsm.read();
+  if (!lsm.read()) {
+    return "Data read error";
+  }
 
   sensors_event_t aevent, mevent, gevent, temp_event;
   lsm.getEvent(&aevent, &mevent, &gevent, &temp_event);
 
-  //calibration offsets to accelerometer data
+  // Apply calibration offsets to accelerometer data
   float accX = aevent.acceleration.x - accel_offsets[0];
   float accY = aevent.acceleration.y - accel_offsets[1];
   float accZ = aevent.acceleration.z - accel_offsets[2];
 
-  //calibration offsets to gyroscope data
+  // Apply calibration offsets to gyroscope data
   float gyroX = gevent.gyro.x - gyro_offsets[0];
   float gyroY = gevent.gyro.y - gyro_offsets[1];
   float gyroZ = gevent.gyro.z - gyro_offsets[2];
 
-  //calibration offsets to magnetometer data
+  // Apply calibration offsets to magnetometer data
   float magX = mevent.magnetic.x - mag_offsets[0];
   float magY = mevent.magnetic.y - mag_offsets[1];
   float magZ = mevent.magnetic.z - mag_offsets[2];
@@ -98,9 +100,9 @@ String LSM9DS1Sensor::readData() {
  */
 void LSM9DS1Sensor::calibrate() {
   Serial.println("Calibrating sensor... Please keep the sensor stationary.");
-  delay(3000);  //time to place the sensor still
+  delay(3000);  // Allow time to place the sensor still
 
-  //Variables to accumulate readings for calibration
+  // Variables to accumulate readings for calibration
   const int num_samples = 100;
   float acc_offset[3] = {0, 0, 0};
   float gyro_offset[3] = {0, 0, 0};
@@ -126,7 +128,7 @@ void LSM9DS1Sensor::calibrate() {
     delay(20);
   }
 
-  //Average offsets
+  // Average offsets
   for (int i = 0; i < 3; i++) {
     accel_offsets[i] = acc_offset[i] / num_samples;
     gyro_offsets[i] = gyro_offset[i] / num_samples;
