@@ -39,7 +39,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classAS7331Sensor.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classAS7331Sensor.html" target="_top" xlink:title="Implementation of a Sensor for UVA/B/C sensor.">
 <polygon fill="none" stroke="black" points="0,-28 0,-118 105,-118 105,-28 0,-28"/>
 <text text-anchor="middle" x="52.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">AS7331Sensor</text>
 <polyline fill="none" stroke="black" points="0,-99 105,-99 "/>
@@ -127,7 +127,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="classDS3231Sensor.html" target="_top" xlink:title=" ">
+<g id="a_node6"><a xlink:href="classDS3231Sensor.html" target="_top" xlink:title="Implementation of a Sensor for the DS3231 Real Time Clock.">
 <polygon fill="none" stroke="black" points="495.5,-22.5 495.5,-123.5 601.5,-123.5 601.5,-22.5 495.5,-22.5"/>
 <text text-anchor="middle" x="548.5" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">DS3231Sensor</text>
 <polyline fill="none" stroke="black" points="495.5,-104.5 601.5,-104.5 "/>

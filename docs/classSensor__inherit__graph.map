@@ -1,10 +1,10 @@
 <map id="Sensor" name="Sensor">
 <area shape="rect" id="node1" title="Parent class for sensor objects." alt="" coords="1080,5,1265,303"/>
-<area shape="rect" id="node2" href="$classAS7331Sensor.html" title=" " alt="" coords="5,387,145,509"/>
+<area shape="rect" id="node2" href="$classAS7331Sensor.html" title="Implementation of a Sensor for UVA/B/C sensor." alt="" coords="5,387,145,509"/>
 <area shape="rect" id="node3" href="$classAnalogSensor.html" title="Implementation of a Sensor for the analog readings." alt="" coords="170,387,306,509"/>
 <area shape="rect" id="node4" href="$classBME280Sensor.html" title="Implementation of a Sensor for the BME280." alt="" coords="330,387,474,509"/>
 <area shape="rect" id="node5" href="$classBME680Sensor.html" title="A class to interface with the Adafruit BME680 sensor for environmental data collection." alt="" coords="498,387,642,509"/>
-<area shape="rect" id="node6" href="$classDS3231Sensor.html" title=" " alt="" coords="666,380,807,516"/>
+<area shape="rect" id="node6" href="$classDS3231Sensor.html" title="Implementation of a Sensor for the DS3231 Real Time Clock." alt="" coords="666,380,807,516"/>
 <area shape="rect" id="node7" href="$classENS160Sensor.html" title="Implementation of a Sensor for the ENS160." alt="" coords="831,387,973,509"/>
 <area shape="rect" id="node8" href="$classGeigerSensor.html" title="A class for interfacing with a Geiger counter sensor." alt="" coords="997,380,1169,516"/>
 <area shape="rect" id="node9" href="$classINA260Sensor.html" title="A class to interface with the Adafruit INA260 sensor for current, voltage, and power measurements." alt="" coords="1194,387,1333,509"/>

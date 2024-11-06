@@ -9,7 +9,7 @@
 
 /**
  * @brief Implementation of a Sensor for UVA/B/C sensor
- * 
+ *
  */
 class AS7331Sensor : public Sensor {
  private:

@@ -1,4 +1,4 @@
 <map id="DS3231Sensor" name="DS3231Sensor">
-<area shape="rect" id="node1" title=" " alt="" coords="27,351,169,487"/>
+<area shape="rect" id="node1" title="Implementation of a Sensor for the DS3231 Real Time Clock." alt="" coords="27,351,169,487"/>
 <area shape="rect" id="node2" href="$classSensor.html" title="Parent class for sensor objects." alt="" coords="5,5,191,303"/>
 </map>

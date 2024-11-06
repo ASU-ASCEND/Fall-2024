@@ -2,7 +2,8 @@
 #include <SparkFun_AS7331.h>
 
 /**
- * @brief Construct a new AS7331Sensor (UVA/B/C Sensor) object with default minimum_period of 0 ms
+ * @brief Construct a new AS7331Sensor (UVA/B/C Sensor) object with default
+ * minimum_period of 0 ms
  *
  */
 AS7331Sensor::AS7331Sensor() : AS7331Sensor(0) {}
@@ -24,9 +25,9 @@ AS7331Sensor::AS7331Sensor(unsigned long minium_period)
 bool AS7331Sensor::verify() { return myUVSensor.begin(); }
 
 /**
- * @brief Reads UV data 
+ * @brief Reads UV data
  *
- * @return String CSV line - UVA, UVB, UVC, 
+ * @return String CSV line - UVA, UVB, UVC,
  */
 String AS7331Sensor::readData() {
   myUVSensor.readAllUV();

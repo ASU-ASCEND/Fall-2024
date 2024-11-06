@@ -32,7 +32,7 @@ bool DS3231Sensor::verify() { return rtc.begin(); }
 
 /**
  * @brief Reads timestamp data from RTC (plus temperature)
- * 
+ *
  * @return String CSV line - year/month/day hour:minute:second, tempC
  */
 String DS3231Sensor::readData() {
@@ -45,11 +45,12 @@ String DS3231Sensor::readData() {
 }
 
 /**
- * @brief Utility function to set the RTC's time, easier to use a separate Arduino program to do this 
- * 
+ * @brief Utility function to set the RTC's time, easier to use a separate
+ * Arduino program to do this
+ *
  * @param year Year
  * @param month Month
- * @param day Day 
+ * @param day Day
  * @param hour Hour in 24h time
  * @param minute Minute
  * @param second Second
