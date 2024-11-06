@@ -20,9 +20,7 @@ DS3231Sensor::DS3231Sensor() : DS3231Sensor(0) {}
  * sensor reads.
  */
 DS3231Sensor::DS3231Sensor(unsigned long minimum_period)
-    : Sensor("DS3231",
-             "DS3231Time,DS3231TempC,", 2,
-             minimum_period) {}
+    : Sensor("DS3231", "DS3231Time,DS3231TempC,", 2, minimum_period) {}
 
 /**
  * @brief Verifies the connection and readiness of the BME680 sensor.
@@ -35,16 +33,18 @@ DS3231Sensor::DS3231Sensor(unsigned long minimum_period)
  * @return true - If the sensor is detected and successfully initialized.
  * @return false - If the sensor is not detected or fails to initialize.
  */
-bool DS3231Sensor::verify() {
-  return rtc.begin(); 
-}
+bool DS3231Sensor::verify() { return rtc.begin(); }
 
 String DS3231Sensor::readData() {
-  DateTime now = rtc.now(); 
+  DateTime now = rtc.now();
 
-  return String(now.year()) + "/" + String(now.month()) + "/" + String(now.day()) + " " + String(now.hour()) + ":" + String(now.minute()) + ":" + String(now.second()) + "," + String(rtc.getTemperature()) + ",";
+  return String(now.year()) + "/" + String(now.month()) + "/" +
+         String(now.day()) + " " + String(now.hour()) + ":" +
+         String(now.minute()) + ":" + String(now.second()) + "," +
+         String(rtc.getTemperature()) + ",";
 }
 
-void DS3231Sensor::setTime(int year, int month, int day, int hour, int minute, int second){
-  rtc.adjust(DateTime(year, month, day, hour, minute, second)); 
+void DS3231Sensor::setTime(int year, int month, int day, int hour, int minute,
+                           int second) {
+  rtc.adjust(DateTime(year, month, day, hour, minute, second));
 }
