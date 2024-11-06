@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['last_5fexecution_43',['last_execution',['../classSensor.html#abd94c964e6cf265293cfb4cd5d01708d',1,'Sensor']]],
-  ['loop_44',['loop',['../main_8cpp.html#afe461d27b9c48d5921c00d521181f12f',1,'main.cpp']]],
-  ['lsm9ds1_5fsensor_45',['lsm9ds1_sensor',['../main_8cpp.html#a65d3af343150171c2dc94255abca5c54',1,'main.cpp']]],
-  ['lsm9ds1sensor_46',['LSM9DS1Sensor',['../classLSM9DS1Sensor.html',1,'LSM9DS1Sensor'],['../classLSM9DS1Sensor.html#a46aef0b7563f5317c17b5c373ca7d513',1,'LSM9DS1Sensor::LSM9DS1Sensor()'],['../classLSM9DS1Sensor.html#a77f30f3bb42282065b2c35ec7b70dc0a',1,'LSM9DS1Sensor::LSM9DS1Sensor(unsigned long minimum_period)']]],
-  ['lsm9ds1sensor_2ecpp_47',['LSM9DS1Sensor.cpp',['../LSM9DS1Sensor_8cpp.html',1,'']]],
-  ['lsm9ds1sensor_2eh_48',['LSM9DS1Sensor.h',['../LSM9DS1Sensor_8h.html',1,'']]]
+  ['ina260_68',['ina260',['../classINA260Sensor.html#a81348d4fdf3a040932de924c09db4358',1,'INA260Sensor']]],
+  ['ina260_5fsensor_69',['ina260_sensor',['../main_8cpp.html#a2711f8eaa9460bd825dc5fa05a6fe777',1,'main.cpp']]],
+  ['ina260sensor_70',['INA260Sensor',['../classINA260Sensor.html',1,'INA260Sensor'],['../classINA260Sensor.html#a042f617dabe0fdd117cd1ba7cdb8723d',1,'INA260Sensor::INA260Sensor()'],['../classINA260Sensor.html#a15132c8e875b5cd00b243bf42b65efd9',1,'INA260Sensor::INA260Sensor(unsigned long minimum_period)']]],
+  ['ina260sensor_2ecpp_71',['INA260Sensor.cpp',['../INA260Sensor_8cpp.html',1,'']]],
+  ['ina260sensor_2eh_72',['INA260Sensor.h',['../INA260Sensor_8h.html',1,'']]],
+  ['instance_73',['instance',['../classErrorDisplay.html#a164dea875d8b3215203e5d6f0076f237',1,'ErrorDisplay']]],
+  ['it_74',['it',['../main_8cpp.html#ac65d766d5179dcc67a8e61e09a1ce969',1,'main.cpp']]]
 ];

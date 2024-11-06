@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pt1000_5fpin_267',['PT1000_PIN',['../AnalogSensor_8h.html#a330caf3be7eb66e72d2b36e1e72f717d',1,'AnalogSensor.h']]]
+  ['geiger_5fpin_373',['GEIGER_PIN',['../GeigerSensor_8h.html#a0dfddbcc95894f158bbc01f9529b7a95',1,'GeigerSensor.h']]]
 ];

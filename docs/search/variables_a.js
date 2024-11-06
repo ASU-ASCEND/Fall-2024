@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['zopt_262',['zopt',['../classZOPT220Sensor.html#a197f87d2ad2e67a2a20d204c6923583c',1,'ZOPT220Sensor']]],
-  ['zopt220_5fsensor_263',['zopt220_sensor',['../main_8cpp.html#a605b2d944419ab59d5b481123c56c912',1,'main.cpp']]],
-  ['zoptaddress_264',['zoptAddress',['../classZOPT220x__Control.html#ae3c36998e024dc480b8abe0dfeed7d3d',1,'ZOPT220x_Control']]]
+  ['pin_5flevel_343',['pin_level',['../classErrorDisplay.html#a2b76f33e66982754402934117fa3b682',1,'ErrorDisplay']]]
 ];
