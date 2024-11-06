@@ -3,7 +3,7 @@ var searchData=
   ['geiger_5fpin_49',['GEIGER_PIN',['../GeigerSensor_8h.html#a0dfddbcc95894f158bbc01f9529b7a95',1,'GeigerSensor.h']]],
   ['geiger_5fsensor_50',['geiger_sensor',['../main_8cpp.html#a47dfda590def210c7c02f431790aa20f',1,'main.cpp']]],
   ['geigercounter_51',['geigerCounter',['../classGeigerSensor.html#aa2185ab41d86642bc04534bd447a8fc8',1,'GeigerSensor']]],
-  ['geigersensor_52',['GeigerSensor',['../classGeigerSensor.html',1,'GeigerSensor'],['../classGeigerSensor.html#a8a7b4cd3421a6f67b6ba15578648a15d',1,'GeigerSensor::GeigerSensor()'],['../classGeigerSensor.html#ad1cfd130a27daae74befd563b7f417ba',1,'GeigerSensor::GeigerSensor(unsigned long minimum_period)']]],
+  ['geigersensor_52',['GeigerSensor',['../classGeigerSensor.html#a8a7b4cd3421a6f67b6ba15578648a15d',1,'GeigerSensor::GeigerSensor()'],['../classGeigerSensor.html#ad1cfd130a27daae74befd563b7f417ba',1,'GeigerSensor::GeigerSensor(unsigned long minimum_period)'],['../classGeigerSensor.html',1,'GeigerSensor']]],
   ['geigersensor_2ecpp_53',['GeigerSensor.cpp',['../GeigerSensor_8cpp.html',1,'']]],
   ['geigersensor_2eh_54',['GeigerSensor.h',['../GeigerSensor_8h.html',1,'']]],
   ['getadjusteduvindex_55',['getAdjustedUVIndex',['../classZOPT220x__Control.html#ac9b447f5665bc72e2cb357cc6700130e',1,'ZOPT220x_Control']]],
@@ -17,5 +17,6 @@ var searchData=
   ['getuvb_63',['getUVB',['../classZOPT220x__Control.html#a9d0197ab4de4731ecd692e39ee9c5e64',1,'ZOPT220x_Control']]],
   ['getuvindex_64',['getUVIndex',['../classZOPT220x__Control.html#a1233f73c507efe1393d84b9d88b4a023',1,'ZOPT220x_Control']]],
   ['gps_65',['GPS',['../classMTK3339Sensor.html#a4a809ba92d7a99aff32c8a4114cb54e5',1,'MTK3339Sensor']]],
-  ['gyro_5foffsets_66',['gyro_offsets',['../classLSM9DS1Sensor.html#aad1c0e961086e5c538a526ed9a660951',1,'LSM9DS1Sensor']]]
+  ['gps_5fsensor_66',['gps_sensor',['../main_8cpp.html#a3e143c154723cdf046c209754c7d81a9',1,'main.cpp']]],
+  ['gyro_5foffsets_67',['gyro_offsets',['../classLSM9DS1Sensor.html#aad1c0e961086e5c538a526ed9a660951',1,'LSM9DS1Sensor']]]
 ];
