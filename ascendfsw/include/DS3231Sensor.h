@@ -5,6 +5,10 @@
 
 #include "Sensor.h"
 
+/**
+ * @brief Implementation of a Sensor for the DS3231 Real Time Clock 
+ * 
+ */
 class DS3231Sensor : public Sensor {
  private:
   RTC_DS3231 rtc;

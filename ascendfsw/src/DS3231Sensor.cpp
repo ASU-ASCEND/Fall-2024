@@ -23,18 +23,18 @@ DS3231Sensor::DS3231Sensor(unsigned long minimum_period)
     : Sensor("DS3231", "DS3231Time,DS3231TempC,", 2, minimum_period) {}
 
 /**
- * @brief Verifies the connection and readiness of the BME680 sensor.
- *
- * This function initializes the sensor and configures it by setting
- * temperature, humidity, and pressure oversampling, along with the gas heater
- * and IIR filter. It checks if the sensor is properly connected and ready for
- * reading data.
+ * @brief Verifies that the sensor is connected
  *
  * @return true - If the sensor is detected and successfully initialized.
  * @return false - If the sensor is not detected or fails to initialize.
  */
 bool DS3231Sensor::verify() { return rtc.begin(); }
 
+/**
+ * @brief Reads timestamp data from RTC (plus temperature)
+ * 
+ * @return String CSV line - year/month/day hour:minute:second, tempC
+ */
 String DS3231Sensor::readData() {
   DateTime now = rtc.now();
 
@@ -44,6 +44,16 @@ String DS3231Sensor::readData() {
          String(rtc.getTemperature()) + ",";
 }
 
+/**
+ * @brief Utility function to set the RTC's time, easier to use a separate Arduino program to do this 
+ * 
+ * @param year Year
+ * @param month Month
+ * @param day Day 
+ * @param hour Hour in 24h time
+ * @param minute Minute
+ * @param second Second
+ */
 void DS3231Sensor::setTime(int year, int month, int day, int hour, int minute,
                            int second) {
   rtc.adjust(DateTime(year, month, day, hour, minute, second));
