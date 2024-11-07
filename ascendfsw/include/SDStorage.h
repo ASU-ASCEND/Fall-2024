@@ -9,7 +9,7 @@
 
 #define SPI1_MISO 8
 #define SD_CS_PIN 9
-#define SPI1_SCK  10
+#define SPI1_SCK 10
 #define SPI1_MOSI 11
 
 /**
@@ -20,7 +20,8 @@ class SDStorage : public Storage {
  private:
   String file_name;
 #if SD_SPI1
-  SPIClassRP2040 sd_spi_1 = SPIClassRP2040(spi1, SPI1_MISO, SD_CS_PIN, SPI1_SCK, SPI1_MOSI);
+  SPIClassRP2040 sd_spi_1 =
+      SPIClassRP2040(spi1, SPI1_MISO, SD_CS_PIN, SPI1_SCK, SPI1_MOSI);
 #endif
 
  public:
