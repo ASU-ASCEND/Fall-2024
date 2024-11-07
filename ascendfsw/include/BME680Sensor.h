@@ -10,7 +10,7 @@
 #include "Sensor.h"
 
 #define SEALEVELPRESSURE_HPA (1013.25)
-#define SPI_MODE 0
+#define BME680_SPI_MODE 0
 #define SPI_CS_PIN 17
 
 /**
