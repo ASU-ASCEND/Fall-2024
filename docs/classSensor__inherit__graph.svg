@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1646;
+var viewWidth = 1770;
 var viewHeight = 413;
 var sectionId = 'dynsection-0';
 </script>
@@ -58,34 +58,34 @@ var sectionId = 'dynsection-0';
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title="Parent class for sensor objects.">
-<polygon fill="#bfbfbf" stroke="black" points="750,-182.5 750,-404.5 889,-404.5 889,-182.5 750,-182.5"/>
-<text text-anchor="middle" x="819.5" y="-392.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sensor</text>
-<polyline fill="none" stroke="black" points="750,-385.5 889,-385.5 "/>
-<text text-anchor="start" x="758" y="-373.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; minimum_period</text>
-<text text-anchor="start" x="758" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; last_execution</text>
-<text text-anchor="start" x="758" y="-351.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sensor_name</text>
-<text text-anchor="start" x="758" y="-340.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; csv_header</text>
-<text text-anchor="start" x="758" y="-329.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; fields</text>
-<polyline fill="none" stroke="black" points="750,-322.5 889,-322.5 "/>
-<text text-anchor="start" x="758" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Sensor()</text>
-<text text-anchor="start" x="758" y="-299.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Sensor()</text>
-<text text-anchor="start" x="758" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getPeriod()</text>
-<text text-anchor="start" x="758" y="-277.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setPeriod()</text>
-<text text-anchor="start" x="758" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getLastExecution()</text>
-<text text-anchor="start" x="758" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setLastExecution()</text>
-<text text-anchor="start" x="758" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSensorName()</text>
-<text text-anchor="start" x="758" y="-233.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSensorCSVHeader()</text>
-<text text-anchor="start" x="758" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="758" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
-<text text-anchor="start" x="758" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readEmpty()</text>
-<text text-anchor="start" x="758" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getDataCSV()</text>
+<polygon fill="#bfbfbf" stroke="black" points="806,-182.5 806,-404.5 945,-404.5 945,-182.5 806,-182.5"/>
+<text text-anchor="middle" x="875.5" y="-392.5" font-family="Helvetica,sans-Serif" font-size="10.00">Sensor</text>
+<polyline fill="none" stroke="black" points="806,-385.5 945,-385.5 "/>
+<text text-anchor="start" x="814" y="-373.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; minimum_period</text>
+<text text-anchor="start" x="814" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; last_execution</text>
+<text text-anchor="start" x="814" y="-351.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sensor_name</text>
+<text text-anchor="start" x="814" y="-340.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; csv_header</text>
+<text text-anchor="start" x="814" y="-329.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; fields</text>
+<polyline fill="none" stroke="black" points="806,-322.5 945,-322.5 "/>
+<text text-anchor="start" x="814" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Sensor()</text>
+<text text-anchor="start" x="814" y="-299.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Sensor()</text>
+<text text-anchor="start" x="814" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getPeriod()</text>
+<text text-anchor="start" x="814" y="-277.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setPeriod()</text>
+<text text-anchor="start" x="814" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getLastExecution()</text>
+<text text-anchor="start" x="814" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setLastExecution()</text>
+<text text-anchor="start" x="814" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSensorName()</text>
+<text text-anchor="start" x="814" y="-233.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSensorCSVHeader()</text>
+<text text-anchor="start" x="814" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="814" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<text text-anchor="start" x="814" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readEmpty()</text>
+<text text-anchor="start" x="814" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getDataCSV()</text>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classAS7331Sensor.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classAS7331Sensor.html" target="_top" xlink:title="Implementation of a Sensor for UVA/B/C sensor.">
 <polygon fill="none" stroke="black" points="0,-28 0,-118 105,-118 105,-28 0,-28"/>
 <text text-anchor="middle" x="52.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">AS7331Sensor</text>
 <polyline fill="none" stroke="black" points="0,-99 105,-99 "/>
@@ -101,8 +101,8 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M739.92,-292.24C602.79,-288.42 317.17,-265.4 114.5,-146 102.56,-138.97 91.78,-128.8 82.69,-118.31"/>
-<polygon fill="none" stroke="midnightblue" points="739.85,-295.74 749.94,-292.49 740.03,-288.74 739.85,-295.74"/>
+<path fill="none" stroke="midnightblue" d="M795.55,-283.83C624.7,-264.25 230.16,-213 114.5,-146 102.37,-138.97 91.46,-128.67 82.29,-118.05"/>
+<polygon fill="none" stroke="midnightblue" points="795.41,-287.34 805.74,-285 796.2,-280.39 795.41,-287.34"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -123,8 +123,8 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node1&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M739.56,-288.09C620.91,-278.28 394.96,-246.76 234.5,-146 223.06,-138.82 212.73,-128.72 204,-118.36"/>
-<polygon fill="none" stroke="midnightblue" points="739.41,-291.59 749.66,-288.89 739.97,-284.61 739.41,-291.59"/>
+<path fill="none" stroke="midnightblue" d="M795.44,-290.38C667.73,-283.63 414.02,-256.15 234.5,-146 222.85,-138.85 212.39,-128.64 203.58,-118.15"/>
+<polygon fill="none" stroke="midnightblue" points="795.37,-293.88 805.54,-290.88 795.72,-286.89 795.37,-293.88"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
@@ -145,8 +145,8 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M739.95,-280.55C643.7,-263.21 479.74,-224.2 360.5,-146 349.11,-138.53 338.55,-128.46 329.47,-118.22"/>
-<polygon fill="none" stroke="midnightblue" points="739.46,-284.02 749.91,-282.31 740.68,-277.13 739.46,-284.02"/>
+<path fill="none" stroke="midnightblue" d="M795.8,-284.07C689.4,-269.78 498.39,-233.33 360.5,-146 348.85,-138.62 338.14,-128.46 328.97,-118.1"/>
+<polygon fill="none" stroke="midnightblue" points="795.45,-287.55 805.82,-285.38 796.36,-280.61 795.45,-287.55"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
@@ -167,213 +167,236 @@ var sectionId = 'dynsection-0';
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M740.05,-268.57C669.17,-244.76 564.79,-203.47 486.5,-146 475.79,-138.14 465.62,-128.16 456.7,-118.15"/>
-<polygon fill="none" stroke="midnightblue" points="739.23,-271.98 749.83,-271.81 741.44,-265.34 739.23,-271.98"/>
+<path fill="none" stroke="midnightblue" d="M796.15,-274.84C713.48,-253.77 582.82,-212.76 486.5,-146 475.44,-138.34 465.08,-128.31 456.07,-118.19"/>
+<polygon fill="none" stroke="midnightblue" points="795.43,-278.27 805.99,-277.31 797.14,-271.48 795.43,-278.27"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="classENS160Sensor.html" target="_top" xlink:title="Implementation of a Sensor for the ENS160.">
-<polygon fill="none" stroke="black" points="495.5,-28 495.5,-118 601.5,-118 601.5,-28 495.5,-28"/>
-<text text-anchor="middle" x="548.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">ENS160Sensor</text>
-<polyline fill="none" stroke="black" points="495.5,-99 601.5,-99 "/>
-<text text-anchor="start" x="503.5" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; ens</text>
-<polyline fill="none" stroke="black" points="495.5,-80 601.5,-80 "/>
-<text text-anchor="start" x="503.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ ENS160Sensor()</text>
-<text text-anchor="start" x="503.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ ENS160Sensor()</text>
-<text text-anchor="start" x="503.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="503.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<g id="a_node6"><a xlink:href="classDS3231Sensor.html" target="_top" xlink:title="Implementation of a Sensor for the DS3231 Real Time Clock.">
+<polygon fill="none" stroke="black" points="495.5,-22.5 495.5,-123.5 601.5,-123.5 601.5,-22.5 495.5,-22.5"/>
+<text text-anchor="middle" x="548.5" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">DS3231Sensor</text>
+<polyline fill="none" stroke="black" points="495.5,-104.5 601.5,-104.5 "/>
+<text text-anchor="start" x="503.5" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; rtc</text>
+<polyline fill="none" stroke="black" points="495.5,-85.5 601.5,-85.5 "/>
+<text text-anchor="start" x="503.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DS3231Sensor()</text>
+<text text-anchor="start" x="503.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DS3231Sensor()</text>
+<text text-anchor="start" x="503.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="503.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<text text-anchor="start" x="503.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setTime()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M741.37,-244.42C700.55,-217.69 650.83,-182.51 610.5,-146 601.21,-137.59 591.96,-127.82 583.57,-118.25"/>
-<polygon fill="none" stroke="midnightblue" points="739.65,-247.48 749.94,-250 743.46,-241.61 739.65,-247.48"/>
+<path fill="none" stroke="midnightblue" d="M796.37,-257.93C741.16,-231.69 667.48,-192.31 610.5,-146 602.31,-139.34 594.34,-131.51 586.99,-123.51"/>
+<polygon fill="none" stroke="midnightblue" points="795.22,-261.25 805.76,-262.35 798.2,-254.92 795.22,-261.25"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classGeigerSensor.html" target="_top" xlink:title="A class for interfacing with a Geiger counter sensor.">
-<polygon fill="none" stroke="black" points="620,-22.5 620,-123.5 749,-123.5 749,-22.5 620,-22.5"/>
-<text text-anchor="middle" x="684.5" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">GeigerSensor</text>
-<polyline fill="none" stroke="black" points="620,-104.5 749,-104.5 "/>
-<text text-anchor="start" x="628" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; measuringPeriodStart</text>
-<polyline fill="none" stroke="black" points="620,-85.5 749,-85.5 "/>
-<text text-anchor="start" x="628" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GeigerSensor()</text>
-<text text-anchor="start" x="628" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GeigerSensor()</text>
-<text text-anchor="start" x="628" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="628" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
-<text text-anchor="start" x="628" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; geigerCounter()</text>
+<g id="a_node7"><a xlink:href="classENS160Sensor.html" target="_top" xlink:title="Implementation of a Sensor for the ENS160.">
+<polygon fill="none" stroke="black" points="619.5,-28 619.5,-118 725.5,-118 725.5,-28 619.5,-28"/>
+<text text-anchor="middle" x="672.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">ENS160Sensor</text>
+<polyline fill="none" stroke="black" points="619.5,-99 725.5,-99 "/>
+<text text-anchor="start" x="627.5" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; ens</text>
+<polyline fill="none" stroke="black" points="619.5,-80 725.5,-80 "/>
+<text text-anchor="start" x="627.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ ENS160Sensor()</text>
+<text text-anchor="start" x="627.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ ENS160Sensor()</text>
+<text text-anchor="start" x="627.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="627.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M746.05,-173.62C735.16,-156 724.48,-138.71 715.16,-123.62"/>
-<polygon fill="none" stroke="midnightblue" points="743.17,-175.62 751.41,-182.29 749.13,-171.94 743.17,-175.62"/>
+<path fill="none" stroke="midnightblue" d="M798.77,-214.38C777.69,-192.49 755,-168.51 734.5,-146 726.39,-137.1 717.87,-127.42 709.82,-118.13"/>
+<polygon fill="none" stroke="midnightblue" points="796.39,-216.95 805.85,-221.72 801.43,-212.09 796.39,-216.95"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="classINA260Sensor.html" target="_top" xlink:title="A class to interface with the Adafruit INA260 sensor for current, voltage, and power measurements.">
-<polygon fill="none" stroke="black" points="767.5,-28 767.5,-118 871.5,-118 871.5,-28 767.5,-28"/>
-<text text-anchor="middle" x="819.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">INA260Sensor</text>
-<polyline fill="none" stroke="black" points="767.5,-99 871.5,-99 "/>
-<text text-anchor="start" x="775.5" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; ina260</text>
-<polyline fill="none" stroke="black" points="767.5,-80 871.5,-80 "/>
-<text text-anchor="start" x="775.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ INA260Sensor()</text>
-<text text-anchor="start" x="775.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ INA260Sensor()</text>
-<text text-anchor="start" x="775.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="775.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<g id="a_node8"><a xlink:href="classGeigerSensor.html" target="_top" xlink:title="A class for interfacing with a Geiger counter sensor.">
+<polygon fill="none" stroke="black" points="744,-22.5 744,-123.5 873,-123.5 873,-22.5 744,-22.5"/>
+<text text-anchor="middle" x="808.5" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">GeigerSensor</text>
+<polyline fill="none" stroke="black" points="744,-104.5 873,-104.5 "/>
+<text text-anchor="start" x="752" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; measuringPeriodStart</text>
+<polyline fill="none" stroke="black" points="744,-85.5 873,-85.5 "/>
+<text text-anchor="start" x="752" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GeigerSensor()</text>
+<text text-anchor="start" x="752" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ GeigerSensor()</text>
+<text text-anchor="start" x="752" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="752" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<text text-anchor="start" x="752" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; geigerCounter()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M819.5,-172.15C819.5,-152.82 819.5,-133.96 819.5,-118.02"/>
-<polygon fill="none" stroke="midnightblue" points="816,-172.29 819.5,-182.29 823,-172.29 816,-172.29"/>
+<path fill="none" stroke="midnightblue" d="M838.75,-172.66C833.45,-155.37 828.26,-138.44 823.71,-123.62"/>
+<polygon fill="none" stroke="midnightblue" points="835.43,-173.76 841.71,-182.29 842.12,-171.7 835.43,-173.76"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
-<g id="a_node9"><a xlink:href="classLSM9DS1Sensor.html" target="_top" xlink:title="Implementation of the Sensor class for the LSM9DS1 (9&#45;axis IMU)">
-<polygon fill="none" stroke="black" points="889.5,-0.5 889.5,-145.5 1003.5,-145.5 1003.5,-0.5 889.5,-0.5"/>
-<text text-anchor="middle" x="946.5" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">LSM9DS1Sensor</text>
-<polyline fill="none" stroke="black" points="889.5,-126.5 1003.5,-126.5 "/>
-<text text-anchor="start" x="897.5" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; lsm</text>
-<text text-anchor="start" x="897.5" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; accel_offsets</text>
-<text text-anchor="start" x="897.5" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; gyro_offsets</text>
-<text text-anchor="start" x="897.5" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; mag_offsets</text>
-<polyline fill="none" stroke="black" points="889.5,-74.5 1003.5,-74.5 "/>
-<text text-anchor="start" x="897.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ LSM9DS1Sensor()</text>
-<text text-anchor="start" x="897.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ LSM9DS1Sensor()</text>
-<text text-anchor="start" x="897.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="897.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
-<text text-anchor="start" x="897.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ calibrate()</text>
-<text text-anchor="start" x="897.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; setupSensor()</text>
+<g id="a_node9"><a xlink:href="classINA260Sensor.html" target="_top" xlink:title="A class to interface with the Adafruit INA260 sensor for current, voltage, and power measurements.">
+<polygon fill="none" stroke="black" points="891.5,-28 891.5,-118 995.5,-118 995.5,-28 891.5,-28"/>
+<text text-anchor="middle" x="943.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">INA260Sensor</text>
+<polyline fill="none" stroke="black" points="891.5,-99 995.5,-99 "/>
+<text text-anchor="start" x="899.5" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; ina260</text>
+<polyline fill="none" stroke="black" points="891.5,-80 995.5,-80 "/>
+<text text-anchor="start" x="899.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ INA260Sensor()</text>
+<text text-anchor="start" x="899.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ INA260Sensor()</text>
+<text text-anchor="start" x="899.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="899.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M888.62,-173.58C894.13,-164.11 899.57,-154.74 904.79,-145.75"/>
-<polygon fill="none" stroke="midnightblue" points="885.56,-171.89 883.56,-182.29 891.61,-175.4 885.56,-171.89"/>
+<path fill="none" stroke="midnightblue" d="M912.79,-172.68C918.86,-153.17 924.79,-134.11 929.8,-118.02"/>
+<polygon fill="none" stroke="midnightblue" points="909.43,-171.7 909.8,-182.29 916.11,-173.78 909.43,-171.7"/>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
 <title>Node10</title>
-<g id="a_node10"><a xlink:href="classMTK3339Sensor.html" target="_top" xlink:title="Implementation of the Adafruit MTK3339 GPS sensor.">
-<polygon fill="none" stroke="black" points="1021.5,-28 1021.5,-118 1135.5,-118 1135.5,-28 1021.5,-28"/>
-<text text-anchor="middle" x="1078.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">MTK3339Sensor</text>
-<polyline fill="none" stroke="black" points="1021.5,-99 1135.5,-99 "/>
-<text text-anchor="start" x="1029.5" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; GPS</text>
-<polyline fill="none" stroke="black" points="1021.5,-80 1135.5,-80 "/>
-<text text-anchor="start" x="1029.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ MTK3339Sensor()</text>
-<text text-anchor="start" x="1029.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ MTK3339Sensor()</text>
-<text text-anchor="start" x="1029.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="1029.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<g id="a_node10"><a xlink:href="classLSM9DS1Sensor.html" target="_top" xlink:title="Implementation of the Sensor class for the LSM9DS1 (9&#45;axis IMU)">
+<polygon fill="none" stroke="black" points="1013.5,-0.5 1013.5,-145.5 1127.5,-145.5 1127.5,-0.5 1013.5,-0.5"/>
+<text text-anchor="middle" x="1070.5" y="-133.5" font-family="Helvetica,sans-Serif" font-size="10.00">LSM9DS1Sensor</text>
+<polyline fill="none" stroke="black" points="1013.5,-126.5 1127.5,-126.5 "/>
+<text text-anchor="start" x="1021.5" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; lsm</text>
+<text text-anchor="start" x="1021.5" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; accel_offsets</text>
+<text text-anchor="start" x="1021.5" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; gyro_offsets</text>
+<text text-anchor="start" x="1021.5" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; mag_offsets</text>
+<polyline fill="none" stroke="black" points="1013.5,-74.5 1127.5,-74.5 "/>
+<text text-anchor="start" x="1021.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ LSM9DS1Sensor()</text>
+<text text-anchor="start" x="1021.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ LSM9DS1Sensor()</text>
+<text text-anchor="start" x="1021.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="1021.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<text text-anchor="start" x="1021.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ calibrate()</text>
+<text text-anchor="start" x="1021.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; setupSensor()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node10 -->
 <g id="edge9" class="edge">
 <title>Node1&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M897.41,-238.3C933.61,-211.89 976.51,-178.8 1012.5,-146 1021.9,-137.43 1031.46,-127.71 1040.27,-118.23"/>
-<polygon fill="none" stroke="midnightblue" points="895.35,-235.47 889.32,-244.17 899.46,-241.13 895.35,-235.47"/>
+<path fill="none" stroke="midnightblue" d="M951.97,-206.82C972.45,-183.86 994.24,-159.45 1013.48,-137.89"/>
+<polygon fill="none" stroke="midnightblue" points="949.12,-204.75 945.07,-214.54 954.34,-209.41 949.12,-204.75"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">
 <title>Node11</title>
-<g id="a_node11"><a xlink:href="classSGP30Sensor.html" target="_top" xlink:title="Implementation of a Sensor for the SGP Air Quality sensor.">
-<polygon fill="none" stroke="black" points="1153.5,-28 1153.5,-118 1253.5,-118 1253.5,-28 1153.5,-28"/>
-<text text-anchor="middle" x="1203.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">SGP30Sensor</text>
-<polyline fill="none" stroke="black" points="1153.5,-99 1253.5,-99 "/>
-<text text-anchor="start" x="1161.5" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sgp</text>
-<polyline fill="none" stroke="black" points="1153.5,-80 1253.5,-80 "/>
-<text text-anchor="start" x="1161.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ SGP30Sensor()</text>
-<text text-anchor="start" x="1161.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ SGP30Sensor()</text>
-<text text-anchor="start" x="1161.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="1161.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<g id="a_node11"><a xlink:href="classMTK3339Sensor.html" target="_top" xlink:title="Implementation of the Adafruit MTK3339 GPS sensor.">
+<polygon fill="none" stroke="black" points="1145.5,-28 1145.5,-118 1259.5,-118 1259.5,-28 1145.5,-28"/>
+<text text-anchor="middle" x="1202.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">MTK3339Sensor</text>
+<polyline fill="none" stroke="black" points="1145.5,-99 1259.5,-99 "/>
+<text text-anchor="start" x="1153.5" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; GPS</text>
+<polyline fill="none" stroke="black" points="1145.5,-80 1259.5,-80 "/>
+<text text-anchor="start" x="1153.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ MTK3339Sensor()</text>
+<text text-anchor="start" x="1153.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ MTK3339Sensor()</text>
+<text text-anchor="start" x="1153.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="1153.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node11 -->
 <g id="edge10" class="edge">
 <title>Node1&#45;&gt;Node11</title>
-<path fill="none" stroke="midnightblue" d="M898.75,-268.32C968.18,-244.58 1069.43,-203.53 1144.5,-146 1154.76,-138.14 1164.37,-128.16 1172.73,-118.15"/>
-<polygon fill="none" stroke="midnightblue" points="897.53,-265.04 889.17,-271.56 899.77,-271.67 897.53,-265.04"/>
+<path fill="none" stroke="midnightblue" d="M954.35,-256.49C1008.34,-229.91 1080.1,-190.7 1136.5,-146 1146.87,-137.78 1157.04,-127.89 1166.18,-118.11"/>
+<polygon fill="none" stroke="midnightblue" points="952.61,-253.44 945.16,-260.97 955.68,-259.73 952.61,-253.44"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node">
 <title>Node12</title>
-<g id="a_node12"><a xlink:href="classSHT31Sensor.html" target="_top" xlink:title="Interfaces with SHT31 Sensor to collect temperature and humidity data.">
-<polygon fill="none" stroke="black" points="1271.5,-22.5 1271.5,-123.5 1393.5,-123.5 1393.5,-22.5 1271.5,-22.5"/>
-<text text-anchor="middle" x="1332.5" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">SHT31Sensor</text>
-<polyline fill="none" stroke="black" points="1271.5,-104.5 1393.5,-104.5 "/>
-<text text-anchor="start" x="1279.5" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sht31</text>
-<text text-anchor="start" x="1279.5" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; csvHeaderCompiled</text>
-<polyline fill="none" stroke="black" points="1271.5,-74.5 1393.5,-74.5 "/>
-<text text-anchor="start" x="1279.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SHT31Sensor()</text>
-<text text-anchor="start" x="1279.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SHT31Sensor()</text>
-<text text-anchor="start" x="1279.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="1279.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<g id="a_node12"><a xlink:href="classSGP30Sensor.html" target="_top" xlink:title="Implementation of a Sensor for the SGP Air Quality sensor.">
+<polygon fill="none" stroke="black" points="1277.5,-28 1277.5,-118 1377.5,-118 1377.5,-28 1277.5,-28"/>
+<text text-anchor="middle" x="1327.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">SGP30Sensor</text>
+<polyline fill="none" stroke="black" points="1277.5,-99 1377.5,-99 "/>
+<text text-anchor="start" x="1285.5" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sgp</text>
+<polyline fill="none" stroke="black" points="1277.5,-80 1377.5,-80 "/>
+<text text-anchor="start" x="1285.5" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ SGP30Sensor()</text>
+<text text-anchor="start" x="1285.5" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ SGP30Sensor()</text>
+<text text-anchor="start" x="1285.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="1285.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node12 -->
 <g id="edge11" class="edge">
 <title>Node1&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M899.06,-278.2C991.74,-258.92 1146.9,-218.38 1262.5,-146 1272.4,-139.8 1281.91,-131.92 1290.56,-123.65"/>
-<polygon fill="none" stroke="midnightblue" points="898.28,-274.78 889.18,-280.22 899.68,-281.64 898.28,-274.78"/>
+<path fill="none" stroke="midnightblue" d="M955,-275.91C1038.82,-255.6 1171.87,-215.07 1268.5,-146 1279.15,-138.39 1288.97,-128.38 1297.41,-118.27"/>
+<polygon fill="none" stroke="midnightblue" points="953.94,-272.57 945.03,-278.29 955.57,-279.38 953.94,-272.57"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="classTempSensor.html" target="_top" xlink:title="Implementation of a Sensor for the onboard temperature sensor.">
-<polygon fill="none" stroke="black" points="1412,-28 1412,-118 1507,-118 1507,-28 1412,-28"/>
-<text text-anchor="middle" x="1459.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">TempSensor</text>
-<polyline fill="none" stroke="black" points="1412,-99 1507,-99 "/>
-<text text-anchor="middle" x="1459.5" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="1412,-80 1507,-80 "/>
-<text text-anchor="start" x="1420" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ TempSensor()</text>
-<text text-anchor="start" x="1420" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ TempSensor()</text>
-<text text-anchor="start" x="1420" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="1420" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<g id="a_node13"><a xlink:href="classSHT31Sensor.html" target="_top" xlink:title="Interfaces with SHT31 Sensor to collect temperature and humidity data.">
+<polygon fill="none" stroke="black" points="1395.5,-22.5 1395.5,-123.5 1517.5,-123.5 1517.5,-22.5 1395.5,-22.5"/>
+<text text-anchor="middle" x="1456.5" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">SHT31Sensor</text>
+<polyline fill="none" stroke="black" points="1395.5,-104.5 1517.5,-104.5 "/>
+<text text-anchor="start" x="1403.5" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; sht31</text>
+<text text-anchor="start" x="1403.5" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; csvHeaderCompiled</text>
+<polyline fill="none" stroke="black" points="1395.5,-74.5 1517.5,-74.5 "/>
+<text text-anchor="start" x="1403.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SHT31Sensor()</text>
+<text text-anchor="start" x="1403.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ SHT31Sensor()</text>
+<text text-anchor="start" x="1403.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="1403.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node13 -->
 <g id="edge12" class="edge">
 <title>Node1&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M899.49,-288.54C1018.16,-279.29 1243.87,-248.5 1402.5,-146 1413.61,-138.82 1423.51,-128.73 1431.82,-118.36"/>
-<polygon fill="none" stroke="midnightblue" points="899.11,-285.06 889.4,-289.29 899.63,-292.04 899.11,-285.06"/>
+<path fill="none" stroke="midnightblue" d="M955.23,-282.66C1060.32,-266.89 1248.03,-228.88 1386.5,-146 1396.67,-139.91 1406.38,-131.98 1415.15,-123.61"/>
+<polygon fill="none" stroke="midnightblue" points="954.71,-279.19 945.33,-284.11 955.73,-286.12 954.71,-279.19"/>
 </g>
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
-<g id="a_node14"><a xlink:href="classZOPT220Sensor.html" target="_top" xlink:title="A class to interface with the ZOPT220x UV and ambient light sensor.">
-<polygon fill="none" stroke="black" points="1525,-28 1525,-118 1638,-118 1638,-28 1525,-28"/>
-<text text-anchor="middle" x="1581.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">ZOPT220Sensor</text>
-<polyline fill="none" stroke="black" points="1525,-99 1638,-99 "/>
-<text text-anchor="start" x="1533" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; zopt</text>
-<polyline fill="none" stroke="black" points="1525,-80 1638,-80 "/>
-<text text-anchor="start" x="1533" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ ZOPT220Sensor()</text>
-<text text-anchor="start" x="1533" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ ZOPT220Sensor()</text>
-<text text-anchor="start" x="1533" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="1533" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<g id="a_node14"><a xlink:href="classTempSensor.html" target="_top" xlink:title="Implementation of a Sensor for the onboard temperature sensor.">
+<polygon fill="none" stroke="black" points="1536,-28 1536,-118 1631,-118 1631,-28 1536,-28"/>
+<text text-anchor="middle" x="1583.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">TempSensor</text>
+<polyline fill="none" stroke="black" points="1536,-99 1631,-99 "/>
+<text text-anchor="middle" x="1583.5" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="1536,-80 1631,-80 "/>
+<text text-anchor="start" x="1544" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ TempSensor()</text>
+<text text-anchor="start" x="1544" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ TempSensor()</text>
+<text text-anchor="start" x="1544" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="1544" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node14 -->
 <g id="edge13" class="edge">
 <title>Node1&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M899.35,-291.47C1035.07,-286.43 1315.52,-261.56 1516.5,-146 1528.76,-138.95 1539.98,-128.77 1549.51,-118.28"/>
-<polygon fill="none" stroke="midnightblue" points="898.92,-287.98 889.05,-291.82 899.16,-294.98 898.92,-287.98"/>
+<path fill="none" stroke="midnightblue" d="M955.59,-291.29C1085.23,-285.85 1344.83,-260.21 1526.5,-146 1537.84,-138.87 1547.87,-128.67 1556.24,-118.18"/>
+<polygon fill="none" stroke="midnightblue" points="955.2,-287.8 945.35,-291.69 955.47,-294.79 955.2,-287.8"/>
+</g>
+<!-- Node15 -->
+<g id="node15" class="node">
+<title>Node15</title>
+<g id="a_node15"><a xlink:href="classZOPT220Sensor.html" target="_top" xlink:title="A class to interface with the ZOPT220x UV and ambient light sensor.">
+<polygon fill="none" stroke="black" points="1649,-28 1649,-118 1762,-118 1762,-28 1649,-28"/>
+<text text-anchor="middle" x="1705.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">ZOPT220Sensor</text>
+<polyline fill="none" stroke="black" points="1649,-99 1762,-99 "/>
+<text text-anchor="start" x="1657" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; zopt</text>
+<polyline fill="none" stroke="black" points="1649,-80 1762,-80 "/>
+<text text-anchor="start" x="1657" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ ZOPT220Sensor()</text>
+<text text-anchor="start" x="1657" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ ZOPT220Sensor()</text>
+<text text-anchor="start" x="1657" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="1657" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node15 -->
+<g id="edge14" class="edge">
+<title>Node1&#45;&gt;Node15</title>
+<path fill="none" stroke="midnightblue" d="M955.18,-283.74C1126.38,-263.88 1523.31,-211.99 1640.5,-146 1652.97,-138.98 1664.33,-128.68 1673.93,-118.06"/>
+<polygon fill="none" stroke="midnightblue" points="954.75,-280.26 945.22,-284.89 955.55,-287.22 954.75,-280.26"/>
 </g>
 </g>
 </svg>
