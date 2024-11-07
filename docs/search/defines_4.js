@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['icm_5fcs_412',['ICM_CS',['../ICM20948Sensor_8h.html#a6bfe29dd8718c4022ee23e0bcdc8e7a2',1,'ICM20948Sensor.h']]],
-  ['icm_5fi2c_5fmode_413',['ICM_I2C_MODE',['../ICM20948Sensor_8h.html#adc49fe1adc2606f6604a29ac1ea43394',1,'ICM20948Sensor.h']]]
+  ['heartbeat_5fpin_5f0_411',['HEARTBEAT_PIN_0',['../main_8cpp.html#abaa3035bca6ee12a60c3b4b03aa7574a',1,'main.cpp']]],
+  ['heartbeat_5fpin_5f1_412',['HEARTBEAT_PIN_1',['../main_8cpp.html#a1e93fe19ad4ef78d366cc8f619da977a',1,'main.cpp']]]
 ];

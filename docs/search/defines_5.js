@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['lsm9ds1_5fmcs_414',['LSM9DS1_MCS',['../LSM9DS1Sensor_8h.html#a79b02f1b4b83a85e4384dd86e9af49c3',1,'LSM9DS1Sensor.h']]],
-  ['lsm9ds1_5fxgcs_415',['LSM9DS1_XGCS',['../LSM9DS1Sensor_8h.html#ae346af1b28b94da6419cf34196be9a65',1,'LSM9DS1Sensor.h']]]
+  ['icm_5fcs_413',['ICM_CS',['../ICM20948Sensor_8h.html#a6bfe29dd8718c4022ee23e0bcdc8e7a2',1,'ICM20948Sensor.h']]],
+  ['icm_5fi2c_5fmode_414',['ICM_I2C_MODE',['../ICM20948Sensor_8h.html#adc49fe1adc2606f6604a29ac1ea43394',1,'ICM20948Sensor.h']]]
 ];
