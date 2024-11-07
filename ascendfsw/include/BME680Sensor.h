@@ -9,6 +9,10 @@
 
 #include "Sensor.h"
 
+#define SEALEVELPRESSURE_HPA (1013.25)
+#define SPI_MODE 0
+#define SPI_CS_PIN 17
+
 /**
  * @class BME680Sensor
  * @brief A class to interface with the Adafruit BME680 sensor for environmental

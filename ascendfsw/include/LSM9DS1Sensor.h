@@ -7,6 +7,9 @@
 
 #include "Sensor.h"
 
+#define LSM9DS1_XGCS 21
+#define LSM9DS1_MCS 22
+
 /**
  * @brief Implementation of the Sensor class for the LSM9DS1 (9-axis IMU)
  *

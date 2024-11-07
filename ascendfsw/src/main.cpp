@@ -32,20 +32,23 @@ void handleDataInterface();
 
 // Global variables
 // sensor classes
-BME680Sensor bme_sensor;
-GeigerSensor geiger_sensor;
-INA260Sensor ina260_sensor;
-LSM9DS1Sensor lsm9ds1_sensor;
-SHT31Sensor sht31_sensor;
-TempSensor temp_sensor;
-AnalogSensor analog_sensor;
-SGP30Sensor sgp30_sensor;
-BME280Sensor bme280_sensor;
-ENS160Sensor ens160_sensor;
-AS7331Sensor uv_sensor;
-DS3231Sensor rtc_backup_sensor;
-MTK3339Sensor gps_sensor;
-ICM20948Sensor icm_sensor;
+// clang-format off
+// class        sensor            minimum period in ms
+BME680Sensor    bme_sensor        (1000);
+GeigerSensor    geiger_sensor     (1000);
+INA260Sensor    ina260_sensor     (1000);
+LSM9DS1Sensor   lsm9ds1_sensor    (0);
+SHT31Sensor     sht31_sensor      (1000);
+TempSensor      temp_sensor       (1000);
+AnalogSensor    analog_sensor     (1000);
+SGP30Sensor     sgp30_sensor      (1000);
+BME280Sensor    bme280_sensor     (1000);
+ENS160Sensor    ens160_sensor     (1000);
+AS7331Sensor    uv_sensor         (1000);
+DS3231Sensor    rtc_backup_sensor (1000);
+MTK3339Sensor   gps_sensor        (5000);
+ICM20948Sensor  icm_sensor        (20);
+// clang-format on
 
 // sensor array
 Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,

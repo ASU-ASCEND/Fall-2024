@@ -1,11 +1,5 @@
 #include "LSM9DS1Sensor.h"
 
-#define LSM9DS1_SCK A5
-#define LSM9DS1_MISO 12
-#define LSM9DS1_MOSI A4
-#define LSM9DS1_XGCS 21
-#define LSM9DS1_MCS 20
-
 /**
  * @brief Construct a new LSM9DS1Sensor object with default minimum_period of 0
  *

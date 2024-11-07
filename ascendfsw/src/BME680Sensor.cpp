@@ -1,9 +1,5 @@
 #include "BME680Sensor.h"
 
-#define SEALEVELPRESSURE_HPA (1013.25)
-#define SPI_MODE 1
-#define SPI_CS_PIN 17
-
 /**
  * @brief Default constructor for the BME680Sensor class.
  *
