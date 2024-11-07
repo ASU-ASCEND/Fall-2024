@@ -40,12 +40,12 @@ SHT31Sensor sht31_sensor;
 TempSensor temp_sensor;
 AnalogSensor analog_sensor;
 SGP30Sensor sgp30_sensor;
-ICM20948Sensor icm_sensor; 
 BME280Sensor bme280_sensor;
 ENS160Sensor ens160_sensor;
 AS7331Sensor uv_sensor;
 DS3231Sensor rtc_backup_sensor;
 MTK3339Sensor gps_sensor;
+ICM20948Sensor icm_sensor; 
 
 // sensor array
 Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
