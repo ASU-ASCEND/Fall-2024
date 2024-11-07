@@ -14,7 +14,7 @@ AS7331Sensor::AS7331Sensor() : AS7331Sensor(0) {}
  * @param minium_period Minimum time to wait between readings in ms
  */
 AS7331Sensor::AS7331Sensor(unsigned long minium_period)
-    : Sensor("AS7331", "UVA(nm), UVB(nm), UVC(nm)", 3, minium_period) {}
+    : Sensor("AS7331", "UVA(nm),UVB(nm),UVC(nm),", 3, minium_period) {}
 
 /**
  * @brief Returns if the sensor can be reached
@@ -36,5 +36,5 @@ String AS7331Sensor::readData() {
   float uvb = myUVSensor.getUVB();
   float uvc = myUVSensor.getUVC();
 
-  return String(uva) + ", " + String(uvb) + ", " + String(uvc) + ", ";
+  return String(uva) + "," + String(uvb) + "," + String(uvc) + ",";
 }
