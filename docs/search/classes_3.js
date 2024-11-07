@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['geigersensor_199',['GeigerSensor',['../classGeigerSensor.html',1,'']]]
+  ['ens160sensor_206',['ENS160Sensor',['../classENS160Sensor.html',1,'']]],
+  ['errordisplay_207',['ErrorDisplay',['../classErrorDisplay.html',1,'']]]
 ];

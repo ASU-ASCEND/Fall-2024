@@ -7,6 +7,10 @@
 
 #include "Sensor.h"
 
+/**
+ * @brief Implementation of a Sensor for UVA/B/C sensor
+ *
+ */
 class AS7331Sensor : public Sensor {
  private:
   SfeAS7331ArdI2C myUVSensor;
