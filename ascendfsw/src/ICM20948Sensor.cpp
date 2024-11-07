@@ -30,7 +30,7 @@ bool ICM20948Sensor::verify() {
     return false;
   }
 #else
-  if (!this->icm.begin_SPI(ICM_CS)) {
+  if (!this->icm.begin_SPI(ICM_CS_PIN)) {
     return false;
   }
 #endif

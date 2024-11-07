@@ -8,7 +8,7 @@
 
 #include "Sensor.h"
 
-#define ICM_CS 26
+#define ICM_CS_PIN 26
 #define ICM_I2C_MODE 1
 
 /**
