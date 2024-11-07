@@ -25,20 +25,20 @@ ICM20948Sensor::ICM20948Sensor(unsigned long minimum_period)
  * @return false if not connected and working
  */
 bool ICM20948Sensor::verify() {
-  #if ICM_I2C_MODE
-  if(!this->icm.begin_I2C()){
-    return false; 
+#if ICM_I2C_MODE
+  if (!this->icm.begin_I2C()) {
+    return false;
   }
-  #else
-  if(!this->icm.begin_SPI(ICM_CS)){
-    return false; 
+#else
+  if (!this->icm.begin_SPI(ICM_CS)) {
+    return false;
   }
-  #endif
+#endif
 
-  this->icm_accel = icm.getAccelerometerSensor(); 
-  this->icm_gyro = icm.getGyroSensor(); 
-  this->icm_mag = icm.getMagnetometerSensor(); 
-  this->icm_temp = icm.getTemperatureSensor(); 
+  this->icm_accel = icm.getAccelerometerSensor();
+  this->icm_gyro = icm.getGyroSensor();
+  this->icm_mag = icm.getMagnetometerSensor();
+  this->icm_temp = icm.getTemperatureSensor();
 
   return true;
 }
@@ -60,5 +60,9 @@ String ICM20948Sensor::readData() {
   this->icm_gyro->getEvent(&gyro);
   this->icm_mag->getEvent(&mag);
 
-  return String(accel.acceleration.x) + "," + String(accel.acceleration.y) + "," + String(accel.acceleration.z) + "," + String(gyro.gyro.x) + "," + String(gyro.gyro.y) + "," + String(gyro.gyro.z) + "," + String(mag.magnetic.x) + "," + String(mag.magnetic.y) + "," + String(mag.magnetic.z) + "," + String(temp.temperature) + ","; 
+  return String(accel.acceleration.x) + "," + String(accel.acceleration.y) +
+         "," + String(accel.acceleration.z) + "," + String(gyro.gyro.x) + "," +
+         String(gyro.gyro.y) + "," + String(gyro.gyro.z) + "," +
+         String(mag.magnetic.x) + "," + String(mag.magnetic.y) + "," +
+         String(mag.magnetic.z) + "," + String(temp.temperature) + ",";
 }

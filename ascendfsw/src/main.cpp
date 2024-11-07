@@ -15,13 +15,13 @@
 #include "DS3231Sensor.h"
 #include "ENS160Sensor.h"
 #include "GeigerSensor.h"
+#include "ICM20948Sensor.h"
 #include "INA260Sensor.h"
 #include "LSM9DS1Sensor.h"
 #include "MTK3339Sensor.h"
 #include "SGP30Sensor.h"
 #include "SHT31Sensor.h"
 #include "TempSensor.h"
-#include "ICM20948Sensor.h"
 
 // helper function definitions
 int verifySensors();
@@ -45,7 +45,7 @@ ENS160Sensor ens160_sensor;
 AS7331Sensor uv_sensor;
 DS3231Sensor rtc_backup_sensor;
 MTK3339Sensor gps_sensor;
-ICM20948Sensor icm_sensor; 
+ICM20948Sensor icm_sensor;
 
 // sensor array
 Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
