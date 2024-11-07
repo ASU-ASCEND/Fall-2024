@@ -12,7 +12,9 @@ print(f"Time: {current_time}\n")
 # potential full header, based on sensors in flight software main, used to build header
 # avoids trouble from missing transmit header 
 full_no_fail_header = [
-  "Header","Millis",
+  "Header",
+  "Millis",
+
   "BMETemp(C),BMEPress(hPa),BMEHum(%),BMEGas(KOhms),BMEAlt(m),",    
   "GeigerSensor(CPS),", 
   "INACurr(mA),INAVolt(mV),INAPow(mW),",                   
@@ -23,8 +25,10 @@ full_no_fail_header = [
   "SGPTVOC(ppb),SGPeCO2(ppm),SGPTVOCBase(ppb),SGPeCO2Base(ppb),SGPH2,SGPEtha",
   "BME280RelHum %,BME280Pres Pa,BME280Alt m,BME280TempC,DewPointC,",  
   "ENSAQI,ENSTVOC ppb,ENSECO2 ppm,",
-  "UVA(nm), UVB(nm), UVC(nm)",
-  " "  # final space for matching fsw
+  "UVA(nm),UVB(nm),UVC(nm),",
+  "DS3231Time,DS3231TempC,",
+  "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,",
+  " "  # final space for matching fsw?
 ]
 
 root = tk.Tk()
