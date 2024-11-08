@@ -12,8 +12,8 @@ print(f"Time: {current_time}\n")
 # potential full header, based on sensors in flight software main, used to build header
 # avoids trouble from missing transmit header 
 full_no_fail_header = [
-  "Header",
-  "Millis",
+  "Header,",
+  "Millis,",
 
   "BMETemp(C),BMEPress(hPa),BMEHum(%),BMEGas(KOhms),BMEAlt(m),",    
   "GeigerSensor(CPS),", 
@@ -63,9 +63,10 @@ time_line = ["none" for i in range(HIST_SIZE)]
 header = "Receive time,header,"
 
 def update():
+  global header 
   with open(fileName, "a", newline = '\n') as f:
     # last_line = data_line
-    data_line.insert(0, str(ser.readline()))
+    data_line.insert(0, str(ser.readline())[2:-5])
     data_line.pop() 
 
     now = datetime.now()
@@ -73,15 +74,15 @@ def update():
     time_line.insert(0, current_time)
     time_line.pop()
 
-    if(header == "header"):
+    if(header == "Receive time,header,"):
       header = "Receive time, "
       header_field = int(data_line[0].split(",")[0], 16) # read header field, convert from hex 
       header_bin = bin(header_field)[2:]
       header_bin = header_bin[header_bin.find("1"):] # trim to first 1
       for i in range(len(header_bin)): # add each from full header if 1
         if header_bin[i] == "1": header += full_no_fail_header[i]
-      print(",".join(header))
-      f.write(",".join(header) + "\n")
+      print(header)
+      f.write(header + "\n")
 
     print(f"{time_line[0]}, {data_line[0]}")
     f.write(f"{time_line[0]}, {data_line[0]}\n")

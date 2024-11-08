@@ -13,7 +13,9 @@ RadioStorage::RadioStorage() : Storage("Radio") {}
  * @return false otherwise
  */
 bool RadioStorage::verify() {
-  Serial1.begin(115200);
+  Serial1.setRX(SERIAL1_RX_PIN);
+  Serial1.setTX(SERIAL1_TX_PIN); 
+  Serial1.begin(57600);
   return Serial1;
 }
 
