@@ -18,3 +18,10 @@ Download the python file (groundstation.py),  and then to start the groundstatio
 ```
 python groundstation.py
 ```
+
+# Executable Use
+Create with
+```
+pyinstaller --onefile groundstation.py
+```
+To use it just download and run
