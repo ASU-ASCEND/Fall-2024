@@ -12,10 +12,13 @@
 #include "AnalogSensor.h"
 #include "BME280Sensor.h"
 #include "BME680Sensor.h"
+#include "DS3231Sensor.h"
 #include "ENS160Sensor.h"
 #include "GeigerSensor.h"
+#include "ICM20948Sensor.h"
 #include "INA260Sensor.h"
 #include "LSM9DS1Sensor.h"
+#include "MTK3339Sensor.h"
 #include "SGP30Sensor.h"
 #include "SHT31Sensor.h"
 #include "TempSensor.h"
@@ -29,23 +32,31 @@ void handleDataInterface();
 
 // Global variables
 // sensor classes
-BME680Sensor bme_sensor;
-GeigerSensor geiger_sensor;
-INA260Sensor ina260_sensor;
-LSM9DS1Sensor lsm9ds1_sensor;
-SHT31Sensor sht31_sensor;
-TempSensor temp_sensor;
-AnalogSensor analog_sensor;
-SGP30Sensor sgp30_sensor;
-BME280Sensor bme280_sensor;
-ENS160Sensor ens160_sensor;
-AS7331Sensor uv_sensor;
+// clang-format off
+// class        sensor            minimum period in ms
+BME680Sensor    bme_sensor        (1000);
+GeigerSensor    geiger_sensor     (1000);
+INA260Sensor    ina260_sensor     (1000);
+LSM9DS1Sensor   lsm9ds1_sensor    (0);
+SHT31Sensor     sht31_sensor      (1000);
+TempSensor      temp_sensor       (1000);
+AnalogSensor    analog_sensor     (1000);
+SGP30Sensor     sgp30_sensor      (1000);
+BME280Sensor    bme280_sensor     (1000);
+ENS160Sensor    ens160_sensor     (1000);
+AS7331Sensor    uv_sensor         (1000);
+DS3231Sensor    rtc_backup_sensor (1000);
+MTK3339Sensor   gps_sensor        (5000);
+ICM20948Sensor  icm_sensor        (20);
+// clang-format on
 
 // sensor array
 Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
                      &lsm9ds1_sensor, &sht31_sensor,  &temp_sensor,
                      &analog_sensor,  &sgp30_sensor,  &bme280_sensor,
-                     &ens160_sensor,  &uv_sensor};
+                     &ens160_sensor,  &uv_sensor,     &rtc_backup_sensor,
+                     &icm_sensor};
+//&gps_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
 String header_condensed = "";
@@ -78,6 +89,8 @@ unsigned int it = 0;
  *
  */
 void setup() {
+  ErrorDisplay::instance().addCode(Error::NONE);  // for safety
+
   // start serial
   Serial.begin(115200);
   while (!Serial)  // remove before flight
@@ -158,7 +171,7 @@ void loop() {
   // store csv row
   storeData(csv_row);
 
-  delay(500);                                  // remove before flight
+  // delay(500);                                  // remove before flight
   digitalWrite(ON_BOARD_LED_PIN, (it & 0x1));  // toggle light with iteration
 }
 

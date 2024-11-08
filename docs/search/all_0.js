@@ -2,7 +2,7 @@ var searchData=
 [
   ['accel_5foffsets_0',['accel_offsets',['../classLSM9DS1Sensor.html#a5943ce2ad14b074f24f50c676b714dae',1,'LSM9DS1Sensor']]],
   ['addcode_1',['addCode',['../classErrorDisplay.html#a25018c85cd6b4055a5e796153b997d13',1,'ErrorDisplay']]],
-  ['analog_5fsensor_2',['analog_sensor',['../main_8cpp.html#a4da70d50cd9e181d4c45b2d503657c68',1,'main.cpp']]],
+  ['analog_5fsensor_2',['analog_sensor',['../main_8cpp.html#afed52d1721f1127305e22d9dd3b4b2ea',1,'main.cpp']]],
   ['analogsensor_3',['AnalogSensor',['../classAnalogSensor.html',1,'AnalogSensor'],['../classAnalogSensor.html#ab0bee8a8adeba701b68b6788add2e698',1,'AnalogSensor::AnalogSensor()'],['../classAnalogSensor.html#a70e07c257f0dbebc9914fe634da84f37',1,'AnalogSensor::AnalogSensor(unsigned long minium_period)']]],
   ['analogsensor_2ecpp_4',['AnalogSensor.cpp',['../AnalogSensor_8cpp.html',1,'']]],
   ['analogsensor_2eh_5',['AnalogSensor.h',['../AnalogSensor_8h.html',1,'']]],
