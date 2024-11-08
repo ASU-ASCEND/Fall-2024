@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['zopt220sensor_231',['ZOPT220Sensor',['../classZOPT220Sensor.html',1,'']]],
-  ['zopt220x_5fcontrol_232',['ZOPT220x_Control',['../classZOPT220x__Control.html',1,'']]]
+  ['zopt220sensor_233',['ZOPT220Sensor',['../classZOPT220Sensor.html',1,'']]],
+  ['zopt220x_5fcontrol_234',['ZOPT220x_Control',['../classZOPT220x__Control.html',1,'']]]
 ];
