@@ -112,11 +112,10 @@ for i in range(HIST_SIZE):
   combined_arr = f"{time_line[0]},{data_line[0]}".split(",") 
   if i < len(time_line):
     combined_arr = f"{time_line[i]},{data_line[i]}".split(",")
-  row = [tk.StringVar()]
-  row[0].set("-")
+  row = []
   for j in range(len(combined_arr)):
     cell_data = tk.StringVar()
-    cell_data.set("-")
+    cell_data.set(combined_arr[j])
     row.append(cell_data)
     Data = tk.Label(root, font = ("Helvetica", "10"))
     Data.grid(row=i+2 + (j // TABLE_WIDTH) * (HIST_SIZE + 1), column=j % TABLE_WIDTH, padx=5, pady=0)
@@ -141,14 +140,15 @@ def read_data():
 
   for i in range(len(data_line)):
     combined_arr = f"{time_line[i]},{data_line[i]}".split(",")
-
+    print("Combined arr", combined_arr)
     for j in range(len(combined_arr)):
       data_cells[i][j].set(combined_arr[j])
 
 def gui_handler():
-  data_thread = threading.Thread(target=read_data)
-  data_thread.start()
-  root.after(1000, gui_handler) 
+  root.update_idletasks()
+  read_data()
+  root.update()
+  root.after(500, gui_handler) 
 
 root.after(0, gui_handler)
 root.mainloop()
