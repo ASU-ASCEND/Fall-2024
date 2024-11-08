@@ -3,6 +3,8 @@ import time
 from datetime import datetime
 import serial.tools.list_ports as sp
 import tkinter as tk
+import threading
+import sys
 
 print("Starting Ground Station...")
 now = datetime.now()
@@ -19,10 +21,10 @@ full_no_fail_header = [
   "GeigerSensor(CPS),", 
   "INACurr(mA),INAVolt(mV),INAPow(mW),",                   
   "LSM9DS1 AccX, LSM9DS1 AccY, LSM9DS1 AccZ, LSM9DS1 GyroX, LSM9DS1 GyroY, LSM9DS1 GyroZ, LSM9DS1 MagX, LSM9DS1 MagY, LSM9DS1 MagZ,", 
-  "SHTHum(%), SHTTemp(C),",  
+  "SHTHum(%), SHTTemp(C),",
   "PicoTemp(C),",
   "WindADC,TempADC,", 
-  "SGPTVOC(ppb),SGPeCO2(ppm),SGPTVOCBase(ppb),SGPeCO2Base(ppb),SGPH2,SGPEtha",
+  "SGPTVOC(ppb),SGPeCO2(ppm),SGPTVOCBase(ppb),SGPeCO2Base(ppb),SGPH2,SGPEtha,",
   "BME280RelHum %,BME280Pres Pa,BME280Alt m,BME280TempC,DewPointC,",  
   "ENSAQI,ENSTVOC ppb,ENSECO2 ppm,",
   "UVA(nm),UVB(nm),UVC(nm),",
@@ -30,51 +32,69 @@ full_no_fail_header = [
   "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,",
   " "  # final space for matching fsw?
 ]
+# # User enter serial port
+# ports = list(sp.comports())
+# for i in ports:
+#     print(i)
+# print("Enter the COM Port (COM4, COM5, COM9, COM12, etc.) ")
+# comport = str(input())
+# print()
 
-root = tk.Tk()
-root.title("ASU ASCEND Ground Station")
+# # Open Serial Port, 
+# ser = serial.Serial(
+#   port = comport,
+#   baudrate = 57600,
+#   parity = serial.PARITY_NONE,
+#   stopbits = serial.STOPBITS_ONE,
+#   bytesize = serial.EIGHTBITS,
+#   timeout = None
+#   )
 
-# User enter serial port
-ports = list(sp.comports())
-for i in ports:
-    print(i)
-print("Enter the COM Port (COM4, COM5, COM9, COM12, etc.) ")
-comport = str(input())
-print()
-
-# Open Serial Port, 
-ser = serial.Serial(
-  port = comport,
-  baudrate = 57600,
-  parity = serial.PARITY_NONE,
-  stopbits = serial.STOPBITS_ONE,
-  bytesize = serial.EIGHTBITS,
-  timeout = None
-  )
-
-fileName = "RFD900x_Data.csv"
+fileName = f"ASCEND_DATA_{now.strftime('%Y_%m_%d_%H_%M_%S')}.csv"
 file = open(fileName, "a")
 file.close()
-print(fileName + " created to hold data. If file exists, data will be appended\n")
+print(fileName + " created to hold data. If file exists (it shouldn't), data will be appended\n")
  
-HIST_SIZE = 6
-data_line = ["empty," for i in range(HIST_SIZE)]
-time_line = ["none" for i in range(HIST_SIZE)]
+HIST_SIZE = 3
+TABLE_WIDTH = 9
+data_line = []
+time_line = []
 header = "Receive time,header,"
+header = "Receive time," + "".join(full_no_fail_header)
 
-def update():
+def _quit():
+  print("Done.")
+  root.quit()
+  sys.exit()
+
+
+root = tk.Tk()
+root.protocol("WM_DELETE_WINDOW", _quit)
+root.title("ASU ASCEND Ground Station")
+
+def update_header_gui():
+  header_arr = header.split(",")
+  for i in range(len(header_arr)):
+    header_label = tk.Label(root, font = ("Helvetica", "10", "bold"))
+    header_label.grid(row=1 + (i // TABLE_WIDTH) * (HIST_SIZE+1), column=i % TABLE_WIDTH, padx=5, pady=0)
+    header_label.config(text=header_arr[i])
+
+def read_data():
   global header 
   with open(fileName, "a", newline = '\n') as f:
     # last_line = data_line
-    data_line.insert(0, str(ser.readline())[2:-5])
-    data_line.pop() 
+    data_line.insert(0, "".join(full_no_fail_header)) #str(ser.readline())[2:-5])
+    if len(data_line) > HIST_SIZE: data_line.pop() 
 
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
     time_line.insert(0, current_time)
-    time_line.pop()
+    if len(time_line) > HIST_SIZE: time_line.pop()
+
+    time.sleep(1)
 
     if(header == "Receive time,header,"):
+      # parse new header
       header = "Receive time, "
       header_field = int(data_line[0].split(",")[0], 16) # read header field, convert from hex 
       header_bin = bin(header_field)[2:]
@@ -87,29 +107,32 @@ def update():
     print(f"{time_line[0]}, {data_line[0]}")
     f.write(f"{time_line[0]}, {data_line[0]}\n")
 
-  Title = tk.Label(root, font = ("Helvetica", "20", "bold"))
-  Title.grid(row=0,column=0,padx=(0, 0), pady=(0,0))
-  Title.config(text=('RFD-900x Data'))
-
-  # Data1 = tk.Label(root, font = ("Helvetica", "10"))
-  # Data1.grid(row=1,column=0,padx=(0, 5), pady=(0,0))
-  # Data1.config(text=f"{header}")
-  header_arr = header.split(",")
-  for i in range(len(header_arr)):
-    header_label = tk.Label(root, font = ("Helvetica", "10", "bold"))
-    header_label.grid(row=1, column=i, padx=5, pady=0)
-    header_label.config(text=header_arr[i])
-
+def update_data_gui():
   for i in range(len(data_line)):
     combined_arr = f"{time_line[i]},{data_line[i]}".split(",")
 
     for j in range(len(combined_arr)):
       Data = tk.Label(root, font = ("Helvetica", "10"))
-      Data.grid(row=i+2, column=j, padx=5, pady=0)
+      Data.grid(row=i+2 + (j // TABLE_WIDTH) * (HIST_SIZE + 1), column=j % TABLE_WIDTH, padx=5, pady=0)
       Data.config(text=combined_arr[j])
 
-  root.after(500, update) 
+def gui_handler():
+  data_thread = threading.Thread(target=read_data)
+  data_thread.start()
 
-root.after(0, update)
+  update_header_gui()
 
+  update_data_gui()
+
+  root.after(1000, gui_handler)
+
+def gui_setup():
+  Title = tk.Label(root, font = ("Helvetica", "20", "bold"))
+  Title.grid(row=0,column=0,padx=(0, 0), pady=(0,0))
+  Title.config(text=('ASU ASCEND Data'))
+
+  update_header_gui()
+
+root.after(0, gui_setup)
+root.after(1000, gui_handler)
 root.mainloop()
