@@ -5,6 +5,7 @@ import serial.tools.list_ports as sp
 import tkinter as tk
 import threading
 import sys
+import os
 
 print("Starting Ground Station...")
 now = datetime.now()
@@ -33,25 +34,28 @@ full_no_fail_header = [
   " "  # final space for matching fsw?
 ]
 # # User enter serial port
-ports = list(sp.comports())
-for i in ports:
-    print(i)
-print("Enter the COM Port (COM4, COM5, COM9, COM12, etc.) ")
-comport = str(input())
-print()
+# ports = list(sp.comports())
+# for i in ports:
+#     print(i)
+# print("Enter the COM Port (COM4, COM5, COM9, COM12, etc.) ")
+# comport = str(input())
+# print()
 
-# Open Serial Port, 
-ser = serial.Serial(
-  port = comport,
-  baudrate = 57600,
-  parity = serial.PARITY_NONE,
-  stopbits = serial.STOPBITS_ONE,
-  bytesize = serial.EIGHTBITS,
-  timeout = None
-  )
+# # Open Serial Port, 
+# ser = serial.Serial(
+#   port = comport,
+#   baudrate = 57600,
+#   parity = serial.PARITY_NONE,
+#   stopbits = serial.STOPBITS_ONE,
+#   bytesize = serial.EIGHTBITS,
+#   timeout = None
+#   )
 
+folder_path = "data"
+if not os.path.exists(folder_path):
+  os.makedirs(folder_path)
 fileName = f"ASCEND_DATA_{now.strftime('%Y_%m_%d_%H_%M_%S')}.csv"
-file = open(fileName, "a")
+file = open(os.path.join(folder_path, fileName), "a")
 file.close()
 print(fileName + " created to hold data. If file exists (it shouldn't), data will be appended\n")
  
@@ -79,7 +83,7 @@ Title.config(text=('ASU ASCEND Data'))
 data_cells = []
 with open(fileName, "a", newline = '\n') as f:
   # last_line = data_line
-  data_line.insert(0, str(ser.readline())[2:-5])
+  data_line.insert(0, "".join(full_no_fail_header))#str(ser.readline())[2:-5])
   if len(data_line) > HIST_SIZE: data_line.pop() 
 
   now = datetime.now()
@@ -90,12 +94,12 @@ with open(fileName, "a", newline = '\n') as f:
   time.sleep(1)
 
   # parse new header
-  header = "Receive time, "
-  header_field = int(data_line[0].split(",")[0], 16) # read header field, convert from hex 
-  header_bin = bin(header_field)[2:]
-  header_bin = header_bin[header_bin.find("1"):] # trim to first 1
-  for i in range(len(header_bin)): # add each from full header if 1
-    if header_bin[i] == "1": header += full_no_fail_header[i]
+  # header = "Receive time, "
+  # header_field = int(data_line[0].split(",")[0], 16) # read header field, convert from hex 
+  # header_bin = bin(header_field)[2:]
+  # header_bin = header_bin[header_bin.find("1"):] # trim to first 1
+  # for i in range(len(header_bin)): # add each from full header if 1
+  #   if header_bin[i] == "1": header += full_no_fail_header[i]
   print(header)
   f.write(header + "\n")
 
@@ -125,7 +129,7 @@ for i in range(HIST_SIZE):
 def read_data():
   with open(fileName, "a", newline = '\n') as f:
     # last_line = data_line
-    data_line.insert(0, str(ser.readline())[2:-5])
+    data_line.insert(0, "".join(full_no_fail_header)) #str(ser.readline())[2:-5])
     if len(data_line) > HIST_SIZE: data_line.pop() 
 
     now = datetime.now()
