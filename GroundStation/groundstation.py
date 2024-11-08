@@ -67,20 +67,63 @@ def _quit():
   root.quit()
   sys.exit()
 
-
 root = tk.Tk()
 root.protocol("WM_DELETE_WINDOW", _quit)
 root.title("ASU ASCEND Ground Station")
 
-def update_header_gui():
-  header_arr = header.split(",")
-  for i in range(len(header_arr)):
-    header_label = tk.Label(root, font = ("Helvetica", "10", "bold"))
-    header_label.grid(row=1 + (i // TABLE_WIDTH) * (HIST_SIZE+1), column=i % TABLE_WIDTH, padx=5, pady=0)
-    header_label.config(text=header_arr[i])
+Title = tk.Label(root, font = ("Helvetica", "20", "bold"))
+Title.grid(row=0,column=0,padx=(0, 0), pady=(0,0))
+Title.config(text=('ASU ASCEND Data'))
+
+# get first transmission and use it to set up gui 
+data_cells = []
+with open(fileName, "a", newline = '\n') as f:
+  # last_line = data_line
+  data_line.insert(0, "".join(full_no_fail_header)) #str(ser.readline())[2:-5])
+  if len(data_line) > HIST_SIZE: data_line.pop() 
+
+  now = datetime.now()
+  current_time = now.strftime("%H:%M:%S")
+  time_line.insert(0, current_time)
+  if len(time_line) > HIST_SIZE: time_line.pop()
+
+  time.sleep(1)
+
+  # parse new header
+  # header = "Receive time, "
+  # header_field = int(data_line[0].split(",")[0], 16) # read header field, convert from hex 
+  # header_bin = bin(header_field)[2:]
+  # header_bin = header_bin[header_bin.find("1"):] # trim to first 1
+  # for i in range(len(header_bin)): # add each from full header if 1
+  #   if header_bin[i] == "1": header += full_no_fail_header[i]
+  print(header)
+  f.write(header + "\n")
+
+  print(f"{time_line[0]}, {data_line[0]}")
+  f.write(f"{time_line[0]}, {data_line[0]}\n")
+
+header_arr = header.split(",")
+for i in range(len(header_arr)):
+  header_label = tk.Label(root, font = ("Helvetica", "10", "bold"))
+  header_label.grid(row=1 + (i // TABLE_WIDTH) * (HIST_SIZE+1), column=i % TABLE_WIDTH, padx=5, pady=0)
+  header_label.config(text=header_arr[i])
+
+for i in range(HIST_SIZE): 
+  combined_arr = f"{time_line[0]},{data_line[0]}".split(",") 
+  if i < len(time_line):
+    combined_arr = f"{time_line[i]},{data_line[i]}".split(",")
+  row = [tk.StringVar()]
+  row[0].set("-")
+  for j in range(len(combined_arr)):
+    cell_data = tk.StringVar()
+    cell_data.set("-")
+    row.append(cell_data)
+    Data = tk.Label(root, font = ("Helvetica", "10"))
+    Data.grid(row=i+2 + (j // TABLE_WIDTH) * (HIST_SIZE + 1), column=j % TABLE_WIDTH, padx=5, pady=0)
+    Data.config(textvariable=cell_data)
+  data_cells.append(row)
 
 def read_data():
-  global header 
   with open(fileName, "a", newline = '\n') as f:
     # last_line = data_line
     data_line.insert(0, "".join(full_no_fail_header)) #str(ser.readline())[2:-5])
@@ -93,46 +136,19 @@ def read_data():
 
     time.sleep(1)
 
-    if(header == "Receive time,header,"):
-      # parse new header
-      header = "Receive time, "
-      header_field = int(data_line[0].split(",")[0], 16) # read header field, convert from hex 
-      header_bin = bin(header_field)[2:]
-      header_bin = header_bin[header_bin.find("1"):] # trim to first 1
-      for i in range(len(header_bin)): # add each from full header if 1
-        if header_bin[i] == "1": header += full_no_fail_header[i]
-      print(header)
-      f.write(header + "\n")
-
     print(f"{time_line[0]}, {data_line[0]}")
     f.write(f"{time_line[0]}, {data_line[0]}\n")
 
-def update_data_gui():
   for i in range(len(data_line)):
     combined_arr = f"{time_line[i]},{data_line[i]}".split(",")
 
     for j in range(len(combined_arr)):
-      Data = tk.Label(root, font = ("Helvetica", "10"))
-      Data.grid(row=i+2 + (j // TABLE_WIDTH) * (HIST_SIZE + 1), column=j % TABLE_WIDTH, padx=5, pady=0)
-      Data.config(text=combined_arr[j])
+      data_cells[i][j].set(combined_arr[j])
 
 def gui_handler():
   data_thread = threading.Thread(target=read_data)
   data_thread.start()
+  root.after(1000, gui_handler) 
 
-  update_header_gui()
-
-  update_data_gui()
-
-  root.after(1000, gui_handler)
-
-def gui_setup():
-  Title = tk.Label(root, font = ("Helvetica", "20", "bold"))
-  Title.grid(row=0,column=0,padx=(0, 0), pady=(0,0))
-  Title.config(text=('ASU ASCEND Data'))
-
-  update_header_gui()
-
-root.after(0, gui_setup)
-root.after(1000, gui_handler)
+root.after(0, gui_handler)
 root.mainloop()
