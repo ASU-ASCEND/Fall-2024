@@ -76,9 +76,9 @@ bool storages_verify[storages_len];
 
 // pin definitions
 #define ON_BOARD_LED_PIN 25
-#define HEARTBEAT_PIN_0 14
-#define HEARTBEAT_PIN_1 15
-#define DATA_INTERFACE_PIN 1
+#define HEARTBEAT_PIN_0 12
+#define HEARTBEAT_PIN_1 13
+#define DATA_INTERFACE_PIN 15
 
 // global variables for main
 // loop counter
@@ -93,8 +93,8 @@ void setup() {
 
   // start serial
   Serial.begin(115200);
-  // while (!Serial)  // remove before flight
-  //   ;
+  while (!Serial)  // remove before flight
+    ;
 
   // setup heartbeat pins
   pinMode(HEARTBEAT_PIN_0, OUTPUT);
@@ -118,6 +118,7 @@ void setup() {
   }
 
   // verify storage
+  Serial.println("Verifying storage...");
   verified_count = verifyStorage();
   if (verified_count == 0) {
     Serial.println("No storages verified, output will be Serial only.");
@@ -137,6 +138,7 @@ void setup() {
   storeData(header);
 
   pinMode(ON_BOARD_LED_PIN, OUTPUT);
+  Serial.println("Setup done."); 
 }
 
 /**
