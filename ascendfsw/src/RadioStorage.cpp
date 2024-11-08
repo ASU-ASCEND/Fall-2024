@@ -13,7 +13,7 @@ RadioStorage::RadioStorage() : Storage("Radio") {}
  * @return false otherwise
  */
 bool RadioStorage::verify() {
-  Serial.end(); 
+  Serial.end();
   Serial1.setRX(SERIAL1_RX_PIN);
   Serial1.setTX(SERIAL1_TX_PIN);
   Serial1.begin(57600);
@@ -25,6 +25,4 @@ bool RadioStorage::verify() {
  *
  * @param data Data to transmit
  */
-void RadioStorage::store(String data) { 
-  Serial1.println(data); 
-}
+void RadioStorage::store(String data) { Serial1.println(data); }

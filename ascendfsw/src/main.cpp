@@ -138,7 +138,7 @@ void setup() {
   storeData(header);
 
   pinMode(ON_BOARD_LED_PIN, OUTPUT);
-  Serial.println("Setup done."); 
+  Serial.println("Setup done.");
 }
 
 /**
