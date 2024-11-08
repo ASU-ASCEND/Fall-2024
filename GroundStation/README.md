@@ -1,7 +1,7 @@
 # Ground Station
 Code for the ground station, using the RFD-900x radio
 
-## Setup 
+## Setup to run with the python command:
 Install python3, run this command in powershell
 ```
 python
@@ -19,9 +19,7 @@ Download the python file (groundstation.py),  and then to start the groundstatio
 python groundstation.py
 ```
 
-# Executable Use
-Create with
-```
-pyinstaller --onefile groundstation.py
-```
-To use it just download and run
+# Just use the executable:
+(Create with: `pyinstaller --onefile groundstation.py`)
+
+To use it just download `/dist/groundstation.exe` and run
