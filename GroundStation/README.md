@@ -14,7 +14,7 @@ Run this command in powershell to install the pyserial package:
 pip install pyserial 
 ```
 
-And then to start the groundstation software: 
+Download the python file (groundstation.py),  and then to start the groundstation software: 
 ```
 python groundstation.py
 ```
