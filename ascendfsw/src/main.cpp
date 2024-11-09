@@ -2,6 +2,7 @@
 
 // error code framework
 #include "ErrorDisplay.h"
+#include "PayloadConfig.h"
 
 // parent classes
 #include "Sensor.h"
@@ -72,11 +73,7 @@ Storage* storages[] = {&sd_storage, &radio_storage};
 const int storages_len = sizeof(storages) / sizeof(storages[0]);
 bool storages_verify[storages_len];
 
-// pin definitions
-#define ON_BOARD_LED_PIN 25
-#define HEARTBEAT_PIN_0 12
-#define HEARTBEAT_PIN_1 13
-#define DATA_INTERFACE_PIN 15
+
 
 // global variables for main
 // loop counter

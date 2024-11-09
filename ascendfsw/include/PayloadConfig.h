@@ -21,8 +21,8 @@
 #define ICM_I2C_MODE 1
 
 // lsm9ds1 imu
-#define LSM9DS1_XGCS 21
-#define LSM9DS1_MCS 22
+#define LSM9DS1_XGCS_PIN 21
+#define LSM9DS1_MCS_PIN 22
 
 // storages
 // radio
@@ -34,8 +34,14 @@
 #define SD_CS_PIN 9
 
 // spi1
-#define SPI1_MISO 8
-#define SPI1_SCK 10
-#define SPI1_MOSI 11
+#define SPI1_MISO_PIN 8
+#define SPI1_SCK_PIN 10
+#define SPI1_MOSI_PIN 11
+
+// main pin definitions
+#define ON_BOARD_LED_PIN 25
+#define HEARTBEAT_PIN_0 12
+#define HEARTBEAT_PIN_1 13
+#define DATA_INTERFACE_PIN 15
 
 #endif

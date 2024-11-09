@@ -17,7 +17,7 @@ LSM9DS1Sensor::LSM9DS1Sensor(unsigned long minimum_period)
              "LSM9DS1 AccX, LSM9DS1 AccY, LSM9DS1 AccZ, LSM9DS1 GyroX, LSM9DS1 "
              "GyroY, LSM9DS1 GyroZ, LSM9DS1 MagX, LSM9DS1 MagY, LSM9DS1 MagZ,",
              9, minimum_period),
-      lsm(LSM9DS1_XGCS, LSM9DS1_MCS) {  // Initialize lsm with CS pins for SPI
+      lsm(LSM9DS1_XGCS_PIN, LSM9DS1_MCS_PIN) {  // Initialize lsm with CS pins for SPI
   // calibration offsets to zero
   for (int i = 0; i < 3; i++) {
     accel_offsets[i] = 0.0;

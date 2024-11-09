@@ -16,7 +16,7 @@ class SDStorage : public Storage {
   String file_name;
 #if SD_SPI1
   SPIClassRP2040 sd_spi_1 =
-      SPIClassRP2040(spi1, SPI1_MISO, SD_CS_PIN, SPI1_SCK, SPI1_MOSI);
+      SPIClassRP2040(spi1, SPI1_MISO_PIN, SD_CS_PIN, SPI1_SCK_PIN, SPI1_MOSI_PIN);
 #endif
 
  public:
