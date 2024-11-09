@@ -7,9 +7,7 @@
 #include <string.h>
 
 #include "Sensor.h"
-
-#define ICM_CS_PIN 26
-#define ICM_I2C_MODE 1
+#include "PayloadConfig.h"
 
 /**
  * @brief Implementation of the Sensor class for the Adafruit ICM20948 (9-axis

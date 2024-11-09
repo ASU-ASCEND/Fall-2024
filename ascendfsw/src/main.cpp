@@ -9,7 +9,6 @@
 
 // include sensor headers here
 #include "AS7331Sensor.h"
-#include "AnalogSensor.h"
 #include "BME280Sensor.h"
 #include "BME680Sensor.h"
 #include "DS3231Sensor.h"
@@ -40,7 +39,6 @@ INA260Sensor    ina260_sensor     (1000);
 LSM9DS1Sensor   lsm9ds1_sensor    (0);
 SHT31Sensor     sht31_sensor      (1000);
 TempSensor      temp_sensor       (1000);
-AnalogSensor    analog_sensor     (1000);
 SGP30Sensor     sgp30_sensor      (1000);
 BME280Sensor    bme280_sensor     (1000);
 ENS160Sensor    ens160_sensor     (1000);
@@ -53,7 +51,7 @@ ICM20948Sensor  icm_sensor        (20);
 // sensor array
 Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
                      &lsm9ds1_sensor, &sht31_sensor,  &temp_sensor,
-                     &analog_sensor,  &sgp30_sensor,  &bme280_sensor,
+                    &sgp30_sensor,  &bme280_sensor,
                      &ens160_sensor,  &uv_sensor,     &rtc_backup_sensor,
                      &icm_sensor};
 //&gps_sensor};

@@ -5,12 +5,7 @@
 #include "SD.h"
 #include "Storage.h"
 
-#define SD_SPI1 1
-
-#define SPI1_MISO 8
-#define SD_CS_PIN 9
-#define SPI1_SCK 10
-#define SPI1_MOSI 11
+#include "PayloadConfig.h"
 
 /**
  * @brief Implementation of a Storage device to interface with an SD card
