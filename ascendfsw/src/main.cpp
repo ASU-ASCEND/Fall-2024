@@ -50,11 +50,10 @@ ICM20948Sensor  icm_sensor        (20);
 // clang-format on
 
 // sensor array
-Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
-                     &lsm9ds1_sensor, &sht31_sensor,  &temp_sensor,
-                    &sgp30_sensor,  &bme280_sensor,
-                     &ens160_sensor,  &uv_sensor,     &rtc_backup_sensor,
-                     &icm_sensor};
+Sensor* sensors[] = {&bme_sensor,     &geiger_sensor,     &ina260_sensor,
+                     &lsm9ds1_sensor, &sht31_sensor,      &temp_sensor,
+                     &sgp30_sensor,   &bme280_sensor,     &ens160_sensor,
+                     &uv_sensor,      &rtc_backup_sensor, &icm_sensor};
 //&gps_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];

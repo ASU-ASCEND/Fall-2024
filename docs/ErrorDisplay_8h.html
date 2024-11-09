@@ -67,19 +67,19 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">ErrorDisplay.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="PayloadConfig_8h_source.html">PayloadConfig.h</a>&quot;</code><br />
 <code>#include &quot;pico/multicore.h&quot;</code><br />
 <code>#include &quot;pico/stdlib.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ErrorDisplay.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="ErrorDisplay_8h__incl.svg" width="372" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="ErrorDisplay_8h__incl.svg" width="523" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -97,15 +97,6 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Singleton class for the 3 GPIO LED Error Display.  <a href="classErrorDisplay.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:af230e937fbf21c24dab2e1c834330a52"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ErrorDisplay_8h.html#af230e937fbf21c24dab2e1c834330a52">ERROR_PIN_2</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:af230e937fbf21c24dab2e1c834330a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d6e22e2c3ab3c12e8cd61594815925a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ErrorDisplay_8h.html#a5d6e22e2c3ab3c12e8cd61594815925a">ERROR_PIN_1</a>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:a5d6e22e2c3ab3c12e8cd61594815925a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48a86006eb436b950e5277fdf8a3ae53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ErrorDisplay_8h.html#a48a86006eb436b950e5277fdf8a3ae53">ERROR_PIN_0</a>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:a48a86006eb436b950e5277fdf8a3ae53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a2c3e4bb40f36b262a5214e2da2bca9c5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ErrorDisplay_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5">Error</a> { <br />
@@ -119,49 +110,6 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a2c3e4bb40f36b262a5214e2da2bca9c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a48a86006eb436b950e5277fdf8a3ae53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48a86006eb436b950e5277fdf8a3ae53">&#9670;&nbsp;</a></span>ERROR_PIN_0</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ERROR_PIN_0&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5d6e22e2c3ab3c12e8cd61594815925a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d6e22e2c3ab3c12e8cd61594815925a">&#9670;&nbsp;</a></span>ERROR_PIN_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ERROR_PIN_1&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af230e937fbf21c24dab2e1c834330a52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af230e937fbf21c24dab2e1c834330a52">&#9670;&nbsp;</a></span>ERROR_PIN_2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ERROR_PIN_2&#160;&#160;&#160;2</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a2c3e4bb40f36b262a5214e2da2bca9c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c3e4bb40f36b262a5214e2da2bca9c5">&#9670;&nbsp;</a></span>Error</h2>

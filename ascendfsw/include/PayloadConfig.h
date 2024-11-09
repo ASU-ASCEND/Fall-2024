@@ -3,16 +3,16 @@
 
 /**
  * @brief Central location for pinout and config defines
- * 
+ *
  */
 
-// error display 
+// error display
 #define ERROR_PIN_2 2
 #define ERROR_PIN_1 3
 #define ERROR_PIN_0 6
 
-// sensors 
-// bme 680 
+// sensors
+// bme 680
 #define BME680_SPI_CS_PIN 17
 #define BME680_SPI_MODE 0
 
