@@ -55,7 +55,7 @@ full_no_fail_header = [
   "LSM9DS1 AccX, LSM9DS1 AccY, LSM9DS1 AccZ, LSM9DS1 GyroX, LSM9DS1 GyroY, LSM9DS1 GyroZ, LSM9DS1 MagX, LSM9DS1 MagY, LSM9DS1 MagZ,", 
   "SHTHum(%), SHTTemp(C),",
   "PicoTemp(C),",
-  "WindADC,TempADC,", 
+  #"WindADC,TempADC,", 
   "SGPTVOC(ppb),SGPeCO2(ppm),SGPTVOCBase(ppb),SGPeCO2Base(ppb),SGPH2,SGPEtha,",
   "BME280RelHum %,BME280Pres Pa,BME280Alt m,BME280TempC,DewPointC,",  
   "ENSAQI,ENSTVOC ppb,ENSECO2 ppm,",
