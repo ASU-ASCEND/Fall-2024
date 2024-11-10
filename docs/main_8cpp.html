@@ -66,7 +66,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -75,6 +74,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;Arduino.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="ErrorDisplay_8h_source.html">ErrorDisplay.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="PayloadConfig_8h_source.html">PayloadConfig.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Sensor_8h_source.html">Sensor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Storage_8h_source.html">Storage.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AS7331Sensor_8h_source.html">AS7331Sensor.h</a>&quot;</code><br />
@@ -99,17 +99,6 @@ Include dependency graph for main.cpp:</div>
 </div>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a753dd0c5a5b93507df5b13ec346881e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a753dd0c5a5b93507df5b13ec346881e7">ON_BOARD_LED_PIN</a>&#160;&#160;&#160;25</td></tr>
-<tr class="separator:a753dd0c5a5b93507df5b13ec346881e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaa3035bca6ee12a60c3b4b03aa7574a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#abaa3035bca6ee12a60c3b4b03aa7574a">HEARTBEAT_PIN_0</a>&#160;&#160;&#160;12</td></tr>
-<tr class="separator:abaa3035bca6ee12a60c3b4b03aa7574a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e93fe19ad4ef78d366cc8f619da977a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a1e93fe19ad4ef78d366cc8f619da977a">HEARTBEAT_PIN_1</a>&#160;&#160;&#160;13</td></tr>
-<tr class="separator:a1e93fe19ad4ef78d366cc8f619da977a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36df51ef7cb9a6bf22a094f4d347cad6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a36df51ef7cb9a6bf22a094f4d347cad6">DATA_INTERFACE_PIN</a>&#160;&#160;&#160;15</td></tr>
-<tr class="separator:a36df51ef7cb9a6bf22a094f4d347cad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aef42a5a8a5d889c599fa964be60eca24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aef42a5a8a5d889c599fa964be60eca24">verifySensors</a> ()</td></tr>
@@ -183,63 +172,6 @@ Variables</h2></td></tr>
 <tr class="memitem:ac65d766d5179dcc67a8e61e09a1ce969"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac65d766d5179dcc67a8e61e09a1ce969">it</a> = 0</td></tr>
 <tr class="separator:ac65d766d5179dcc67a8e61e09a1ce969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a36df51ef7cb9a6bf22a094f4d347cad6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36df51ef7cb9a6bf22a094f4d347cad6">&#9670;&nbsp;</a></span>DATA_INTERFACE_PIN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DATA_INTERFACE_PIN&#160;&#160;&#160;15</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abaa3035bca6ee12a60c3b4b03aa7574a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abaa3035bca6ee12a60c3b4b03aa7574a">&#9670;&nbsp;</a></span>HEARTBEAT_PIN_0</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HEARTBEAT_PIN_0&#160;&#160;&#160;12</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1e93fe19ad4ef78d366cc8f619da977a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e93fe19ad4ef78d366cc8f619da977a">&#9670;&nbsp;</a></span>HEARTBEAT_PIN_1</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HEARTBEAT_PIN_1&#160;&#160;&#160;13</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a753dd0c5a5b93507df5b13ec346881e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a753dd0c5a5b93507df5b13ec346881e7">&#9670;&nbsp;</a></span>ON_BOARD_LED_PIN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ON_BOARD_LED_PIN&#160;&#160;&#160;25</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a222d3cef3e43d77865ecbd2f95edba3a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a222d3cef3e43d77865ecbd2f95edba3a">&#9670;&nbsp;</a></span>handleDataInterface()</h2>

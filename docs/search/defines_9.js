@@ -7,7 +7,7 @@ var searchData=
   ['sensortype_5fzopt2202_426',['SENSORTYPE_ZOPT2202',['../ZOPT220x__Control_8h.html#a973673325b483975ebac70e21d1ee967',1,'ZOPT220x_Control.h']]],
   ['serial1_5frx_5fpin_427',['SERIAL1_RX_PIN',['../PayloadConfig_8h.html#a863cecd1886a3aab37477c89cff41c43',1,'PayloadConfig.h']]],
   ['serial1_5ftx_5fpin_428',['SERIAL1_TX_PIN',['../PayloadConfig_8h.html#a034e57e90772ad922631c79a6a154110',1,'PayloadConfig.h']]],
-  ['spi1_5fmiso_429',['SPI1_MISO',['../PayloadConfig_8h.html#a7bb1fce9599f7a1568a075cd975c6502',1,'PayloadConfig.h']]],
-  ['spi1_5fmosi_430',['SPI1_MOSI',['../PayloadConfig_8h.html#a161081b41465c86e1a771c4194041341',1,'PayloadConfig.h']]],
-  ['spi1_5fsck_431',['SPI1_SCK',['../PayloadConfig_8h.html#a241b59557c3e3c91418162ed4d682aaa',1,'PayloadConfig.h']]]
+  ['spi1_5fmiso_5fpin_429',['SPI1_MISO_PIN',['../PayloadConfig_8h.html#ad78661760fc1a7e2851c49d3cead2519',1,'PayloadConfig.h']]],
+  ['spi1_5fmosi_5fpin_430',['SPI1_MOSI_PIN',['../PayloadConfig_8h.html#a0eef22ccdc4fd88572ba8543445522c6',1,'PayloadConfig.h']]],
+  ['spi1_5fsck_5fpin_431',['SPI1_SCK_PIN',['../PayloadConfig_8h.html#aafbcfb01e19fc70a09a6b130e1e7154a',1,'PayloadConfig.h']]]
 ];

@@ -72,8 +72,6 @@ Storage* storages[] = {&sd_storage, &radio_storage};
 const int storages_len = sizeof(storages) / sizeof(storages[0]);
 bool storages_verify[storages_len];
 
-
-
 // global variables for main
 // loop counter
 unsigned int it = 0;

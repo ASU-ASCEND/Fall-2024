@@ -97,10 +97,10 @@ Macros</h2></td></tr>
 <tr class="separator:a97e46f2363905b2fc7a4beac75efdd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc49fe1adc2606f6604a29ac1ea43394"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#adc49fe1adc2606f6604a29ac1ea43394">ICM_I2C_MODE</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:adc49fe1adc2606f6604a29ac1ea43394"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae346af1b28b94da6419cf34196be9a65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#ae346af1b28b94da6419cf34196be9a65">LSM9DS1_XGCS</a>&#160;&#160;&#160;21</td></tr>
-<tr class="separator:ae346af1b28b94da6419cf34196be9a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79b02f1b4b83a85e4384dd86e9af49c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#a79b02f1b4b83a85e4384dd86e9af49c3">LSM9DS1_MCS</a>&#160;&#160;&#160;22</td></tr>
-<tr class="separator:a79b02f1b4b83a85e4384dd86e9af49c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac497176d73ec84d742887962d6a6f47a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#ac497176d73ec84d742887962d6a6f47a">LSM9DS1_XGCS_PIN</a>&#160;&#160;&#160;21</td></tr>
+<tr class="separator:ac497176d73ec84d742887962d6a6f47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14287a16ed8b281fe0f7434d7f4d0119"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#a14287a16ed8b281fe0f7434d7f4d0119">LSM9DS1_MCS_PIN</a>&#160;&#160;&#160;22</td></tr>
+<tr class="separator:a14287a16ed8b281fe0f7434d7f4d0119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a863cecd1886a3aab37477c89cff41c43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#a863cecd1886a3aab37477c89cff41c43">SERIAL1_RX_PIN</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a863cecd1886a3aab37477c89cff41c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a034e57e90772ad922631c79a6a154110"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#a034e57e90772ad922631c79a6a154110">SERIAL1_TX_PIN</a>&#160;&#160;&#160;0</td></tr>
@@ -109,12 +109,20 @@ Macros</h2></td></tr>
 <tr class="separator:a6b45b8a80c72eccdea7bb185463ca679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d57a6c18b2d5e81f31093e58ed0c62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#a04d57a6c18b2d5e81f31093e58ed0c62">SD_CS_PIN</a>&#160;&#160;&#160;9</td></tr>
 <tr class="separator:a04d57a6c18b2d5e81f31093e58ed0c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bb1fce9599f7a1568a075cd975c6502"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#a7bb1fce9599f7a1568a075cd975c6502">SPI1_MISO</a>&#160;&#160;&#160;8</td></tr>
-<tr class="separator:a7bb1fce9599f7a1568a075cd975c6502"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a241b59557c3e3c91418162ed4d682aaa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#a241b59557c3e3c91418162ed4d682aaa">SPI1_SCK</a>&#160;&#160;&#160;10</td></tr>
-<tr class="separator:a241b59557c3e3c91418162ed4d682aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a161081b41465c86e1a771c4194041341"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#a161081b41465c86e1a771c4194041341">SPI1_MOSI</a>&#160;&#160;&#160;11</td></tr>
-<tr class="separator:a161081b41465c86e1a771c4194041341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78661760fc1a7e2851c49d3cead2519"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#ad78661760fc1a7e2851c49d3cead2519">SPI1_MISO_PIN</a>&#160;&#160;&#160;8</td></tr>
+<tr class="separator:ad78661760fc1a7e2851c49d3cead2519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafbcfb01e19fc70a09a6b130e1e7154a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#aafbcfb01e19fc70a09a6b130e1e7154a">SPI1_SCK_PIN</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:aafbcfb01e19fc70a09a6b130e1e7154a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eef22ccdc4fd88572ba8543445522c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#a0eef22ccdc4fd88572ba8543445522c6">SPI1_MOSI_PIN</a>&#160;&#160;&#160;11</td></tr>
+<tr class="separator:a0eef22ccdc4fd88572ba8543445522c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a753dd0c5a5b93507df5b13ec346881e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#a753dd0c5a5b93507df5b13ec346881e7">ON_BOARD_LED_PIN</a>&#160;&#160;&#160;25</td></tr>
+<tr class="separator:a753dd0c5a5b93507df5b13ec346881e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa3035bca6ee12a60c3b4b03aa7574a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#abaa3035bca6ee12a60c3b4b03aa7574a">HEARTBEAT_PIN_0</a>&#160;&#160;&#160;12</td></tr>
+<tr class="separator:abaa3035bca6ee12a60c3b4b03aa7574a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e93fe19ad4ef78d366cc8f619da977a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#a1e93fe19ad4ef78d366cc8f619da977a">HEARTBEAT_PIN_1</a>&#160;&#160;&#160;13</td></tr>
+<tr class="separator:a1e93fe19ad4ef78d366cc8f619da977a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36df51ef7cb9a6bf22a094f4d347cad6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PayloadConfig_8h.html#a36df51ef7cb9a6bf22a094f4d347cad6">DATA_INTERFACE_PIN</a>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:a36df51ef7cb9a6bf22a094f4d347cad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="aba104876166752f24fb0443b22075f76"></a>
@@ -139,6 +147,20 @@ Macros</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define BME680_SPI_MODE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36df51ef7cb9a6bf22a094f4d347cad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36df51ef7cb9a6bf22a094f4d347cad6">&#9670;&nbsp;</a></span>DATA_INTERFACE_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_INTERFACE_PIN&#160;&#160;&#160;15</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -189,6 +211,34 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="abaa3035bca6ee12a60c3b4b03aa7574a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaa3035bca6ee12a60c3b4b03aa7574a">&#9670;&nbsp;</a></span>HEARTBEAT_PIN_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HEARTBEAT_PIN_0&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e93fe19ad4ef78d366cc8f619da977a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e93fe19ad4ef78d366cc8f619da977a">&#9670;&nbsp;</a></span>HEARTBEAT_PIN_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HEARTBEAT_PIN_1&#160;&#160;&#160;13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a97e46f2363905b2fc7a4beac75efdd7b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97e46f2363905b2fc7a4beac75efdd7b">&#9670;&nbsp;</a></span>ICM_CS_PIN</h2>
 
@@ -217,28 +267,42 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="a79b02f1b4b83a85e4384dd86e9af49c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79b02f1b4b83a85e4384dd86e9af49c3">&#9670;&nbsp;</a></span>LSM9DS1_MCS</h2>
+<a id="a14287a16ed8b281fe0f7434d7f4d0119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14287a16ed8b281fe0f7434d7f4d0119">&#9670;&nbsp;</a></span>LSM9DS1_MCS_PIN</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LSM9DS1_MCS&#160;&#160;&#160;22</td>
+          <td class="memname">#define LSM9DS1_MCS_PIN&#160;&#160;&#160;22</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ae346af1b28b94da6419cf34196be9a65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae346af1b28b94da6419cf34196be9a65">&#9670;&nbsp;</a></span>LSM9DS1_XGCS</h2>
+<a id="ac497176d73ec84d742887962d6a6f47a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac497176d73ec84d742887962d6a6f47a">&#9670;&nbsp;</a></span>LSM9DS1_XGCS_PIN</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LSM9DS1_XGCS&#160;&#160;&#160;21</td>
+          <td class="memname">#define LSM9DS1_XGCS_PIN&#160;&#160;&#160;21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a753dd0c5a5b93507df5b13ec346881e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a753dd0c5a5b93507df5b13ec346881e7">&#9670;&nbsp;</a></span>ON_BOARD_LED_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ON_BOARD_LED_PIN&#160;&#160;&#160;25</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -301,42 +365,42 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="a7bb1fce9599f7a1568a075cd975c6502"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bb1fce9599f7a1568a075cd975c6502">&#9670;&nbsp;</a></span>SPI1_MISO</h2>
+<a id="ad78661760fc1a7e2851c49d3cead2519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad78661760fc1a7e2851c49d3cead2519">&#9670;&nbsp;</a></span>SPI1_MISO_PIN</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SPI1_MISO&#160;&#160;&#160;8</td>
+          <td class="memname">#define SPI1_MISO_PIN&#160;&#160;&#160;8</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a161081b41465c86e1a771c4194041341"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a161081b41465c86e1a771c4194041341">&#9670;&nbsp;</a></span>SPI1_MOSI</h2>
+<a id="a0eef22ccdc4fd88572ba8543445522c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eef22ccdc4fd88572ba8543445522c6">&#9670;&nbsp;</a></span>SPI1_MOSI_PIN</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SPI1_MOSI&#160;&#160;&#160;11</td>
+          <td class="memname">#define SPI1_MOSI_PIN&#160;&#160;&#160;11</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a241b59557c3e3c91418162ed4d682aaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a241b59557c3e3c91418162ed4d682aaa">&#9670;&nbsp;</a></span>SPI1_SCK</h2>
+<a id="aafbcfb01e19fc70a09a6b130e1e7154a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafbcfb01e19fc70a09a6b130e1e7154a">&#9670;&nbsp;</a></span>SPI1_SCK_PIN</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SPI1_SCK&#160;&#160;&#160;10</td>
+          <td class="memname">#define SPI1_SCK_PIN&#160;&#160;&#160;10</td>
         </tr>
       </table>
 </div><div class="memdoc">
