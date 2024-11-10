@@ -6,8 +6,8 @@
 #include <Adafruit_Sensor.h>
 #include <string.h>
 
-#include "Sensor.h"
 #include "PayloadConfig.h"
+#include "Sensor.h"
 
 /**
  * @brief Implementation of the Sensor class for the Adafruit ICM20948 (9-axis

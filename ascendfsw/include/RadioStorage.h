@@ -3,8 +3,8 @@
 
 #include <Arduino.h>
 
-#include "Storage.h"
 #include "PayloadConfig.h"
+#include "Storage.h"
 
 /**
  * @brief Implementation of a Storage device to interface with an SD card

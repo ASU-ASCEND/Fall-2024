@@ -2,10 +2,9 @@
 #define SD_STORAGE_H
 
 #include "ErrorDisplay.h"
+#include "PayloadConfig.h"
 #include "SD.h"
 #include "Storage.h"
-
-#include "PayloadConfig.h"
 
 /**
  * @brief Implementation of a Storage device to interface with an SD card

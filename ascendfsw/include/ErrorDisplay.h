@@ -3,10 +3,9 @@
 
 #include <Arduino.h>
 
+#include "PayloadConfig.h"
 #include "pico/multicore.h"
 #include "pico/stdlib.h"
-
-#include "PayloadConfig.h"
 
 /**
  * Error codes:
