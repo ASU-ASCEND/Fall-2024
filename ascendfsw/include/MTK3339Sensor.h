@@ -16,11 +16,11 @@
  */
 class MTK3339Sensor : public Sensor {
  private:
-  //int pin; chip select pin
+  // int pin; chip select pin
   Adafruit_GPS GPS;
 
  public:
-  MTK3339Sensor(); //pass pin in constructor
+  MTK3339Sensor();  // pass pin in constructor
   MTK3339Sensor(unsigned long minimum_period);
 
   bool verify() override;
