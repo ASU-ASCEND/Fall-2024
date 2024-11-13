@@ -7,7 +7,10 @@
 #include <Wire.h>
 #include <string.h>
 
+#include "PayloadConfig.h"
 #include "Sensor.h"
+
+#define SEALEVELPRESSURE_HPA (1013.25)
 
 /**
  * @class BME680Sensor

@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['zopt220sensor_162',['ZOPT220Sensor',['../classZOPT220Sensor.html',1,'']]],
-  ['zopt220x_5fcontrol_163',['ZOPT220x_Control',['../classZOPT220x__Control.html',1,'']]]
+  ['sdstorage_228',['SDStorage',['../classSDStorage.html',1,'']]],
+  ['sensor_229',['Sensor',['../classSensor.html',1,'']]],
+  ['sgp30sensor_230',['SGP30Sensor',['../classSGP30Sensor.html',1,'']]],
+  ['sht31sensor_231',['SHT31Sensor',['../classSHT31Sensor.html',1,'']]],
+  ['storage_232',['Storage',['../classStorage.html',1,'']]]
 ];

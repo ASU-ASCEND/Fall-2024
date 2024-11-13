@@ -1,9 +1,5 @@
 #include "BME680Sensor.h"
 
-#define SEALEVELPRESSURE_HPA (1013.25)
-#define SPI_MODE 1
-#define SPI_CS_PIN 17
-
 /**
  * @brief Default constructor for the BME680Sensor class.
  *
@@ -40,8 +36,8 @@ BME680Sensor::BME680Sensor(unsigned long minimum_period)
  * @return false - If the sensor is not detected or fails to initialize.
  */
 bool BME680Sensor::verify() {
-#if SPI_MODE  // Using SPI
-  if (!bme.begin(SPI_CS_PIN, spi0)) {
+#if BME680_SPI_MODE  // Using SPI
+  if (!bme.begin(BME680_SPI_CS_PIN, spi0)) {
     return false;
   }
 #else  // Using I2C

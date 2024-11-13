@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['zopt_281',['zopt',['../classZOPT220Sensor.html#a197f87d2ad2e67a2a20d204c6923583c',1,'ZOPT220Sensor']]],
-  ['zopt220_5fsensor_282',['zopt220_sensor',['../main_8cpp.html#a605b2d944419ab59d5b481123c56c912',1,'main.cpp']]],
-  ['zoptaddress_283',['zoptAddress',['../classZOPT220x__Control.html#ae3c36998e024dc480b8abe0dfeed7d3d',1,'ZOPT220x_Control']]]
+  ['radio_5fstorage_381',['radio_storage',['../main_8cpp.html#aa9bf2d87eb422349a53cce59be5d5fe7',1,'main.cpp']]],
+  ['rtc_382',['rtc',['../classDS3231Sensor.html#a7ef3bb961c4dff9c9759b16eacfd7c39',1,'DS3231Sensor']]],
+  ['rtc_5fbackup_5fsensor_383',['rtc_backup_sensor',['../main_8cpp.html#adcfbe18d684f8a0cb3ea4efae14e5846',1,'main.cpp']]]
 ];
