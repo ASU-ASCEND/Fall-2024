@@ -77,13 +77,13 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for SDStorage:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classSDStorage__inherit__graph.svg" width="168" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classSDStorage__inherit__graph.svg" width="168" height="302"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
 Collaboration diagram for SDStorage:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classSDStorage__coll__graph.svg" width="275" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classSDStorage__coll__graph.svg" width="426" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -109,6 +109,8 @@ Public Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a940beb3d7849473c7c96a4fe57479c1a"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDStorage.html#a940beb3d7849473c7c96a4fe57479c1a">file_name</a></td></tr>
 <tr class="separator:a940beb3d7849473c7c96a4fe57479c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa623d55594db1a3e97bc60169f8aa673"><td class="memItemLeft" align="right" valign="top">SPIClassRP2040&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSDStorage.html#aa623d55594db1a3e97bc60169f8aa673">sd_spi_1</a></td></tr>
+<tr class="separator:aa623d55594db1a3e97bc60169f8aa673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of a <a class="el" href="classStorage.html" title="Parent class for all data storage devices (sd card, radio, etc)">Storage</a> device to interface with an SD card. </p>
@@ -222,6 +224,34 @@ false otherwise </dd></dl>
 </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="aa623d55594db1a3e97bc60169f8aa673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa623d55594db1a3e97bc60169f8aa673">&#9670;&nbsp;</a></span>sd_spi_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SPIClassRP2040 SDStorage::sd_spi_1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= SPIClassRP2040(spi1, <a class="code" href="PayloadConfig_8h.html#ad78661760fc1a7e2851c49d3cead2519">SPI1_MISO_PIN</a>, <a class="code" href="PayloadConfig_8h.html#a04d57a6c18b2d5e81f31093e58ed0c62">SD_CS_PIN</a>,</div>
+<div class="line">                                           <a class="code" href="PayloadConfig_8h.html#aafbcfb01e19fc70a09a6b130e1e7154a">SPI1_SCK_PIN</a>, <a class="code" href="PayloadConfig_8h.html#a0eef22ccdc4fd88572ba8543445522c6">SPI1_MOSI_PIN</a>)</div>
+<div class="ttc" id="aPayloadConfig_8h_html_a04d57a6c18b2d5e81f31093e58ed0c62"><div class="ttname"><a href="PayloadConfig_8h.html#a04d57a6c18b2d5e81f31093e58ed0c62">SD_CS_PIN</a></div><div class="ttdeci">#define SD_CS_PIN</div><div class="ttdoc">SD Card SPI CS PIN.</div><div class="ttdef"><b>Definition:</b> PayloadConfig.h:38</div></div>
+<div class="ttc" id="aPayloadConfig_8h_html_a0eef22ccdc4fd88572ba8543445522c6"><div class="ttname"><a href="PayloadConfig_8h.html#a0eef22ccdc4fd88572ba8543445522c6">SPI1_MOSI_PIN</a></div><div class="ttdeci">#define SPI1_MOSI_PIN</div><div class="ttdoc">SPI1 MOSI PIN.</div><div class="ttdef"><b>Definition:</b> PayloadConfig.h:46</div></div>
+<div class="ttc" id="aPayloadConfig_8h_html_aafbcfb01e19fc70a09a6b130e1e7154a"><div class="ttname"><a href="PayloadConfig_8h.html#aafbcfb01e19fc70a09a6b130e1e7154a">SPI1_SCK_PIN</a></div><div class="ttdeci">#define SPI1_SCK_PIN</div><div class="ttdoc">SPI1 SCK PIN.</div><div class="ttdef"><b>Definition:</b> PayloadConfig.h:44</div></div>
+<div class="ttc" id="aPayloadConfig_8h_html_ad78661760fc1a7e2851c49d3cead2519"><div class="ttname"><a href="PayloadConfig_8h.html#ad78661760fc1a7e2851c49d3cead2519">SPI1_MISO_PIN</a></div><div class="ttdeci">#define SPI1_MISO_PIN</div><div class="ttdoc">SPI1 MISO PIN.</div><div class="ttdef"><b>Definition:</b> PayloadConfig.h:42</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>

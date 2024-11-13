@@ -1,30 +1,6 @@
 var searchData=
 [
-  ['zopt_115',['zopt',['../classZOPT220Sensor.html#a197f87d2ad2e67a2a20d204c6923583c',1,'ZOPT220Sensor']]],
-  ['zopt220_5fsensor_116',['zopt220_sensor',['../main_8cpp.html#a605b2d944419ab59d5b481123c56c912',1,'main.cpp']]],
-  ['zopt220sensor_117',['ZOPT220Sensor',['../classZOPT220Sensor.html',1,'ZOPT220Sensor'],['../classZOPT220Sensor.html#a9631f5bd9a0e1ea5ad4ffb34e3413745',1,'ZOPT220Sensor::ZOPT220Sensor()'],['../classZOPT220Sensor.html#a42578e81a233f9bad1b7f297cf5784f8',1,'ZOPT220Sensor::ZOPT220Sensor(unsigned long mimimum_period)']]],
-  ['zopt220sensor_2ecpp_118',['ZOPT220Sensor.cpp',['../ZOPT220Sensor_8cpp.html',1,'']]],
-  ['zopt220sensor_2eh_119',['ZOPT220Sensor.h',['../ZOPT220Sensor_8h.html',1,'']]],
-  ['zopt220x_5fals_5fdata_120',['ZOPT220x_ALS_DATA',['../ZOPT220x__Control_8h.html#a2e437940208f1509634a56e7db304a76',1,'ZOPT220x_Control.h']]],
-  ['zopt220x_5fcomp_5fdata_121',['ZOPT220x_COMP_DATA',['../ZOPT220x__Control_8h.html#ab51710f03374d37d1a55ff44c2d67ec4',1,'ZOPT220x_Control.h']]],
-  ['zopt220x_5fcontrol_122',['ZOPT220x_Control',['../classZOPT220x__Control.html',1,'']]],
-  ['zopt220x_5fcontrol_2eh_123',['ZOPT220x_Control.h',['../ZOPT220x__Control_8h.html',1,'']]],
-  ['zopt220x_5fdevice_5fconfig_124',['ZOPT220x_DEVICE_CONFIG',['../ZOPT220x__Control_8h.html#a1c7aa93dc30de0b660e19d5252f582da',1,'ZOPT220x_Control.h']]],
-  ['zopt220x_5fint_5fcfg_125',['ZOPT220x_INT_CFG',['../ZOPT220x__Control_8h.html#a86f4da4161faf00ba60c02737611bbe9',1,'ZOPT220x_Control.h']]],
-  ['zopt220x_5fint_5fpst_126',['ZOPT220x_INT_PST',['../ZOPT220x__Control_8h.html#a9abc8414db89c6269b8c3a8dc6db85c9',1,'ZOPT220x_Control.h']]],
-  ['zopt220x_5fls_5fgain_127',['ZOPT220x_LS_GAIN',['../ZOPT220x__Control_8h.html#acefa7b60e449460a28980a2bceccb6bf',1,'ZOPT220x_Control.h']]],
-  ['zopt220x_5fls_5fmeas_5frate_128',['ZOPT220x_LS_MEAS_RATE',['../ZOPT220x__Control_8h.html#adbfd3be3b87e203df471126f52bde8a7',1,'ZOPT220x_Control.h']]],
-  ['zopt220x_5fmain_5fctrl_129',['ZOPT220x_MAIN_CTRL',['../ZOPT220x__Control_8h.html#ab1c61d50a257037bf4dbd709d4147591',1,'ZOPT220x_Control.h']]],
-  ['zopt220x_5fmain_5fstatus_130',['ZOPT220x_MAIN_STATUS',['../ZOPT220x__Control_8h.html#a1ec9966069f147e521beaa08f153be52',1,'ZOPT220x_Control.h']]],
-  ['zopt220x_5fpart_5fid_131',['ZOPT220x_PART_ID',['../ZOPT220x__Control_8h.html#a32860c7924f3a407f2f31bca0fcbaf84',1,'ZOPT220x_Control.h']]],
-  ['zopt220x_5fspecial_5fmode_5f1_132',['ZOPT220x_SPECIAL_MODE_1',['../ZOPT220x__Control_8h.html#afc5e82c6fbb3cf39d40845eac3311832',1,'ZOPT220x_Control.h']]],
-  ['zopt220x_5fspecial_5fmode_5f2_133',['ZOPT220x_SPECIAL_MODE_2',['../ZOPT220x__Control_8h.html#a8b345b70c65e90ba0ef1d586740461c0',1,'ZOPT220x_Control.h']]],
-  ['zopt220x_5fuv_5fcomp_5fdata_134',['ZOPT220x_UV_COMP_DATA',['../ZOPT220x__Control_8h.html#af90272ee18c4ca859b5c1adf36f7b9b1',1,'ZOPT220x_Control.h']]],
-  ['zopt220x_5fuvb_5fdata_135',['ZOPT220x_UVB_DATA',['../ZOPT220x__Control_8h.html#a89ba52ba6676a42b1b185f26f712d66f',1,'ZOPT220x_Control.h']]],
-  ['zopt220xsetup_136',['zopt220xSetup',['../classZOPT220x__Control.html#aab772e9154760b2ddbee82953532f08e',1,'ZOPT220x_Control']]],
-  ['zopt220xsetupwithaddress_137',['zopt220xSetupWithAddress',['../classZOPT220x__Control.html#adc20ce356a572b8039ba96b9160e97c4',1,'ZOPT220x_Control']]],
-  ['zoptaddress_138',['zoptAddress',['../classZOPT220x__Control.html#ae3c36998e024dc480b8abe0dfeed7d3d',1,'ZOPT220x_Control']]],
-  ['zoptread3registers_139',['zoptRead3Registers',['../classZOPT220x__Control.html#a76e8b5e30cc7b3a0f9e0dace481e8030',1,'ZOPT220x_Control']]],
-  ['zoptreadregister_140',['zoptReadRegister',['../classZOPT220x__Control.html#a58c74577acc1183a66b1f9b9281551a3',1,'ZOPT220x_Control']]],
-  ['zoptwriteregister_141',['zoptWriteRegister',['../classZOPT220x__Control.html#ab5f43fd630eaaadeea212559e12648be',1,'ZOPT220x_Control']]]
+  ['verify_185',['verify',['../classAS7331Sensor.html#a7232fc7844005125bd323cd2798d5e5c',1,'AS7331Sensor::verify()'],['../classZOPT220Sensor.html#a5fab507a3cadaab6d6026c3fea36d0e6',1,'ZOPT220Sensor::verify()'],['../classTempSensor.html#ab110bdca4c570053b16da6481b00bba5',1,'TempSensor::verify()'],['../classStorage.html#a83fbc910d2fe786ac9134f27a85bda8f',1,'Storage::verify()'],['../classSHT31Sensor.html#a1b322dd4ff6fafbbdfdccaf7cd0b622f',1,'SHT31Sensor::verify()'],['../classSGP30Sensor.html#a1fd4a6f8ad76aacb6c2aebda3eddb3ac',1,'SGP30Sensor::verify()'],['../classSensor.html#a45975aa760bbab8224775ae5d78da333',1,'Sensor::verify()'],['../classSDStorage.html#a2a08793ce2cb22bc0675f5cf4916155a',1,'SDStorage::verify()'],['../classRadioStorage.html#a6d15a136027e899fb2124afe82c0629e',1,'RadioStorage::verify()'],['../classMTK3339Sensor.html#a5e39435a4f8f037a3b9a7d949e736e6f',1,'MTK3339Sensor::verify()'],['../classLSM9DS1Sensor.html#a245f95f4d1174bf884bb47781f21f055',1,'LSM9DS1Sensor::verify()'],['../classINA260Sensor.html#a799f491fe1496b33b1d985e5672a7e6d',1,'INA260Sensor::verify()'],['../classICM20948Sensor.html#aa612d43f7d31da2e8a5646ec58e04944',1,'ICM20948Sensor::verify()'],['../classGeigerSensor.html#af9b257d10771ecc37b124ea067bc5354',1,'GeigerSensor::verify()'],['../classENS160Sensor.html#addd37045fa8828b7c1f437bd8043c54e',1,'ENS160Sensor::verify()'],['../classDS3231Sensor.html#acecc9cc8ee162220e28c9907ba7dd722',1,'DS3231Sensor::verify()'],['../classBME680Sensor.html#accc4dcd1322c9578c549b5f68df06844',1,'BME680Sensor::verify()'],['../classBME280Sensor.html#a912cb1dac291afe2e80f099c95229489',1,'BME280Sensor::verify()'],['../classAnalogSensor.html#a93c2743f77d0cefecfc8a4cecb6ee8da',1,'AnalogSensor::verify()']]],
+  ['verifysensors_186',['verifySensors',['../main_8cpp.html#aef42a5a8a5d889c599fa964be60eca24',1,'main.cpp']]],
+  ['verifystorage_187',['verifyStorage',['../main_8cpp.html#a339ac134cdee34bfe9d5f539ab14ba00',1,'main.cpp']]]
 ];

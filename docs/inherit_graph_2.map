@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classZOPT220x__Control.html" title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node1" href="$classStorage.html" title="Parent class for all data storage devices (sd card, radio, etc)" alt="" coords="5,31,77,57"/>
+<area shape="rect" id="node2" href="$classRadioStorage.html" title="Implementation of a Storage device to interface with an SD card." alt="" coords="125,5,235,32"/>
+<area shape="rect" id="node3" href="$classSDStorage.html" title="Implementation of a Storage device to interface with an SD card." alt="" coords="135,56,225,83"/>
 </map>

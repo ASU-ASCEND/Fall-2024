@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['main_2ecpp_166',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['mtk3339sensor_2ecpp_167',['MTK3339Sensor.cpp',['../MTK3339Sensor_8cpp.html',1,'']]],
-  ['mtk3339sensor_2eh_168',['MTK3339Sensor.h',['../MTK3339Sensor_8h.html',1,'']]]
+  ['icm20948sensor_2ecpp_251',['ICM20948Sensor.cpp',['../ICM20948Sensor_8cpp.html',1,'']]],
+  ['icm20948sensor_2eh_252',['ICM20948Sensor.h',['../ICM20948Sensor_8h.html',1,'']]],
+  ['ina260sensor_2ecpp_253',['INA260Sensor.cpp',['../INA260Sensor_8cpp.html',1,'']]],
+  ['ina260sensor_2eh_254',['INA260Sensor.h',['../INA260Sensor_8h.html',1,'']]]
 ];

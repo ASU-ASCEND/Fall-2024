@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['wind_5fpin_282',['WIND_PIN',['../AnalogSensor_8h.html#aba0c6bbc4f09561494697d5ec87ab839',1,'AnalogSensor.h']]]
+  ['lsm9ds1_5fmcs_5fpin_419',['LSM9DS1_MCS_PIN',['../PayloadConfig_8h.html#a14287a16ed8b281fe0f7434d7f4d0119',1,'PayloadConfig.h']]],
+  ['lsm9ds1_5fxgcs_5fpin_420',['LSM9DS1_XGCS_PIN',['../PayloadConfig_8h.html#ac497176d73ec84d742887962d6a6f47a',1,'PayloadConfig.h']]]
 ];

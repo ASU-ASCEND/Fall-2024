@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['sdstorage_148',['SDStorage',['../classSDStorage.html',1,'']]],
-  ['sensor_149',['Sensor',['../classSensor.html',1,'']]],
-  ['sgp30sensor_150',['SGP30Sensor',['../classSGP30Sensor.html',1,'']]],
-  ['sht31sensor_151',['SHT31Sensor',['../classSHT31Sensor.html',1,'']]],
-  ['storage_152',['Storage',['../classStorage.html',1,'']]]
+  ['lsm9ds1sensor_225',['LSM9DS1Sensor',['../classLSM9DS1Sensor.html',1,'']]]
 ];
