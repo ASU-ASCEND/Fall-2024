@@ -5,10 +5,9 @@
  *
  */
 
-MTK3339Sensor::MTK3339Sensor(int pin)
-    : Sensor("MTK3339", "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,", 7), // Base class constructor
-      GPS(&SPI, pin),  // Initialize GPS with SPI and pin
-      pin(pin) {    // Initialize pin
+MTK3339Sensor::MTK3339Sensor()
+    : Sensor("MTK3339", "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,", 7),
+      GPS(&SPI, chip_select) { // Initialize GPS with SPI using the defined macro
 }
 
 /**
@@ -16,10 +15,10 @@ MTK3339Sensor::MTK3339Sensor(int pin)
  *
  * @param minimum_period Minimum period between sensor reads in ms
  */
-MTK3339Sensor::MTK3339Sensor(unsigned long minimum_period, int pin)
-    : Sensor("MTK3339",
-             "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,", 7) {}
-
+MTK3339Sensor::MTK3339Sensor(unsigned long minimum_period)
+    : Sensor("MTK3339", "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,", 7),
+      GPS(&SPI, chip_select) { // Initialize GPS with SPI using the defined macro
+}
 /**
  * @brief Verifies if the sensor is connected and working
  *
@@ -27,7 +26,7 @@ MTK3339Sensor::MTK3339Sensor(unsigned long minimum_period, int pin)
  * @return false if it is not connected and working
  */
 bool MTK3339Sensor::verify() {
-  if (!GPS.begin(pin)) {  // returns 0 on success
+  if (!GPS.begin(chip_select)) {  // returns 0 on success
     GPS.sendCommand(PMTK_SET_NMEA_OUTPUT_RMCGGA);
     GPS.sendCommand(PMTK_SET_NMEA_UPDATE_1HZ);  // 1 Hz update rate
     delay(1000);

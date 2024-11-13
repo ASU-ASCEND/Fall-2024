@@ -8,18 +8,20 @@
 
 #include "Sensor.h"
 
+#define chip_select 17
+
 /**
  * @brief Implementation of the Adafruit MTK3339 GPS sensor
  *
  */
 class MTK3339Sensor : public Sensor {
  private:
-  int pin; //chip select pin
-  Adafruit_GPS GPS = Adafruit_GPS(&SPI, pin);
+  //int pin; chip select pin
+  Adafruit_GPS GPS;
 
  public:
-  MTK3339Sensor(int pin); //pass pin in constructor
-  MTK3339Sensor(unsigned long minimum_period, int pin);
+  MTK3339Sensor(); //pass pin in constructor
+  MTK3339Sensor(unsigned long minimum_period);
 
   bool verify() override;
   String readData() override;
