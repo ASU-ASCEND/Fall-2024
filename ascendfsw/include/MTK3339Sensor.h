@@ -3,9 +3,12 @@
 
 #include <Adafruit_GPS.h>
 #include <Arduino.h>
+#include <SPI.h>
 #include <Wire.h>
 
 #include "Sensor.h"
+
+#define MTK3339_CS_PIN 20
 
 /**
  * @brief Implementation of the Adafruit MTK3339 GPS sensor
@@ -13,10 +16,11 @@
  */
 class MTK3339Sensor : public Sensor {
  private:
-  Adafruit_GPS GPS = Adafruit_GPS(&Wire);
+  //int pin; chip select pin
+  Adafruit_GPS GPS;
 
  public:
-  MTK3339Sensor();
+  MTK3339Sensor(); //pass pin in constructor
   MTK3339Sensor(unsigned long minimum_period);
 
   bool verify() override;
