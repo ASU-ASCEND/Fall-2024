@@ -8,8 +8,6 @@
 
 #include "Sensor.h"
 
-#define MTK3339_CS_PIN 20
-
 /**
  * @brief Implementation of the Adafruit MTK3339 GPS sensor
  *
