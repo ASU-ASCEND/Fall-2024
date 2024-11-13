@@ -7,7 +7,7 @@
 
 MTK3339Sensor::MTK3339Sensor()
     : Sensor("MTK3339", "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,", 7),
-      GPS(&SPI, chip_select) { // Initialize GPS with SPI using the defined macro
+      GPS(&SPI, MTK3339_CS_PIN) { // Initialize GPS with SPI using the defined macro
 }
 
 /**
@@ -16,8 +16,8 @@ MTK3339Sensor::MTK3339Sensor()
  * @param minimum_period Minimum period between sensor reads in ms
  */
 MTK3339Sensor::MTK3339Sensor(unsigned long minimum_period)
-    : Sensor("MTK3339", "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,", 7),
-      GPS(&SPI, chip_select) { // Initialize GPS with SPI using the defined macro
+    : Sensor("MTK3339", "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,", 7, minimum_period),
+      GPS(&SPI, MTK3339_CS_PIN) { // Initialize GPS with SPI using the defined macro
 }
 /**
  * @brief Verifies if the sensor is connected and working
@@ -26,7 +26,7 @@ MTK3339Sensor::MTK3339Sensor(unsigned long minimum_period)
  * @return false if it is not connected and working
  */
 bool MTK3339Sensor::verify() {
-  if (!GPS.begin(chip_select)) {  // returns 0 on success
+  if (!GPS.begin(MTK3339_CS_PIN)) {  // returns 0 on success
     GPS.sendCommand(PMTK_SET_NMEA_OUTPUT_RMCGGA);
     GPS.sendCommand(PMTK_SET_NMEA_UPDATE_1HZ);  // 1 Hz update rate
     delay(1000);
