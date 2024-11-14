@@ -35,6 +35,10 @@ bool ICM20948Sensor::verify() {
   }
 #endif
 
+  icm.setAccelRange(icm20948_accel_range_t::ICM20948_ACCEL_RANGE_16_G);
+  icm.setGyroRange(icm20948_gyro_range_t::ICM20948_GYRO_RANGE_1000_DPS);
+  icm.setMagDataRate(ak09916_data_rate_t::AK09916_MAG_DATARATE_50_HZ); 
+
   this->icm_accel = icm.getAccelerometerSensor();
   this->icm_gyro = icm.getGyroSensor();
   this->icm_mag = icm.getMagnetometerSensor();
