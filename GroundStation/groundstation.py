@@ -160,7 +160,7 @@ for i in range(HIST_SIZE):
   data_cells.append(row)
 
 def read_data():
-  with open(fileName, "a", newline = '\n') as f:
+  with open(os.path.join(folder_path, fileName), "a", newline = '\n') as f:
     # last_line = data_line
     data_line.insert(0, str(ser.readline())[2:-5])
     if len(data_line) > HIST_SIZE: data_line.pop() 
