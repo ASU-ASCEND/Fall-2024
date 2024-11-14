@@ -20,6 +20,7 @@ void PCF8523Sensor::calibrate() {
     }
 }
 
+/** saving */
 bool PCF8523Sensor::isRTCReady() {
     return rtc.initialized() && !rtc.lostPower();
 }
