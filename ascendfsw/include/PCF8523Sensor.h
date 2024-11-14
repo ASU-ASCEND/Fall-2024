@@ -3,19 +3,18 @@
 
 #include <RTClib.h>
 
-/** saving? */
-class PCF8523Sensor {
-public:
-    PCF8523Sensor();  
-    bool begin();     
-    DateTime now();   
+#include "Sensor.h"
 
-private:
-    RTC_PCF8523 rtc;  // Private RTC object
+class PCF8523Sensor : public Sensor {
+ private:
+  RTC_PCF8523 rtc;
 
-    void adjust(const DateTime& dt);  
-    void calibrate();                 
-    bool isRTCReady();                
+ public:
+  PCF8523Sensor();
+  PCF8523Sensor(unsigned long minimum_period);
+  bool verify();
+  String readData();
+  void calibrate();
 };
 
-#endif // PCF8523SENSOR_H
+#endif  // PCF8523SENSOR_H

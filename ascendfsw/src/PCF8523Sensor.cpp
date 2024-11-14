@@ -1,26 +1,21 @@
 #include "PCF8523Sensor.h"
 
-PCF8523Sensor::PCF8523Sensor() {}
+PCF8523Sensor::PCF8523Sensor() : PCF8523Sensor(0) {}
 
-bool PCF8523Sensor::begin() {
-    return rtc.begin();
-}
+PCF8523Sensor::PCF8523Sensor(unsigned long minimum_period)
+    : Sensor("PCF8523", "PCFTime, ", 1, minimum_period) {}
 
-DateTime PCF8523Sensor::now() {
-    return rtc.now();
-}
+bool PCF8523Sensor::verify() { return rtc.begin(); }
 
-void PCF8523Sensor::adjust(const DateTime& dt) {
-    rtc.adjust(dt);
+String PCF8523Sensor::readData() {
+  DateTime now = rtc.now();
+  return String(now.year()) + "/" + String(now.month()) + "/" +
+         String(now.day()) + " " + String(now.hour()) + ":" +
+         String(now.minute()) + ":" + String(now.second()) + ",";
 }
 
 void PCF8523Sensor::calibrate() {
-    if (!rtc.initialized() || rtc.lostPower()) {
-        rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
-    }
-}
-
-/** saving */
-bool PCF8523Sensor::isRTCReady() {
-    return rtc.initialized() && !rtc.lostPower();
+  if (!rtc.initialized() || rtc.lostPower()) {
+    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
+  }
 }
