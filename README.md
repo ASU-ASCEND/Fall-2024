@@ -18,18 +18,18 @@ Flight software for the ASU Fall 2024 ASCEND Payload
 
 ## Meeting Schedule
 
-| Week  | Task                                                | Status   |
-|-------|-----------------------------------------------------|----------|
-| 9/18  | Reviewing last semester, Github Org.                | Done.    |
-| 9/25  | Github, Arduino, Platform.io and FSWv1              | Done.    |
-| 10/2  | Merging, Datasheets, and Calibration                | Done.    |
-| 10/9  | Starting FSWv2 Improvements                         | Done.    |
-| 10/16 | FSWv2 More Improvements and New Sensors             | Done.    |
-| 10/23 | FSWv2 (cont.)                                       | Done.    |
-| 10/30 | Testing and more FSWv2                              | Done.    |
-| 11/6  | Finish FSWv2, start integrating FSWv3, start DP:Tv1 |          |
-| 11/13 | Testing FSWv3, DP:Tv2                               |          |
-| 11/21 | Launch                                              |          |
+| Week  | Task                                                    | Status   |
+|-------|---------------------------------------------------------|----------|
+| 9/18  | Reviewing last semester, Github Org.                    | Done.    |
+| 9/25  | Github, Arduino, Platform.io and FSWv1                  | Done.    |
+| 10/2  | Merging, Datasheets, and Calibration                    | Done.    |
+| 10/9  | Starting FSWv2 Improvements                             | Done.    |
+| 10/16 | FSWv2 More Improvements and New Sensors                 | Done.    |
+| 10/23 | FSWv2 (cont.)                                           | Done.    |
+| 10/30 | Testing and more FSWv2                                  | Done.    |
+| 11/6  | Finishing FSWv2, start integrating FSWv3, start DP:Tv1  | Done.    |
+| 11/13 | Testing FSWv3, DP:Tv2                                   |          |
+| 11/21 | Launch                                                  |          |
 
 # Potential Milestones 
 

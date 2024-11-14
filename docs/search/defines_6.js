@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pt1000_5fpin_382',['PT1000_PIN',['../AnalogSensor_8h.html#a330caf3be7eb66e72d2b36e1e72f717d',1,'AnalogSensor.h']]]
+  ['lsm9ds1_5fmcs_5fpin_420',['LSM9DS1_MCS_PIN',['../PayloadConfig_8h.html#a14287a16ed8b281fe0f7434d7f4d0119',1,'PayloadConfig.h']]],
+  ['lsm9ds1_5fxgcs_5fpin_421',['LSM9DS1_XGCS_PIN',['../PayloadConfig_8h.html#ac497176d73ec84d742887962d6a6f47a',1,'PayloadConfig.h']]]
 ];

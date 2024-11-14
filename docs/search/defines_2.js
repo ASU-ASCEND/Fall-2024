@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['geiger_5fpin_373',['GEIGER_PIN',['../GeigerSensor_8h.html#a0dfddbcc95894f158bbc01f9529b7a95',1,'GeigerSensor.h']]]
+  ['error_5fpin_5f0_412',['ERROR_PIN_0',['../PayloadConfig_8h.html#a48a86006eb436b950e5277fdf8a3ae53',1,'PayloadConfig.h']]],
+  ['error_5fpin_5f1_413',['ERROR_PIN_1',['../PayloadConfig_8h.html#a5d6e22e2c3ab3c12e8cd61594815925a',1,'PayloadConfig.h']]],
+  ['error_5fpin_5f2_414',['ERROR_PIN_2',['../PayloadConfig_8h.html#af230e937fbf21c24dab2e1c834330a52',1,'PayloadConfig.h']]]
 ];

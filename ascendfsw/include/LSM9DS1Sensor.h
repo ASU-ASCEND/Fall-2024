@@ -5,6 +5,7 @@
 #include <Adafruit_Sensor.h>
 #include <string.h>
 
+#include "PayloadConfig.h"
 #include "Sensor.h"
 
 /**

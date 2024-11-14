@@ -1,11 +1,5 @@
 #include "LSM9DS1Sensor.h"
 
-#define LSM9DS1_SCK A5
-#define LSM9DS1_MISO 12
-#define LSM9DS1_MOSI A4
-#define LSM9DS1_XGCS 21
-#define LSM9DS1_MCS 20
-
 /**
  * @brief Construct a new LSM9DS1Sensor object with default minimum_period of 0
  *
@@ -23,7 +17,8 @@ LSM9DS1Sensor::LSM9DS1Sensor(unsigned long minimum_period)
              "LSM9DS1 AccX, LSM9DS1 AccY, LSM9DS1 AccZ, LSM9DS1 GyroX, LSM9DS1 "
              "GyroY, LSM9DS1 GyroZ, LSM9DS1 MagX, LSM9DS1 MagY, LSM9DS1 MagZ,",
              9, minimum_period),
-      lsm(LSM9DS1_XGCS, LSM9DS1_MCS) {  // Initialize lsm with CS pins for SPI
+      lsm(LSM9DS1_XGCS_PIN,
+          LSM9DS1_MCS_PIN) {  // Initialize lsm with CS pins for SPI
   // calibration offsets to zero
   for (int i = 0; i < 3; i++) {
     accel_offsets[i] = 0.0;

@@ -3,6 +3,7 @@
 
 #include <Arduino.h>
 
+#include "PayloadConfig.h"
 #include "Storage.h"
 
 /**

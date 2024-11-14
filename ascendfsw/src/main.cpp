@@ -2,6 +2,7 @@
 
 // error code framework
 #include "ErrorDisplay.h"
+#include "PayloadConfig.h"
 
 // parent classes
 #include "Sensor.h"
@@ -9,13 +10,15 @@
 
 // include sensor headers here
 #include "AS7331Sensor.h"
-#include "AnalogSensor.h"
 #include "BME280Sensor.h"
 #include "BME680Sensor.h"
+#include "DS3231Sensor.h"
 #include "ENS160Sensor.h"
 #include "GeigerSensor.h"
+#include "ICM20948Sensor.h"
 #include "INA260Sensor.h"
 #include "LSM9DS1Sensor.h"
+#include "MTK3339Sensor.h"
 #include "SGP30Sensor.h"
 #include "SHT31Sensor.h"
 #include "TempSensor.h"
@@ -29,23 +32,30 @@ void handleDataInterface();
 
 // Global variables
 // sensor classes
-BME680Sensor bme_sensor;
-GeigerSensor geiger_sensor;
-INA260Sensor ina260_sensor;
-LSM9DS1Sensor lsm9ds1_sensor;
-SHT31Sensor sht31_sensor;
-TempSensor temp_sensor;
-AnalogSensor analog_sensor;
-SGP30Sensor sgp30_sensor;
-BME280Sensor bme280_sensor;
-ENS160Sensor ens160_sensor;
-AS7331Sensor uv_sensor;
+// clang-format off
+// class        sensor            minimum period in ms
+BME680Sensor    bme_sensor        (1000);
+GeigerSensor    geiger_sensor     (1000);
+INA260Sensor    ina260_sensor     (1000);
+LSM9DS1Sensor   lsm9ds1_sensor    (0);
+SHT31Sensor     sht31_sensor      (1000);
+TempSensor      temp_sensor       (1000);
+SGP30Sensor     sgp30_sensor      (1000);
+BME280Sensor    bme280_sensor     (1000);
+ENS160Sensor    ens160_sensor     (1000);
+AS7331Sensor    uv_sensor         (1000);
+DS3231Sensor    rtc_backup_sensor (1000);
+MTK3339Sensor   gps_sensor        (5000);
+ICM20948Sensor  icm_sensor        (20);
+// clang-format on
 
 // sensor array
-Sensor* sensors[] = {&bme_sensor,     &geiger_sensor, &ina260_sensor,
-                     &lsm9ds1_sensor, &sht31_sensor,  &temp_sensor,
-                     &analog_sensor,  &sgp30_sensor,  &bme280_sensor,
-                     &ens160_sensor,  &uv_sensor};
+Sensor* sensors[] = {&bme_sensor,     &geiger_sensor,     &ina260_sensor,
+                     &lsm9ds1_sensor, &sht31_sensor,      &temp_sensor,
+                     &sgp30_sensor,   &bme280_sensor,     &ens160_sensor,
+                     &uv_sensor,      &rtc_backup_sensor, &icm_sensor,
+                     &gps_sensor};
+//&gps_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
 String header_condensed = "";
@@ -62,12 +72,6 @@ RadioStorage radio_storage;
 Storage* storages[] = {&sd_storage, &radio_storage};
 const int storages_len = sizeof(storages) / sizeof(storages[0]);
 bool storages_verify[storages_len];
-
-// pin definitions
-#define ON_BOARD_LED_PIN 25
-#define HEARTBEAT_PIN_0 14
-#define HEARTBEAT_PIN_1 15
-#define DATA_INTERFACE_PIN 1
 
 // global variables for main
 // loop counter
@@ -114,6 +118,14 @@ void setup() {
     }
   }
 
+  // verify storage
+  Serial.println("Verifying storage...");
+  verified_count = verifyStorage();
+  if (verified_count == 0) {
+    Serial.println("No storages verified, output will be Serial only.");
+    ErrorDisplay::instance().addCode(Error::CRITICAL_FAIL);
+  }
+
   // build csv header
   String header = "Header,Millis,";
   for (int i = 0; i < sensors_len; i++) {
@@ -130,6 +142,7 @@ void setup() {
   queue_add_blocking(&qt, header.c_str()); 
 
   pinMode(ON_BOARD_LED_PIN, OUTPUT);
+  Serial.println("Setup done.");
 }
 
 /**
