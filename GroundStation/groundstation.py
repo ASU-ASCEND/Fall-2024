@@ -3,7 +3,6 @@ import time
 from datetime import datetime
 import serial.tools.list_ports as sp
 import tkinter as tk
-import threading
 import sys
 import os
 import logging
