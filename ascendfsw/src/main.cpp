@@ -14,7 +14,6 @@
 #include "BME680Sensor.h"
 #include "DS3231Sensor.h"
 #include "ENS160Sensor.h"
-#include "GeigerSensor.h"
 #include "ICM20948Sensor.h"
 #include "INA260Sensor.h"
 #include "LSM9DS1Sensor.h"
@@ -35,7 +34,6 @@ void handleDataInterface();
 // clang-format off
 // class        sensor            minimum period in ms
 BME680Sensor    bme_sensor        (1000);
-GeigerSensor    geiger_sensor     (1000);
 INA260Sensor    ina260_sensor     (1000);
 LSM9DS1Sensor   lsm9ds1_sensor    (0);
 SHT31Sensor     sht31_sensor      (1000);
@@ -50,10 +48,10 @@ ICM20948Sensor  icm_sensor        (20);
 // clang-format on
 
 // sensor array
-Sensor* sensors[] = {&bme_sensor,     &geiger_sensor,     &ina260_sensor,
+Sensor* sensors[] = {&rtc_backup_sensor, &bme_sensor,     &ina260_sensor,
                      &lsm9ds1_sensor, &sht31_sensor,      &temp_sensor,
                      &sgp30_sensor,   &bme280_sensor,     &ens160_sensor,
-                     &uv_sensor,      &rtc_backup_sensor, &icm_sensor,
+                     &uv_sensor, &icm_sensor,
                      &gps_sensor};
 //&gps_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);

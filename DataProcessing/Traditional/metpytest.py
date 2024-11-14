@@ -20,6 +20,7 @@ cooked_temp = []
 cooked_dewpoint = []
 lowest_pres = 1000
 for i in range(len(raw_pres)):
+  if(raw_pres[i].magnitude == 100): break
   if(raw_pres[i].magnitude < lowest_pres and i % 20 == 0):
     cooked_pres.append(raw_pres[i].magnitude)
     cooked_temp.append(raw_temp[i].magnitude)
