@@ -96,7 +96,7 @@ TABLE_WIDTH = 9
 data_line = []
 time_line = []
 header = "Receive time,header,"
-header = "Receive time," + "".join(full_no_fail_header)
+# header = "Receive time," + "".join(full_no_fail_header)
 
 def _quit():
   print("Done.")
@@ -113,9 +113,9 @@ Title.config(text=('ASU ASCEND Data'))
 
 # get first transmission and use it to set up gui 
 data_cells = []
-with open(fileName, "a", newline = '\n') as f:
+with open(os.path.join(folder_path, fileName), "a", newline = '\n') as f:
   # last_line = data_line
-  data_line.insert(0, "".join(full_no_fail_header))#str(ser.readline())[2:-5])
+  data_line.insert(0, str(ser.readline())[2:-5])
   if len(data_line) > HIST_SIZE: data_line.pop() 
 
   now = datetime.now()
@@ -127,6 +127,7 @@ with open(fileName, "a", newline = '\n') as f:
 
   # parse new header
   header = "Receive time, "
+  print(data_line[0].split(",")[0])
   header_field = int(data_line[0].split(",")[0], 16) # read header field, convert from hex 
   header_bin = bin(header_field)[2:]
   header_bin = header_bin[header_bin.find("1"):] # trim to first 1
@@ -161,7 +162,7 @@ for i in range(HIST_SIZE):
 def read_data():
   with open(fileName, "a", newline = '\n') as f:
     # last_line = data_line
-    data_line.insert(0, "".join(full_no_fail_header)) #str(ser.readline())[2:-5])
+    data_line.insert(0, str(ser.readline())[2:-5])
     if len(data_line) > HIST_SIZE: data_line.pop() 
 
     now = datetime.now()
@@ -176,7 +177,7 @@ def read_data():
 
   for i in range(len(data_line)):
     combined_arr = f"{time_line[i]},{data_line[i]}".split(",")
-    print("Combined arr", combined_arr)
+    # print("Combined arr", combined_arr)
     for j in range(len(combined_arr)):
       data_cells[i][j].set(combined_arr[j])
 
