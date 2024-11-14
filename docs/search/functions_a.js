@@ -1,21 +1,7 @@
 var searchData=
 [
-  ['sdstorage_204',['SDStorage',['../classSDStorage.html#a992cb710f41462a7a35c6dfdc838f01f',1,'SDStorage']]],
-  ['sensor_205',['Sensor',['../classSensor.html#ac961611fe726ecce2236efa3b9ee450c',1,'Sensor::Sensor(String sensor_name, String csv_header, int fields)'],['../classSensor.html#a861ed177b65f0d04543e7b6fae6b8c85',1,'Sensor::Sensor(String sensor_name, String csv_header, int fields, unsigned long minimum_period)']]],
-  ['setgain_206',['setGain',['../classZOPT220x__Control.html#afa9fab0ef429c9e7a46afd752a2ee44d',1,'ZOPT220x_Control']]],
-  ['seti2cadr52_207',['setI2CAdr52',['../classZOPT220x__Control.html#a7bd39622c1375fed8d64c885aad5ae2d',1,'ZOPT220x_Control']]],
-  ['seti2cadr53_208',['setI2CAdr53',['../classZOPT220x__Control.html#ae2ff7f5af470f4f235e7725c4c35ca64',1,'ZOPT220x_Control']]],
-  ['setlastexecution_209',['setLastExecution',['../classSensor.html#aea739069d8009fdb9b4026b4b3afc3ab',1,'Sensor']]],
-  ['setmeasurementrate_210',['setMeasurementRate',['../classZOPT220x__Control.html#a809d1f5db2a9f0884fa82e0b77b944bf',1,'ZOPT220x_Control']]],
-  ['setmode_211',['setMode',['../classZOPT220x__Control.html#a70fedf9d112bc34ef55e21452acd3877',1,'ZOPT220x_Control']]],
-  ['setperiod_212',['setPeriod',['../classSensor.html#aecd2cfc8a5d16e306f6369adcc3e208a',1,'Sensor']]],
-  ['setresolution_213',['setResolution',['../classZOPT220x__Control.html#aa8d79db36ab65e003f87a493f720233d',1,'ZOPT220x_Control']]],
-  ['setup_214',['setup',['../main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d',1,'main.cpp']]],
-  ['sgp30sensor_215',['SGP30Sensor',['../classSGP30Sensor.html#a884d39d3cbdde603d75d43d6c4f5b89d',1,'SGP30Sensor::SGP30Sensor()'],['../classSGP30Sensor.html#a22e23104fef4d49ab10260ca2730c5b7',1,'SGP30Sensor::SGP30Sensor(unsigned long minimum_period)']]],
-  ['sht31sensor_216',['SHT31Sensor',['../classSHT31Sensor.html#a2acbce22f16d33bb4899747b3be26577',1,'SHT31Sensor::SHT31Sensor()'],['../classSHT31Sensor.html#a50211f4dddeeaaeb7976f79755e26bc9',1,'SHT31Sensor::SHT31Sensor(unsigned long minimum_period)']]],
-  ['softreset_217',['softReset',['../classZOPT220x__Control.html#adf29f97ec2609d414b33101264158486',1,'ZOPT220x_Control']]],
-  ['standby_218',['standby',['../classZOPT220x__Control.html#ac427197b44897ed82f77069e2e88270a',1,'ZOPT220x_Control']]],
-  ['storage_219',['Storage',['../classStorage.html#a2f5803f60b5c3cd8e9c35fc744ab3058',1,'Storage']]],
-  ['store_220',['store',['../classSDStorage.html#a9450318396c536da92d44d9ebad33ec1',1,'SDStorage::store()'],['../classStorage.html#a08674ceb4404690065b1cf39963eb5a3',1,'Storage::store()']]],
-  ['storedata_221',['storeData',['../main_8cpp.html#a0f14b13edaa51207f1ff6752e4696ee7',1,'main.cpp']]]
+  ['radiostorage_313',['RadioStorage',['../classRadioStorage.html#ab46ed262770c99c8049617ca479192ba',1,'RadioStorage']]],
+  ['readdata_314',['readData',['../classAnalogSensor.html#aa2d4d56cb40b3abf388213dc97c63b23',1,'AnalogSensor::readData()'],['../classZOPT220Sensor.html#a6aeb56062c5ff976d199ae407df9ed6c',1,'ZOPT220Sensor::readData()'],['../classTempSensor.html#a3e5875aa6fad21ed69aa3ac15b59f7b9',1,'TempSensor::readData()'],['../classSHT31Sensor.html#a8c96b9d77a2a3859391038c6ebccec4d',1,'SHT31Sensor::readData()'],['../classSGP30Sensor.html#a4a14ecfe1a86d4872b0f6f27de80f25a',1,'SGP30Sensor::readData()'],['../classSensor.html#a56153cab066abc01692301d11965f9b8',1,'Sensor::readData()'],['../classMTK3339Sensor.html#a632c895115930d476540fed7d6537635',1,'MTK3339Sensor::readData()'],['../classLSM9DS1Sensor.html#ab7bb3fa7c86f10b340d25912d143baf3',1,'LSM9DS1Sensor::readData()'],['../classINA260Sensor.html#a40a7b8158adfe1742ab7ce746b2830c4',1,'INA260Sensor::readData()'],['../classICM20948Sensor.html#ade76b92e100f84353a5f5884dbbdec4b',1,'ICM20948Sensor::readData()'],['../classGeigerSensor.html#a5629ecf718aa41b6f62780913025560a',1,'GeigerSensor::readData()'],['../classENS160Sensor.html#a4c6fb31bf074f299bc7c0d4bb1c344ac',1,'ENS160Sensor::readData()'],['../classDS3231Sensor.html#a796277dc5eb15ae0972addd9edd2b2f7',1,'DS3231Sensor::readData()'],['../classBME680Sensor.html#a2fe0b9adb49b816f610039e8495f2bc2',1,'BME680Sensor::readData()'],['../classBME280Sensor.html#ab54514df45ba3c8f66889180f2e9fd87',1,'BME280Sensor::readData()'],['../classAS7331Sensor.html#a35dc4a11152a841a48eeb79795d18492',1,'AS7331Sensor::readData()']]],
+  ['readempty_315',['readEmpty',['../classSensor.html#a62d72a2f81422ac2d2fa8ae86ba08571',1,'Sensor']]],
+  ['readsensordata_316',['readSensorData',['../main_8cpp.html#a9db5e6113d9a0bd03a1b044059ae787b',1,'main.cpp']]]
 ];

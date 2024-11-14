@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['geigersensor_2ecpp_155',['GeigerSensor.cpp',['../GeigerSensor_8cpp.html',1,'']]],
-  ['geigersensor_2eh_156',['GeigerSensor.h',['../GeigerSensor_8h.html',1,'']]]
+  ['ds3231sensor_2ecpp_245',['DS3231Sensor.cpp',['../DS3231Sensor_8cpp.html',1,'']]],
+  ['ds3231sensor_2eh_246',['DS3231Sensor.h',['../DS3231Sensor_8h.html',1,'']]]
 ];

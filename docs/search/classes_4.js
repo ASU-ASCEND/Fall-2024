@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lsm9ds1sensor_141',['LSM9DS1Sensor',['../classLSM9DS1Sensor.html',1,'']]]
+  ['geigersensor_223',['GeigerSensor',['../classGeigerSensor.html',1,'']]]
 ];
