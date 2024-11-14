@@ -49,6 +49,7 @@ full_no_fail_header = [
   "Header,",
   "Millis,",
 
+  "PCFTime, ", 
   "BMETemp(C),BMEPress(hPa),BMEHum(%),BMEGas(KOhms),BMEAlt(m),",    
   "GeigerSensor(CPS),", 
   "INACurr(mA),INAVolt(mV),INAPow(mW),",                   
@@ -60,7 +61,7 @@ full_no_fail_header = [
   "BME280RelHum %,BME280Pres Pa,BME280Alt m,BME280TempC,DewPointC,",  
   "ENSAQI,ENSTVOC ppb,ENSECO2 ppm,",
   "UVA(nm),UVB(nm),UVC(nm),",
-  "DS3231Time,DS3231TempC,",
+  #"DS3231Time,DS3231TempC,",
   "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,",
   " "  # final space for matching fsw?
 ]
