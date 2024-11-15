@@ -25,6 +25,9 @@
 /** @brief LSM9DS1 IMU Magnetometer Pin */
 #define LSM9DS1_MCS_PIN 22
 
+/** @brief MTK3339 GPS CS Pin*/
+#define MTK3339_CS_PIN 20
+
 // storages
 // for radio
 /** @brief UART0 RX Pin */
