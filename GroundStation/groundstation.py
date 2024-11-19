@@ -3,7 +3,6 @@ import time
 from datetime import datetime
 import serial.tools.list_ports as sp
 import tkinter as tk
-import threading
 import sys
 import os
 import logging
@@ -49,9 +48,10 @@ full_no_fail_header = [
   "Header,",
   "Millis,",
 
-  "PCFTime, ", 
+  # "PCFTime, ", 
+  "DS3231Time,DS3231TempC,",
   "BMETemp(C),BMEPress(hPa),BMEHum(%),BMEGas(KOhms),BMEAlt(m),",    
-  "GeigerSensor(CPS),", 
+  # "GeigerSensor(CPS),", 
   "INACurr(mA),INAVolt(mV),INAPow(mW),",                   
   "LSM9DS1 AccX, LSM9DS1 AccY, LSM9DS1 AccZ, LSM9DS1 GyroX, LSM9DS1 GyroY, LSM9DS1 GyroZ, LSM9DS1 MagX, LSM9DS1 MagY, LSM9DS1 MagZ,", 
   "SHTHum(%), SHTTemp(C),",
@@ -61,7 +61,7 @@ full_no_fail_header = [
   "BME280RelHum %,BME280Pres Pa,BME280Alt m,BME280TempC,DewPointC,",  
   "ENSAQI,ENSTVOC ppb,ENSECO2 ppm,",
   "UVA(nm),UVB(nm),UVC(nm),",
-  #"DS3231Time,DS3231TempC,",
+  "ICM AccX,ICM AccY,ICM AccZ,ICM GyroX,ICM GyroY,ICM GyroZ,ICM MagX,ICM MagY,ICM MagZ,ICM TempC,",
   "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,",
   " "  # final space for matching fsw?
 ]
@@ -96,7 +96,7 @@ TABLE_WIDTH = 9
 data_line = []
 time_line = []
 header = "Receive time,header,"
-header = "Receive time," + "".join(full_no_fail_header)
+# header = "Receive time," + "".join(full_no_fail_header)
 
 def _quit():
   print("Done.")
@@ -113,9 +113,9 @@ Title.config(text=('ASU ASCEND Data'))
 
 # get first transmission and use it to set up gui 
 data_cells = []
-with open(fileName, "a", newline = '\n') as f:
+with open(os.path.join(folder_path, fileName), "a", newline = '\n') as f:
   # last_line = data_line
-  data_line.insert(0, "".join(full_no_fail_header))#str(ser.readline())[2:-5])
+  data_line.insert(0, str(ser.readline())[2:-5])
   if len(data_line) > HIST_SIZE: data_line.pop() 
 
   now = datetime.now()
@@ -127,6 +127,7 @@ with open(fileName, "a", newline = '\n') as f:
 
   # parse new header
   header = "Receive time, "
+  print(data_line[0].split(",")[0])
   header_field = int(data_line[0].split(",")[0], 16) # read header field, convert from hex 
   header_bin = bin(header_field)[2:]
   header_bin = header_bin[header_bin.find("1"):] # trim to first 1
@@ -159,9 +160,9 @@ for i in range(HIST_SIZE):
   data_cells.append(row)
 
 def read_data():
-  with open(fileName, "a", newline = '\n') as f:
+  with open(os.path.join(folder_path, fileName), "a", newline = '\n') as f:
     # last_line = data_line
-    data_line.insert(0, "".join(full_no_fail_header)) #str(ser.readline())[2:-5])
+    data_line.insert(0, str(ser.readline())[2:-5])
     if len(data_line) > HIST_SIZE: data_line.pop() 
 
     now = datetime.now()
@@ -176,7 +177,7 @@ def read_data():
 
   for i in range(len(data_line)):
     combined_arr = f"{time_line[i]},{data_line[i]}".split(",")
-    print("Combined arr", combined_arr)
+    # print("Combined arr", combined_arr)
     for j in range(len(combined_arr)):
       data_cells[i][j].set(combined_arr[j])
 

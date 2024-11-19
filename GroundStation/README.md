@@ -23,3 +23,8 @@ python groundstation.py
 (Create with: `pyinstaller --onefile groundstation.py`)
 
 To use it just download `/dist/groundstation.exe` and run
+
+# For Backup:
+Use run the `/Backup/serialonlybackup.py` script or use `/Backup/dist/serialonlybackup.exe`
+
+These will be terminal applications with no parsing so they're more robust

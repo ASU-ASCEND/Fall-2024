@@ -82,7 +82,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="BME680Sensor_8h_source.html">BME680Sensor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DS3231Sensor_8h_source.html">DS3231Sensor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ENS160Sensor_8h_source.html">ENS160Sensor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GeigerSensor_8h_source.html">GeigerSensor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ICM20948Sensor_8h_source.html">ICM20948Sensor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="INA260Sensor_8h_source.html">INA260Sensor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LSM9DS1Sensor_8h_source.html">LSM9DS1Sensor.h</a>&quot;</code><br />
@@ -127,8 +126,6 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a0acb6df8c6120cd2966d9a7ef67dc565"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBME680Sensor.html">BME680Sensor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0acb6df8c6120cd2966d9a7ef67dc565">bme_sensor</a> (1000)</td></tr>
 <tr class="separator:a0acb6df8c6120cd2966d9a7ef67dc565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a458b83ca6680c822e0cc168fbd579065"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeigerSensor.html">GeigerSensor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a458b83ca6680c822e0cc168fbd579065">geiger_sensor</a> (1000)</td></tr>
-<tr class="separator:a458b83ca6680c822e0cc168fbd579065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aaec7a466546ae9ce387852e01e5536"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classINA260Sensor.html">INA260Sensor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a6aaec7a466546ae9ce387852e01e5536">ina260_sensor</a> (1000)</td></tr>
 <tr class="separator:a6aaec7a466546ae9ce387852e01e5536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf611c8353be37ac1eec20148673511c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLSM9DS1Sensor.html">LSM9DS1Sensor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adf611c8353be37ac1eec20148673511c">lsm9ds1_sensor</a> (0)</td></tr>
@@ -371,24 +368,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a458b83ca6680c822e0cc168fbd579065"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a458b83ca6680c822e0cc168fbd579065">&#9670;&nbsp;</a></span>geiger_sensor</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classGeigerSensor.html">GeigerSensor</a> geiger_sensor(1000) </td>
-          <td>(</td>
-          <td class="paramtype">1000&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1ad969436b83a3feb79af6deebf60d1b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ad969436b83a3feb79af6deebf60d1b">&#9670;&nbsp;</a></span>gps_sensor</h2>
 
@@ -546,17 +525,15 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {&amp;<a class="code" href="main_8cpp.html#a0acb6df8c6120cd2966d9a7ef67dc565">bme_sensor</a>,     &amp;<a class="code" href="main_8cpp.html#a458b83ca6680c822e0cc168fbd579065">geiger_sensor</a>,     &amp;<a class="code" href="main_8cpp.html#a6aaec7a466546ae9ce387852e01e5536">ina260_sensor</a>,</div>
-<div class="line">                     &amp;<a class="code" href="main_8cpp.html#adf611c8353be37ac1eec20148673511c">lsm9ds1_sensor</a>, &amp;<a class="code" href="main_8cpp.html#a80c884a23afbdc811012d5ac34326493">sht31_sensor</a>,      &amp;<a class="code" href="main_8cpp.html#a24a54c1dabc1e13f503b7d5bb72fd588">temp_sensor</a>,</div>
-<div class="line">                     &amp;<a class="code" href="main_8cpp.html#abb9eac58e2aca040baa096195577058f">sgp30_sensor</a>,   &amp;<a class="code" href="main_8cpp.html#a5e06902fdd9dd0f9e999683d83063577">bme280_sensor</a>,     &amp;<a class="code" href="main_8cpp.html#a3e98eb3264715a4fd62974bf534291db">ens160_sensor</a>,</div>
-<div class="line">                     &amp;<a class="code" href="main_8cpp.html#a2afe2e0c63f9b2ab0712a3cb331b11c4">uv_sensor</a>,      &amp;<a class="code" href="main_8cpp.html#adcfbe18d684f8a0cb3ea4efae14e5846">rtc_backup_sensor</a>, &amp;<a class="code" href="main_8cpp.html#a5c4fa06dc1db8181a76e881f4848ce4f">icm_sensor</a>,</div>
-<div class="line">                     &amp;<a class="code" href="main_8cpp.html#a1ad969436b83a3feb79af6deebf60d1b">gps_sensor</a>}</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= {&amp;<a class="code" href="main_8cpp.html#adcfbe18d684f8a0cb3ea4efae14e5846">rtc_backup_sensor</a>, &amp;<a class="code" href="main_8cpp.html#a0acb6df8c6120cd2966d9a7ef67dc565">bme_sensor</a>,    &amp;<a class="code" href="main_8cpp.html#a6aaec7a466546ae9ce387852e01e5536">ina260_sensor</a>,</div>
+<div class="line">                     &amp;<a class="code" href="main_8cpp.html#adf611c8353be37ac1eec20148673511c">lsm9ds1_sensor</a>,    &amp;<a class="code" href="main_8cpp.html#a80c884a23afbdc811012d5ac34326493">sht31_sensor</a>,  &amp;<a class="code" href="main_8cpp.html#a24a54c1dabc1e13f503b7d5bb72fd588">temp_sensor</a>,</div>
+<div class="line">                     &amp;<a class="code" href="main_8cpp.html#abb9eac58e2aca040baa096195577058f">sgp30_sensor</a>,      &amp;<a class="code" href="main_8cpp.html#a5e06902fdd9dd0f9e999683d83063577">bme280_sensor</a>, &amp;<a class="code" href="main_8cpp.html#a3e98eb3264715a4fd62974bf534291db">ens160_sensor</a>,</div>
+<div class="line">                     &amp;<a class="code" href="main_8cpp.html#a2afe2e0c63f9b2ab0712a3cb331b11c4">uv_sensor</a>,         &amp;<a class="code" href="main_8cpp.html#a5c4fa06dc1db8181a76e881f4848ce4f">icm_sensor</a>,    &amp;<a class="code" href="main_8cpp.html#a1ad969436b83a3feb79af6deebf60d1b">gps_sensor</a>}</div>
 <div class="ttc" id="amain_8cpp_html_a0acb6df8c6120cd2966d9a7ef67dc565"><div class="ttname"><a href="main_8cpp.html#a0acb6df8c6120cd2966d9a7ef67dc565">bme_sensor</a></div><div class="ttdeci">BME680Sensor bme_sensor(1000)</div></div>
 <div class="ttc" id="amain_8cpp_html_a1ad969436b83a3feb79af6deebf60d1b"><div class="ttname"><a href="main_8cpp.html#a1ad969436b83a3feb79af6deebf60d1b">gps_sensor</a></div><div class="ttdeci">MTK3339Sensor gps_sensor(5000)</div></div>
 <div class="ttc" id="amain_8cpp_html_a24a54c1dabc1e13f503b7d5bb72fd588"><div class="ttname"><a href="main_8cpp.html#a24a54c1dabc1e13f503b7d5bb72fd588">temp_sensor</a></div><div class="ttdeci">TempSensor temp_sensor(1000)</div></div>
 <div class="ttc" id="amain_8cpp_html_a2afe2e0c63f9b2ab0712a3cb331b11c4"><div class="ttname"><a href="main_8cpp.html#a2afe2e0c63f9b2ab0712a3cb331b11c4">uv_sensor</a></div><div class="ttdeci">AS7331Sensor uv_sensor(1000)</div></div>
 <div class="ttc" id="amain_8cpp_html_a3e98eb3264715a4fd62974bf534291db"><div class="ttname"><a href="main_8cpp.html#a3e98eb3264715a4fd62974bf534291db">ens160_sensor</a></div><div class="ttdeci">ENS160Sensor ens160_sensor(1000)</div></div>
-<div class="ttc" id="amain_8cpp_html_a458b83ca6680c822e0cc168fbd579065"><div class="ttname"><a href="main_8cpp.html#a458b83ca6680c822e0cc168fbd579065">geiger_sensor</a></div><div class="ttdeci">GeigerSensor geiger_sensor(1000)</div></div>
 <div class="ttc" id="amain_8cpp_html_a5c4fa06dc1db8181a76e881f4848ce4f"><div class="ttname"><a href="main_8cpp.html#a5c4fa06dc1db8181a76e881f4848ce4f">icm_sensor</a></div><div class="ttdeci">ICM20948Sensor icm_sensor(20)</div></div>
 <div class="ttc" id="amain_8cpp_html_a5e06902fdd9dd0f9e999683d83063577"><div class="ttname"><a href="main_8cpp.html#a5e06902fdd9dd0f9e999683d83063577">bme280_sensor</a></div><div class="ttdeci">BME280Sensor bme280_sensor(1000)</div></div>
 <div class="ttc" id="amain_8cpp_html_a6aaec7a466546ae9ce387852e01e5536"><div class="ttname"><a href="main_8cpp.html#a6aaec7a466546ae9ce387852e01e5536">ina260_sensor</a></div><div class="ttdeci">INA260Sensor ina260_sensor(1000)</div></div>
