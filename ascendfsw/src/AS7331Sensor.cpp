@@ -6,15 +6,17 @@
  * minimum_period of 0 ms
  *
  */
-AS7331Sensor::AS7331Sensor() : AS7331Sensor(0) {}
+AS7331Sensor::AS7331Sensor(uint8_t i2c_addr) : AS7331Sensor(0, i2c_addr) {}
 
 /**
  * @brief Construct a new AS7331Sensor (UVA/B/C Sensor) object
  *
  * @param minium_period Minimum time to wait between readings in ms
  */
-AS7331Sensor::AS7331Sensor(unsigned long minium_period)
-    : Sensor("AS7331", "UVA(nm),UVB(nm),UVC(nm),", 3, minium_period) {}
+AS7331Sensor::AS7331Sensor(unsigned long minium_period, uint8_t i2c_addr)
+    : Sensor("AS7331", "UVA(nm),UVB(nm),UVC(nm),", 3, minium_period) {
+  this->i2c_addr = i2c_addr;
+}
 
 /**
  * @brief Returns if the sensor can be reached
@@ -22,7 +24,7 @@ AS7331Sensor::AS7331Sensor(unsigned long minium_period)
  * @return true always
  * @return false never
  */
-bool AS7331Sensor::verify() { return myUVSensor.begin(); }
+bool AS7331Sensor::verify() { return myUVSensor.begin(this->i2c_addr); }
 
 /**
  * @brief Reads UV data

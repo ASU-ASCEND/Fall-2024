@@ -1,7 +1,8 @@
 var searchData=
 [
+  ['i2c_5faddr_72',['i2c_addr',['../classAS7331Sensor.html#a7bf9a8e37c93f58db2f41187fd4f3363',1,'AS7331Sensor']]],
   ['icm_73',['icm',['../classICM20948Sensor.html#a79e354702d11ae27a348f64db78fde22',1,'ICM20948Sensor']]],
-  ['icm20948sensor_74',['ICM20948Sensor',['../classICM20948Sensor.html',1,'ICM20948Sensor'],['../classICM20948Sensor.html#a8a574df240372e4a1c475e229d9f4b2d',1,'ICM20948Sensor::ICM20948Sensor()'],['../classICM20948Sensor.html#a589c36813a59a5640cfc68eddbfe52cc',1,'ICM20948Sensor::ICM20948Sensor(unsigned long minimum_period)']]],
+  ['icm20948sensor_74',['ICM20948Sensor',['../classICM20948Sensor.html',1,'ICM20948Sensor'],['../classICM20948Sensor.html#a589c36813a59a5640cfc68eddbfe52cc',1,'ICM20948Sensor::ICM20948Sensor(unsigned long minimum_period)'],['../classICM20948Sensor.html#a8a574df240372e4a1c475e229d9f4b2d',1,'ICM20948Sensor::ICM20948Sensor()']]],
   ['icm20948sensor_2ecpp_75',['ICM20948Sensor.cpp',['../ICM20948Sensor_8cpp.html',1,'']]],
   ['icm20948sensor_2eh_76',['ICM20948Sensor.h',['../ICM20948Sensor_8h.html',1,'']]],
   ['icm_5faccel_77',['icm_accel',['../classICM20948Sensor.html#a84af140cb894641f89c35cc653f61384',1,'ICM20948Sensor']]],

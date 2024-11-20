@@ -13,7 +13,6 @@
 #include "BME280Sensor.h"
 #include "BME680Sensor.h"
 #include "ENS160Sensor.h"
-#include "GeigerSensor.h"
 #include "ICM20948Sensor.h"
 #include "INA260Sensor.h"
 #include "LSM9DS1Sensor.h"
@@ -36,7 +35,6 @@ void handleDataInterface();
 // clang-format off
 // class        sensor            minimum period in ms
 BME680Sensor    bme_sensor        (1000);
-GeigerSensor    geiger_sensor     (1000);
 INA260Sensor    ina260_sensor     (1000);
 LSM9DS1Sensor   lsm9ds1_sensor    (0);
 SHT31Sensor     sht31_sensor      (1000);
@@ -44,7 +42,9 @@ TempSensor      temp_sensor       (1000);
 SGP30Sensor     sgp30_sensor      (1000);
 BME280Sensor    bme280_sensor     (1000);
 ENS160Sensor    ens160_sensor     (1000);
-AS7331Sensor    uv_sensor         (1000);
+AS7331Sensor    uv_sensor_1       (1000, UV_I2C_ADDR_1);
+AS7331Sensor    uv_sensor_2       (1000, UV_I2C_ADDR_2);
+DS3231Sensor    rtc_backup_sensor (1000);
 MTK3339Sensor   gps_sensor        (5000);
 ICM20948Sensor  icm_sensor        (20);
 PCF8523Sensor   rtc_sensor        (1000);
@@ -52,11 +52,11 @@ PCF8523Sensor   rtc_sensor        (1000);
 // clang-format on
 
 // sensor array
-Sensor* sensors[] = {&rtc_sensor,    &bme_sensor,     &geiger_sensor,
-                     &ina260_sensor, &lsm9ds1_sensor, &sht31_sensor,
-                     &temp_sensor,   &sgp30_sensor,   &bme280_sensor,
-                     &ens160_sensor, &uv_sensor,      //&rtc_backup_sensor,
-                     &icm_sensor,    &gps_sensor};
+Sensor* sensors[] = {&rtc_backup_sensor, &bme_sensor,    &ina260_sensor,
+                     &lsm9ds1_sensor,    &sht31_sensor,  &temp_sensor,
+                     &sgp30_sensor,      &bme280_sensor, &ens160_sensor,
+                     &uv_sensor_1,       &uv_sensor_2,   &icm_sensor,
+                     &gps_sensor};
 //&gps_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
