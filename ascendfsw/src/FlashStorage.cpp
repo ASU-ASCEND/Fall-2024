@@ -14,7 +14,16 @@ FlashStorage::FlashStorage() : position(0), Storage("Flash Storage") {}
  */
 bool FlashStorage::verify() {
     // TODO: Implement verify() function
-    return this->flash.begin(FLASH_CS_PIN);
+    if(this->flash.begin(FLASH_CS_PIN) == false) return false; 
+
+    uint8_t pos[8];
+    this->flash.readBlock(0, pos, 8);
+    for(int i = 0; i < 8; i++){
+        this->position = (this->position << 8) | pos[i];
+    }
+    this->position += 10;  // 2 bytes buffer
+
+    return true; 
 }
 
 /**
@@ -29,5 +38,12 @@ void FlashStorage::store(String data) {
     data.getBytes(raw_data, buf_size);  
 
     this->flash.writeBlock(position, raw_data, buf_size); 
-    position += buf_size; 
+    this->position += buf_size; 
+    
+    uint8_t pos[8]; 
+    for(int i = 0; i < 8; i++){
+        pos[i] = (uint8_t)((this->position >> (i * 8)) & 0xFF);
+    }
+
+    this->flash.writeBlock(0, pos, 8);
 }
