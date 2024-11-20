@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lsm9ds1sensor_232',['LSM9DS1Sensor',['../classLSM9DS1Sensor.html',1,'']]]
+  ['icm20948sensor_237',['ICM20948Sensor',['../classICM20948Sensor.html',1,'']]],
+  ['ina260sensor_238',['INA260Sensor',['../classINA260Sensor.html',1,'']]]
 ];

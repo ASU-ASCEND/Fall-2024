@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pcf8523sensor_234',['PCF8523Sensor',['../classPCF8523Sensor.html',1,'']]]
+  ['mtk3339sensor_240',['MTK3339Sensor',['../classMTK3339Sensor.html',1,'']]]
 ];
