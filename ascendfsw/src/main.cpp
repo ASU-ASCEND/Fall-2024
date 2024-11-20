@@ -44,7 +44,6 @@ BME280Sensor    bme280_sensor     (1000);
 ENS160Sensor    ens160_sensor     (1000);
 AS7331Sensor    uv_sensor_1       (1000, UV_I2C_ADDR_1);
 AS7331Sensor    uv_sensor_2       (1000, UV_I2C_ADDR_2);
-DS3231Sensor    rtc_backup_sensor (1000);
 MTK3339Sensor   gps_sensor        (5000);
 ICM20948Sensor  icm_sensor        (20);
 PCF8523Sensor   rtc_sensor        (1000);
@@ -52,7 +51,7 @@ PCF8523Sensor   rtc_sensor        (1000);
 // clang-format on
 
 // sensor array
-Sensor* sensors[] = {&rtc_backup_sensor, &bme_sensor,    &ina260_sensor,
+Sensor* sensors[] = {&rtc_sensor, &bme_sensor,    &ina260_sensor,
                      &lsm9ds1_sensor,    &sht31_sensor,  &temp_sensor,
                      &sgp30_sensor,      &bme280_sensor, &ens160_sensor,
                      &uv_sensor_1,       &uv_sensor_2,   &icm_sensor,
