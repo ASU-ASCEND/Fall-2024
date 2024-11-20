@@ -257,11 +257,11 @@ void storeData(String data) {
  *
  */
 void handleDataInterface() {
-  static unsigned long last_dump = millis(); 
-  // dump every 30 seconds 
-  if(millis() - last_dump > 30'000){
-    flash_storage.dump(); 
-    last_dump = millis(); 
+  static unsigned long last_dump = millis();
+  // dump every 30 seconds
+  if (millis() - last_dump > 30'000) {
+    flash_storage.dump();
+    last_dump = millis();
   }
 }
 
