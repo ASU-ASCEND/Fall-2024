@@ -37,15 +37,18 @@
 
 /** @brief SD Card SPI Toggle */
 #define SD_SPI1 1
-/** @brief SD Card SPI CS PIN */
+/** @brief SD Card SPI CS Pin */
 #define SD_CS_PIN 9
 
+/** @brief Flash chip SPI CS Pin */
+#define FLASH_CS 7
+
 // spi1
-/** @brief SPI1 MISO PIN */
+/** @brief SPI1 MISO Pin */
 #define SPI1_MISO_PIN 8
-/** @brief SPI1 SCK PIN */
+/** @brief SPI1 SCK Pin */
 #define SPI1_SCK_PIN 10
-/** @brief SPI1 MOSI PIN */
+/** @brief SPI1 MOSI Pin */
 #define SPI1_MOSI_PIN 11
 
 // main pin definitions

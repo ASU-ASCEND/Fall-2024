@@ -10,9 +10,9 @@ class FlashStorage : public Storage {
     private:
         String file_name;
         SFE_SPI_FLASH flash;
-        String storage_name = "Flash Storage";
         SPIClassRP2040 sd_spi_1 = SPIClassRP2040(spi1, SPI1_MISO_PIN, SD_CS_PIN,
                                                  SPI1_SCK_PIN, SPI1_MOSI_PIN);
+        uint64_t position; 
 
     public:
         FlashStorage();
