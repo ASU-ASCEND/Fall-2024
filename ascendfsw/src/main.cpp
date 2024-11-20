@@ -17,10 +17,10 @@
 #include "INA260Sensor.h"
 #include "LSM9DS1Sensor.h"
 #include "MTK3339Sensor.h"
+#include "PCF8523Sensor.h"
 #include "SGP30Sensor.h"
 #include "SHT31Sensor.h"
 #include "TempSensor.h"
-#include "PCF8523Sensor.h"
 // #include "DS3231Sensor.h"
 
 // helper function definitions
@@ -51,11 +51,10 @@ PCF8523Sensor   rtc_sensor        (1000);
 // clang-format on
 
 // sensor array
-Sensor* sensors[] = {&rtc_sensor, &bme_sensor,    &ina260_sensor,
-                     &lsm9ds1_sensor,    &sht31_sensor,  &temp_sensor,
-                     &sgp30_sensor,      &bme280_sensor, &ens160_sensor,
-                     &uv_sensor_1,       &uv_sensor_2,   &icm_sensor,
-                     &gps_sensor};
+Sensor* sensors[] = {
+    &rtc_sensor,  &bme_sensor,   &ina260_sensor, &lsm9ds1_sensor, &sht31_sensor,
+    &temp_sensor, &sgp30_sensor, &bme280_sensor, &ens160_sensor,  &uv_sensor_1,
+    &uv_sensor_2, &icm_sensor,   &gps_sensor};
 //&gps_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
