@@ -256,7 +256,14 @@ void storeData(String data) {
  * @brief Handles data interface mode for retrieving data from flash memory
  *
  */
-void handleDataInterface() { delay(100); }
+void handleDataInterface() {
+  static unsigned long last_dump = millis(); 
+  // dump every 30 seconds 
+  if(millis() - last_dump > 30'000){
+    flash_storage.dump(); 
+    last_dump = millis(); 
+  }
+}
 
 /** -------------------------------------------------------------------
  * CORE 1 CODE ONLY AFTER THIS, DO NOT MIX CODE FOR THE CORES
