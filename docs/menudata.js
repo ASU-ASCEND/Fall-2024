@@ -114,5 +114,6 @@ var menudata={children:[
 {text:"o",url:"globals_defs.html#index_o"},
 {text:"p",url:"globals_defs.html#index_p"},
 {text:"s",url:"globals_defs.html#index_s"},
+{text:"u",url:"globals_defs.html#index_u"},
 {text:"w",url:"globals_defs.html#index_w"},
 {text:"z",url:"globals_defs.html#index_z"}]}]}]}]}

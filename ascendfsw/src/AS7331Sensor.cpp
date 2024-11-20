@@ -1,8 +1,6 @@
 #include <AS7331Sensor.h>
 #include <SparkFun_AS7331.h>
 
-
-
 /**
  * @brief Construct a new AS7331Sensor (UVA/B/C Sensor) object with default
  * minimum_period of 0 ms
@@ -17,9 +15,8 @@ AS7331Sensor::AS7331Sensor(uint8_t i2c_addr) : AS7331Sensor(0, i2c_addr) {}
  */
 AS7331Sensor::AS7331Sensor(unsigned long minium_period, uint8_t i2c_addr)
     : Sensor("AS7331", "UVA(nm),UVB(nm),UVC(nm),", 3, minium_period) {
-      this->i2c_addr = i2c_addr; 
-    }
-
+  this->i2c_addr = i2c_addr;
+}
 
 /**
  * @brief Returns if the sensor can be reached

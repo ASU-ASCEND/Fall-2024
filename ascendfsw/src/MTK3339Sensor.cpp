@@ -8,8 +8,7 @@
 MTK3339Sensor::MTK3339Sensor()
     : Sensor("MTK3339",
              "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,", 7),
-      GPS(&Wire) {
-}
+      GPS(&Wire) {}
 
 /**
  * @brief Constructor for the MTK3339Sensor
@@ -54,7 +53,7 @@ String MTK3339Sensor::readData() {
         GPS.lastNMEA());  // this also sets the newNMEAreceived() flag to false
     if (!GPS.parse(GPS.lastNMEA())) {  // this also sets the newNMEAreceived()
                                        // flag to false
-      return "-,-,-,-,-,-,-,";  // we can fail to parse a sentence in
+      return "-,-,-,-,-,-,-,";         // we can fail to parse a sentence in
                                        // which case we should just wait for
                                        // another
     }

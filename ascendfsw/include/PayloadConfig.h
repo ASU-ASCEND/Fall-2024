@@ -30,7 +30,7 @@
 
 /** @brief UV sensor I2C Addresses */
 // [1, 1, 1, 0, 1, A1, A0]
-#define UV_I2C_ADDR_1 0b1110100 
+#define UV_I2C_ADDR_1 0b1110100
 #define UV_I2C_ADDR_2 0b1110100
 
 // storages

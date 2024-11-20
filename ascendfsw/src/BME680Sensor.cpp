@@ -23,12 +23,12 @@ BME680Sensor::BME680Sensor(unsigned long minimum_period)
     : Sensor("BME680",
              "BMETemp(C),BMEPress(hPa),BMEHum(%),BMEGas(KOhms),BMEAlt(m),", 5,
              minimum_period) {
-              #if BME680_SPI_MODE
-                bme = Adafruit_BME680(BME680_SPI_CS_PIN);
-              #else
-                bme = Adafruit_BME680();
-              #endif
-             }
+#if BME680_SPI_MODE
+  bme = Adafruit_BME680(BME680_SPI_CS_PIN);
+#else
+  bme = Adafruit_BME680();
+#endif
+}
 
 /**
  * @brief Verifies the connection and readiness of the BME680 sensor.
