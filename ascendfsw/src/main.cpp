@@ -63,13 +63,15 @@ String header_condensed = "";
 // include storage headers here
 #include "RadioStorage.h"
 #include "SDStorage.h"
+#include "FlashStorage.h"
 
 // storage classes
 SDStorage sd_storage;
 RadioStorage radio_storage;
+FlashStorage flash_storage; 
 
 // storage array
-Storage* storages[] = {&sd_storage, &radio_storage};
+Storage* storages[] = {&sd_storage, &radio_storage, &flash_storage};
 const int storages_len = sizeof(storages) / sizeof(storages[0]);
 bool storages_verify[storages_len];
 
