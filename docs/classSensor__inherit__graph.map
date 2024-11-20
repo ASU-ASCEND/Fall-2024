@@ -1,6 +1,6 @@
 <map id="Sensor" name="Sensor">
 <area shape="rect" id="node1" title="Parent class for sensor objects." alt="" coords="1179,5,1364,303"/>
-<area shape="rect" id="node2" href="$classAS7331Sensor.html" title="Implementation of a Sensor for UVA/B/C sensor." alt="" coords="5,387,145,509"/>
+<area shape="rect" id="node2" href="$classAS7331Sensor.html" title="Implementation of a Sensor for UVA/B/C sensor." alt="" coords="5,380,145,516"/>
 <area shape="rect" id="node3" href="$classAnalogSensor.html" title="Implementation of a Sensor for the analog readings." alt="" coords="170,387,306,509"/>
 <area shape="rect" id="node4" href="$classBME280Sensor.html" title="Implementation of a Sensor for the BME280." alt="" coords="330,387,474,509"/>
 <area shape="rect" id="node5" href="$classBME680Sensor.html" title="A class to interface with the Adafruit BME680 sensor for environmental data collection." alt="" coords="498,387,642,509"/>

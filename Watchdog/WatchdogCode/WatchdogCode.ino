@@ -36,7 +36,7 @@ void setup() {
 }
 
 void loop() {
-  delay(5000);                      // check every 5s
+  delay(30000);                     // check every 30s
   if ((beat0 || beat1) == false) {  // if either beat hasn't changed
     // one of the tasks if frozen, reset
     digitalWrite(RESET_PIN, HIGH);

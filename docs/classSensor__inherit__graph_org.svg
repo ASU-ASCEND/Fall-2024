@@ -40,22 +40,23 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="classAS7331Sensor.html" target="_top" xlink:title="Implementation of a Sensor for UVA/B/C sensor.">
-<polygon fill="none" stroke="black" points="0,-28 0,-118 105,-118 105,-28 0,-28"/>
-<text text-anchor="middle" x="52.5" y="-106" font-family="Helvetica,sans-Serif" font-size="10.00">AS7331Sensor</text>
-<polyline fill="none" stroke="black" points="0,-99 105,-99 "/>
-<text text-anchor="start" x="8" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; myUVSensor</text>
-<polyline fill="none" stroke="black" points="0,-80 105,-80 "/>
-<text text-anchor="start" x="8" y="-68" font-family="Helvetica,sans-Serif" font-size="10.00">+ AS7331Sensor()</text>
-<text text-anchor="start" x="8" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ AS7331Sensor()</text>
-<text text-anchor="start" x="8" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
-<text text-anchor="start" x="8" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
+<polygon fill="none" stroke="black" points="0,-22.5 0,-123.5 105,-123.5 105,-22.5 0,-22.5"/>
+<text text-anchor="middle" x="52.5" y="-111.5" font-family="Helvetica,sans-Serif" font-size="10.00">AS7331Sensor</text>
+<polyline fill="none" stroke="black" points="0,-104.5 105,-104.5 "/>
+<text text-anchor="start" x="8" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; myUVSensor</text>
+<text text-anchor="start" x="8" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; i2c_addr</text>
+<polyline fill="none" stroke="black" points="0,-74.5 105,-74.5 "/>
+<text text-anchor="start" x="8" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ AS7331Sensor()</text>
+<text text-anchor="start" x="8" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ AS7331Sensor()</text>
+<text text-anchor="start" x="8" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ verify()</text>
+<text text-anchor="start" x="8" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ readData()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M869.78,-285.39C686.99,-267.99 243.46,-219.29 114.5,-146 102.31,-139.07 91.38,-128.81 82.22,-118.19"/>
+<path fill="none" stroke="midnightblue" d="M869.78,-285.39C686.99,-267.99 243.46,-219.29 114.5,-146 104.46,-140.29 95.28,-132.33 87.23,-123.76"/>
 <polygon fill="none" stroke="midnightblue" points="869.58,-288.88 879.87,-286.34 870.24,-281.91 869.58,-288.88"/>
 </g>
 <!-- Node3 -->
