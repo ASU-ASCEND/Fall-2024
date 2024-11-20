@@ -14,17 +14,17 @@ FlashStorage::FlashStorage() : position(0), Storage("Flash Storage") {}
  */
 bool FlashStorage::verify() {
 <<<<<<< HEAD
-    // TODO: Implement verify() function
-    if(this->flash.begin(FLASH_CS_PIN) == false) return false; 
+  // TODO: Implement verify() function
+  if (this->flash.begin(FLASH_CS_PIN) == false) return false;
 
-    uint8_t pos[8];
-    this->flash.readBlock(0, pos, 8);
-    for(int i = 0; i < 8; i++){
-        this->position = (this->position << 8) | pos[i];
-    }
-    this->position += 10;  // 2 bytes buffer
+  uint8_t pos[8];
+  this->flash.readBlock(0, pos, 8);
+  for (int i = 0; i < 8; i++) {
+    this->position = (this->position << 8) | pos[i];
+  }
+  this->position += 10;  // 2 bytes buffer
 
-    return true; 
+  return true; 
 =======
   // TODO: Implement verify() function
   return this->flash.begin(FLASH_CS_PIN);
@@ -42,13 +42,13 @@ void FlashStorage::store(String data) {
   uint8_t raw_data[buf_size];
   data.getBytes(raw_data, buf_size);
 
-    this->flash.writeBlock(position, raw_data, buf_size); 
-    this->position += buf_size; 
-    
-    uint8_t pos[8]; 
-    for(int i = 0; i < 8; i++){
-        pos[i] = (uint8_t)((this->position >> (i * 8)) & 0xFF);
-    }
+  this->flash.writeBlock(position, raw_data, buf_size);
+  this->position += buf_size;
 
-    this->flash.writeBlock(0, pos, 8);
+  uint8_t pos[8];
+  for (int i = 0; i < 8; i++) {
+    pos[i] = (uint8_t)((this->position >> (i * 8)) & 0xFF);
+  }
+
+  this->flash.writeBlock(0, pos, 8);
 }
