@@ -22,7 +22,13 @@ BME680Sensor::BME680Sensor() : BME680Sensor(0) {}
 BME680Sensor::BME680Sensor(unsigned long minimum_period)
     : Sensor("BME680",
              "BMETemp(C),BMEPress(hPa),BMEHum(%),BMEGas(KOhms),BMEAlt(m),", 5,
-             minimum_period) {}
+             minimum_period) {
+              #if BME680_SPI_MODE
+                bme = Adafruit_BME680(BME680_SPI_CS_PIN);
+              #else
+                bme = Adafruit_BME680();
+              #endif
+             }
 
 /**
  * @brief Verifies the connection and readiness of the BME680 sensor.
@@ -36,15 +42,9 @@ BME680Sensor::BME680Sensor(unsigned long minimum_period)
  * @return false - If the sensor is not detected or fails to initialize.
  */
 bool BME680Sensor::verify() {
-#if BME680_SPI_MODE  // Using SPI
-  if (!bme.begin(BME680_SPI_CS_PIN, spi0)) {
-    return false;
-  }
-#else  // Using I2C
   if (!bme.begin()) {
     return false;
   }
-#endif
 
   // Set up oversampling and filter initialization
   bme.setTemperatureOversampling(BME680_OS_8X);
@@ -70,10 +70,10 @@ bool BME680Sensor::verify() {
  */
 String BME680Sensor::readData() {
   if (!bme.performReading()) {
-    return "-, -, -, -, -, ";
+    return "-,-,-,-,-,";
   }
 
-  return String(bme.temperature) + ", " + String(bme.pressure / 100.0) + ", " +
-         String(bme.humidity) + ", " + String(bme.gas_resistance) + ", " +
-         String(bme.readAltitude(SEALEVELPRESSURE_HPA)) + ", ";
+  return String(bme.temperature) + "," + String(bme.pressure / 100.0) + "," +
+         String(bme.humidity) + "," + String(bme.gas_resistance) + "," +
+         String(bme.readAltitude(SEALEVELPRESSURE_HPA)) + ",";
 }

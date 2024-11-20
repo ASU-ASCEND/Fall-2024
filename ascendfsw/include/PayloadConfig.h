@@ -13,12 +13,12 @@
 /** @brief BME680 CS Pin */
 #define BME680_SPI_CS_PIN 17
 /** @brief BME680 SPI Mode Toggle Pin */
-#define BME680_SPI_MODE 0
+#define BME680_SPI_MODE 1
 
 /** @brief ICM20948 IMU CS Pin */
 #define ICM_CS_PIN 26
 /** @brief ICM20948 IMU I2C Toggle Pin */
-#define ICM_I2C_MODE 1
+#define ICM_I2C_MODE 0
 
 /** @brief LSM9DS1 IMU Accelerometer/Gyroscope Pin */
 #define LSM9DS1_XGCS_PIN 21
@@ -27,6 +27,11 @@
 
 /** @brief MTK3339 GPS CS Pin*/
 #define MTK3339_CS_PIN 20
+
+/** @brief UV sensor I2C Addresses */
+// [1, 1, 1, 0, 1, A1, A0]
+#define UV_I2C_ADDR_1 0b1110100 
+#define UV_I2C_ADDR_2 0b1110100
 
 // storages
 // for radio

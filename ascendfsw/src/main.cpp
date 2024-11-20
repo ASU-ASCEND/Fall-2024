@@ -41,7 +41,8 @@ TempSensor      temp_sensor       (1000);
 SGP30Sensor     sgp30_sensor      (1000);
 BME280Sensor    bme280_sensor     (1000);
 ENS160Sensor    ens160_sensor     (1000);
-AS7331Sensor    uv_sensor         (1000);
+AS7331Sensor    uv_sensor_1       (1000, UV_I2C_ADDR_1);
+AS7331Sensor    uv_sensor_2       (1000, UV_I2C_ADDR_2);
 DS3231Sensor    rtc_backup_sensor (1000);
 MTK3339Sensor   gps_sensor        (5000);
 ICM20948Sensor  icm_sensor        (20);
@@ -51,7 +52,7 @@ ICM20948Sensor  icm_sensor        (20);
 Sensor* sensors[] = {&rtc_backup_sensor, &bme_sensor,    &ina260_sensor,
                      &lsm9ds1_sensor,    &sht31_sensor,  &temp_sensor,
                      &sgp30_sensor,      &bme280_sensor, &ens160_sensor,
-                     &uv_sensor,         &icm_sensor,    &gps_sensor};
+                     &uv_sensor_1, &uv_sensor_2,  &icm_sensor,    &gps_sensor};
 //&gps_sensor};
 const int sensors_len = sizeof(sensors) / sizeof(sensors[0]);
 bool sensors_verify[sensors_len];
