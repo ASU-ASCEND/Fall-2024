@@ -14,7 +14,7 @@ FlashStorage::FlashStorage() : position(0), Storage("Flash Storage") {}
  */
 bool FlashStorage::verify() {
     // TODO: Implement verify() function
-    return this->flash.begin(FLASH_CS);
+    return this->flash.begin(FLASH_CS_PIN);
 }
 
 /**

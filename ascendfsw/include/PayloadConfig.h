@@ -26,7 +26,7 @@
 #define LSM9DS1_MCS_PIN 22
 
 /** @brief MTK3339 GPS CS Pin*/
-#define MTK3339_CS_PIN 20
+// #define MTK3339_CS_PIN 20
 
 /** @brief UV sensor I2C Addresses */
 // [1, 1, 1, 0, 1, A1, A0]
@@ -46,7 +46,7 @@
 #define SD_CS_PIN 9
 
 /** @brief Flash chip SPI CS Pin */
-#define FLASH_CS 7
+#define FLASH_CS_PIN 20
 
 // spi1
 /** @brief SPI1 MISO Pin */
