@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pcf8523sensor_322',['PCF8523Sensor',['../classPCF8523Sensor.html#a0b4ee84247f99ecdc97c6207cd4c7165',1,'PCF8523Sensor::PCF8523Sensor()'],['../classPCF8523Sensor.html#afb52f2ef4ae49dba0f7df1d882de8e71',1,'PCF8523Sensor::PCF8523Sensor(unsigned long minimum_period)']]]
+  ['mtk3339sensor_331',['MTK3339Sensor',['../classMTK3339Sensor.html#a97dcd5d72db33226c075b962adc94157',1,'MTK3339Sensor::MTK3339Sensor()'],['../classMTK3339Sensor.html#a756a728a65297f1b463b2c9ab445b388',1,'MTK3339Sensor::MTK3339Sensor(unsigned long minimum_period)']]]
 ];

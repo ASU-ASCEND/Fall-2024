@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['geigersensor_229',['GeigerSensor',['../classGeigerSensor.html',1,'']]]
+  ['flashstorage_235',['FlashStorage',['../classFlashStorage.html',1,'']]]
 ];

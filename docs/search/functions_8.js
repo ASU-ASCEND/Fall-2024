@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['loop_319',['loop',['../main_8cpp.html#afe461d27b9c48d5921c00d521181f12f',1,'main.cpp']]],
-  ['lsm9ds1sensor_320',['LSM9DS1Sensor',['../classLSM9DS1Sensor.html#a46aef0b7563f5317c17b5c373ca7d513',1,'LSM9DS1Sensor::LSM9DS1Sensor()'],['../classLSM9DS1Sensor.html#a77f30f3bb42282065b2c35ec7b70dc0a',1,'LSM9DS1Sensor::LSM9DS1Sensor(unsigned long minimum_period)']]]
+  ['icm20948sensor_326',['ICM20948Sensor',['../classICM20948Sensor.html#a8a574df240372e4a1c475e229d9f4b2d',1,'ICM20948Sensor::ICM20948Sensor()'],['../classICM20948Sensor.html#a589c36813a59a5640cfc68eddbfe52cc',1,'ICM20948Sensor::ICM20948Sensor(unsigned long minimum_period)']]],
+  ['ina260sensor_327',['INA260Sensor',['../classINA260Sensor.html#a042f617dabe0fdd117cd1ba7cdb8723d',1,'INA260Sensor::INA260Sensor()'],['../classINA260Sensor.html#a15132c8e875b5cd00b243bf42b65efd9',1,'INA260Sensor::INA260Sensor(unsigned long minimum_period)']]],
+  ['instance_328',['instance',['../classErrorDisplay.html#a164dea875d8b3215203e5d6f0076f237',1,'ErrorDisplay']]]
 ];
