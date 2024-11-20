@@ -136,6 +136,7 @@ void setup() {
   Serial.println("Setup done.");
 }
 
+bool was_dumping = false; 
 /**
  * @brief Loop for core 0, handling sensor reads
  *
@@ -152,8 +153,14 @@ void loop() {
 
   // switch to data recovery mode
   if (digitalRead(DATA_INTERFACE_PIN) == HIGH) {
+    was_dumping = true; 
     handleDataInterface();
     return;
+  }
+
+  if(was_dumping == true){
+    was_dumping = false; 
+    flash_storage.erase(); 
   }
 
   // start print line with iteration number
