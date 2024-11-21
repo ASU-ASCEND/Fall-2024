@@ -71,7 +71,7 @@ RadioStorage radio_storage;
 FlashStorage flash_storage;
 
 // storage array
-Storage* storages[] = {&sd_storage, &radio_storage, &flash_storage};
+Storage* storages[] = {&sd_storage, &radio_storage}; //, &flash_storage};
 const int storages_len = sizeof(storages) / sizeof(storages[0]);
 bool storages_verify[storages_len];
 
@@ -159,6 +159,7 @@ void loop() {
   }
 
   if(was_dumping == true){
+    Serial.println("\nErasing flash chip...."); 
     was_dumping = false; 
     flash_storage.erase(); 
   }
@@ -264,7 +265,7 @@ void storeData(String data) {
  *
  */
 void handleDataInterface() {
-  static unsigned long last_dump = millis();
+  static unsigned long last_dump = 0;
   // dump every 30 seconds
   if (millis() - last_dump > 30'000) {
     flash_storage.dump();

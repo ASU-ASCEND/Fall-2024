@@ -18,9 +18,9 @@ class FlashStorage : public Storage {
                                                   '|', '|', '|', '|'};
   String file_name;
   SFE_SPI_FLASH flash;
-  uint64_t position;
+  uint32_t position;
   void loadPosition();
-  void updatePosition(uint64_t new_pos);
+  void updatePosition(uint32_t new_pos);
 
  public:
   FlashStorage();
