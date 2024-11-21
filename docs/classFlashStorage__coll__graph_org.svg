@@ -102,7 +102,7 @@
 <title>Node5</title>
 <g id="a_node5"><a xlink:title=" ">
 <polygon fill="none" stroke="#bfbfbf" points="361.33,-199 361.33,-256 417.33,-256 417.33,-199 361.33,-199"/>
-<text text-anchor="middle" x="389.33" y="-244" font-family="Helvetica,sans-Serif" font-size="10.00">uint64_t</text>
+<text text-anchor="middle" x="389.33" y="-244" font-family="Helvetica,sans-Serif" font-size="10.00">uint32_t</text>
 <polyline fill="none" stroke="#bfbfbf" points="361.33,-237 417.33,-237 "/>
 <text text-anchor="middle" x="389.33" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="#bfbfbf" points="361.33,-218 417.33,-218 "/>

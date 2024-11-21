@@ -71,7 +71,7 @@ RadioStorage radio_storage;
 FlashStorage flash_storage;
 
 // storage array
-Storage* storages[] = {&sd_storage, &radio_storage}; //, &flash_storage};
+Storage* storages[] = {&sd_storage, &radio_storage};  //, &flash_storage};
 const int storages_len = sizeof(storages) / sizeof(storages[0]);
 bool storages_verify[storages_len];
 
@@ -158,10 +158,10 @@ void loop() {
     return;
   }
 
-  if(was_dumping == true){
-    Serial.println("\nErasing flash chip...."); 
-    was_dumping = false; 
-    flash_storage.erase(); 
+  if (was_dumping == true) {
+    Serial.println("\nErasing flash chip....");
+    was_dumping = false;
+    flash_storage.erase();
   }
 
   // start print line with iteration number
