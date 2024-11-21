@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mtk3339_5fcs_5fpin_420',['MTK3339_CS_PIN',['../PayloadConfig_8h.html#a73cf4cc64586db1fe83f4506c6c0dc28',1,'PayloadConfig.h']]]
+  ['lsm9ds1_5fmcs_5fpin_463',['LSM9DS1_MCS_PIN',['../PayloadConfig_8h.html#a14287a16ed8b281fe0f7434d7f4d0119',1,'PayloadConfig.h']]],
+  ['lsm9ds1_5fxgcs_5fpin_464',['LSM9DS1_XGCS_PIN',['../PayloadConfig_8h.html#ac497176d73ec84d742887962d6a6f47a',1,'PayloadConfig.h']]]
 ];

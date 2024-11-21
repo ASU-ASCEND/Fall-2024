@@ -14,10 +14,11 @@
 class AS7331Sensor : public Sensor {
  private:
   SfeAS7331ArdI2C myUVSensor;
+  uint8_t i2c_addr;
 
  public:
-  AS7331Sensor();
-  AS7331Sensor(unsigned long minimum_period);
+  AS7331Sensor(uint8_t i2c_addr);
+  AS7331Sensor(unsigned long minimum_period, uint8_t i2c_addr);
 
   bool verify() override;
   String readData() override;

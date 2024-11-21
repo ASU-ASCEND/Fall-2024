@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['pin_5flevel_379',['pin_level',['../classErrorDisplay.html#a2b76f33e66982754402934117fa3b682',1,'ErrorDisplay']]]
+  ['mag_5foffsets_415',['mag_offsets',['../classLSM9DS1Sensor.html#a412305477e39c9a5e46ebc7dd9f2caaf',1,'LSM9DS1Sensor']]],
+  ['measuringperiodstart_416',['measuringPeriodStart',['../classGeigerSensor.html#a3f3e077ee3f22666f2ea23659e510e57',1,'GeigerSensor']]],
+  ['minimum_5fperiod_417',['minimum_period',['../classSensor.html#ab44ddb52915d3308953718c4ba3f63c4',1,'Sensor']]],
+  ['myuvsensor_418',['myUVSensor',['../classAS7331Sensor.html#a3b065be9f006920d2f8102ce7c60ee27',1,'AS7331Sensor']]]
 ];

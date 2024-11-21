@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['wind_5fpin_434',['WIND_PIN',['../AnalogSensor_8h.html#aba0c6bbc4f09561494697d5ec87ab839',1,'AnalogSensor.h']]]
+  ['uv_5fi2c_5faddr_5f1_478',['UV_I2C_ADDR_1',['../PayloadConfig_8h.html#a645ee06f09470629d5fe40d1f716c299',1,'PayloadConfig.h']]],
+  ['uv_5fi2c_5faddr_5f2_479',['UV_I2C_ADDR_2',['../PayloadConfig_8h.html#ad58bcae54cd4fb77890d7bb18bfb76ea',1,'PayloadConfig.h']]]
 ];

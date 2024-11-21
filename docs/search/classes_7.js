@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mtk3339sensor_226',['MTK3339Sensor',['../classMTK3339Sensor.html',1,'']]]
+  ['lsm9ds1sensor_248',['LSM9DS1Sensor',['../classLSM9DS1Sensor.html',1,'']]]
 ];

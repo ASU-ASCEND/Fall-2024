@@ -1,6 +1,23 @@
 var searchData=
 [
-  ['verify_338',['verify',['../classAS7331Sensor.html#a7232fc7844005125bd323cd2798d5e5c',1,'AS7331Sensor::verify()'],['../classZOPT220Sensor.html#a5fab507a3cadaab6d6026c3fea36d0e6',1,'ZOPT220Sensor::verify()'],['../classTempSensor.html#ab110bdca4c570053b16da6481b00bba5',1,'TempSensor::verify()'],['../classStorage.html#a83fbc910d2fe786ac9134f27a85bda8f',1,'Storage::verify()'],['../classSHT31Sensor.html#a1b322dd4ff6fafbbdfdccaf7cd0b622f',1,'SHT31Sensor::verify()'],['../classSGP30Sensor.html#a1fd4a6f8ad76aacb6c2aebda3eddb3ac',1,'SGP30Sensor::verify()'],['../classSensor.html#a45975aa760bbab8224775ae5d78da333',1,'Sensor::verify()'],['../classSDStorage.html#a2a08793ce2cb22bc0675f5cf4916155a',1,'SDStorage::verify()'],['../classRadioStorage.html#a6d15a136027e899fb2124afe82c0629e',1,'RadioStorage::verify()'],['../classMTK3339Sensor.html#a5e39435a4f8f037a3b9a7d949e736e6f',1,'MTK3339Sensor::verify()'],['../classLSM9DS1Sensor.html#a245f95f4d1174bf884bb47781f21f055',1,'LSM9DS1Sensor::verify()'],['../classINA260Sensor.html#a799f491fe1496b33b1d985e5672a7e6d',1,'INA260Sensor::verify()'],['../classICM20948Sensor.html#aa612d43f7d31da2e8a5646ec58e04944',1,'ICM20948Sensor::verify()'],['../classGeigerSensor.html#af9b257d10771ecc37b124ea067bc5354',1,'GeigerSensor::verify()'],['../classENS160Sensor.html#addd37045fa8828b7c1f437bd8043c54e',1,'ENS160Sensor::verify()'],['../classDS3231Sensor.html#acecc9cc8ee162220e28c9907ba7dd722',1,'DS3231Sensor::verify()'],['../classBME680Sensor.html#accc4dcd1322c9578c549b5f68df06844',1,'BME680Sensor::verify()'],['../classBME280Sensor.html#a912cb1dac291afe2e80f099c95229489',1,'BME280Sensor::verify()'],['../classAnalogSensor.html#a93c2743f77d0cefecfc8a4cecb6ee8da',1,'AnalogSensor::verify()']]],
-  ['verifysensors_339',['verifySensors',['../main_8cpp.html#aef42a5a8a5d889c599fa964be60eca24',1,'main.cpp']]],
-  ['verifystorage_340',['verifyStorage',['../main_8cpp.html#a339ac134cdee34bfe9d5f539ab14ba00',1,'main.cpp']]]
+  ['sdstorage_349',['SDStorage',['../classSDStorage.html#a992cb710f41462a7a35c6dfdc838f01f',1,'SDStorage']]],
+  ['sensor_350',['Sensor',['../classSensor.html#ac961611fe726ecce2236efa3b9ee450c',1,'Sensor::Sensor(String sensor_name, String csv_header, int fields)'],['../classSensor.html#a861ed177b65f0d04543e7b6fae6b8c85',1,'Sensor::Sensor(String sensor_name, String csv_header, int fields, unsigned long minimum_period)']]],
+  ['setgain_351',['setGain',['../classZOPT220x__Control.html#afa9fab0ef429c9e7a46afd752a2ee44d',1,'ZOPT220x_Control']]],
+  ['seti2cadr52_352',['setI2CAdr52',['../classZOPT220x__Control.html#a7bd39622c1375fed8d64c885aad5ae2d',1,'ZOPT220x_Control']]],
+  ['seti2cadr53_353',['setI2CAdr53',['../classZOPT220x__Control.html#ae2ff7f5af470f4f235e7725c4c35ca64',1,'ZOPT220x_Control']]],
+  ['setlastexecution_354',['setLastExecution',['../classSensor.html#aea739069d8009fdb9b4026b4b3afc3ab',1,'Sensor']]],
+  ['setmeasurementrate_355',['setMeasurementRate',['../classZOPT220x__Control.html#a809d1f5db2a9f0884fa82e0b77b944bf',1,'ZOPT220x_Control']]],
+  ['setmode_356',['setMode',['../classZOPT220x__Control.html#a70fedf9d112bc34ef55e21452acd3877',1,'ZOPT220x_Control']]],
+  ['setperiod_357',['setPeriod',['../classSensor.html#aecd2cfc8a5d16e306f6369adcc3e208a',1,'Sensor']]],
+  ['setresolution_358',['setResolution',['../classZOPT220x__Control.html#aa8d79db36ab65e003f87a493f720233d',1,'ZOPT220x_Control']]],
+  ['settime_359',['setTime',['../classDS3231Sensor.html#a85e9bf415e7787be9c0e176383a2141a',1,'DS3231Sensor']]],
+  ['setup_360',['setup',['../main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d',1,'main.cpp']]],
+  ['setupsensor_361',['setupSensor',['../classLSM9DS1Sensor.html#a3f06cfc776d797dbb8d454794a7c9fc2',1,'LSM9DS1Sensor']]],
+  ['sgp30sensor_362',['SGP30Sensor',['../classSGP30Sensor.html#a884d39d3cbdde603d75d43d6c4f5b89d',1,'SGP30Sensor::SGP30Sensor()'],['../classSGP30Sensor.html#a22e23104fef4d49ab10260ca2730c5b7',1,'SGP30Sensor::SGP30Sensor(unsigned long minimum_period)']]],
+  ['sht31sensor_363',['SHT31Sensor',['../classSHT31Sensor.html#a2acbce22f16d33bb4899747b3be26577',1,'SHT31Sensor::SHT31Sensor()'],['../classSHT31Sensor.html#a50211f4dddeeaaeb7976f79755e26bc9',1,'SHT31Sensor::SHT31Sensor(unsigned long minimum_period)']]],
+  ['softreset_364',['softReset',['../classZOPT220x__Control.html#adf29f97ec2609d414b33101264158486',1,'ZOPT220x_Control']]],
+  ['standby_365',['standby',['../classZOPT220x__Control.html#ac427197b44897ed82f77069e2e88270a',1,'ZOPT220x_Control']]],
+  ['storage_366',['Storage',['../classStorage.html#a2f5803f60b5c3cd8e9c35fc744ab3058',1,'Storage']]],
+  ['store_367',['store',['../classFlashStorage.html#a4890571487bb855dd72c050dc37a73f1',1,'FlashStorage::store()'],['../classRadioStorage.html#ad9afb493f9783fecca7e82ec5543b98e',1,'RadioStorage::store()'],['../classSDStorage.html#a9450318396c536da92d44d9ebad33ec1',1,'SDStorage::store()'],['../classStorage.html#a08674ceb4404690065b1cf39963eb5a3',1,'Storage::store()']]],
+  ['storedata_368',['storeData',['../main_8cpp.html#a0f14b13edaa51207f1ff6752e4696ee7',1,'main.cpp']]]
 ];
