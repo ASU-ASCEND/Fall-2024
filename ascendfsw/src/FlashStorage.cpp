@@ -34,8 +34,9 @@ void FlashStorage::loadPosition() {
  */
 bool FlashStorage::verify() {
   // TODO: Implement verify() function
-  if (this->flash.begin(FLASH_CS_PIN, 2'000'000, SPI, SPI_MODE0) == false) return false;
-  Serial.println("Initial position: " + String(this->position)); 
+  if (this->flash.begin(FLASH_CS_PIN, 2'000'000, SPI, SPI_MODE0) == false)
+    return false;
+  Serial.println("Initial position: " + String(this->position));
 
   //   this->updatePosition(this->data_start_position);
   //   this->flash.erase();
