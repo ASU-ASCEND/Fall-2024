@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flashstorage_243',['FlashStorage',['../classFlashStorage.html',1,'']]]
+  ['flashstorage_244',['FlashStorage',['../classFlashStorage.html',1,'']]]
 ];

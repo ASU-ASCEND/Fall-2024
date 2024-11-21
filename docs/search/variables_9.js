@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['last_5fexecution_411',['last_execution',['../classSensor.html#abd94c964e6cf265293cfb4cd5d01708d',1,'Sensor']]],
-  ['lsm_412',['lsm',['../classLSM9DS1Sensor.html#a575a34680d47c0ca966393d59dc30ed0',1,'LSM9DS1Sensor']]],
-  ['lsm9ds1_5fsensor_413',['lsm9ds1_sensor',['../main_8cpp.html#adf611c8353be37ac1eec20148673511c',1,'main.cpp']]]
+  ['last_5fexecution_412',['last_execution',['../classSensor.html#abd94c964e6cf265293cfb4cd5d01708d',1,'Sensor']]],
+  ['lsm_413',['lsm',['../classLSM9DS1Sensor.html#a575a34680d47c0ca966393d59dc30ed0',1,'LSM9DS1Sensor']]],
+  ['lsm9ds1_5fsensor_414',['lsm9ds1_sensor',['../main_8cpp.html#adf611c8353be37ac1eec20148673511c',1,'main.cpp']]]
 ];
