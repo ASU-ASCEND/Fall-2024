@@ -19,7 +19,6 @@
 #include "MTK3339Sensor.h"
 #include "PCF8523Sensor.h"
 #include "SGP30Sensor.h"
-#include "SHT31Sensor.h"
 #include "TempSensor.h"
 // #include "DS3231Sensor.h"
 
@@ -37,7 +36,6 @@ void handleDataInterface();
 BME680Sensor    bme_sensor        (1000);
 INA260Sensor    ina260_sensor     (1000);
 LSM9DS1Sensor   lsm9ds1_sensor    (0);
-SHT31Sensor     sht31_sensor      (1000);
 TempSensor      temp_sensor       (1000);
 SGP30Sensor     sgp30_sensor      (1000);
 BME280Sensor    bme280_sensor     (1000);
@@ -52,7 +50,7 @@ PCF8523Sensor   rtc_sensor        (1000);
 
 // sensor array
 Sensor* sensors[] = {
-    &rtc_sensor,  &bme_sensor,   &ina260_sensor, &lsm9ds1_sensor, &sht31_sensor,
+    &rtc_sensor,  &bme_sensor,   &ina260_sensor, &lsm9ds1_sensor,
     &temp_sensor, &sgp30_sensor, &bme280_sensor, &ens160_sensor,  &uv_sensor_1,
     &uv_sensor_2, &icm_sensor,   &gps_sensor};
 //&gps_sensor};
