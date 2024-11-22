@@ -14,7 +14,11 @@ AS7331Sensor::AS7331Sensor(uint8_t i2c_addr) : AS7331Sensor(0, i2c_addr) {}
  * @param minium_period Minimum time to wait between readings in ms
  */
 AS7331Sensor::AS7331Sensor(unsigned long minium_period, uint8_t i2c_addr)
-    : Sensor("AS7331", "UVA(nm),UVB(nm),UVC(nm),", 3, minium_period) {
+    : Sensor("AS7331" + String(i2c_addr & 0b11),
+             "UVA" + String(i2c_addr & 0b11) + "(nm),UVB" +
+                 String(i2c_addr & 0b11) + "(nm),UVC" +
+                 String(i2c_addr & 0b11) + "(nm),",
+             3, minium_period) {
   this->i2c_addr = i2c_addr;
 }
 
