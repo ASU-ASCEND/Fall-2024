@@ -86,7 +86,7 @@ void FlashStorage::dump() {
     data = this->flash.readByte(pos);
     pos++;
     Serial.write(data);  // print as a character
-    delay(10);
+    //delay(1);
   }
 }
 
