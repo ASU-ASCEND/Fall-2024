@@ -1,0 +1,11 @@
+<map id="ZOPT220Sensor::verify" name="ZOPT220Sensor::verify">
+<area shape="rect" id="node1" title="Verifies the connection to the ZOPT220x sensor." alt="" coords="5,122,176,149"/>
+<area shape="rect" id="node2" href="$classZOPT220x__Control.html#aab772e9154760b2ddbee82953532f08e" title=" " alt="" coords="224,115,435,156"/>
+<area shape="rect" id="node3" href="$classZOPT220x__Control.html#adc20ce356a572b8039ba96b9160e97c4" title=" " alt="" coords="483,115,693,156"/>
+<area shape="rect" id="node4" href="$classZOPT220x__Control.html#a8eb237d4b6eb8513893d99d3163fc094" title=" " alt="" coords="772,5,1001,47"/>
+<area shape="rect" id="node5" href="$classZOPT220x__Control.html#a58c74577acc1183a66b1f9b9281551a3" title=" " alt="" coords="1081,108,1293,149"/>
+<area shape="rect" id="node6" href="$classZOPT220x__Control.html#afa9fab0ef429c9e7a46afd752a2ee44d" title=" " alt="" coords="786,122,987,149"/>
+<area shape="rect" id="node8" href="$classZOPT220x__Control.html#a809d1f5db2a9f0884fa82e0b77b944bf" title=" " alt="" coords="741,173,1032,199"/>
+<area shape="rect" id="node9" href="$classZOPT220x__Control.html#aa8d79db36ab65e003f87a493f720233d" title=" " alt="" coords="767,223,1007,250"/>
+<area shape="rect" id="node7" href="$classZOPT220x__Control.html#ab5f43fd630eaaadeea212559e12648be" title=" " alt="" coords="1080,173,1295,215"/>
+</map>

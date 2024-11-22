@@ -1,0 +1,6 @@
+<map id="ErrorDisplay::addCode" name="ErrorDisplay::addCode">
+<area shape="rect" id="node1" title="Sets the error code to the given value if the given error is of a higher priority then the current er..." alt="" coords="367,56,533,83"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="Setup for core 0." alt="" coords="222,5,281,32"/>
+<area shape="rect" id="node3" href="$classSDStorage.html#a9450318396c536da92d44d9ebad33ec1" title="Store data on the SD card, ending with newline." alt="" coords="5,81,136,108"/>
+<area shape="rect" id="node4" href="$classSDStorage.html#a2a08793ce2cb22bc0675f5cf4916155a" title="Verify SD card connection and create a new, unique file." alt="" coords="184,107,319,133"/>
+</map>

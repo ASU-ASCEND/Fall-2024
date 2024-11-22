@@ -1,0 +1,7 @@
+<map id="Sensor::readEmpty" name="Sensor::readEmpty">
+<area shape="rect" id="node1" title="Returns CSV line in the same format as readData() but with &quot;&#45;&quot; instead of data." alt="" coords="511,31,656,57"/>
+<area shape="rect" id="node2" href="$classSensor.html#a2d5ecda6a046ddba40d0e37921226d2f" title="Uses readData and readEmpty to get the data&#45;filled or empty&#45;celled CSV line for the sensor." alt="" coords="295,5,447,32"/>
+<area shape="rect" id="node5" href="$classENS160Sensor.html#a4c6fb31bf074f299bc7c0d4bb1c344ac" title="Reads Air Quality Index, TVOC (ppb), and ECOS (ppm)" alt="" coords="279,56,463,83"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a9db5e6113d9a0bd03a1b044059ae787b" title="Read data from each verified Sensor." alt="" coords="104,5,231,32"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="Loop for core 0, handling sensor reads." alt="" coords="5,5,56,32"/>
+</map>

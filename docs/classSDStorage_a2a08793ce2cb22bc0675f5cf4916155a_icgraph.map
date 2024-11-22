@@ -1,0 +1,4 @@
+<map id="SDStorage::verify" name="SDStorage::verify">
+<area shape="rect" id="node1" title="Verify SD card connection and create a new, unique file." alt="" coords="184,5,319,32"/>
+<area shape="rect" id="node2" href="$classSDStorage.html#a9450318396c536da92d44d9ebad33ec1" title="Store data on the SD card, ending with newline." alt="" coords="5,5,136,32"/>
+</map>
