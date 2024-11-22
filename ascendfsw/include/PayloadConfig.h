@@ -46,7 +46,7 @@
 #define SD_CS_PIN 9
 
 /** @brief Flash memory SPI Toggle */
-#define FLASH_SPI1 1
+#define FLASH_SPI1 0
 /** @brief Flash chip SPI CS Pin */
 #define FLASH_CS_PIN 20
 
