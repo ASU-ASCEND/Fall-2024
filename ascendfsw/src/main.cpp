@@ -150,7 +150,7 @@ void loop() {
   digitalWrite(HEARTBEAT_PIN_1, (it & 0x1));
 
   // switch to data recovery mode
-  if (digitalRead(DATA_INTERFACE_PIN) == HIGH) {
+  if (digitalRead(DATA_INTERFACE_PIN) == LOW) {
     was_dumping = true;
     handleDataInterface();
     return;
