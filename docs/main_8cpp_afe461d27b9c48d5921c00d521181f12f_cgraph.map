@@ -4,11 +4,10 @@
 <area shape="rect" id="node3" href="$main_8cpp.html#a222d3cef3e43d77865ecbd2f95edba3a" title="Handles data interface mode for retrieving data from flash memory." alt="" coords="109,56,263,83"/>
 <area shape="rect" id="node5" href="$classErrorDisplay.html#a164dea875d8b3215203e5d6f0076f237" title="Accesses the only instance of ErrorDisplay (Singleton)" alt="" coords="104,107,268,133"/>
 <area shape="rect" id="node6" href="$main_8cpp.html#a9db5e6113d9a0bd03a1b044059ae787b" title="Read data from each verified Sensor." alt="" coords="123,157,249,184"/>
-<area shape="rect" id="node10" href="$main_8cpp.html#a0f14b13edaa51207f1ff6752e4696ee7" title="Sends data to each storage device, assumes storage devices take care of newline/data end themselves." alt="" coords="143,208,229,235"/>
-<area shape="rect" id="node12" href="$classErrorDisplay.html#a493bde338b369414abffe90e0d49e93b" title="Toggles the level of the error display." alt="" coords="111,259,261,285"/>
+<area shape="rect" id="node10" href="$classFlashStorage.html#a4890571487bb855dd72c050dc37a73f1" title="Store data on flash." alt="" coords="112,208,260,235"/>
+<area shape="rect" id="node11" href="$classErrorDisplay.html#a493bde338b369414abffe90e0d49e93b" title="Toggles the level of the error display." alt="" coords="111,259,261,285"/>
 <area shape="rect" id="node4" href="$classFlashStorage.html#afffc9c3ffc2886608f7ebef3420a6069" title=" " alt="" coords="316,56,468,83"/>
 <area shape="rect" id="node7" href="$classSensor.html#a2d5ecda6a046ddba40d0e37921226d2f" title="Uses readData and readEmpty to get the data&#45;filled or empty&#45;celled CSV line for the sensor." alt="" coords="316,157,468,184"/>
 <area shape="rect" id="node8" href="$classSensor.html#a56153cab066abc01692301d11965f9b8" title="Returns the collected data from the sensor in CSV format." alt="" coords="521,132,656,159"/>
 <area shape="rect" id="node9" href="$classSensor.html#a62d72a2f81422ac2d2fa8ae86ba08571" title="Returns CSV line in the same format as readData() but with &quot;&#45;&quot; instead of data." alt="" coords="516,183,661,209"/>
-<area shape="rect" id="node11" href="$classStorage.html#a08674ceb4404690065b1cf39963eb5a3" title="Send data to storage device." alt="" coords="335,208,449,235"/>
 </map>

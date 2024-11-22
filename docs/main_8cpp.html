@@ -66,6 +66,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -98,6 +99,13 @@ Include dependency graph for main.cpp:</div>
 </div>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a8201d54530a1f4d0365d64f9b719abf0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a8201d54530a1f4d0365d64f9b719abf0">QT_ENTRY_SIZE</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="separator:a8201d54530a1f4d0365d64f9b719abf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5633633d812e26b17cde137daa3df4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7b5633633d812e26b17cde137daa3df4">QT_MAX_SIZE</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a7b5633633d812e26b17cde137daa3df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aef42a5a8a5d889c599fa964be60eca24"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aef42a5a8a5d889c599fa964be60eca24">verifySensors</a> ()</td></tr>
@@ -121,6 +129,12 @@ Functions</h2></td></tr>
 <tr class="memitem:afe461d27b9c48d5921c00d521181f12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">loop</a> ()</td></tr>
 <tr class="memdesc:afe461d27b9c48d5921c00d521181f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loop for core 0, handling sensor reads.  <a href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">More...</a><br /></td></tr>
 <tr class="separator:afe461d27b9c48d5921c00d521181f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac764ee28e2916a7de10b22927e02d1a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac764ee28e2916a7de10b22927e02d1a4">setup1</a> ()</td></tr>
+<tr class="memdesc:ac764ee28e2916a7de10b22927e02d1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup for core 1.  <a href="main_8cpp.html#ac764ee28e2916a7de10b22927e02d1a4">More...</a><br /></td></tr>
+<tr class="separator:ac764ee28e2916a7de10b22927e02d1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ceba300a80e348e278539f57e0ca79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a39ceba300a80e348e278539f57e0ca79">loop1</a> ()</td></tr>
+<tr class="memdesc:a39ceba300a80e348e278539f57e0ca79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loop for core 1.  <a href="main_8cpp.html#a39ceba300a80e348e278539f57e0ca79">More...</a><br /></td></tr>
+<tr class="separator:a39ceba300a80e348e278539f57e0ca79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -162,7 +176,7 @@ Variables</h2></td></tr>
 <tr class="separator:aa9bf2d87eb422349a53cce59be5d5fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38404ff215fdd423068709aafb8b772b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFlashStorage.html">FlashStorage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a38404ff215fdd423068709aafb8b772b">flash_storage</a></td></tr>
 <tr class="separator:a38404ff215fdd423068709aafb8b772b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39db351a5a127ccbd3893f4de5936b05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classStorage.html">Storage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a39db351a5a127ccbd3893f4de5936b05">storages</a> [] = {&amp;<a class="el" href="main_8cpp.html#ad957b3f59d6aa0ac31f6b666528f798d">sd_storage</a>, &amp;<a class="el" href="main_8cpp.html#aa9bf2d87eb422349a53cce59be5d5fe7">radio_storage</a>, &amp;<a class="el" href="main_8cpp.html#a38404ff215fdd423068709aafb8b772b">flash_storage</a>}</td></tr>
+<tr class="memitem:a39db351a5a127ccbd3893f4de5936b05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classStorage.html">Storage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a39db351a5a127ccbd3893f4de5936b05">storages</a> [] = {&amp;<a class="el" href="main_8cpp.html#ad957b3f59d6aa0ac31f6b666528f798d">sd_storage</a>, &amp;<a class="el" href="main_8cpp.html#aa9bf2d87eb422349a53cce59be5d5fe7">radio_storage</a>}</td></tr>
 <tr class="separator:a39db351a5a127ccbd3893f4de5936b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12b260a884350838d7056cd758cd8cbe"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a12b260a884350838d7056cd758cd8cbe">storages_len</a> = sizeof(<a class="el" href="main_8cpp.html#a39db351a5a127ccbd3893f4de5936b05">storages</a>) / sizeof(<a class="el" href="main_8cpp.html#a39db351a5a127ccbd3893f4de5936b05">storages</a>[0])</td></tr>
 <tr class="separator:a12b260a884350838d7056cd758cd8cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,9 +184,42 @@ Variables</h2></td></tr>
 <tr class="separator:a45010841f3644338adefc6120a95e51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac65d766d5179dcc67a8e61e09a1ce969"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ac65d766d5179dcc67a8e61e09a1ce969">it</a> = 0</td></tr>
 <tr class="separator:ac65d766d5179dcc67a8e61e09a1ce969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afabd161670122f5293f38657d84ef4c4"><td class="memItemLeft" align="right" valign="top">queue_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#afabd161670122f5293f38657d84ef4c4">qt</a></td></tr>
+<tr class="separator:afabd161670122f5293f38657d84ef4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab068caac15d62ecf406acd1986797797"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ab068caac15d62ecf406acd1986797797">was_dumping</a> = false</td></tr>
 <tr class="separator:ab068caac15d62ecf406acd1986797797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a8b4e2a5f762856b9eec173ed046fca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a0a8b4e2a5f762856b9eec173ed046fca">it2</a> = 0</td></tr>
+<tr class="separator:a0a8b4e2a5f762856b9eec173ed046fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a8201d54530a1f4d0365d64f9b719abf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8201d54530a1f4d0365d64f9b719abf0">&#9670;&nbsp;</a></span>QT_ENTRY_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QT_ENTRY_SIZE&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b5633633d812e26b17cde137daa3df4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5633633d812e26b17cde137daa3df4">&#9670;&nbsp;</a></span>QT_MAX_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QT_MAX_SIZE&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a222d3cef3e43d77865ecbd2f95edba3a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a222d3cef3e43d77865ecbd2f95edba3a">&#9670;&nbsp;</a></span>handleDataInterface()</h2>
@@ -230,6 +277,31 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a39ceba300a80e348e278539f57e0ca79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ceba300a80e348e278539f57e0ca79">&#9670;&nbsp;</a></span>loop1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loop1 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loop for core 1. </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a39ceba300a80e348e278539f57e0ca79_cgraph.svg" width="366" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a9db5e6113d9a0bd03a1b044059ae787b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9db5e6113d9a0bd03a1b044059ae787b">&#9670;&nbsp;</a></span>readSensorData()</h2>
 
@@ -281,7 +353,36 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_cgraph.svg" width="491" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a4fc01d736fe50cf5b977f755b675f11d_cgraph.svg" width="572" height="443"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ac764ee28e2916a7de10b22927e02d1a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac764ee28e2916a7de10b22927e02d1a4">&#9670;&nbsp;</a></span>setup1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup1 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Setup for core 1. </p>
+<hr  />
+ <h2><a class="anchor" id="autotoc_md16"></a>
+CORE 1 CODE ONLY AFTER THIS, DO NOT MIX CODE FOR THE CORES</h2>
+<p>TODO: Implement multicore for communication here setup queue for data transfer between cores </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_ac764ee28e2916a7de10b22927e02d1a4_cgraph.svg" width="235" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -319,7 +420,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a0f14b13edaa51207f1ff6752e4696ee7_icgraph.svg" width="204" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a0f14b13edaa51207f1ff6752e4696ee7_icgraph.svg" width="204" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -371,7 +472,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a339ac134cdee34bfe9d5f539ab14ba00_icgraph.svg" width="227" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp_a339ac134cdee34bfe9d5f539ab14ba00_icgraph.svg" width="235" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -528,6 +629,20 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a0a8b4e2a5f762856b9eec173ed046fca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a8b4e2a5f762856b9eec173ed046fca">&#9670;&nbsp;</a></span>it2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int it2 = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adf611c8353be37ac1eec20148673511c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf611c8353be37ac1eec20148673511c">&#9670;&nbsp;</a></span>lsm9ds1_sensor</h2>
 
@@ -540,6 +655,20 @@ Here is the caller graph for this function:</div>
           <td class="paramtype">0&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afabd161670122f5293f38657d84ef4c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afabd161670122f5293f38657d84ef4c4">&#9670;&nbsp;</a></span>qt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">queue_t qt</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -675,7 +804,7 @@ Here is the caller graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classStorage.html">Storage</a>* storages[] = {&amp;<a class="el" href="main_8cpp.html#ad957b3f59d6aa0ac31f6b666528f798d">sd_storage</a>, &amp;<a class="el" href="main_8cpp.html#aa9bf2d87eb422349a53cce59be5d5fe7">radio_storage</a>, &amp;<a class="el" href="main_8cpp.html#a38404ff215fdd423068709aafb8b772b">flash_storage</a>}</td>
+          <td class="memname"><a class="el" href="classStorage.html">Storage</a>* storages[] = {&amp;<a class="el" href="main_8cpp.html#ad957b3f59d6aa0ac31f6b666528f798d">sd_storage</a>, &amp;<a class="el" href="main_8cpp.html#aa9bf2d87eb422349a53cce59be5d5fe7">radio_storage</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -18,5 +18,6 @@ var searchData=
   ['ina260sensor_2ecpp_97',['INA260Sensor.cpp',['../INA260Sensor_8cpp.html',1,'']]],
   ['ina260sensor_2eh_98',['INA260Sensor.h',['../INA260Sensor_8h.html',1,'']]],
   ['instance_99',['instance',['../classErrorDisplay.html#a164dea875d8b3215203e5d6f0076f237',1,'ErrorDisplay']]],
-  ['it_100',['it',['../main_8cpp.html#ac65d766d5179dcc67a8e61e09a1ce969',1,'main.cpp']]]
+  ['it_100',['it',['../main_8cpp.html#ac65d766d5179dcc67a8e61e09a1ce969',1,'main.cpp']]],
+  ['it2_101',['it2',['../main_8cpp.html#a0a8b4e2a5f762856b9eec173ed046fca',1,'main.cpp']]]
 ];

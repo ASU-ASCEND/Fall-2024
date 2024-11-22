@@ -1,6 +1,5 @@
 <map id="Storage::store" name="Storage::store">
-<area shape="rect" id="node1" title="Send data to storage device." alt="" coords="247,31,360,57"/>
-<area shape="rect" id="node2" href="$main_8cpp.html#a0f14b13edaa51207f1ff6752e4696ee7" title="Sends data to each storage device, assumes storage devices take care of newline/data end themselves." alt="" coords="112,31,199,57"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="Loop for core 0, handling sensor reads." alt="" coords="9,5,60,32"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="Setup for core 0." alt="" coords="5,56,64,83"/>
+<area shape="rect" id="node1" title="Send data to storage device." alt="" coords="247,5,360,32"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#a0f14b13edaa51207f1ff6752e4696ee7" title="Sends data to each storage device, assumes storage devices take care of newline/data end themselves." alt="" coords="112,5,199,32"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a39ceba300a80e348e278539f57e0ca79" title="Loop for core 1." alt="" coords="5,5,64,32"/>
 </map>
