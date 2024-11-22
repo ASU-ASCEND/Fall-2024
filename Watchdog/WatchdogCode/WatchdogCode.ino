@@ -15,8 +15,8 @@ ISR(PCINT0_vect) {
   }
 }
 
-// 1 minute before looking for heartbeat 
-#define MS_WAIT_AFTER_BOOT 60000 
+// 1 minute before looking for heartbeat
+#define MS_WAIT_AFTER_BOOT 60000
 #define MS_WAIT_IN_OP 30000
 
 void setup() {
@@ -40,7 +40,7 @@ void setup() {
 }
 
 void loop() {
-  delay(MS_WAIT_IN_OP);                     // check every 30
+  delay(MS_WAIT_IN_OP);             // check every 30
   if ((beat0 || beat1) == false) {  // if either beat hasn't changed
     // one of the tasks if frozen, reset
     digitalWrite(RESET_PIN, HIGH);
