@@ -8,7 +8,7 @@ FlashStorage::FlashStorage() : position(0), Storage("Flash Storage") {}
 
 /**
  * @brief Read position from flash
- * 
+ *
  */
 void FlashStorage::loadPosition() {
   uint8_t currentByte = this->flash.readByte(this->position);
@@ -17,7 +17,6 @@ void FlashStorage::loadPosition() {
   while ((currentByte != 0xFF) && (this->position < this->MAX_SIZE)) {
     currentByte = this->flash.readByte(++this->position);
   }
-
 }
 
 /**
@@ -27,11 +26,28 @@ void FlashStorage::loadPosition() {
  * @return false
  */
 bool FlashStorage::verify() {
-  if (this->flash.begin(FLASH_CS_PIN) == false)
-    return false;
+  // #if SD_SPI1
+  // if (!SD.begin(SD_CS_PIN, this->sd_spi_1)) {
+  //   ErrorDisplay::instance().addCode(Error::SD_CARD_FAIL);
+  //   return false;
+  // }
+  // #else
+  //   if (!SD.begin(SD_CS_PIN)) {
+  //     ErrorDisplay::instance().addCode(Error::SD_CARD_FAIL);
+  //     return false;
+  //   }
+  // #endif
+
+
+  #if FLASH_SPI1
+  if (this->flash.begin(FLASH_CS_PIN, 2000000UL, this->flash_spi_1) == false) return false;
+  #else
+  if (this->flash.begin(FLASH_CS_PIN) == false) return false;
+  #endif
+
   Serial.println("Initial position: " + String(this->position));
   this->position = 0;
-  this->loadPosition(); // Get position from flash
+  this->loadPosition();  // Get position from flash
 
   Serial.println("Updated position: " + String(this->position));
 
@@ -46,7 +62,7 @@ bool FlashStorage::verify() {
 void FlashStorage::store(String data) {
   data = data + "\n";
 
-  for(const uint8_t& character : data) {
+  for (const uint8_t& character : data) {
     this->flash.writeByte(this->position, character);
     ++this->position;
     this->flash.blockingBusyWait();
@@ -69,6 +85,7 @@ void FlashStorage::dump() {
     data = this->flash.readByte(pos);
     pos++;
     Serial.write(data);  // print as a character
+    delay(10);
   }
 }
 
