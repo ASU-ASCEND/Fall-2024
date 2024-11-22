@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['enablealssensing_312',['enableALSSensing',['../classZOPT220x__Control.html#a27c0821f9341f36d87c9388ce7bf4ee5',1,'ZOPT220x_Control']]],
-  ['enablerawsensing_313',['enableRawSensing',['../classZOPT220x__Control.html#a0d055b74457d1c10173897918d5610ab',1,'ZOPT220x_Control']]],
-  ['enablesensor_314',['enableSensor',['../classZOPT220x__Control.html#a6878d8f2dbff54f6e2f9203df20b9927',1,'ZOPT220x_Control']]],
-  ['enableuvbsensing_315',['enableUVBSensing',['../classZOPT220x__Control.html#a1172703928cf494b466ea2c3595bbbba',1,'ZOPT220x_Control']]],
-  ['ens160sensor_316',['ENS160Sensor',['../classENS160Sensor.html#a713ee03716a806ed6b676f7179ee9b22',1,'ENS160Sensor::ENS160Sensor()'],['../classENS160Sensor.html#a34b8a0b14049bff232bb98a69f102409',1,'ENS160Sensor::ENS160Sensor(unsigned long minium_period)']]],
-  ['erase_317',['erase',['../classFlashStorage.html#ac2dd4e8b7b4a85d5820f4277d0fb6727',1,'FlashStorage']]],
-  ['errordisplay_318',['ErrorDisplay',['../classErrorDisplay.html#a05b483632a3680f52ea94beeffb5a9ca',1,'ErrorDisplay']]]
+  ['enablealssensing_314',['enableALSSensing',['../classZOPT220x__Control.html#a27c0821f9341f36d87c9388ce7bf4ee5',1,'ZOPT220x_Control']]],
+  ['enablerawsensing_315',['enableRawSensing',['../classZOPT220x__Control.html#a0d055b74457d1c10173897918d5610ab',1,'ZOPT220x_Control']]],
+  ['enablesensor_316',['enableSensor',['../classZOPT220x__Control.html#a6878d8f2dbff54f6e2f9203df20b9927',1,'ZOPT220x_Control']]],
+  ['enableuvbsensing_317',['enableUVBSensing',['../classZOPT220x__Control.html#a1172703928cf494b466ea2c3595bbbba',1,'ZOPT220x_Control']]],
+  ['ens160sensor_318',['ENS160Sensor',['../classENS160Sensor.html#a713ee03716a806ed6b676f7179ee9b22',1,'ENS160Sensor::ENS160Sensor()'],['../classENS160Sensor.html#a34b8a0b14049bff232bb98a69f102409',1,'ENS160Sensor::ENS160Sensor(unsigned long minium_period)']]],
+  ['erase_319',['erase',['../classFlashStorage.html#ac2dd4e8b7b4a85d5820f4277d0fb6727',1,'FlashStorage']]],
+  ['errordisplay_320',['ErrorDisplay',['../classErrorDisplay.html#a05b483632a3680f52ea94beeffb5a9ca',1,'ErrorDisplay']]]
 ];
