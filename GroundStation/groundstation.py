@@ -48,8 +48,8 @@ full_no_fail_header = [
   "Header,",
   "Millis,",
 
-  # "PCFTime, ", 
-  "DS3231Time,DS3231TempC,",
+  "PCFTime, ", 
+  # "DS3231Time,DS3231TempC,",
   "BMETemp(C),BMEPress(hPa),BMEHum(%),BMEGas(KOhms),BMEAlt(m),",    
   # "GeigerSensor(CPS),", 
   "INACurr(mA),INAVolt(mV),INAPow(mW),",                   
@@ -60,8 +60,8 @@ full_no_fail_header = [
   "SGPTVOC(ppb),SGPeCO2(ppm),SGPTVOCBase(ppb),SGPeCO2Base(ppb),SGPH2,SGPEtha,",
   "BME280RelHum %,BME280Pres Pa,BME280Alt m,BME280TempC,DewPointC,",  
   "ENSAQI,ENSTVOC ppb,ENSECO2 ppm,",
-  "UVA(nm),UVB(nm),UVC(nm),",
-  "UVA(nm),UVB(nm),UVC(nm),",
+  "UVA2(nm),UVB2(nm),UVC2(nm),",
+  "UVA0(nm),UVB0(nm),UVC0(nm),",
   "ICM AccX,ICM AccY,ICM AccZ,ICM GyroX,ICM GyroY,ICM GyroZ,ICM MagX,ICM MagY,ICM MagZ,ICM TempC,",
   "MTK_Date,MTK_Lat,MTKLong,MTKSpeed,MTKAngle,MTKAlt,MTKSats,",
   " "  # final space for matching fsw?
