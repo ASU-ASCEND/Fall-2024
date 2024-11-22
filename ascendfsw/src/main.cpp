@@ -28,7 +28,7 @@ int verifySensors();
 int verifyStorage();
 void storeData(String data);
 String readSensorData();
-// void handleDataInterface();
+void handleDataInterface();
 
 // Global variables
 // sensor classes
@@ -61,17 +61,17 @@ bool sensors_verify[sensors_len];
 String header_condensed = "";
 
 // include storage headers here
-// #include "FlashStorage.h"
+#include "FlashStorage.h"
 #include "RadioStorage.h"
 #include "SDStorage.h"
 
 // storage classes
 SDStorage sd_storage;
 RadioStorage radio_storage;
-// FlashStorage flash_storage;
+FlashStorage flash_storage;
 
 // storage array
-Storage* storages[] = {&sd_storage, &radio_storage};  //, &flash_storage};
+Storage* storages[] = {&sd_storage, &radio_storage, &flash_storage};
 const int storages_len = sizeof(storages) / sizeof(storages[0]);
 bool storages_verify[storages_len];
 
@@ -161,17 +161,18 @@ void loop() {
   // toggle heartbeats
   digitalWrite(HEARTBEAT_PIN_0, (it & 0x1));
 
-  // switch to data recovery mode  // if (digitalRead(DATA_INTERFACE_PIN) == HIGH) {
-  //   was_dumping = true;
-  //   handleDataInterface();
-  //   return;
-  // }
+  //switch to data recovery mode  
+  if(digitalRead(DATA_INTERFACE_PIN) == HIGH) {
+    was_dumping = true;
+    handleDataInterface();
+    return;
+  }
 
-  // if (was_dumping == true) {
-  //   Serial.println("\nErasing flash chip....");
-  //   was_dumping = false;
-  //   flash_storage.erase();
-  // }
+  if (was_dumping == true) {
+    Serial.println("\nErasing flash chip....");
+    was_dumping = false;
+    flash_storage.erase();
+  }
 
   // start print line with iteration number
   Serial.print("it: " + String(it) + "\t");
@@ -269,18 +270,18 @@ void storeData(String data) {
   }
 }
 
-// /**
-//  * @brief Handles data interface mode for retrieving data from flash memory
-//  *
-//  */
-// void handleDataInterface() {
-//   static unsigned long last_dump = 0;
-//   // dump every 30 seconds
-//   if (millis() - last_dump > 30'000) {
-//     flash_storage.dump();
-//     last_dump = millis();
-//   }
-// }
+/**
+ * @brief Handles data interface mode for retrieving data from flash memory
+ *
+ */
+void handleDataInterface() {
+  static unsigned long last_dump = 0;
+  // dump every 30 seconds
+  if (millis() - last_dump > 30'000) {
+    flash_storage.dump();
+    last_dump = millis();
+  }
+}
 
 /** -------------------------------------------------------------------
  * CORE 1 CODE ONLY AFTER THIS, DO NOT MIX CODE FOR THE CORES
