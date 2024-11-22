@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data_5fstart_5fposition_387',['data_start_position',['../classFlashStorage.html#acb67afc0d1feedbf7a92e89e3206d733',1,'FlashStorage']]]
+  ['data_5fstart_5fposition_383',['DATA_START_POSITION',['../classFlashStorage.html#adbac64b3df6f7a1c63ae7dc41f83ae21',1,'FlashStorage']]]
 ];
