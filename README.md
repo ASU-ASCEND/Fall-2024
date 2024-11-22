@@ -13,7 +13,9 @@ Flight software for the ASU Fall 2024 ASCEND Payload
 
 [docs](https://github.com/ASU-ASCEND/Fall-2024/tree/main/docs): Doxygen auto-generated documentation site for GitHub pages. 
 
-[scripts](https://github.com/ASU-ASCEND/Fall-2024/tree/main/scripts) Various organizational and automation scripts. 
+[scripts](https://github.com/ASU-ASCEND/Fall-2024/tree/main/scripts): Various organizational and automation scripts. 
+
+[PCBs](https://github.com/ASU-ASCEND/Fall-2024/tree/main/PCBs): Payload PCBs
 
 
 ## Meeting Schedule
