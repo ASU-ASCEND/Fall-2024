@@ -38,12 +38,12 @@ bool FlashStorage::verify() {
   //   }
   // #endif
 
-
-  #if FLASH_SPI1
-  if (this->flash.begin(FLASH_CS_PIN, 2000000UL, this->flash_spi_1) == false) return false;
-  #else
+#if FLASH_SPI1
+  if (this->flash.begin(FLASH_CS_PIN, 2000000UL, this->flash_spi_1) == false)
+    return false;
+#else
   if (this->flash.begin(FLASH_CS_PIN) == false) return false;
-  #endif
+#endif
 
   Serial.println("Initial position: " + String(this->position));
   this->position = 0;

@@ -1,4 +1,4 @@
 <map id="FlashStorage" name="FlashStorage">
-<area shape="rect" id="node1" title=" " alt="" coords="5,175,187,369"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,175,187,384"/>
 <area shape="rect" id="node2" href="$classStorage.html" title="Parent class for all data storage devices (sd card, radio, etc)" alt="" coords="17,5,175,127"/>
 </map>
