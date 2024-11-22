@@ -65,11 +65,10 @@ void FlashStorage::dump() {
   uint32_t pos = this->DATA_START_POSITION;
   // read until it hits end_code
   while ((pos < this->MAX_SIZE) && (pos < this->position) && (data != 0xFF)) {
-    // digitalWrite(HEARTBEAT_PIN_0, (pos & 0x10) != 0);
+    digitalWrite(HEARTBEAT_PIN_0, (pos & 0x60) != 0);
     data = this->flash.readByte(pos);
     pos++;
     Serial.write(data);  // print as a character
-    delay(10);
   }
 }
 
