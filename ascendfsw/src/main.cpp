@@ -69,7 +69,12 @@ RadioStorage radio_storage;
 FlashStorage flash_storage;
 
 // storage array
+#if FLASH_SPI1 == 0
+Storage* storages[] = {&sd_storage, &radio_storage};
+#else
 Storage* storages[] = {&sd_storage, &radio_storage, &flash_storage};
+#endif 
+
 const int storages_len = sizeof(storages) / sizeof(storages[0]);
 bool storages_verify[storages_len];
 
@@ -77,11 +82,20 @@ bool storages_verify[storages_len];
 // loop counter
 unsigned int it = 0;
 
+// multicore transfer queue
+#define QT_ENTRY_SIZE 1000
+#define QT_MAX_SIZE 10
+
+queue_t qt;
+// char qt_entry[QT_ENTRY_SIZE]; 
+
 /**
  * @brief Setup for core 0
  *
  */
 void setup() {
+  // multicore setup
+  queue_init(&qt, QT_ENTRY_SIZE, QT_MAX_SIZE);
   ErrorDisplay::instance().addCode(Error::NONE);  // for safety
 
   // start serial
@@ -91,7 +105,6 @@ void setup() {
 
   // setup heartbeat pins
   pinMode(HEARTBEAT_PIN_0, OUTPUT);
-  pinMode(HEARTBEAT_PIN_1, OUTPUT);
 
   // verify sensors
   int verified_count = verifySensors();
@@ -117,6 +130,12 @@ void setup() {
     Serial.println("No storages verified, output will be Serial only.");
     ErrorDisplay::instance().addCode(Error::CRITICAL_FAIL);
   }
+  // spi0 
+  #if FLASH_SPI1 == 0
+  if(flash_storage.verify()){
+    Serial.println(flash_storage.getStorageName() + " verified.");
+  }
+  #endif
 
   // build csv header
   String header = "Header,Millis,";
@@ -128,7 +147,13 @@ void setup() {
   Serial.println(header);
 
   // store header
-  storeData(header);
+  // storeData(header);
+  #if FLASH_SPI1 == 0
+  flash_storage.store(header); 
+  #endif
+
+  // send header to core1
+  queue_add_blocking(&qt, header.c_str()); 
 
   pinMode(ON_BOARD_LED_PIN, OUTPUT);
   Serial.println("Setup done.");
@@ -147,10 +172,16 @@ void loop() {
 
   // toggle heartbeats
   digitalWrite(HEARTBEAT_PIN_0, (it & 0x1));
-  digitalWrite(HEARTBEAT_PIN_1, (it & 0x1));
 
-  // switch to data recovery mode
-  if (digitalRead(DATA_INTERFACE_PIN) == LOW) {
+  //switch to data recovery mode  
+  if(digitalRead(DATA_INTERFACE_PIN) == LOW) {
+    #if FLASH_SPI1
+    if(was_dumping == false){
+      while(queue_get_level(&qt) != 0);
+      delay(10); 
+      rp2040.idleOtherCore(); 
+    }
+    #endif
     was_dumping = true;
     handleDataInterface();
     return;
@@ -160,6 +191,9 @@ void loop() {
     Serial.println("\nErasing flash chip....");
     was_dumping = false;
     flash_storage.erase();
+    #if FLASH_SPI1
+    rp2040.resumeOtherCore(); 
+    #endif
   }
 
   // start print line with iteration number
@@ -171,8 +205,11 @@ void loop() {
   // print csv row
   Serial.println(csv_row);
 
-  // store csv row
-  storeData(csv_row);
+  // send data to flash
+  flash_storage.store(csv_row); 
+
+  // send data to core1
+  queue_add_blocking(&qt, csv_row.c_str()); 
 
   delay(500);                                  // remove before flight
   digitalWrite(ON_BOARD_LED_PIN, (it & 0x1));  // toggle light with iteration
@@ -279,18 +316,39 @@ void handleDataInterface() {
  *
  */
 
-// /**
-//  * @brief Setup for core 1
-//  *
-//  *
-//  */
-// void setup1() {}
+/**
+ * @brief Setup for core 1
+ *
+ *
+ */
+void setup1() {
+  delay(500); // wait for other setup to run 
 
-// /**
-//  * @brief Loop for core 1
-//  *
-//  */
-// void loop1() {
-//   Serial.println("Core 1: " + String(millis()));
-//   delay(1000);
-// }
+  pinMode(HEARTBEAT_PIN_1, OUTPUT);
+  
+  // verify storage
+  if (verifyStorage() == 0) {
+    Serial.println("No storages verified, output will be Serial only.");
+  }
+
+}
+
+int it2 = 0; 
+/**
+ * @brief Loop for core 1
+ *
+ */
+void loop1() {
+  it2++; 
+  digitalWrite(HEARTBEAT_PIN_1, (it2 & 0x1));
+
+  char received_data[QT_ENTRY_SIZE]; 
+  queue_remove_blocking(&qt, received_data);
+
+  // store csv row
+  storeData(String(received_data));
+
+  // Serial.println("[CORE1]\t" + queue_get_level(&qt) + String(received_data)); 
+
+  //radioStorage.store(String(received_data));
+}
