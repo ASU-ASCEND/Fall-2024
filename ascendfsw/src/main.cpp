@@ -100,8 +100,8 @@ void setup() {
 
   // start serial
   Serial.begin(115200);
-  while (!Serial)  // remove before flight
-    ;
+  // while (!Serial)  // remove before flight
+  //   ;
 
   // setup heartbeat pins
   pinMode(HEARTBEAT_PIN_0, OUTPUT);
@@ -212,7 +212,7 @@ void loop() {
   // send data to core1
   queue_add_blocking(&qt, csv_row.c_str());
 
-  delay(500);                                  // remove before flight
+  //delay(500);                                  // remove before flight
   digitalWrite(ON_BOARD_LED_PIN, (it & 0x1));  // toggle light with iteration
 }
 
