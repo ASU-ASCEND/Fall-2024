@@ -161,6 +161,11 @@ void loop() {
 
   //switch to data recovery mode  
   if(digitalRead(DATA_INTERFACE_PIN) == HIGH) {
+    if(was_dumping == false){
+      while(queue_get_level(&qt) != 0);
+      delay(10); 
+      rp2040.idleOtherCore(); 
+    }
     was_dumping = true;
     handleDataInterface();
     return;
@@ -170,6 +175,7 @@ void loop() {
     Serial.println("\nErasing flash chip....");
     was_dumping = false;
     flash_storage.erase();
+    rp2040.resumeOtherCore(); 
   }
 
   // start print line with iteration number
