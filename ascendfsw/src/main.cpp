@@ -69,7 +69,12 @@ RadioStorage radio_storage;
 FlashStorage flash_storage;
 
 // storage array
+#if FLASH_SPI1 == 0
+Storage* storages[] = {&sd_storage, &radio_storage};
+#else
 Storage* storages[] = {&sd_storage, &radio_storage, &flash_storage};
+#endif 
+
 const int storages_len = sizeof(storages) / sizeof(storages[0]);
 bool storages_verify[storages_len];
 
@@ -79,7 +84,7 @@ unsigned int it = 0;
 
 // multicore transfer queue
 #define QT_ENTRY_SIZE 1000
-#define QT_MAX_SIZE 20
+#define QT_MAX_SIZE 10
 
 queue_t qt;
 // char qt_entry[QT_ENTRY_SIZE]; 
@@ -125,6 +130,12 @@ void setup() {
     Serial.println("No storages verified, output will be Serial only.");
     ErrorDisplay::instance().addCode(Error::CRITICAL_FAIL);
   }
+  // spi0 
+  #if FLASH_SPI1 == 0
+  if(flash_storage.verify()){
+    Serial.println(flash_storage.getStorageName() + " verified.");
+  }
+  #endif
 
   // build csv header
   String header = "Header,Millis,";
@@ -137,6 +148,9 @@ void setup() {
 
   // store header
   // storeData(header);
+  #if FLASH_SPI1 == 0
+  flash_storage.store(header); 
+  #endif
 
   // send header to core1
   queue_add_blocking(&qt, header.c_str()); 
@@ -161,11 +175,13 @@ void loop() {
 
   //switch to data recovery mode  
   if(digitalRead(DATA_INTERFACE_PIN) == HIGH) {
+    #if FLASH_SPI1
     if(was_dumping == false){
       while(queue_get_level(&qt) != 0);
       delay(10); 
       rp2040.idleOtherCore(); 
     }
+    #endif
     was_dumping = true;
     handleDataInterface();
     return;
@@ -175,7 +191,9 @@ void loop() {
     Serial.println("\nErasing flash chip....");
     was_dumping = false;
     flash_storage.erase();
+    #if FLASH_SPI1
     rp2040.resumeOtherCore(); 
+    #endif
   }
 
   // start print line with iteration number
@@ -186,6 +204,9 @@ void loop() {
 
   // print csv row
   Serial.println(csv_row);
+
+  // send data to flash
+  flash_storage.store(csv_row); 
 
   // send data to core1
   queue_add_blocking(&qt, csv_row.c_str()); 
