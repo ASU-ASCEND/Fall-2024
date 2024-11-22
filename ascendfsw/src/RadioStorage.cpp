@@ -26,9 +26,9 @@ bool RadioStorage::verify() {
  * @param data Data to transmit
  */
 void RadioStorage::store(String data) {
-  static const unsigned long transmission_mod = 1; 
-  static unsigned long transmission_count = 0; 
-  if(transmission_count % transmission_mod == 0){
-    Serial1.println(data); 
+  static const unsigned long transmission_mod = 1;
+  static unsigned long transmission_count = 0;
+  if (transmission_count % transmission_mod == 0) {
+    Serial1.println(data);
   }
 }
