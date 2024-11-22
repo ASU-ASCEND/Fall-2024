@@ -15,6 +15,10 @@ ISR(PCINT0_vect) {
   }
 }
 
+// 1 minute before looking for heartbeat 
+#define MS_WAIT_AFTER_BOOT 60000 
+#define MS_WAIT_IN_OP 30000
+
 void setup() {
   // setup
   pinMode(HEARTBEAT_PIN_0, INPUT);
@@ -32,17 +36,17 @@ void setup() {
   // enable pins
   PCMSK |= (1 << PCINT3) | (1 << PCINT4);
 
-  delay(10000);  // wait 10s to start checking
+  delay(MS_WAIT_AFTER_BOOT);  // wait 10s to start checking
 }
 
 void loop() {
-  delay(60000);                     // check every 30s
+  delay(MS_WAIT_IN_OP);                     // check every 30
   if ((beat0 || beat1) == false) {  // if either beat hasn't changed
     // one of the tasks if frozen, reset
     digitalWrite(RESET_PIN, HIGH);
     delay(500);
     digitalWrite(RESET_PIN, LOW);
-    delay(5000);  // give the pico time to setup again
+    delay(MS_WAIT_AFTER_BOOT);  // give the pico time to setup again
     // clear beats
   }
   beat0 = false;
