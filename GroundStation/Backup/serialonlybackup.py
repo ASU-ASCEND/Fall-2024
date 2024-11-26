@@ -15,7 +15,7 @@ print()
 # Open Serial Port, 
 ser = serial.Serial(
   port = comport,
-  baudrate = 57600,
+  baudrate = 112500,
   parity = serial.PARITY_NONE,
   stopbits = serial.STOPBITS_ONE,
   bytesize = serial.EIGHTBITS,
@@ -40,7 +40,7 @@ while(1):
     now = datetime.now()
     current_time = now.strftime("%H:%M:%S")
 
-    time.sleep(1)
+    # time.sleep(1)
 
     print(f"{current_time}, {data}")
     f.write(f"{current_time}, {data}\n")
