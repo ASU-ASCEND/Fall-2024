@@ -31,7 +31,7 @@ Flight software for the ASU Fall 2024 ASCEND Payload
 | 10/30 | Testing and more FSWv2                                  | Done.    |
 | 11/6  | Finishing FSWv2, start DP:Tv1                           | Done.    |
 | 11/13 | Testing FSWv2, integrate FSWv3, DP:Tv1                  | Done.    |
-| 11/21 | Launch                                                  |          |
+| 11/21 | Launch                                                  | Done.    |
 
 # Potential Milestones 
 
