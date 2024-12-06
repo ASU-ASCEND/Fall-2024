@@ -1,4 +1,4 @@
-﻿Time,Timestamp,Event,Count Rate, cps,Dose rate, Sv/h,Dose Rate Error, %,Dose Rate Alarm,Dose Alarm,Duration of dose accumulation, sec.,Dose, Sv,Temperature,Latitude,Longitude,Comment
+﻿Time,Timestamp,Event,Count Rate: cps,Dose rate: Sv/h,Dose Rate Error: %,Dose Rate Alarm,Dose Alarm,Duration of dose accumulation: sec.,Dose: Sv,Temperature,Latitude,Longitude,Comment
 2024-11-22 22:16:20.956,133767873809560000,Device power on,,,,0,0,,,,,,
 2024-11-22 22:16:22.956,133767873829560000,,,,,0,0,23960,6.7E-7,28.6,,,
 2024-11-22 22:17:22.956,133767874429560000,,,,,0,0,24020,6.8E-7,28.7,,,
