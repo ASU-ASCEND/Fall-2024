@@ -1,7 +1,0 @@
-<map id="ErrorDisplay::instance" name="ErrorDisplay::instance">
-<area shape="rect" id="node1" title="Accesses the only instance of ErrorDisplay (Singleton)" alt="" coords="367,81,531,108"/>
-<area shape="rect" id="node2" href="$main_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="Loop for core 0, handling sensor reads." alt="" coords="226,5,277,32"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="Setup for core 0." alt="" coords="222,56,281,83"/>
-<area shape="rect" id="node4" href="$classSDStorage.html#a9450318396c536da92d44d9ebad33ec1" title="Store data on the SD card, ending with newline." alt="" coords="5,132,136,159"/>
-<area shape="rect" id="node5" href="$classSDStorage.html#a2a08793ce2cb22bc0675f5cf4916155a" title="Verify SD card connection and create a new, unique file." alt="" coords="184,157,319,184"/>
-</map>

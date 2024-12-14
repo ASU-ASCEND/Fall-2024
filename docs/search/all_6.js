@@ -1,21 +1,13 @@
 var searchData=
 [
-  ['geiger_5fpin_60',['GEIGER_PIN',['../GeigerSensor_8h.html#a0dfddbcc95894f158bbc01f9529b7a95',1,'GeigerSensor.h']]],
-  ['geigercounter_61',['geigerCounter',['../classGeigerSensor.html#aa2185ab41d86642bc04534bd447a8fc8',1,'GeigerSensor']]],
-  ['geigersensor_62',['GeigerSensor',['../classGeigerSensor.html#a8a7b4cd3421a6f67b6ba15578648a15d',1,'GeigerSensor::GeigerSensor()'],['../classGeigerSensor.html#ad1cfd130a27daae74befd563b7f417ba',1,'GeigerSensor::GeigerSensor(unsigned long minimum_period)'],['../classGeigerSensor.html',1,'GeigerSensor']]],
-  ['geigersensor_2ecpp_63',['GeigerSensor.cpp',['../GeigerSensor_8cpp.html',1,'']]],
-  ['geigersensor_2eh_64',['GeigerSensor.h',['../GeigerSensor_8h.html',1,'']]],
-  ['getadjusteduvindex_65',['getAdjustedUVIndex',['../classZOPT220x__Control.html#ac9b447f5665bc72e2cb357cc6700130e',1,'ZOPT220x_Control']]],
-  ['getals_66',['getALS',['../classZOPT220x__Control.html#a28cf4beaf6bcebce91c1418790e9d843',1,'ZOPT220x_Control']]],
-  ['getdatacsv_67',['getDataCSV',['../classSensor.html#a2d5ecda6a046ddba40d0e37921226d2f',1,'Sensor']]],
-  ['getlastexecution_68',['getLastExecution',['../classSensor.html#ac44e20195df40674efb539e0aea1f789',1,'Sensor']]],
-  ['getperiod_69',['getPeriod',['../classSensor.html#a8763e8f8a73198127db17e0b9e79c5f5',1,'Sensor']]],
-  ['getsensorcsvheader_70',['getSensorCSVHeader',['../classSensor.html#a8a69f0a1c04c3b90d8225d67301a75b6',1,'Sensor']]],
-  ['getsensorname_71',['getSensorName',['../classSensor.html#acbb8667640eea651a758497cf4b88194',1,'Sensor']]],
-  ['getstoragename_72',['getStorageName',['../classStorage.html#ade89a8cb71d3f08ac75390d0f1e842cb',1,'Storage']]],
-  ['getuvb_73',['getUVB',['../classZOPT220x__Control.html#a9d0197ab4de4731ecd692e39ee9c5e64',1,'ZOPT220x_Control']]],
-  ['getuvindex_74',['getUVIndex',['../classZOPT220x__Control.html#a1233f73c507efe1393d84b9d88b4a023',1,'ZOPT220x_Control']]],
-  ['gps_75',['GPS',['../classMTK3339Sensor.html#a4a809ba92d7a99aff32c8a4114cb54e5',1,'MTK3339Sensor']]],
-  ['gps_5fsensor_76',['gps_sensor',['../main_8cpp.html#a1ad969436b83a3feb79af6deebf60d1b',1,'main.cpp']]],
-  ['gyro_5foffsets_77',['gyro_offsets',['../classLSM9DS1Sensor.html#aad1c0e961086e5c538a526ed9a660951',1,'LSM9DS1Sensor']]]
+  ['data_20processing_0',['Data Processing',['../index.html#autotoc_md8',1,'']]],
+  ['data_5finterface_5fpin_1',['DATA_INTERFACE_PIN',['../PayloadConfig_8h.html#a36df51ef7cb9a6bf22a094f4d347cad6',1,'PayloadConfig.h']]],
+  ['data_5fstart_5fposition_2',['DATA_START_POSITION',['../classFlashStorage.html#adbac64b3df6f7a1c63ae7dc41f83ae21',1,'FlashStorage']]],
+  ['dataavailable_3',['dataAvailable',['../classZOPT220x__Control.html#af74c3620eaaa1ba7413ebd8417eee271',1,'ZOPT220x_Control']]],
+  ['disablesensor_4',['disableSensor',['../classZOPT220x__Control.html#a1f67c4ca2c2c8f160ea8f790fb433602',1,'ZOPT220x_Control']]],
+  ['do_20not_20mix_20code_20for_20the_20cores_5',['CORE 1 CODE ONLY AFTER THIS, DO NOT MIX CODE FOR THE CORES',['../main_8cpp.html#autotoc_md16',1,'']]],
+  ['ds3231sensor_6',['ds3231sensor',['../classDS3231Sensor.html',1,'DS3231Sensor'],['../classDS3231Sensor.html#ac8b72bc3924e23cf7a36fbb4d766979c',1,'DS3231Sensor::DS3231Sensor()'],['../classDS3231Sensor.html#aa1404e8c86a6ce68c6fe2ac336ae1de3',1,'DS3231Sensor::DS3231Sensor(unsigned long minimum_period)']]],
+  ['ds3231sensor_2ecpp_7',['DS3231Sensor.cpp',['../DS3231Sensor_8cpp.html',1,'']]],
+  ['ds3231sensor_2eh_8',['DS3231Sensor.h',['../DS3231Sensor_8h.html',1,'']]],
+  ['dump_9',['dump',['../classFlashStorage.html#afffc9c3ffc2886608f7ebef3420a6069',1,'FlashStorage']]]
 ];

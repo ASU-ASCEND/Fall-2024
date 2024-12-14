@@ -1,20 +1,14 @@
 var searchData=
 [
-  ['enablealssensing_33',['enableALSSensing',['../classZOPT220x__Control.html#a27c0821f9341f36d87c9388ce7bf4ee5',1,'ZOPT220x_Control']]],
-  ['enablerawsensing_34',['enableRawSensing',['../classZOPT220x__Control.html#a0d055b74457d1c10173897918d5610ab',1,'ZOPT220x_Control']]],
-  ['enablesensor_35',['enableSensor',['../classZOPT220x__Control.html#a6878d8f2dbff54f6e2f9203df20b9927',1,'ZOPT220x_Control']]],
-  ['enableuvbsensing_36',['enableUVBSensing',['../classZOPT220x__Control.html#a1172703928cf494b466ea2c3595bbbba',1,'ZOPT220x_Control']]],
-  ['ens_37',['ens',['../classENS160Sensor.html#acd102707ec44e2480b3e2d9bf8fc4bd4',1,'ENS160Sensor']]],
-  ['ens160_5fsensor_38',['ens160_sensor',['../main_8cpp.html#a3e98eb3264715a4fd62974bf534291db',1,'main.cpp']]],
-  ['ens160sensor_39',['ENS160Sensor',['../classENS160Sensor.html',1,'ENS160Sensor'],['../classENS160Sensor.html#a34b8a0b14049bff232bb98a69f102409',1,'ENS160Sensor::ENS160Sensor(unsigned long minium_period)'],['../classENS160Sensor.html#a713ee03716a806ed6b676f7179ee9b22',1,'ENS160Sensor::ENS160Sensor()']]],
-  ['ens160sensor_2ecpp_40',['ENS160Sensor.cpp',['../ENS160Sensor_8cpp.html',1,'']]],
-  ['ens160sensor_2eh_41',['ENS160Sensor.h',['../ENS160Sensor_8h.html',1,'']]],
-  ['erase_42',['erase',['../classFlashStorage.html#ac2dd4e8b7b4a85d5820f4277d0fb6727',1,'FlashStorage']]],
-  ['error_43',['Error',['../ErrorDisplay_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5',1,'ErrorDisplay.h']]],
-  ['error_5fdisplay_5fmutex_44',['error_display_mutex',['../classErrorDisplay.html#acb319f797d97bda8672644d80e188893',1,'ErrorDisplay']]],
-  ['error_5fpin_5f0_45',['ERROR_PIN_0',['../PayloadConfig_8h.html#a48a86006eb436b950e5277fdf8a3ae53',1,'PayloadConfig.h']]],
-  ['error_5fpin_5f1_46',['ERROR_PIN_1',['../PayloadConfig_8h.html#a5d6e22e2c3ab3c12e8cd61594815925a',1,'PayloadConfig.h']]],
-  ['error_5fpin_5f2_47',['ERROR_PIN_2',['../PayloadConfig_8h.html#af230e937fbf21c24dab2e1c834330a52',1,'PayloadConfig.h']]],
-  ['errordisplay_48',['ErrorDisplay',['../classErrorDisplay.html#a05b483632a3680f52ea94beeffb5a9ca',1,'ErrorDisplay::ErrorDisplay()'],['../classErrorDisplay.html',1,'ErrorDisplay']]],
-  ['errordisplay_2eh_49',['ErrorDisplay.h',['../ErrorDisplay_8h.html',1,'']]]
+  ['bme_0',['bme',['../classBME280Sensor.html#a01b4337f58f7856cb66aa629a74b2767',1,'BME280Sensor::bme'],['../classBME680Sensor.html#ab3723bdbb8e0cb47210630d2d9d9fb4f',1,'BME680Sensor::bme']]],
+  ['bme280_5fsensor_1',['bme280_sensor',['../main_8cpp.html#a5e06902fdd9dd0f9e999683d83063577',1,'main.cpp']]],
+  ['bme280sensor_2',['bme280sensor',['../classBME280Sensor.html',1,'BME280Sensor'],['../classBME280Sensor.html#a316081d86f0e0b02f6c3a5d3d0da2fc9',1,'BME280Sensor::BME280Sensor()'],['../classBME280Sensor.html#a466a1da747b315a2b6e3755e656b3042',1,'BME280Sensor::BME280Sensor(unsigned long minium_period)']]],
+  ['bme280sensor_2ecpp_3',['BME280Sensor.cpp',['../BME280Sensor_8cpp.html',1,'']]],
+  ['bme280sensor_2eh_4',['BME280Sensor.h',['../BME280Sensor_8h.html',1,'']]],
+  ['bme680_5fspi_5fcs_5fpin_5',['BME680_SPI_CS_PIN',['../PayloadConfig_8h.html#aba104876166752f24fb0443b22075f76',1,'PayloadConfig.h']]],
+  ['bme680_5fspi_5fmode_6',['BME680_SPI_MODE',['../PayloadConfig_8h.html#a21c757a3dabd481c269e7decfdc3976c',1,'PayloadConfig.h']]],
+  ['bme680sensor_7',['bme680sensor',['../classBME680Sensor.html',1,'BME680Sensor'],['../classBME680Sensor.html#aef81ef59340d381e16b54c965f8f73c0',1,'BME680Sensor::BME680Sensor()'],['../classBME680Sensor.html#a0679871d405ed9cc332da90988e19750',1,'BME680Sensor::BME680Sensor(unsigned long minimum_period)']]],
+  ['bme680sensor_2ecpp_8',['BME680Sensor.cpp',['../BME680Sensor_8cpp.html',1,'']]],
+  ['bme680sensor_2eh_9',['BME680Sensor.h',['../BME680Sensor_8h.html',1,'']]],
+  ['bme_5fsensor_10',['bme_sensor',['../main_8cpp.html#a0acb6df8c6120cd2966d9a7ef67dc565',1,'main.cpp']]]
 ];

@@ -1,12 +1,17 @@
 var searchData=
 [
-  ['payload_5fconfig_5fh_125',['PAYLOAD_CONFIG_H',['../PayloadConfig_8h.html#aa5acd16a8ceef08812ade79183b40f6e',1,'PayloadConfig.h']]],
-  ['payloadconfig_2eh_126',['PayloadConfig.h',['../PayloadConfig_8h.html',1,'']]],
-  ['pcf8523sensor_127',['PCF8523Sensor',['../classPCF8523Sensor.html',1,'PCF8523Sensor'],['../classPCF8523Sensor.html#a0b4ee84247f99ecdc97c6207cd4c7165',1,'PCF8523Sensor::PCF8523Sensor()'],['../classPCF8523Sensor.html#afb52f2ef4ae49dba0f7df1d882de8e71',1,'PCF8523Sensor::PCF8523Sensor(unsigned long minimum_period)']]],
-  ['pcf8523sensor_2ecpp_128',['PCF8523Sensor.cpp',['../PCF8523Sensor_8cpp.html',1,'']]],
-  ['pcf8523sensor_2eh_129',['PCF8523Sensor.h',['../PCF8523Sensor_8h.html',1,'']]],
-  ['pin_5flevel_130',['pin_level',['../classErrorDisplay.html#a2b76f33e66982754402934117fa3b682',1,'ErrorDisplay']]],
-  ['position_131',['position',['../classFlashStorage.html#a31cfbafb772ae2ed11535354db878dc0',1,'FlashStorage']]],
-  ['power_5fcycled_132',['POWER_CYCLED',['../ErrorDisplay_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5a1ad5e7c87dfa348cdcf44d3ca5038624',1,'ErrorDisplay.h']]],
-  ['pt1000_5fpin_133',['PT1000_PIN',['../AnalogSensor_8h.html#a330caf3be7eb66e72d2b36e1e72f717d',1,'AnalogSensor.h']]]
+  ['mag_5foffsets_0',['mag_offsets',['../classLSM9DS1Sensor.html#a412305477e39c9a5e46ebc7dd9f2caaf',1,'LSM9DS1Sensor']]],
+  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['max_5fsize_2',['MAX_SIZE',['../classFlashStorage.html#a4c65f1e55370a07f427a18b7a2fe1536',1,'FlashStorage']]],
+  ['measuringperiodstart_3',['measuringPeriodStart',['../classGeigerSensor.html#a3f3e077ee3f22666f2ea23659e510e57',1,'GeigerSensor']]],
+  ['meeting_20schedule_4',['Meeting Schedule',['../index.html#autotoc_md2',1,'']]],
+  ['milestones_5',['Potential Milestones',['../index.html#autotoc_md3',1,'']]],
+  ['minimum_20viable_20product_6',['minimum viable product',['../index.html#autotoc_md10',1,'v1 (Minimum Viable Product)'],['../index.html#autotoc_md5',1,'v1 (Minimum Viable Product)']]],
+  ['minimum_5fperiod_7',['minimum_period',['../classSensor.html#ab44ddb52915d3308953718c4ba3f63c4',1,'Sensor']]],
+  ['mix_20code_20for_20the_20cores_8',['CORE 1 CODE ONLY AFTER THIS, DO NOT MIX CODE FOR THE CORES',['../main_8cpp.html#autotoc_md16',1,'']]],
+  ['mtk3339sensor_9',['mtk3339sensor',['../classMTK3339Sensor.html#a97dcd5d72db33226c075b962adc94157',1,'MTK3339Sensor::MTK3339Sensor()'],['../classMTK3339Sensor.html#a756a728a65297f1b463b2c9ab445b388',1,'MTK3339Sensor::MTK3339Sensor(unsigned long minimum_period)'],['../classMTK3339Sensor.html',1,'MTK3339Sensor']]],
+  ['mtk3339sensor_2ecpp_10',['MTK3339Sensor.cpp',['../MTK3339Sensor_8cpp.html',1,'']]],
+  ['mtk3339sensor_2eh_11',['MTK3339Sensor.h',['../MTK3339Sensor_8h.html',1,'']]],
+  ['multi_20core_12',['v3 (Multi Core)',['../index.html#autotoc_md7',1,'']]],
+  ['myuvsensor_13',['myUVSensor',['../classAS7331Sensor.html#a3b065be9f006920d2f8102ce7c60ee27',1,'AS7331Sensor']]]
 ];

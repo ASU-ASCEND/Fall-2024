@@ -31,34 +31,34 @@
 class ZOPT220x_Control {
  private:
   byte zoptAddress = 0x53;  // Default I2C address. Can be changed via software.
-  //#define ZOPT220X_ADDR 0x53 //7-bit unshifted default I2C Address
-  //#define ZOPT220X_ADDR 0x52 //7-bit unshifted programmed NVM I2C Address (in
-  // case you need multiple on same bus)
-  // boolean zopt220xSetup();
-  // boolean zopt220xSetupWithAddress(byte address);
-  // float getUVIndex(void);
-  // float getAdjustedUVIndex(long UVB, byte gain, byte resolution);
-  // long getUVB();
-  // long getALS();
-  // void setMeasurementRate(byte rate);
-  // void setResolution(byte resolution);
-  // void setGain(byte gain);
-  // boolean checkPowerOnStatus();
-  // boolean dataAvailable();
-  // void enableSensor(void);
-  // void disableSensor(void);
-  // void standby();
-  // void enableALSSensing();
-  // void enableUVBSensing();
-  // void enableRawSensing();
-  // void setMode(byte mode);
-  // void setI2CAdr53();
-  // void setI2CAdr52();
-  // void softReset();
-  // long zoptRead3Registers(byte addr);
-  // byte zoptReadRegister(byte addr);
-  // void zoptWriteRegister(byte addr, byte val);
-  // void setMode(byte mode);
+  // #define ZOPT220X_ADDR 0x53 //7-bit unshifted default I2C Address
+  // #define ZOPT220X_ADDR 0x52 //7-bit unshifted programmed NVM I2C Address (in
+  //  case you need multiple on same bus)
+  //  boolean zopt220xSetup();
+  //  boolean zopt220xSetupWithAddress(byte address);
+  //  float getUVIndex(void);
+  //  float getAdjustedUVIndex(long UVB, byte gain, byte resolution);
+  //  long getUVB();
+  //  long getALS();
+  //  void setMeasurementRate(byte rate);
+  //  void setResolution(byte resolution);
+  //  void setGain(byte gain);
+  //  boolean checkPowerOnStatus();
+  //  boolean dataAvailable();
+  //  void enableSensor(void);
+  //  void disableSensor(void);
+  //  void standby();
+  //  void enableALSSensing();
+  //  void enableUVBSensing();
+  //  void enableRawSensing();
+  //  void setMode(byte mode);
+  //  void setI2CAdr53();
+  //  void setI2CAdr52();
+  //  void softReset();
+  //  long zoptRead3Registers(byte addr);
+  //  byte zoptReadRegister(byte addr);
+  //  void zoptWriteRegister(byte addr, byte val);
+  //  void setMode(byte mode);
  public:
   // Setup the sensor with default settings
   // Assume we are using the default zopt address of 0x53

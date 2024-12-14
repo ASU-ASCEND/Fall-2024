@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['qt_134',['qt',['../main_8cpp.html#afabd161670122f5293f38657d84ef4c4',1,'main.cpp']]],
-  ['qt_5fentry_5fsize_135',['QT_ENTRY_SIZE',['../main_8cpp.html#a8201d54530a1f4d0365d64f9b719abf0',1,'main.cpp']]],
-  ['qt_5fmax_5fsize_136',['QT_MAX_SIZE',['../main_8cpp.html#a7b5633633d812e26b17cde137daa3df4',1,'main.cpp']]]
+  ['new_20improved_0',['v2 (New &amp; Improved)',['../index.html#autotoc_md6',1,'']]],
+  ['none_1',['NONE',['../ErrorDisplay_8h.html#a2c3e4bb40f36b262a5214e2da2bca9c5ac157bdf0b85a40d2619cbc8bc1ae5fe2',1,'ErrorDisplay.h']]],
+  ['not_20mix_20code_20for_20the_20cores_2',['CORE 1 CODE ONLY AFTER THIS, DO NOT MIX CODE FOR THE CORES',['../main_8cpp.html#autotoc_md16',1,'']]]
 ];

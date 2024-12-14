@@ -177,8 +177,7 @@ void loop() {
   if (digitalRead(DATA_INTERFACE_PIN) == LOW) {
 #if FLASH_SPI1
     if (was_dumping == false) {
-      while (queue_get_level(&qt) != 0)
-        ;
+      while (queue_get_level(&qt) != 0);
       delay(10);
       rp2040.idleOtherCore();
     }
